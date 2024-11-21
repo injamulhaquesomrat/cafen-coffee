@@ -10,7 +10,7 @@ const Shop = () => {
         <link rel="canonical" href="/" />
       </Helmet>
       <div>
-        <Container>Hey This is About page</Container>
+        <Container>Hey This is Shop page</Container>
       </div>
     </>
   );
