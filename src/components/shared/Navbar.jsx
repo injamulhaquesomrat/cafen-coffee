@@ -2,13 +2,10 @@ import { FaBars, FaChevronDown } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 import Container from "./Container";
 import { useState } from "react";
-import { navItems } from "../../utils/navItems";
 import DropdownMenu from "./Navbar/DropdownMenu";
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
-  console.log(isDropdownOpen);
 
   const handleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
   return (
@@ -22,23 +19,6 @@ const Navbar = () => {
 
           {/* menus */}
           <ul className="hidden md:flex gap-5 font-nunito text-cf-coffee font-medium md:text-lg relative">
-            {/* {navItems.map(({ name, path }, index) => (
-              <li key={index} onClick={handleDropdown}>
-                <NavLink
-                  to={path}
-                  className={({ isActive }) =>
-                    `flex items-center gap-1 leading-6 px-2.5 py-1 font-bold rounded-lg duration-150 border ${
-                      isActive
-                        ? "bg-cf-yellow text-cf-coffee border-cf-coffee"
-                        : "hover:bg-cf-yellow hover:border-cf-coffee border-transparent"
-                    }`
-                  }
-                >
-                  {name}
-                  {name === "Pages" && <FaChevronDown className="text-sm" />}
-                </NavLink>
-              </li>
-            ))} */}
             <li onClick={() => setIsDropdownOpen(false)}>
               <NavLink
                 to="/"
@@ -73,22 +53,19 @@ const Navbar = () => {
               onMouseEnter={handleDropdown}
               onMouseLeave={handleDropdown}
             >
-              <NavLink
-                to="/pages"
-                className={({ isActive }) =>
-                  `flex items-center gap-1 leading-6 px-2.5 py-1 font-bold rounded-lg duration-150 border ${
-                    isActive
+              {/* ${isActive
                       ? "bg-cf-yellow text-cf-coffee border-cf-coffee"
                       : "hover:bg-cf-yellow hover:border-cf-coffee border-transparent"
-                  }`
-                }
+                  } */}
+              <button
+                className={`flex items-center gap-1 leading-6 px-2.5 py-1 font-bold rounded-lg duration-150 border border-transparent hover:border-cf-coffee hover:bg-cf-yellow`}
               >
                 Pages
                 <FaChevronDown className="text-sm" />
                 {isDropdownOpen && (
                   <DropdownMenu isDropdownOpen={isDropdownOpen} />
                 )}
-              </NavLink>
+              </button>
             </li>
             <li onClick={() => setIsDropdownOpen(false)}>
               <NavLink

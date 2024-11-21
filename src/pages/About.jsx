@@ -1,20 +1,19 @@
 import { Helmet } from "react-helmet";
-import "./App.css";
-import Container from "./components/shared/Container";
+import Container from "../components/shared/Container";
 
-function App() {
+const About = () => {
   return (
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Home</title>
+        <title>About</title>
         <link rel="canonical" href="/" />
       </Helmet>
       <div>
-        <Container>Hey This is Homepage</Container>
+        <Container>Hey This is About page</Container>
       </div>
     </>
   );
-}
+};
 
-export default App;
+export default About;
