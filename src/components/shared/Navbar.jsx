@@ -4,12 +4,16 @@ import Container from "./Container";
 import { useState } from "react";
 import DropdownMenu from "./Navbar/DropdownMenu";
 import { navItems } from "../../utils/navItems";
+import CartContainer from "./Navbar/CartContainer";
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isCartOpen, setIsCartOpen] = useState(false);
 
   // handle dropdown menu
   const handleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
+
+  const handleCartModal = () => setIsCartOpen(!isCartOpen);
 
   return (
     <div className="bg-cf-light-yellow">
@@ -102,7 +106,10 @@ const Navbar = () => {
           {/* start::cart container  */}
           <div className="flex gap-4 items-center">
             {/* start::cart modal open button */}
-            <button className="font-nunito font-bold text-cf-coffee md:text-lg">
+            <button
+              onClick={handleCartModal}
+              className="font-nunito font-bold text-cf-coffee md:text-lg"
+            >
               Cart (0)
             </button>
             {/* end::cart modal open button */}
@@ -140,6 +147,13 @@ const Navbar = () => {
           </div>
         </div>
       </Container>
+
+      {/* start::cart modal */}
+      <CartContainer
+        isCartOpen={isCartOpen}
+        handleCartModal={handleCartModal}
+      />
+      {/* end::cart modal */}
     </div>
   );
 };

@@ -15,6 +15,7 @@ const DropdownMenu = ({ isDropdownOpen, setIsDropdownOpen, menus }) => {
         isDropdownOpen ? "top-[90px] md:top-[34px]" : "md:-top-24"
       } right-4 left-4 md:left-auto md:-right-4 bg-cf-light-white text-cf-coffee rounded-lg p-3 min-w-[90vw] md:min-w-[200px] border border-cf-coffee`}
     >
+      {/* start:: menu list */}
       <ul className="rounded-lg space-y-1">
         {menuList.map(({ name, path, submenus }, index) => (
           <li key={index}>
@@ -51,7 +52,7 @@ const DropdownMenu = ({ isDropdownOpen, setIsDropdownOpen, menus }) => {
               </NavLink>
             )}
 
-            {/* submenus */}
+            {/* start::submenus */}
             {name === "Pages" && submenus && submenus.length > 0 && (
               <div
                 className={`${
@@ -76,9 +77,11 @@ const DropdownMenu = ({ isDropdownOpen, setIsDropdownOpen, menus }) => {
                 ))}
               </div>
             )}
+            {/* end::submenus */}
           </li>
         ))}
       </ul>
+      {/* end:: menu list */}
     </div>
   );
 };

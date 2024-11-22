@@ -10,7 +10,7 @@ function App() {
         <title>Home</title>
         <link rel="canonical" href="/" />
       </Helmet>
-      <div>
+      <div className="font-roboto">
         <Container>Hey This is Homepage</Container>
       </div>
     </>
