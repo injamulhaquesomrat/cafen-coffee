@@ -21,7 +21,7 @@ const CartContainer = ({ isCartOpen, handleCartModal }) => {
             Your cart
           </h3>
           <button onClick={handleCartModal}>
-            <BiX className="text-3xl" />
+            <BiX className="text-3xl text-cf-coffee" />
           </button>
         </div>
 
@@ -44,7 +44,7 @@ const CartContainer = ({ isCartOpen, handleCartModal }) => {
             <p className="text-cf-coffee font-medium">
               Nothing in your basket. Time to browse and shop!
             </p>
-            <button className="text-lg font-semibold bg-cf-yellow text-cf-coffee px-6 py-3 rounded-full border border-cf-coffee">
+            <button className="text-lg font-semibold bg-cf-yellow hover:bg-cf-coffee text-cf-coffee hover:text-cf-yellow px-6 py-3 rounded-full border border-cf-coffee">
               Shop Now
             </button>
           </div>
