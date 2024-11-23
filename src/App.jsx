@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet";
 import "./App.css";
-import Container from "./components/shared/Container";
+import Hero from "./components/Home/Hero";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         <link rel="canonical" href="/" />
       </Helmet>
       <div className="font-roboto">
-        <Container>Hey This is Homepage</Container>
+        <Hero />
       </div>
     </>
   );

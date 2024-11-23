@@ -13,7 +13,7 @@ const DropdownMenu = ({ isDropdownOpen, setIsDropdownOpen, menus }) => {
     <div
       className={`absolute ${
         isDropdownOpen ? "top-[90px] md:top-[34px]" : "md:-top-24"
-      } right-4 left-4 md:left-auto md:-right-4 bg-cf-light-white text-cf-coffee rounded-lg p-3 min-w-[90vw] md:min-w-[200px] border border-cf-coffee`}
+      } right-4 left-4 md:left-auto md:-right-4 bg-cf-light-white text-cf-coffee rounded-lg p-3 min-w-[90vw] md:min-w-[200px] z-50 border border-cf-coffee`}
     >
       {/* start:: menu list */}
       <ul className="rounded-lg space-y-1">
