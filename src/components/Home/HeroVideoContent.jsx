@@ -19,7 +19,7 @@ const HeroVideoContent = () => {
       {/* start:: video */}
       <video
         ref={videoRef}
-        className="rounded-lg shadow-lg w-full rounded-t-2xl border border-cf-coffee relative z-30"
+        className="rounded-lg shadow-lg w-full rounded-t-2xl rounded-b-none border border-cf-coffee relative z-40"
         autoPlay
         loop
         muted
@@ -33,7 +33,7 @@ const HeroVideoContent = () => {
       {/* start:: custom pause and playbutton */}
       <button
         onClick={handlePlayPause}
-        className="absolute bottom-8 right-8 bg-cf-yellow text-cf-coffee rounded-full p-2 md:p-5 border border-cf-coffee z-40"
+        className="absolute md:bottom-8 bottom-4 md:right-8 right-4 bg-cf-yellow text-cf-coffee rounded-full p-2 md:p-5 border border-cf-coffee z-40"
       >
         {isVideoPlaying ? (
           <svg
@@ -122,19 +122,19 @@ const HeroVideoContent = () => {
       {/* end:: custom pause and playbutton */}
 
       {/* start:: video props container */}
-      <div className="blur-sm absolute -top-20 -left-20 z-20">
+      <div className="hidden md:block blur-sm absolute -top-20 -left-20 z-20">
         <img src="/icons/hero/hero-decorative-01.avif" alt="video prop" />
       </div>
-      <div className="blur-sm absolute -top-20 right-1/3 z-30 ">
+      <div className="hidden md:block blur-sm absolute -top-20 right-1/3 z-30 ">
         <img src="/icons/hero/hero-decorative-04.avif" alt="video prop" />
       </div>
-      <div className="blur-sm absolute bottom-1/3 -right-20 z-40">
+      <div className="hidden md:block blur-sm absolute bottom-1/3 -right-20 z-40">
         <img src="/icons/hero/hero-decorative-02.avif" alt="video prop" />
       </div>
-      <div className="absolute top-1/2 -left-6 z-40">
+      <div className="hidden md:block absolute top-1/2 -left-6 z-40">
         <img src="/icons/hero/hero-decorative-06.avif" alt="video prop" />
       </div>
-      <div className="absolute top-2 -right-10 z-40">
+      <div className="hidden md:block absolute top-2 -right-10 z-40">
         <img src="/icons/hero/hero-decorative-07.avif" alt="video prop" />
       </div>
       {/* end:: video props container */}

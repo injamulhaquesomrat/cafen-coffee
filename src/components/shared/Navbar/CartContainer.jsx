@@ -33,7 +33,7 @@ const CartContainer = ({ isCartOpen, handleCartModal }) => {
           <div className="w-full">
             <img
               className="w-6/12 mx-auto"
-              src="/public/empty-cart.svg"
+              src="/empty-cart.svg"
               alt="empty cart"
             />
           </div>

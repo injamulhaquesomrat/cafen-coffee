@@ -7,8 +7,8 @@ const Hero = () => {
     <section className="bg-cf-light-yellow pt-8 overflow-hidden">
       <Container>
         {/* start:: hero text container */}
-        <div className="text-center w-full md:w-2/3 mx-auto grid gap-[1.375rem]">
-          <h1 className="text-[50px] md:text-[60px] leading-tight font-nunito font-bold text-cf-coffee">
+        <div className="text-center w-full md:w-2/3 mx-auto grid gap-[1.375rem] py-10">
+          <h1 className="text-[50px] md:text-6xl leading-tight tracking-tighter font-nunito font-bold text-cf-coffee">
             Discover the perfect blend of taste and ambiance.
           </h1>
 
