@@ -3,16 +3,16 @@ import { aboutMarqueeItems } from "../../utils/aboutCarouselItems";
 import Marquee from "react-fast-marquee";
 
 const AboutMarquee = () => {
-  const [marqueeDirection, setMarqueeDirection] = useState("left");
+  const [marqueeDirection, setMarqueeDirection] = useState("right");
 
   const handleCycleComplete = () => {
     // Change direction after completing a cycle
     setMarqueeDirection((prevDirection) =>
-      prevDirection === "left" ? "right" : "left"
+      prevDirection === "right" ? "left" : "right"
     );
   };
   return (
-    <div className="bg-cf-yellow">
+    <section className="bg-cf-yellow">
       <Marquee
         direction={marqueeDirection}
         onCycleComplete={handleCycleComplete}
@@ -31,7 +31,7 @@ const AboutMarquee = () => {
           ))}
         </div>
       </Marquee>
-    </div>
+    </section>
   );
 };
 

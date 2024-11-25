@@ -3,6 +3,7 @@ import "./App.css";
 import Hero from "./components/Home/Hero";
 import AboutSection from "./components/About/AboutSection";
 import AboutMarquee from "./components/About/AboutMarquee";
+import Featured from "./components/Featured/Featured";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Hero />
         <AboutSection />
         <AboutMarquee />
+        <Featured />
       </div>
     </>
   );
