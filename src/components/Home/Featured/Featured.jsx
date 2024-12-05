@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { featuredItems } from "../../utils/featuredItems";
-import Container from "../shared/Container";
+import { featuredItems } from "../../../utils/featuredItems";
+import Container from "../../shared/Container";
 
 const Featured = () => {
   return (
@@ -9,16 +9,16 @@ const Featured = () => {
         <div className="my-16 md:my-28 bg-cf-light-yellow border border-cf-coffee rounded-2xl p-10">
           <div className="flex flex-col gap-5 items-center justify-center">
             <img src="/feature-icon.svg" alt="feature icon" />
-            <h1 className="text-2xl md:text-3xl font-nunito font-bold text-cf-coffee text-center">
+            <h1 className="text-2xl md:text-4xl lg:text-5xl font-nunito font-bold text-cf-coffee text-center">
               Featured menu items
             </h1>
           </div>
 
           {/* start::menu list */}
-          <ul className="grid grid-cols-2 justify-between py-10 gap-y-6 gap-x-8">
+          <ul className="grid grid-cols-2 justify-between py-10 gap-y-6 gap-x-16">
             {featuredItems.map((item, index) => (
               <li
-                className="border-b pb-5 col-span-2 lg:col-span-1"
+                className="border-b border-cf-light-white pb-5 col-span-2 lg:col-span-1"
                 key={index}
               >
                 <div className="flex flex-col md:flex-row items-start md:items-center gap-5 w-full">

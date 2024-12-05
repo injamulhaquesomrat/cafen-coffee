@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Container from "../shared/Container";
+import Container from "../../shared/Container";
 import HeroVideoContent from "./HeroVideoContent";
 
 const Hero = () => {
@@ -8,7 +8,7 @@ const Hero = () => {
       <Container>
         {/* start:: hero text container */}
         <div className="text-center w-full md:w-2/3 mx-auto grid gap-[1.375rem] py-10">
-          <h1 className="text-[50px] md:text-6xl leading-tight tracking-tighter font-nunito font-bold text-cf-coffee">
+          <h1 className="text-[50px] md:text-7xl leading-tighter tracking-tighter font-nunito font-bold text-cf-coffee">
             Discover the perfect blend of taste and ambiance.
           </h1>
 

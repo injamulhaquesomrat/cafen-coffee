@@ -32,3 +32,11 @@
     padding: 1.25rem 2.5rem;
   }
 }
+
+.splide__arrows .splide__arrow {
+  border: 1px solid #5a0808;
+}
+.splide__arrows .splide__arrow svg {
+  fill: #5a0808;
+  width: 1em;
+}
