@@ -8,6 +8,7 @@ import Events from "./components/Home/Events/Events";
 import EventsGallery from "./components/Home/Gallery/EventsGallery";
 import Reviews from "./components/Home/Reviews/Reviews";
 import Specs from "./components/Home/Specs/Specs";
+import Reservation from "./components/Home/Reservation/Reservation";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <EventsGallery />
         <Reviews />
         <Specs />
+        <Reservation />
       </div>
     </>
   );
