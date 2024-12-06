@@ -1,7 +1,7 @@
-import galleryOne from "../../../../public/icons/gallery/gallary-image-01.avif";
-import galleryTwo from "../../../../public/icons/gallery/gallary-image-02.avif";
-import galleryThree from "../../../../public/icons/gallery/gallary-image-03.avif";
-import galleryFour from "../../../../public/icons/gallery/gallary-image-04.avif";
+import galleryOne from "/icons/gallery/gallary-image-01.avif";
+import galleryTwo from "/icons/gallery/gallary-image-02.avif";
+import galleryThree from "/icons/gallery/gallary-image-03.avif";
+import galleryFour from "/icons/gallery/gallary-image-04.avif";
 
 const EventsGallery = () => {
   return (

@@ -7,6 +7,7 @@ import Featured from "./components/Home/Featured/Featured";
 import Events from "./components/Home/Events/Events";
 import EventsGallery from "./components/Home/Gallery/EventsGallery";
 import Reviews from "./components/Home/Reviews/Reviews";
+import Specs from "./components/Home/Specs/Specs";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Events />
         <EventsGallery />
         <Reviews />
+        <Specs />
       </div>
     </>
   );
