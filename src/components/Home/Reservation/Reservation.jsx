@@ -1,13 +1,24 @@
 import Container from "../../shared/Container";
 
 const Reservation = () => {
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const name = form.name.value;
+    const email = form.email.value;
+    const phone = form.phone.value;
+    const date = form.date.value;
+    const time = form.time.value;
+    const guest = form.guest.value;
+    console.log({ name, email, phone, date, time, guest });
+  };
   return (
     <div className="py-14 md:py-20 bg-[url('/public/form-bg-image.avif')] h-full bg-cover">
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="lg:col-span-1"></div>
           <div className="md:w-2/3 lg:w-full xl:w-2/3 mx-auto border border-cf-coffee p-5 md:p-8 rounded-lg bg-cf-yellow text-cf-coffee lg:col-span-1">
-            <form>
+            <form onSubmit={handleFormSubmit}>
               <h6 className="text-2xl md:text-3xl font-semibold font-nunito">
                 Make a reservation
               </h6>
@@ -26,7 +37,7 @@ const Reservation = () => {
                   <input
                     className="bg-transparent border-b border-cf-coffee py-2.5 col-span-2 placeholder:text-cf-coffee/80 focus-visible:outline-0"
                     type="text"
-                    name="name"
+                    name="email"
                     placeholder="ihsomrat.official@gmail"
                   />
                 </div>
@@ -35,7 +46,7 @@ const Reservation = () => {
                   <input
                     className="bg-transparent border-b border-cf-coffee py-2.5 col-span-2 placeholder:text-cf-coffee/80 focus-visible:outline-0"
                     type="text"
-                    name="name"
+                    name="date"
                     placeholder="DD/MM/YYYY"
                   />
                 </div>
@@ -44,7 +55,7 @@ const Reservation = () => {
                   <input
                     className="bg-transparent border-b border-cf-coffee py-2.5 col-span-2 placeholder:text-cf-coffee/80 focus-visible:outline-0"
                     type="text"
-                    name="name"
+                    name="time"
                     placeholder="MM/HH"
                   />
                 </div>
@@ -53,7 +64,7 @@ const Reservation = () => {
                   <input
                     className="bg-transparent border-b border-cf-coffee py-2.5 col-span-2 placeholder:text-cf-coffee/80 focus-visible:outline-0"
                     type="text"
-                    name="name"
+                    name="phone"
                     placeholder="+880 123 456 789"
                   />
                 </div>
@@ -62,7 +73,7 @@ const Reservation = () => {
                   <input
                     className="bg-transparent border-b border-cf-coffee py-2.5 col-span-2 placeholder:text-cf-coffee/80 focus-visible:outline-0"
                     type="text"
-                    name="name"
+                    name="guest"
                     placeholder="2"
                   />
                 </div>

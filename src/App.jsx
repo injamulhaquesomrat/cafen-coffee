@@ -9,6 +9,7 @@ import EventsGallery from "./components/Home/Gallery/EventsGallery";
 import Reviews from "./components/Home/Reviews/Reviews";
 import Specs from "./components/Home/Specs/Specs";
 import Reservation from "./components/Home/Reservation/Reservation";
+import Products from "./components/Home/Products/Products";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Reviews />
         <Specs />
         <Reservation />
+        <Products />
       </div>
     </>
   );
