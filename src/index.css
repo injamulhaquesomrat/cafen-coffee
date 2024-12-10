@@ -17,6 +17,10 @@
   font-family: "Nunito", sans-serif;
 }
 
+input:-webkit-autofill {
+  background-color: transparent;
+}
+
 .cf-btn {
   font-size: 0.875rem;
   font-weight: 500;

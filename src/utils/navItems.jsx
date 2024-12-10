@@ -66,3 +66,38 @@ export const navItems = [
     path: "/shop",
   },
 ];
+
+export const utilityItems = [
+  {
+    name: "Style guide",
+    path: "/style-guide",
+  },
+  {
+    name: "Instructions",
+    path: "/instructions",
+  },
+  {
+    name: "Licenses",
+    path: "/licenses",
+  },
+  {
+    name: "Changelog",
+    path: "/changelog",
+  },
+  {
+    name: "Link in Bio",
+    path: "/link-in-bio",
+  },
+  {
+    name: "Error 404",
+    path: "/error-404",
+  },
+  {
+    name: "Password Protected",
+    path: "/password-protected",
+  },
+  {
+    name: "Coming Soon",
+    path: "/coming-soon",
+  },
+];
