@@ -6,7 +6,7 @@ export const productItems = [
     image:
       "https://images.unsplash.com/photo-1521677446241-d182a96ec49f?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     save_offer: "Save 10%",
-    thumbnail: "/public/icons/demo/demo-1.avif",
+    thumbnail: "/icons/demo/demo-1.avif",
     description:
       "The blend offers a rich crema and a smooth, velvety finish, making it perfect for both straight espresso shots and espresso-based drinks like lattes, cappuccinos, and macchiatos.",
     ingredients: ["Robusta coffee beans"],
@@ -40,7 +40,7 @@ export const productItems = [
     image:
       "https://images.unsplash.com/photo-1522675397120-8cb88c83ac16?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     save_offer: "Save 18%",
-    thumbnail: "/public/icons/demo/demo-2.avif",
+    thumbnail: "/icons/demo/demo-2.avif",
     description:
       "A premium blend of ground coffee that delivers a rich and full-bodied flavor, perfect for any coffee lover.",
     ingredients: ["Arabica coffee beans"],
@@ -61,7 +61,7 @@ export const productItems = [
     id: 3,
     title: "Decaf Coffee Blend",
     price: 16.99,
-    thumbnail: "/public/icons/demo/demo-1.avif",
+    thumbnail: "/icons/demo/demo-1.avif",
     image:
       "https://images.unsplash.com/photo-1549652127-2e5e59e86a7a?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     save_offer: "Save 10%",
@@ -85,7 +85,7 @@ export const productItems = [
     id: 4,
     title: "Organic Coffee Beans",
     price: 18.99,
-    thumbnail: "/public/icons/demo/demo-3.avif",
+    thumbnail: "/icons/demo/demo-3.avif",
     image:
       "https://images.unsplash.com/photo-1495862433577-132cf20d7902?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     save_offer: "Save 15%",
@@ -109,7 +109,7 @@ export const productItems = [
     id: 5,
     title: "French Roast Coffee",
     price: 17.99,
-    thumbnail: "/public/icons/demo/demo-2.avif",
+    thumbnail: "/icons/demo/demo-2.avif",
     image:
       "https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     save_offer: "Save 12%",
@@ -133,7 +133,7 @@ export const productItems = [
     id: 6,
     title: "Espresso Blend",
     price: 19.99,
-    thumbnail: "/public/icons/demo/demo-3.avif",
+    thumbnail: "/icons/demo/demo-3.avif",
     image:
       "https://images.unsplash.com/photo-1494314671902-399b18174975?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     save_offer: "Save 20%",
@@ -157,7 +157,7 @@ export const productItems = [
     id: 7,
     title: "Cold Brew Coffee",
     price: 20.99,
-    thumbnail: "/public/icons/demo/demo-2.avif",
+    thumbnail: "/icons/demo/demo-2.avif",
     image:
       "https://images.unsplash.com/photo-1518057111178-44a106bad636?q=80&w=2136&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     save_offer: "Save 10%",
@@ -181,7 +181,7 @@ export const productItems = [
     id: 8,
     title: "Single Origin Coffee",
     price: 21.99,
-    thumbnail: "/public/icons/demo/demo-1.avif",
+    thumbnail: "/icons/demo/demo-1.avif",
     image:
       "https://images.unsplash.com/photo-1517487618188-7168abd3ca7d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     save_offer: "Save 15%",
@@ -205,7 +205,7 @@ export const productItems = [
     id: 9,
     title: "Breakfast Blend Coffee",
     price: 22.99,
-    thumbnail: "/public/icons/demo/demo-3.avif",
+    thumbnail: "/icons/demo/demo-3.avif",
     image:
       "https://images.unsplash.com/photo-1550547660-5d719a574887?q=80&w=2047&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     save_offer: "Save 10%",
@@ -229,7 +229,7 @@ export const productItems = [
     id: 10,
     title: "Dark Roast Coffee",
     price: 23.99,
-    thumbnail: "/public/icons/demo/demo-2.avif",
+    thumbnail: "/icons/demo/demo-2.avif",
     image:
       "https://images.unsplash.com/photo-1498603645763-1005915e0abe?q=80&w=2201&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     save_offer: "Save 12%",
