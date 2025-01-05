@@ -10,7 +10,7 @@ const CartContainer = ({ isCartOpen, handleCartModal }) => {
 
   return (
     <div
-      className={`fixed top-0 left-0 h-[100vh] w-[100vw] bg-black/40 ${
+      className={`fixed top-0 left-0 h-[100vh] w-[100vw] bg-black/40 z-50 ${
         isCartOpen ? "block" : "hidden"
       }`}
       onClick={handleCartOutsideClick}
