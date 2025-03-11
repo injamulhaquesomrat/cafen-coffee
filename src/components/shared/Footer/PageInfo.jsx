@@ -10,7 +10,7 @@ const PageInfo = () => {
       <div className="border border-cf-coffee p-4 md:p-8 rounded-3xl flex flex-col md:flex-row justify-between lg:col-span-7">
         <div className="flex flex-col justify-between">
           <div>
-            <img src="/public/logo.svg" alt="footer logo" />
+            <img src="/logo.svg" alt="footer logo" />
             {/* start::social links  */}
             <div className="flex items-center gap-4 pt-5">
               <Link to="#">
@@ -71,7 +71,7 @@ const PageInfo = () => {
           </p>
         </div>
         <div>
-          <img src="/public/footer-image.svg" alt="footer map" />
+          <img src="/footer-image.svg" alt="footer map" />
         </div>
       </div>
       <div className="grid md:grid-cols-2 gap-8 p-4 md:p-8 border border-cf-coffee bg-cf-coffee text-white font-nunito rounded-3xl lg:col-span-5">

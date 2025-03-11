@@ -1,4 +1,14 @@
 import Container from "../../shared/Container";
+import ReservationInputField from "./ReservationInputField";
+
+const formFields = [
+  { label: "Name", name: "name", placeholder: "Injamul Haque" },
+  { label: "Email", name: "email", placeholder: "ihsomrat.official@gmail" },
+  { label: "Date", name: "date", placeholder: "DD/MM/YYYY" },
+  { label: "Time", name: "time", placeholder: "MM/HH" },
+  { label: "Phone", name: "phone", placeholder: "+880 123 456 789" },
+  { label: "No guests", name: "guest", placeholder: "2" },
+];
 
 const Reservation = () => {
   const handleFormSubmit = (event) => {
@@ -12,71 +22,22 @@ const Reservation = () => {
     const guest = form.guest.value;
     console.log({ name, email, phone, date, time, guest });
   };
+
   return (
-    <div className="py-14 md:py-20 bg-[url('/public/form-bg-image.avif')] h-full bg-cover">
+    <div className="py-14 md:py-20 bg-[url('/form-bg-image.avif')] h-full bg-cover">
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="lg:col-span-1"></div>
           <div className="md:w-2/3 lg:w-full xl:w-2/3 mx-auto border border-cf-coffee p-5 md:p-8 rounded-lg bg-cf-yellow text-cf-coffee lg:col-span-1">
+            {/* start:: reservation form */}
             <form onSubmit={handleFormSubmit}>
               <h6 className="text-2xl md:text-3xl font-semibold font-nunito">
                 Make a reservation
               </h6>
               <div className="space-y-6 py-6 font-medium ">
-                <div className="grid grid-cols-3 items-center text-cf-coffee/80">
-                  <p className="col-span-1">Name:</p>
-                  <input
-                    className="bg-transparent border-b border-cf-coffee py-2.5 col-span-2 placeholder:text-cf-coffee/80 focus-visible:outline-0"
-                    type="text"
-                    name="name"
-                    placeholder="Injamul Haque"
-                  />
-                </div>
-                <div className="grid grid-cols-3 items-center text-cf-coffee/80">
-                  <p className=" col-span-1">Email:</p>
-                  <input
-                    className="bg-transparent border-b border-cf-coffee py-2.5 col-span-2 placeholder:text-cf-coffee/80 focus-visible:outline-0"
-                    type="text"
-                    name="email"
-                    placeholder="ihsomrat.official@gmail"
-                  />
-                </div>
-                <div className="grid grid-cols-3 items-center text-cf-coffee/80">
-                  <p className=" col-span-1">Date:</p>
-                  <input
-                    className="bg-transparent border-b border-cf-coffee py-2.5 col-span-2 placeholder:text-cf-coffee/80 focus-visible:outline-0"
-                    type="text"
-                    name="date"
-                    placeholder="DD/MM/YYYY"
-                  />
-                </div>
-                <div className="grid grid-cols-3 items-center text-cf-coffee/80">
-                  <p className=" col-span-1">Time:</p>
-                  <input
-                    className="bg-transparent border-b border-cf-coffee py-2.5 col-span-2 placeholder:text-cf-coffee/80 focus-visible:outline-0"
-                    type="text"
-                    name="time"
-                    placeholder="MM/HH"
-                  />
-                </div>
-                <div className="grid grid-cols-3 items-center text-cf-coffee/80">
-                  <p className=" col-span-1">Phone:</p>
-                  <input
-                    className="bg-transparent border-b border-cf-coffee py-2.5 col-span-2 placeholder:text-cf-coffee/80 focus-visible:outline-0"
-                    type="text"
-                    name="phone"
-                    placeholder="+880 123 456 789"
-                  />
-                </div>
-                <div className="grid grid-cols-3 items-center text-cf-coffee/80">
-                  <p className=" col-span-1">No guests:</p>
-                  <input
-                    className="bg-transparent border-b border-cf-coffee py-2.5 col-span-2 placeholder:text-cf-coffee/80 focus-visible:outline-0"
-                    type="text"
-                    name="guest"
-                    placeholder="2"
-                  />
-                </div>
+                {formFields.map((field) => (
+                  <ReservationInputField key={field.name} {...field} />
+                ))}
               </div>
               <div>
                 <button
@@ -87,6 +48,7 @@ const Reservation = () => {
                 </button>
               </div>
             </form>
+            {/* end:: reservation form */}
           </div>
         </div>
       </Container>

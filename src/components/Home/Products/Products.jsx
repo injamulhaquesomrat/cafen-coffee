@@ -10,10 +10,12 @@ const Products = () => {
           Our signatures items
         </h1>
 
+        {/* start:: products container */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {productItems.slice(0, 4).map((item, index) => (
             <ProductItem key={index} item={item} />
           ))}
+          {/* end:: products container */}
         </div>
       </div>
     </Container>

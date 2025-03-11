@@ -2,7 +2,7 @@ import Container from "../../shared/Container";
 
 const AboutSection = () => {
   return (
-    <section className=" py-20 md:py-32 bg-cf-coffee">
+    <section className="py-20 md:py-32 bg-cf-coffee">
       <Container>
         <div className="flex justify-center items-center mb-5">
           <img

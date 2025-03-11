@@ -9,7 +9,7 @@ const Specs = () => {
           <div className="md:basis-5/12 flex justify-center">
             <img
               className="border border-cf-coffee rounded-[2.5rem] object-cover"
-              src="/public/icons/about/about-image-01.avif"
+              src="/icons/about/about-image-01.avif"
               alt="about image"
             />
           </div>
@@ -21,7 +21,7 @@ const Specs = () => {
               <div className="flex flex-col gap-3">
                 <div className="bg-cf-yellow p-3 rounded-xl border border-cf-coffee w-fit">
                   <img
-                    src="/public/icons/about/about-icon-01.svg"
+                    src="/icons/about/about-icon-01.svg"
                     alt="ABOUT ICON   "
                   />
                 </div>
@@ -35,7 +35,7 @@ const Specs = () => {
               <div className="flex flex-col gap-3">
                 <div className="bg-cf-yellow p-3 rounded-xl border border-cf-coffee w-fit">
                   <img
-                    src="/public/icons/about/about-icon-02.svg"
+                    src="/icons/about/about-icon-02.svg"
                     alt="ABOUT ICON   "
                   />
                 </div>
@@ -49,7 +49,7 @@ const Specs = () => {
               <div className="flex flex-col justify-end gap-3">
                 <div className="bg-cf-yellow p-3 rounded-xl border border-cf-coffee w-fit">
                   <img
-                    src="/public/icons/about/about-icon-03.svg"
+                    src="/icons/about/about-icon-03.svg"
                     alt="ABOUT ICON   "
                   />
                 </div>

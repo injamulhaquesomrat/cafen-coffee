@@ -10,6 +10,7 @@ import Reviews from "./components/Home/Reviews/Reviews";
 import Specs from "./components/Home/Specs/Specs";
 import Reservation from "./components/Home/Reservation/Reservation";
 import Products from "./components/Home/Products/Products";
+import GoToTop from "./components/shared/GoToTop";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Specs />
         <Reservation />
         <Products />
+        <GoToTop />
       </div>
     </>
   );
