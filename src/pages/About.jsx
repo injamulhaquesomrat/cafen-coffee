@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
 import Container from "../components/shared/Container";
+import Intro from "../components/About/Intro";
 
 const About = () => {
   return (
@@ -10,7 +11,9 @@ const About = () => {
         <link rel="canonical" href="/" />
       </Helmet>
       <div>
-        <Container>Hey This is About page</Container>
+        <Container>
+          <Intro />
+        </Container>
       </div>
     </>
   );
