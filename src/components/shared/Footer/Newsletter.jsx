@@ -13,7 +13,7 @@ const Newsletter = () => {
       <form onSubmit={handleSubmit} className="xl:w-4/12">
         <div className="border border-cf-coffee rounded-full p-1.5 xl:p-2 flex justify-between">
           <input
-            className="px-3 bg-cf-light-yellow focus-visible:outline-0 text-cf-coffee placeholder:text-cf-coffee/80 placeholder:text-md text-md lg:text-lg rounded-lg font-medium flex-1"
+            className="px-3 bg-cf-foreground focus-visible:outline-0 text-cf-coffee placeholder:text-cf-coffee/80 placeholder:text-md text-md lg:text-lg rounded-lg font-medium flex-1"
             type="email"
             name="email"
             id="email"

@@ -17,7 +17,7 @@ function App() {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Home</title>
+        <title>Home | Cafen - Ecommerce Website</title>
         <link rel="canonical" href="/" />
       </Helmet>
       <div className="font-roboto">
