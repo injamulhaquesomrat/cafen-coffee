@@ -12,7 +12,7 @@ const Intro = () => {
         <h1 className="text-[56px] md:text-6xl pb-4 md:pb-7 leading-[1.125] tracking-tighter text-cf-coffee font-nunito font-semibold">
           About cafen café
         </h1>
-        <p className="pb-[50px] md:pb-[60px] xl:pr-20 text-cf-coffee xl:text-lg leading-tight">
+        <p className="pb-[50px] md:pb-[60px] max-w-[600px] text-cf-coffee xl:text-lg leading-tight">
           Welcome to Cafen Café, where every cup of coffee is crafted with love
           and every visit feels like coming home.
         </p>

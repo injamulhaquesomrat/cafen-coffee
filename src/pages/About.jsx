@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import Container from "../components/shared/Container";
 import Intro from "../components/About/Intro";
+import OurStory from "../components/About/OurStory";
 
 const About = () => {
   return (
@@ -10,11 +11,12 @@ const About = () => {
         <title>About | Cafen</title>
         <link rel="canonical" href="/" />
       </Helmet>
-      <div>
+      <>
         <Container>
           <Intro />
         </Container>
-      </div>
+        <OurStory />
+      </>
     </>
   );
 };
