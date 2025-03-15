@@ -27,7 +27,7 @@ const Navbar = () => {
           {/* end:logo container */}
 
           {/* start::menus */}
-          <ul className="hidden md:flex gap-5 font-nunito text-cf-coffee font-medium md:text-lg relative">
+          <ul className="hidden lg:flex gap-5 font-nunito text-cf-coffee font-medium md:text-lg relative">
             {/* start::Homepage link */}
             <li onClick={() => setIsDropdownOpen(false)}>
               <NavLink
@@ -118,7 +118,7 @@ const Navbar = () => {
               {/* start::sidebar trigger button */}
               <button
                 onClick={handleDropdown}
-                className={`relative p-2.5 md:hidden ${
+                className={`relative p-2.5 lg:hidden ${
                   isDropdownOpen
                     ? "border-cf-yellow border bg-cf-coffee"
                     : "bg-cf-yellow border border-cf-coffee"

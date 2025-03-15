@@ -8,40 +8,42 @@ const Intro = () => {
           alt="about intro image"
         />
       </div>
-      <div className="p-5 md:p-10 bg-cf-light-yellow basis-1/2 md:basis-7/12">
+      <div className="p-5 md:p-10 lg:p-[60px] bg-cf-light-yellow basis-1/2 md:basis-7/12">
         <h1 className="text-[56px] md:text-6xl pb-4 md:pb-7 leading-[1.125] tracking-tighter text-cf-coffee font-nunito font-semibold">
           About cafen café
         </h1>
-        <p className="pb-[50px] md:pb-[60px] text-cf-coffee">
+        <p className="pb-[50px] md:pb-[60px] xl:pr-20 text-cf-coffee xl:text-lg leading-tight">
           Welcome to Cafen Café, where every cup of coffee is crafted with love
           and every visit feels like coming home.
         </p>
-        <ul className="text-cf-coffee mb-auto">
-          <li className="flex items-center gap-2.5 pb-2.5 md:pb-4 text-sm md:text-base">
-            <img
-              className="h-5 w-5"
-              src="https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66c5dd9223f789cfded54897_about-list-icon.svg"
-              alt="tick icon"
-            />
-            <span>From a dream to reality</span>
-          </li>
-          <li className="flex items-center gap-2.5 pb-2.5 md:pb-4 text-sm md:text-base">
-            <img
-              className="h-5 w-5"
-              src="https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66c5dd9223f789cfded54897_about-list-icon.svg"
-              alt="tick icon"
-            />
-            <span>Opening our doors</span>
-          </li>
-          <li className="flex items-center gap-2.5 pb-2.5 md:pb-0 text-sm md:text-base">
-            <img
-              className="h-5 w-5"
-              src="https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66c5dd9223f789cfded54897_about-list-icon.svg"
-              alt="tick icon"
-            />
-            <span>Growing with our community</span>
-          </li>
-        </ul>
+        <div className="w-full xl:h-1/2 flex xl:items-center">
+          <ul className="text-cf-coffee">
+            <li className="flex items-center gap-2.5 pb-2.5 md:pb-4">
+              <img
+                className="h-5 w-5"
+                src="https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66c5dd9223f789cfded54897_about-list-icon.svg"
+                alt="tick icon"
+              />
+              <span className=" text-sm md:text-base xl:text-lg">From a dream to reality</span>
+            </li>
+            <li className="flex items-center gap-2.5 pb-2.5 md:pb-4">
+              <img
+                className="h-5 w-5"
+                src="https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66c5dd9223f789cfded54897_about-list-icon.svg"
+                alt="tick icon"
+              />
+              <span className=" text-sm md:text-base xl:text-lg">Opening our doors</span>
+            </li>
+            <li className="flex items-center gap-2.5 pb-2.5 md:pb-0">
+              <img
+                className="h-5 w-5"
+                src="https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66c5dd9223f789cfded54897_about-list-icon.svg"
+                alt="tick icon"
+              />
+              <span className=" text-sm md:text-base xl:text-lg">Growing with our community</span>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
