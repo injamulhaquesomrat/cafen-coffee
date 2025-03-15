@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import Container from "../components/shared/Container";
 import Intro from "../components/About/Intro";
 import OurStory from "../components/About/OurStory";
+import OurValues from "../components/About/OurValues";
 
 const About = () => {
   return (
@@ -16,6 +17,9 @@ const About = () => {
           <Intro />
         </Container>
         <OurStory />
+        <Container>
+          <OurValues/>
+        </Container>
       </>
     </>
   );
