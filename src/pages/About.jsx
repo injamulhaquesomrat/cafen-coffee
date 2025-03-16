@@ -3,6 +3,7 @@ import Container from "../components/shared/Container";
 import Intro from "../components/About/Intro";
 import OurStory from "../components/About/OurStory";
 import OurValues from "../components/About/OurValues";
+import OurTeam from "../components/About/OurTeam";
 
 const About = () => {
   return (
@@ -20,6 +21,7 @@ const About = () => {
         <Container>
           <OurValues/>
         </Container>
+        <OurTeam/>
       </>
     </>
   );
