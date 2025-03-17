@@ -41,40 +41,36 @@ const Hero = () => {
             </div>
             {/* end::hero menu button container*/}
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-x-8 xl:gap-y-0 text-cf-coffee ">
+            {/* start:: specifications */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-x-8 xl:gap-y-0 text-cf-coffee pt-4 xl:pt-8">
               <div className="flex items-start gap-3">
-                <div className="bg-cf-yellow p-1.5 md:p-3.5 rounded-xl border border-cf-coffee w-fit">
-                  <img
-                    src="/icons/about/about-icon-01.svg"
-                    alt="coffee ICON"
-                  />
+                <div className="bg-cf-yellow p-1.5 md:p-3 xl:p-3.5 rounded-xl border border-cf-coffee w-fit">
+                  <img src="/icons/about/about-icon-01.svg" alt="coffee ICON" />
                 </div>
                 <div>
-                  <h6 className="text-xl lg:text-2xl font-semibold font-nunito tracking-tighter">
-                  Artisanal Coffee
+                  <h6 className="text-xl xl:text-2xl font-semibold font-nunito tracking-tighter">
+                    Artisanal Coffee
                   </h6>
-                  <p className="font-nunito tracking-tight lg:text-lg">
+                  <p className="font-nunito tracking-tight xl:text-lg">
                     Savor fresh, locally sourced menu items.
                   </p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="bg-cf-yellow p-1.5 md:p-3.5 rounded-xl border border-cf-coffee w-fit">
-                  <img
-                    src="/icons/about/about-icon-03.svg"
-                    alt="ABOUT ICON"
-                  />
+                <div className="bg-cf-yellow p-1.5 md:p-3 xl:p-3.5 rounded-xl border border-cf-coffee w-fit">
+                  <img src="/icons/about/about-icon-03.svg" alt="ABOUT ICON" />
                 </div>
                 <div>
-                  <h6 className="text-xl lg:text-2xl font-semibold font-nunito tracking-tighter">
+                  <h6 className="text-xl xl:text-2xl font-semibold font-nunito tracking-tighter">
                     Free Wi-Fi
                   </h6>
-                  <p className="font-nunito tracking-tight lg:text-lg">
+                  <p className="font-nunito tracking-tight xl:text-lg">
                     Stay connected with our complimentary Wi-Fi.
                   </p>
                 </div>
               </div>
             </div>
+            {/* end:: specifications */}
           </div>
           {/* end:: hero text container */}
 
@@ -82,7 +78,7 @@ const Hero = () => {
           <div className="-mb-6 -mt-14 md:-mt-16 md:-mr-4 lg:mr-0 lg:-mt-32 lg:-mb-36 -rotate-6 md:basis-1/3 lg:basis-1/2">
             <div>
               <img
-              className="w-[600px] h-[600px] lg:h-[800px] lg:w-[800px] xl:w-full xl:h-full object-cover"
+                className="w-[600px] h-[600px] lg:h-[800px] lg:w-[800px] xl:w-full xl:h-full object-cover"
                 src="https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66c97d18d320003d1a1fcc6f_hero-image-02.avif"
                 alt="hero banner image"
               />
