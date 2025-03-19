@@ -4,6 +4,7 @@ import Intro from "../components/About/Intro";
 import OurStory from "../components/About/OurStory";
 import OurValues from "../components/About/OurValues";
 import OurTeam from "../components/About/OurTeam";
+import GoToTop from "../components/shared/GoToTop";
 
 const About = () => {
   return (
@@ -19,9 +20,10 @@ const About = () => {
         </Container>
         <OurStory />
         <Container>
-          <OurValues/>
+          <OurValues />
         </Container>
-        <OurTeam/>
+        <OurTeam />
+        <GoToTop />
       </>
     </>
   );
