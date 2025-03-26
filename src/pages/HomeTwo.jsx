@@ -3,6 +3,7 @@ import Hero from "../components/Home2/Hero";
 import Brands from "../components/Home2/Brands";
 import GoToTop from "../components/shared/GoToTop";
 import FeaturedMenuItems from "../components/Home2/FeaturedMenuItems/FeaturedMenuItems";
+import Specs from "../components/Home2/Specs/Specs";
 
 const HomeTwo = () => {
   return (
@@ -15,6 +16,7 @@ const HomeTwo = () => {
       <Hero />
       <Brands />
       <FeaturedMenuItems />
+      <Specs/>
       <GoToTop />
     </>
   );

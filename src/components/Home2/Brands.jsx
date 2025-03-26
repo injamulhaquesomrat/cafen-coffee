@@ -21,7 +21,7 @@ const Brands = () => {
               We are serving top brands coffee
             </h3>
           </div>
-          <div className="md:w-4/6 lg:w-2/3 xl:w-10/12">
+          <div className="w-full md:w-4/6 lg:w-2/3 xl:w-10/12">
             <Marquee
               direction={marqueeDirection}
               onCycleComplete={handleCycleComplete}
