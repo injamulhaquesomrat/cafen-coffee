@@ -1,6 +1,6 @@
 import { locationItems } from "../../../utils/locationItems";
 import Container from "../../shared/Container";
-import LocationItem from "./locationItem";
+import LocationItem from "./LocationItem";
 
 const Locations = () => {
   return (
