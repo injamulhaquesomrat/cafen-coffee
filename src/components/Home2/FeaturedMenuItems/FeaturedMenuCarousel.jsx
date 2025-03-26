@@ -11,7 +11,7 @@ const FeaturedMenuCarousel = () => {
           type: "slide",
           perMove: 1,
           perPage: 1,
-          focus: "center",
+          // focus: "center",
           pagination: false,
           classes: {
             arrows:
@@ -24,7 +24,7 @@ const FeaturedMenuCarousel = () => {
               perPage: 2,
             },
             1024: {
-              perPage: 3,
+              perPage: 2.5,
             },
           },
           height: "100%",
