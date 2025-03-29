@@ -5,6 +5,8 @@ import GoToTop from "../components/shared/GoToTop";
 import FeaturedMenuItems from "../components/Home2/FeaturedMenuItems/FeaturedMenuItems";
 import Specs from "../components/Home2/Specs/Specs";
 import Locations from "../components/Home2/Locations/Locations";
+import OrderNow from "../components/Home2/OrderNow/OrderNow";
+import Team from "../components/Home2/Team/Team";
 
 const HomeTwo = () => {
   return (
@@ -19,6 +21,8 @@ const HomeTwo = () => {
       <FeaturedMenuItems />
       <Specs/>
       <Locations/>
+      <OrderNow/>
+      <Team/>
       <GoToTop />
     </>
   );

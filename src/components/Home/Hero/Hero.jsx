@@ -8,9 +8,11 @@ const Hero = () => {
       <Container>
         {/* start:: hero text container */}
         <div className="text-center w-full md:w-2/3 mx-auto grid gap-[1.375rem] py-10">
+          {/* start:: hero text */}
           <h1 className="text-[50px] md:text-7xl leading-tighter tracking-tighter font-nunito font-bold text-cf-coffee">
             Discover the perfect blend of taste and ambiance.
           </h1>
+          {/* end:: hero text */}
 
           {/*start::hero menu button  */}
           <Link to="/menu">

@@ -31,14 +31,21 @@ const Reservation = () => {
           <div className="md:w-2/3 lg:w-full xl:w-2/3 mx-auto border border-cf-coffee p-5 md:p-8 rounded-lg bg-cf-yellow text-cf-coffee lg:col-span-1">
             {/* start:: reservation form */}
             <form onSubmit={handleFormSubmit}>
+              {/* start:: form title */}
               <h6 className="text-2xl md:text-3xl font-semibold font-nunito">
                 Make a reservation
               </h6>
+              {/* end:: form title */}
+
+              {/* start:: reservation form fields */}
               <div className="space-y-6 py-6 font-medium ">
                 {formFields.map((field) => (
                   <ReservationInputField key={field.name} {...field} />
                 ))}
               </div>
+              {/* end::  reservation form fields */}
+              
+              {/* start:: form submit button */}
               <div>
                 <button
                   className="px-6 md:px-8 py-2 md:py-4 border border-cf-coffee rounded-full bg-cf-coffee hover:bg-cf-yellow text-cf-yellow hover:text-cf-coffee text-lg duration-300 transition-all"
@@ -47,6 +54,7 @@ const Reservation = () => {
                   Submit
                 </button>
               </div>
+              {/* form submit button */}
             </form>
             {/* end:: reservation form */}
           </div>

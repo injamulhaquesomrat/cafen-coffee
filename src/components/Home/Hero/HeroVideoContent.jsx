@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import HeroPausePlayBtn from "./HeroPausePlayBtn";
+import { videoPropItems } from "../../../utils/videoPropItems";
 
 const HeroVideoContent = () => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(true);
@@ -39,21 +40,14 @@ const HeroVideoContent = () => {
       {/* end:: custom pause and playbutton */}
 
       {/* start:: video props container */}
-      <div className="hidden md:block blur-sm absolute -top-20 -left-20 z-20">
-        <img src="/icons/hero/hero-decorative-01.avif" alt="video prop" />
-      </div>
-      <div className="hidden md:block blur-sm absolute -top-20 right-1/3 z-30 ">
-        <img src="/icons/hero/hero-decorative-04.avif" alt="video prop" />
-      </div>
-      <div className="hidden md:block blur-sm absolute bottom-1/3 -right-20 z-40">
-        <img src="/icons/hero/hero-decorative-02.avif" alt="video prop" />
-      </div>
-      <div className="hidden md:block absolute top-1/2 -left-6 z-40">
-        <img src="/icons/hero/hero-decorative-06.avif" alt="video prop" />
-      </div>
-      <div className="hidden md:block absolute top-2 -right-10 z-40">
-        <img src="/icons/hero/hero-decorative-07.avif" alt="video prop" />
-      </div>
+      {videoPropItems.map((item) => (
+        <div
+          key={item?.id}
+          className={`hidden md:block blur-sm absolute ${item?.classNames}`}
+        >
+          <img src={item?.src} alt="video prop" />
+        </div>
+      ))}
       {/* end:: video props container */}
     </div>
   );

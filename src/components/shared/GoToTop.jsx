@@ -22,7 +22,7 @@ const GoToTop = () => {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-6 right-6 p-3 rounded-full bg-cf-yellow text-cf-coffee shadow-md transition-opacity duration-300 ${
+      className={`fixed bottom-6 right-6 p-3 rounded-full bg-cf-yellow z-[99] text-cf-coffee shadow-md transition-opacity duration-300 ${
         isVisible ? "opacity-90" : "opacity-0 pointer-events-none"
       }`}
     >
