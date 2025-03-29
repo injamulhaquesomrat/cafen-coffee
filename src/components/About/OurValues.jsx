@@ -1,5 +1,38 @@
 import ValuesAccordion from "./ValuesAccordion";
 
+const OurValues = () => {
+  return (
+    <section className="py-20 md:py-[100px] lg:py-[10\20px] ">
+      {/* start:: section title */}
+      <h2 className="text-[42px] sm:text-[50px] md:text-[54px] lg:text-6xl font-nunito leading-tight tracking-tighter text-cf-coffee font-medium text-center">
+        Our values
+      </h2>
+      {/* end:: section title */}
+
+      {/* start:: our values container */}
+      <div className="flex flex-col md:flex-row gap-10 lg:gap-20 mt-[30px] md:mt-10 lg:mt-[60px]">
+        {/* start:: our values image container */}
+        <div>
+          <img
+            className="rounded-2xl border border-cf-coffee"
+            src="https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66c6bfc3e1cf54b7acae136c_value-image.avif"
+            alt="over values banner image"
+          />
+        </div>
+        {/* end:: our values image container */}
+
+        {/* start:: our values accordion container */}
+        <ValuesAccordion accordionItems={accordionItems} />
+        {/* end:: our values accordion container */}
+      </div>
+      {/* end:: our values container */}
+    </section>
+  );
+};
+
+export default OurValues;
+
+// our values accordion items
 const accordionItems = [
   {
     id: 1,
@@ -26,25 +59,3 @@ const accordionItems = [
       "We continually explore new ways to enhance our menu and improve the café experience.",
   },
 ];
-
-const OurValues = () => {
-  return (
-    <div className="py-20 md:py-[100px] lg:py-[10\20px] ">
-      <h2 className="text-[42px] sm:text-[50px] md:text-[54px] lg:text-6xl font-nunito leading-tight tracking-tighter text-cf-coffee font-medium text-center">
-        Our values
-      </h2>
-      <div className="flex flex-col md:flex-row gap-10 lg:gap-20 mt-[30px] md:mt-10 lg:mt-[60px]">
-        <div>
-          <img
-            className="rounded-2xl border border-cf-coffee"
-            src="https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66c6bfc3e1cf54b7acae136c_value-image.avif"
-            alt="over values banner image"
-          />
-        </div>
-        <ValuesAccordion accordionItems={accordionItems} />
-      </div>
-    </div>
-  );
-};
-
-export default OurValues;

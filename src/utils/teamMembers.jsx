@@ -8,7 +8,7 @@ export const teamMembers = [
     socials: {
       facebook: "https://facebook.com/johndoe",
       instagram: "https://instagram.com/johndoe",
-      twitter: "https://twitter.com/johndoe",
+      // twitter: "https://twitter.com/johndoe",
     },
   },
   {
