@@ -13,14 +13,18 @@ const Brands = () => {
     );
   };
   return (
-    <div className="py-[50px] border-y border-cf-coffee">
+    <section className="py-[50px] border-y border-cf-coffee">
       <Container>
         <div className="flex flex-col md:flex-row gap-7 items-center">
+          {/* start:: section heading */}
           <div className="md:w-2/6 lg:w-1/3 xl:w-2/12">
             <h3 className="text-xl font-nunito text-cf-coffee tracking-tighter leading-tight lg:text-[26px]">
               We are serving top brands coffee
             </h3>
           </div>
+          {/* end:: section heading */}
+
+          {/* start:: brand marquee list */}
           <div className="w-full md:w-4/6 lg:w-2/3 xl:w-10/12">
             <Marquee
               direction={marqueeDirection}
@@ -33,9 +37,10 @@ const Brands = () => {
               ))}
             </Marquee>
           </div>
+          {/* end:: brand marquee list */}
         </div>
       </Container>
-    </div>
+    </section>
   );
 };
 
