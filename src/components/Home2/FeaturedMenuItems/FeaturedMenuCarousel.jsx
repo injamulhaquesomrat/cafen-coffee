@@ -8,7 +8,6 @@ const featuredMenuOptions = {
   type: "slide",
   perMove: 1,
   perPage: 1,
-  // focus: "center",
   pagination: false,
   classes: {
     arrows:
@@ -21,7 +20,7 @@ const featuredMenuOptions = {
       perPage: 2,
     },
     1024: {
-      perPage: 2.5,
+      perPage: 3,
     },
   },
   height: "100%",
