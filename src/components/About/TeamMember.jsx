@@ -1,6 +1,5 @@
 import { FaFacebook, FaInstagramSquare } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
-import { Link } from "react-router-dom";
 
 const TeamMember = ({ member }) => {
   const { name, position, image, socials } = member;
@@ -12,20 +11,20 @@ const TeamMember = ({ member }) => {
       icon: <FaFacebook size={30} c className="text-cf-yellow" />,
     },
     {
-      id: 1,
+      id: 2,
       link: `${socials?.instagram}`,
       icon: <FaInstagramSquare size={30} c className="text-cf-yellow" />,
     },
     {
-      id: 1,
+      id: 3,
       link: `${socials?.twitter}`,
       icon: <FaSquareXTwitter size={30} c className="text-cf-yellow" />,
     },
   ];
   return (
     <>
-      <Link
-        to={`/product/${name}`}
+      <div
+        // to={`/product/${name}`}
         className="inline-block border border-cf-coffee rounded-xl p-5 group bg-cf-yellow md:bg-transparent md:hover:bg-cf-yellow transition-all duration-500 mt-8"
       >
         {/* start:: team member image container */}
@@ -44,7 +43,7 @@ const TeamMember = ({ member }) => {
                     key={item?.id}
                     className="hover:-translate-y-3 transition-all duration-700"
                   >
-                    <Link to={item.link}>{item.icon}</Link>
+                    <a href={item.link}>{item.icon}</a>
                   </div>
                 )
             )}
@@ -63,7 +62,7 @@ const TeamMember = ({ member }) => {
           </p>
         </div>
         {/* end:: team member text container */}
-      </Link>
+      </div>
     </>
   );
 };

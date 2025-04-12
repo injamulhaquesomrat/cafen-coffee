@@ -13,8 +13,8 @@ const Products = () => {
         {/* end:: section heading */}
 
         {/* start:: products container */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {productItems.slice(0, 4).map((item, index) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {productItems.slice(0, 3).map((item, index) => (
             <ProductItem key={index} item={item} />
           ))}
         </div>

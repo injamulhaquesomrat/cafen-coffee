@@ -26,7 +26,7 @@ const ShopHero = ({ selectedCategory, handleCategoryChange }) => {
         Shop
       </h1>
 
-      <div className="flex justify-center items-center gap-6  mt-5 flex-wrap">
+      <div className="flex flex-col sm:flex-row justify-center items-center gap-2 md:gap-6 mt-5 lg:mt-8 flex-wrap">
         <ShopTabs
           shopTabItems={shopTabItems}
           selectedCategory={selectedCategory}
