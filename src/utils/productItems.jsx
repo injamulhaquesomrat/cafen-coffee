@@ -2,251 +2,240 @@ export const productItems = [
   {
     id: 1,
     title: "Espresso Beans",
+    category: "coffee",
     price: 14.99,
     image:
-      "https://images.unsplash.com/photo-1521677446241-d182a96ec49f?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1521677446241-d182a96ec49f?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3",
     save_offer: "Save 10%",
     thumbnail: "/icons/demo/demo-1.avif",
     description:
-      "The blend offers a rich crema and a smooth, velvety finish, making it perfect for both straight espresso shots and espresso-based drinks like lattes, cappuccinos, and macchiatos.",
+      "The blend offers a rich crema and a smooth, velvety finish, perfect for espresso shots and espresso-based drinks like lattes, cappuccinos, and macchiatos.",
     ingredients: ["Robusta coffee beans"],
     reviews: [
       {
         name: "Frances Guerrero",
         review:
-          "Great for remote work. This café is ideal for remote work. The Wi-Fi is fast, the seating is comfortable, and the coffee keeps me focused. A great place to get things done.",
+          "Great for remote work. The Wi-Fi is fast, the seating is comfortable, and the coffee keeps me focused.",
       },
       {
         name: "Larry Lawson",
         review:
-          "Perfect for breakfast. This café is my go-to spot for breakfast. The menu has a great variety, and everything is delicious. The coffee is the perfect way to start the day. Highly recommend!",
+          "Perfect for breakfast. The coffee is the perfect way to start the day. Highly recommend!",
       },
       {
         name: "Lori Stevens",
         review:
-          "Lovely outdoor seating. The outdoor seating at this café is lovely. Perfect for enjoying a cup of coffee on a sunny day. The ambiance is great, and the coffee is always satisfying.",
+          "Lovely outdoor seating. The ambiance is great, and the coffee is always satisfying.",
       },
       {
         name: "Bryan Knight",
         review:
-          "Best lattes in town. If you're a latte lover, this is the place for you. The lattes are smooth, creamy, and absolutely delicious. The café itself is charming and perfect for a quick break.",
+          "Best lattes in town. Smooth, creamy, and absolutely delicious. A charming café!",
       },
     ],
   },
   {
     id: 2,
-    title: "Premium Ground Coffee",
-    price: 15.99,
+    title: "Matcha Green Tea",
+    category: "tea",
+    price: 9.99,
     image:
-      "https://images.unsplash.com/photo-1522675397120-8cb88c83ac16?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    save_offer: "Save 18%",
+      "https://images.unsplash.com/photo-1717398804998-ad2d48822518?q=80&w=2153&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    save_offer: "Save 15%",
     thumbnail: "/icons/demo/demo-2.avif",
     description:
-      "A premium blend of ground coffee that delivers a rich and full-bodied flavor, perfect for any coffee lover.",
-    ingredients: ["Arabica coffee beans"],
+      "Premium Japanese matcha powder with a rich flavor and vibrant green color. Great for lattes and smoothies.",
+    ingredients: ["Stone-ground matcha green tea leaves"],
     reviews: [
       {
-        name: "John Doe",
+        name: "Emily Wu",
         review:
-          "Amazing flavor and aroma. This premium ground coffee is my new favorite. The flavor is rich and the aroma is heavenly.",
+          "Calming and energizing. The matcha here is top-notch and super fresh.",
       },
       {
-        name: "Jane Smith",
+        name: "Daniel Cho",
         review:
-          "Perfect for my morning routine. I love starting my day with a cup of this coffee. It's smooth and delicious.",
+          "Perfect afternoon pick-me-up. Creamy, earthy, and so good.",
+      },
+      {
+        name: "Monica Patel",
+        review:
+          "Great quality matcha. It’s vibrant and smooth—not bitter like others.",
       },
     ],
   },
   {
     id: 3,
-    title: "Decaf Coffee Blend",
-    price: 16.99,
-    thumbnail: "/icons/demo/demo-1.avif",
+    title: "Tiramisu Delight",
+    category: "dessert",
+    price: 6.5,
     image:
-      "https://images.unsplash.com/photo-1549652127-2e5e59e86a7a?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    save_offer: "Save 10%",
+      "https://images.unsplash.com/photo-1639744211487-b27e3551b07c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    save_offer: "Save $1 on 2",
+    thumbnail: "/icons/demo/demo-3.avif",
     description:
-      "A smooth and flavorful decaf coffee blend that lets you enjoy the taste of coffee without the caffeine.",
-    ingredients: ["Decaffeinated coffee beans"],
+      "Classic Italian dessert with espresso-soaked ladyfingers, mascarpone cream, and cocoa powder.",
+    ingredients: ["Espresso", "Mascarpone", "Ladyfingers", "Cocoa powder"],
     reviews: [
       {
-        name: "Alice Johnson",
-        review:
-          "Great decaf option. This decaf blend is perfect for my evening coffee. It tastes just like regular coffee.",
+        name: "Jessica Morgan",
+        review: "Heavenly dessert. The layers melt in your mouth.",
       },
       {
-        name: "Bob Brown",
+        name: "Marcus Hill",
         review:
-          "Smooth and flavorful. I can't even tell it's decaf. It's so smooth and flavorful.",
+          "My favorite treat. Rich and balanced. Not too sweet, just right.",
+      },
+      {
+        name: "Rachel Adams",
+        review: "Best combo with coffee. You won't regret it.",
       },
     ],
   },
   {
     id: 4,
-    title: "Organic Coffee Beans",
-    price: 18.99,
-    thumbnail: "/icons/demo/demo-3.avif",
+    title: "Cold Brew Coffee",
+    category: "coffee",
+    price: 4.75,
     image:
-      "https://images.unsplash.com/photo-1495862433577-132cf20d7902?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    save_offer: "Save 15%",
+      "https://images.unsplash.com/photo-1592663527359-cf6642f54cff?q=80&w=2219&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    save_offer: "Buy 1 Get 1 Half Off",
+    thumbnail: "/icons/demo/demo-1.avif",
     description:
-      "Organic coffee beans sourced from sustainable farms, offering a rich and pure coffee experience.",
-    ingredients: ["Organic Arabica coffee beans"],
+      "Smooth, bold, and naturally sweet cold brew steeped for 18 hours. Served over ice for a refreshing kick.",
+    ingredients: ["Arabica coffee", "Filtered water"],
     reviews: [
       {
-        name: "Charlie Davis",
-        review:
-          "Best organic coffee. I love that these beans are organic and the flavor is amazing.",
+        name: "Steven Blake",
+        review: "Refreshing and bold. Great flavor, not too bitter.",
       },
       {
-        name: "Dana Lee",
-        review:
-          "Sustainable and delicious. It's great to know that I'm enjoying a delicious cup of coffee that's also good for the environment.",
+        name: "Naomi Clarke",
+        review: "Smoothest cold brew ever. Has a natural sweetness.",
+      },
+      {
+        name: "Tom Nguyen",
+        review: "Caffeine kick! Tastes amazing with oat milk.",
       },
     ],
   },
   {
     id: 5,
-    title: "French Roast Coffee",
-    price: 17.99,
-    thumbnail: "/icons/demo/demo-2.avif",
+    title: "Chai Latte",
+    category: "tea",
+    price: 5.25,
     image:
-      "https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    save_offer: "Save 12%",
+      "https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    save_offer: "Save 5%",
+    thumbnail: "/icons/demo/demo-3.avif",
     description:
-      "A dark and bold French roast coffee that delivers a strong and intense flavor.",
-    ingredients: ["French roast coffee beans"],
+      "A cozy, spiced chai tea blend with creamy steamed milk. Perfect balance of cinnamon, cardamom, and cloves.",
+    ingredients: ["Black tea", "Cinnamon", "Cardamom", "Milk"],
     reviews: [
       {
-        name: "Eve Martinez",
-        review:
-          "Bold and intense. This French roast is perfect for those who love a strong cup of coffee.",
+        name: "Amira Shah",
+        review: "Warm and comforting. My favorite fall drink.",
       },
       {
-        name: "Frank Wilson",
-        review:
-          "Rich and flavorful. The flavor is rich and intense, just the way I like it.",
+        name: "Lucas Brown",
+        review: "The spice blend is just perfect.",
       },
     ],
   },
   {
     id: 6,
-    title: "Espresso Blend",
-    price: 19.99,
-    thumbnail: "/icons/demo/demo-3.avif",
+    title: "Vanilla Bean Cheesecake",
+    category: "dessert",
+    price: 7.0,
     image:
-      "https://images.unsplash.com/photo-1494314671902-399b18174975?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    save_offer: "Save 20%",
+      "https://images.unsplash.com/photo-1603455908680-5d6de8bf7cd4?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    save_offer: "Free topping",
+    thumbnail: "/icons/demo/demo-2.avif",
     description:
-      "A specially crafted espresso blend that delivers a rich crema and a smooth, velvety finish.",
-    ingredients: ["Espresso blend coffee beans"],
+      "Creamy vanilla bean cheesecake with a buttery graham cracker crust. A classic favorite.",
+    ingredients: ["Cream cheese", "Vanilla bean", "Graham cracker"],
     reviews: [
       {
-        name: "Grace Kim",
-        review:
-          "Perfect for espresso. This blend makes the best espresso shots. The crema is amazing.",
-      },
-      {
-        name: "Henry Clark",
-        review:
-          "Smooth and velvety. The finish is so smooth and velvety. I love it.",
+        name: "Sophie Lin",
+        review: "Melt-in-your-mouth texture. So rich and smooth.",
       },
     ],
   },
   {
     id: 7,
-    title: "Cold Brew Coffee",
-    price: 20.99,
-    thumbnail: "/icons/demo/demo-2.avif",
+    title: "Mocha Latte",
+    category: "coffee",
+    price: 5.0,
     image:
-      "https://images.unsplash.com/photo-1518057111178-44a106bad636?q=80&w=2136&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    save_offer: "Save 10%",
+      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3",
+    save_offer: "Earn 2x points",
+    thumbnail: "/icons/demo/demo-1.avif",
     description:
-      "A refreshing cold brew coffee that's perfect for hot summer days.",
-    ingredients: ["Cold brew coffee beans"],
+      "A rich blend of espresso, chocolate, and steamed milk. Topped with whipped cream.",
+    ingredients: ["Espresso", "Cocoa", "Milk"],
     reviews: [
       {
-        name: "Ivy Nguyen",
-        review:
-          "Refreshing and delicious. This cold brew is perfect for summer. It's so refreshing.",
-      },
-      {
-        name: "Jack Robinson",
-        review:
-          "Best cold brew. I've tried many cold brews, and this one is the best. It's smooth and flavorful.",
+        name: "Jared Cole",
+        review: "Coffee + chocolate = heaven. My go-to treat!",
       },
     ],
   },
   {
     id: 8,
-    title: "Single Origin Coffee",
-    price: 21.99,
-    thumbnail: "/icons/demo/demo-1.avif",
+    title: "Lemon Tart",
+    category: "dessert",
+    price: 5.95,
     image:
-      "https://images.unsplash.com/photo-1517487618188-7168abd3ca7d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    save_offer: "Save 15%",
+      "https://images.unsplash.com/photo-1589302168068-964664d93dc0?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3",
+    save_offer: "Save 20% this week",
+    thumbnail: "/icons/demo/demo-2.avif",
     description:
-      "A premium single origin coffee that offers a unique and distinct flavor profile.",
-    ingredients: ["Single origin coffee beans"],
+      "Zesty lemon curd in a flaky pastry shell, topped with powdered sugar. Light, tangy, and refreshing.",
+    ingredients: ["Lemon", "Eggs", "Butter", "Pastry dough"],
     reviews: [
       {
-        name: "Karen White",
-        review:
-          "Unique flavor. This single origin coffee has a unique flavor that's unlike any other.",
-      },
-      {
-        name: "Leo Harris",
-        review:
-          "Distinct and delicious. The flavor profile is distinct and delicious. I love it.",
+        name: "Carla Romero",
+        review: "Tangy and perfect. Pairs beautifully with tea.",
       },
     ],
   },
   {
     id: 9,
-    title: "Breakfast Blend Coffee",
-    price: 22.99,
-    thumbnail: "/icons/demo/demo-3.avif",
+    title: "Herbal Infusion Tea",
+    category: "tea",
+    price: 4.25,
     image:
-      "https://images.unsplash.com/photo-1550547660-5d719a574887?q=80&w=2047&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    save_offer: "Save 10%",
+      "https://images.unsplash.com/photo-1675155337990-378495973b2a?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    save_offer: "10% off your next cup",
+    thumbnail: "/icons/demo/demo-3.avif",
     description:
-      "A light and smooth breakfast blend coffee that's perfect for starting your day.",
-    ingredients: ["Breakfast blend coffee beans"],
+      "A soothing blend of chamomile, mint, and rose petals. Caffeine-free and perfect for winding down.",
+    ingredients: ["Chamomile", "Mint", "Rose petals"],
     reviews: [
       {
-        name: "Mia Thompson",
-        review:
-          "Perfect for mornings. This breakfast blend is light and smooth, perfect for starting my day.",
-      },
-      {
-        name: "Noah Walker",
-        review:
-          "Smooth and delicious. The flavor is smooth and delicious. I love having it in the morning.",
+        name: "Nina Adams",
+        review: "Relaxing and fragrant. Great before bedtime.",
       },
     ],
   },
   {
     id: 10,
-    title: "Dark Roast Coffee",
-    price: 23.99,
-    thumbnail: "/icons/demo/demo-2.avif",
+    title: "Carrot Cake Slice",
+    category: "dessert",
+    price: 6.25,
     image:
-      "https://images.unsplash.com/photo-1498603645763-1005915e0abe?q=80&w=2201&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    save_offer: "Save 12%",
+      "https://images.unsplash.com/photo-1679940984055-fda3bbaadbb1?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    save_offer: "Buy 2, Save $2",
+    thumbnail: "/icons/demo/demo-1.avif",
     description:
-      "A rich and bold dark roast coffee that delivers a deep and intense flavor.",
-    ingredients: ["Dark roast coffee beans"],
+      "Moist carrot cake with cream cheese frosting and a hint of spice. A classic café favorite.",
+    ingredients: ["Carrots", "Walnuts", "Cinnamon", "Cream cheese"],
     reviews: [
       {
-        name: "Olivia Scott",
-        review:
-          "Rich and bold. This dark roast is perfect for those who love a deep and intense flavor.",
-      },
-      {
-        name: "Paul Adams",
-        review:
-          "Intense and flavorful. The flavor is intense and bold, just the way I like it.",
+        name: "Leo Martinez",
+        review: "So moist and flavorful. Love the frosting!",
       },
     ],
-  },
-];
+  }
+]
+

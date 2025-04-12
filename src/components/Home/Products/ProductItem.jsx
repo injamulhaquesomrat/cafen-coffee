@@ -9,7 +9,7 @@ const ProductItem = ({ item }) => {
         className="inline-block border border-cf-coffee md:border-transparent md:hover:border-cf-coffee rounded-xl p-4 group bg-cf-light-yellow md:bg-transparent md:hover:bg-cf-light-yellow transition-all duration-300 mt-8"
       >
         {/* start: product visual representation with offer */}
-        <div className="relative rounded-lg h-[300px] 2xl:h-[400px] overflow-hidden">
+        <div className="relative rounded-lg aspect-[9/10] overflow-hidden">
           {/* start:: product image */}
           <img
             className="w-full h-full object-cover rounded-lg"

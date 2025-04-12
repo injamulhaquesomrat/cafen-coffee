@@ -17,8 +17,8 @@ const Products = () => {
           {productItems.slice(0, 4).map((item, index) => (
             <ProductItem key={index} item={item} />
           ))}
-          {/* end:: products container */}
         </div>
+        {/* end:: products container */}
       </div>
     </Container>
   );
