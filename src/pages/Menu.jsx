@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import Container from "../components/shared/Container";
 import PageHero from "../components/shared/PageHero";
 import GoToTop from "../components/shared/GoToTop";
+import MenuContainer from "../components/Menu/MenuContainer";
 
 const Menu = () => {
   return (
@@ -23,6 +24,7 @@ const Menu = () => {
               </p>
             }
           />
+          <MenuContainer />
         </Container>
         <GoToTop />
       </div>
