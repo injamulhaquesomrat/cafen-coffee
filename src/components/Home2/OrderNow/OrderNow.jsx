@@ -4,7 +4,7 @@ const OrderNow = () => {
   return (
     <div className="relative">
       {/* start:: order now background video */}
-      <div className="w-full aspect-[16/8] lg:aspect-[16/7]">
+      <div className="w-full aspect-[16/8] lg:aspect-[16/7] xl:aspect-[16/6] overflow-hidden">
         <video
           className="w-full h-full object-cover"
           autoPlay

@@ -3,6 +3,7 @@ import Container from "../components/shared/Container";
 import PageHero from "../components/shared/PageHero";
 import GoToTop from "../components/shared/GoToTop";
 import MenuContainer from "../components/Menu/MenuContainer";
+import OrderNow from "../components/Home2/OrderNow/OrderNow";
 
 const Menu = () => {
   return (
@@ -26,6 +27,7 @@ const Menu = () => {
           />
           <MenuContainer />
         </Container>
+          <OrderNow/>
         <GoToTop />
       </div>
     </>

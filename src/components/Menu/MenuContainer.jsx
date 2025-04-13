@@ -32,6 +32,7 @@ const MenuContainer = () => {
         />
         <MenuList menuItems={featuredItems} />
       </div>
+      
     </div>
   );
 };
