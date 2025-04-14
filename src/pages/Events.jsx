@@ -10,12 +10,12 @@ const Events = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Events | Cafen </title>
+        <title>Events | Cafen ☕</title>
         <link rel="canonical" href="/" />
       </Helmet>
       <div>
         <Container>
-          <PageHero pageTitle={"Our Events"} />
+          <PageHero pageTitle={"Our events"} />
           <EventsContainer />
         </Container>
         <OrderNow />

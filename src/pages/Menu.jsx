@@ -10,13 +10,13 @@ const Menu = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Menu | Cafen </title>
+        <title>Menu | Cafen ☕</title>
         <link rel="canonical" href="/" />
       </Helmet>
       <div>
         <Container>
           <PageHero
-            pageTitle={"Our Menu"}
+            pageTitle={"Our menu"}
             subContent={
               <p className="text-cf-coffee max-w-[620px] text-center mx-auto">
                 Welcome to Cafen! Here, we take pride in serving a curated
@@ -27,7 +27,7 @@ const Menu = () => {
           />
           <MenuContainer />
         </Container>
-          <OrderNow/>
+        <OrderNow />
         <GoToTop />
       </div>
     </>

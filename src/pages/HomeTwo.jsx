@@ -13,7 +13,7 @@ const HomeTwo = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Home2 | Cafen - Ecommerce Website</title>
+        <title>Home2 | Cafen ☕ - Ecommerce Website</title>
         <link rel="canonical" href="/" />
       </Helmet>
       <Hero />

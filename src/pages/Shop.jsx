@@ -32,7 +32,7 @@ const Shop = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Shop | Cafen </title>
+        <title>Shop | Cafen ☕</title>
         <link rel="canonical" href="/" />
       </Helmet>
       <div>
