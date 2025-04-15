@@ -25,10 +25,10 @@ const contactInfoItems = [
 
 const ContactInformation = () => {
   return (
-    <div>
+    <div className="mt-20 md:mt-[100px] lg:mt-[150px] pb-20 md:pb-[100px] lg:pb-[150px] text-cf-coffee">
       {/* start::contact information with socials */}
       <div>
-        <h5>Contact information</h5>
+        <h5 className="text-[32px] font-nunito leading-tight tracking-tighter font-medium pb-5">Contact information</h5>
         <p>Social Media</p>
         {/* start::social links  */}
         <div className="flex items-center gap-4 pt-5">
