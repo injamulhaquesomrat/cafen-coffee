@@ -10,7 +10,7 @@ const FaqsContainer = () => {
 
 export default FaqsContainer;
 
-// our values accordion items
+// our faqs accordion items
 const accordionItems = [
   {
     id: 1,

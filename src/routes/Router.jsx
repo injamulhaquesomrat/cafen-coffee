@@ -10,6 +10,8 @@ import Menu from "../pages/Menu";
 import Location from "../pages/Location";
 import Blog from "../pages/Blog";
 import Faqs from "../pages/Faqs";
+import BookATable from "../pages/BookATable";
+import PrivacyPolicy from "../pages/PrivacyPolicy";
 
 const Router = createBrowserRouter([
   {
@@ -60,6 +62,14 @@ const Router = createBrowserRouter([
       {
         path: "/faqs",
         element: <Faqs />,
+      },
+      {
+        path: "/book-a-table",
+        element: <BookATable />,
+      },
+      {
+        path: "/privacy-policy",
+        element: <PrivacyPolicy />,
       },
     ],
   },
