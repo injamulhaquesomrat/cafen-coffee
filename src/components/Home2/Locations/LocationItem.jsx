@@ -28,7 +28,7 @@ const LocationItem = ({ item }) => {
             <button className="inline-flex px-6  bg-cf-yellow py-3 rounded-full items-center gap-2 group border border-cf-coffee w-fit">
               <span>View on map</span>{" "}
               <FaArrowRight
-                className="group-hover:translate-x-1 duration-100 ease-in-out"
+                className="group-hover:translate-x-1 duration-300 ease-in-out"
                 size={12}
               />
             </button>

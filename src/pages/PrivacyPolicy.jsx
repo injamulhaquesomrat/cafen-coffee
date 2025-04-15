@@ -10,7 +10,7 @@ const PrivacyPolicy = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Book a Table | Cafen ☕</title>
+        <title>Privacy Policy | Cafen ☕</title>
         <link rel="canonical" href="/" />
       </Helmet>
       <div>
