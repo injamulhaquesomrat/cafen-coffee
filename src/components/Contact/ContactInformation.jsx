@@ -18,20 +18,22 @@ const contactInfoItems = [
     id: 3,
     img: "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66c6e41583705ec21dc9790c_contact-icon-03.svg",
     title: "Email",
-    text: "mailcontact@cafencafe.com",
+    text: "contact@cafencafe.com",
     link: "mail:contact@cafencafe.com",
   },
 ];
 
 const ContactInformation = () => {
   return (
-    <div className="mt-20 md:mt-[100px] lg:mt-[150px] pb-20 md:pb-[100px] lg:pb-[150px] text-cf-coffee">
+    <div className="mt-20 md:mt-[100px] lg:mt-[150px] pb-20 md:pb-[100px] lg:pb-[150px] text-cf-coffee flex flex-col md:flex-row justify-between gap-5 md:gap-10 lg:gap-10">
       {/* start::contact information with socials */}
       <div>
-        <h5 className="text-[32px] font-nunito leading-tight tracking-tighter font-medium pb-5">Contact information</h5>
+        <h5 className="text-[32px] font-nunito leading-tight tracking-tighter font-medium pb-5">
+          Contact information
+        </h5>
         <p>Social Media</p>
         {/* start::social links  */}
-        <div className="flex items-center gap-4 pt-5">
+        <div className="flex items-center gap-4 pt-2.5 pb-5">
           <Link to="#">
             <img
               className="h-6 w-6 hover:-translate-y-1 transition-all duration-300"
@@ -66,18 +68,18 @@ const ContactInformation = () => {
       {/* end::contact information with socials */}
 
       {/* start::phone, email, address */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 pt-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-3 gap-[30px] lg:gap-5">
         {contactInfoItems.map((item) => (
-          <div key={item?.id} className="col-span-1">
-            <div>
+          <div key={item?.id} className="col-span-1 flex flex-col sm:flex-row gap-5">
+            <div className="h-10 w-10 md:h-[50px] md:w-[50px] min-w-2/5 bg-cf-yellow flex items-center justify-center rounded-full border border-cf-coffee">
               <img src={item?.img} alt={item?.title} />
             </div>
-            <div>
-              <h6>{item?.title}</h6>
+            <div className="w-4/5">
+              <h6 className="font-nunito text-2xl font-medium tracking-tighter leading-tight pb-2.5">{item?.title}</h6>
               {item?.link ? (
-                <a href={item?.link}>{item?.text}</a>
+                <a className="tracking-tight leading-tight underline hover:no-underline" href={item?.link}>{item?.text}</a>
               ) : (
-                <p>{item?.text}</p>
+                <p className="tracking-tight leading-tight">{item?.text}</p>
               )}
             </div>
           </div>
