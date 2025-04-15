@@ -9,6 +9,7 @@ import HomeTwo from "../pages/HomeTwo";
 import Menu from "../pages/Menu";
 import Location from "../pages/Location";
 import Blog from "../pages/Blog";
+import Faqs from "../pages/Faqs";
 
 const Router = createBrowserRouter([
   {
@@ -55,6 +56,10 @@ const Router = createBrowserRouter([
       {
         path: "/blog",
         element: <Blog />,
+      },
+      {
+        path: "/faqs",
+        element: <Faqs />,
       },
     ],
   },
