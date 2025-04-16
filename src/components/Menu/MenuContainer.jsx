@@ -5,6 +5,8 @@ import MenuHero from "./MenuHero";
 const MenuContainer = () => {
   return (
     <div className="py-[60px] md:py-10 lg:py-[100px] space-y-10 md:space-y-16 lg:space-y-20">
+      {/* Todo:: use differennt items for breakfast, lunch and dinner */}
+      {/* start:: breakfast items */}
       <div>
         <MenuHero
           menuTitle={"Breakfast"}
@@ -14,6 +16,9 @@ const MenuContainer = () => {
         />
         <MenuList menuItems={featuredItems} />
       </div>
+      {/* end:: breakfast items */}
+
+      {/* start:: lunch items */}
       <div>
         <MenuHero
           menuTitle={"Lunch"}
@@ -23,6 +28,9 @@ const MenuContainer = () => {
         />
         <MenuList menuItems={featuredItems} />
       </div>
+      {/* end:: lunch items */}
+
+      {/* start:: dinner items */}
       <div>
         <MenuHero
           menuTitle={"Dinner"}
@@ -32,7 +40,7 @@ const MenuContainer = () => {
         />
         <MenuList menuItems={featuredItems} />
       </div>
-      
+      {/* end:: dinner items */}
     </div>
   );
 };
