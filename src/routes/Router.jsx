@@ -20,60 +20,56 @@ const Router = createHashRouter([
     // errorElement: <ErrorPage />,
     children: [
       {
-        children: [
-          {
-            path: "/",
-            element: <App />,
-          },
-          {
-            path: "/about",
-            element: <About />,
-          },
-          {
-            path: "/pages",
-            element: <h1>Pages</h1>,
-          },
-          {
-            path: "/shop",
-            element: <Shop />,
-          },
-          {
-            path: "/contact",
-            element: <Contact />,
-          },
-          {
-            path: "/events",
-            element: <Events />,
-          },
-          {
-            path: "/home-2",
-            element: <HomeTwo />,
-          },
-          {
-            path: "/menu",
-            element: <Menu />,
-          },
-          {
-            path: "/location",
-            element: <Location />,
-          },
-          {
-            path: "/blog",
-            element: <Blog />,
-          },
-          {
-            path: "/faqs",
-            element: <Faqs />,
-          },
-          {
-            path: "/book-a-table",
-            element: <BookATable />,
-          },
-          {
-            path: "/privacy-policy",
-            element: <PrivacyPolicy />,
-          },
-        ],
+        path: "/",
+        element: <App />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/pages",
+        element: <h1>Pages</h1>,
+      },
+      {
+        path: "/shop",
+        element: <Shop />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
+      {
+        path: "/events",
+        element: <Events />,
+      },
+      {
+        path: "/home-2",
+        element: <HomeTwo />,
+      },
+      {
+        path: "/menu",
+        element: <Menu />,
+      },
+      {
+        path: "/location",
+        element: <Location />,
+      },
+      {
+        path: "/blog",
+        element: <Blog />,
+      },
+      {
+        path: "/faqs",
+        element: <Faqs />,
+      },
+      {
+        path: "/book-a-table",
+        element: <BookATable />,
+      },
+      {
+        path: "/privacy-policy",
+        element: <PrivacyPolicy />,
       },
     ],
   },
