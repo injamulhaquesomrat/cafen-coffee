@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 
 const ProductItem = ({ item }) => {
-  const { title, price, thumbnail, image, save_offer } = item;
+  const { id, title, price, thumbnail, image, save_offer } = item;
   return (
     <>
       <Link
-        to={`/product/${title}`}
+        to={`/product/${id}`}
         className="inline-block border border-cf-coffee md:border-transparent md:hover:border-cf-coffee rounded-xl p-4 group bg-cf-light-yellow md:bg-transparent md:hover:bg-cf-light-yellow transition-all duration-300 mt-8"
       >
         {/* start: product visual representation with offer */}

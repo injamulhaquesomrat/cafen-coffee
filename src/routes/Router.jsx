@@ -12,6 +12,7 @@ import Blog from "../pages/Blog";
 import Faqs from "../pages/Faqs";
 import BookATable from "../pages/BookATable";
 import PrivacyPolicy from "../pages/PrivacyPolicy";
+import Product from "../components/Shop/Product/Product";
 
 const Router = createHashRouter([
   {
@@ -34,6 +35,10 @@ const Router = createHashRouter([
       {
         path: "/shop",
         element: <Shop />,
+      },
+      {
+        path: "/product/:productId",
+        element: <Product />,
       },
       {
         path: "/contact",
