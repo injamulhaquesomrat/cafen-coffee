@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { productItems } from "../../../utils/productItems";
 import Container from "../../shared/Container";
+import ProductDetailsCard from "./ProductDetailsCard";
 
 const Product = () => {
   const { productId } = useParams();
@@ -12,7 +13,7 @@ const Product = () => {
 
   return (
     <Container>
-      <h1>Product</h1>
+      <ProductDetailsCard/>
     </Container>
   );
 };
