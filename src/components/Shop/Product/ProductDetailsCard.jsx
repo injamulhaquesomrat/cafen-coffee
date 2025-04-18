@@ -5,9 +5,22 @@ import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
+import { FcSynchronize } from "react-icons/fc";
 
 const ProductDetailsCard = () => {
   const [open, setOpen] = useState(false);
+  const thumbnailsRef = useState(null);
+  const [thumbnailsVisible, setThumbnailsVisible] = useState(false);
+
+  const toggleThumbnails = () => {
+    setThumbnailsVisible(!thumbnailsVisible);
+    const thumbnailContainer = document.querySelector(
+      ".yarl__thumbnails_track"
+    );
+    if (thumbnailContainer) {
+      thumbnailContainer.classList.toggle("hidden");
+    }
+  };
 
   return (
     <div className="mt-5 rounded-2xl md:rounded-[50px] border border-cf-coffee overflow-hidden bg-white flex flex-col lg:flex-row">
@@ -34,25 +47,36 @@ const ProductDetailsCard = () => {
             slides={slides}
             plugins={[Thumbnails, Zoom, Fullscreen]}
             zoom={{ maxZoomPixelRatio: 3 }}
-            thumbnails={{ width: 100, height: 100 }}
+            thumbnails={{ width: 70, height: 70, ref: thumbnailsRef }}
+            carousel={{
+              finite: "true",
+              spacing: "10px",
+              imageFit: "contain",
+              preload: slides.length,
+            }}
             styles={{
               container: { backgroundColor: "rgba(0, 0, 0, 0.9)" },
+              thumbnailsContainer: {
+                backgroundColor: "rgba(0, 0, 0, 0.9)",
+                border: "0",
+              },
             }}
             toolbar={{
               buttons: [
                 <button
-                  key="custom-button"
-                  onClick={() => alert("Custom Action!")}
+                  className="text-cf-light-yellow p-2 hover:rotate-180 transition-all duration-500"
+                  key="toggle-thumbnails"
+                  onClick={toggleThumbnails}
+                  // onClick={() =>
+                  //   thumbnailsRef.current?.visible
+                  //     ? thumbnailsRef.current?.hide()
+                  //     : thumbnailsRef.current?.show()
+                  // }
                 >
-                  Custom
+                  <FcSynchronize size={24} />
                 </button>,
                 "close",
               ],
-            }}
-            carousel={{
-              spacing: "10px",
-              imageFit: "contain",
-              preload: 2,
             }}
             captions={{
               title: (slide) => slide.title,
@@ -60,11 +84,6 @@ const ProductDetailsCard = () => {
             }}
           />
         </>
-        {/* <img
-          className="h-full w-full object-cover"
-          src="https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c70438233ef77965948968_product-hover-01.avif"
-          alt="product image"
-        /> */}
       </div>
       {/* end:: product image container with lightshot  */}
 
@@ -142,15 +161,27 @@ export default ProductDetailsCard;
 
 const slides = [
   {
-    src: "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c70438233ef77965948968_product-hover-01.avif",
+    src: "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c6ea51336d4457d43f725d_product-01.avif",
+    thumbnail: "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c6ea51336d4457d43f725d_product-01.avif", // Thumbnail image
+    title: "Premium Ground Coffee",
+    description: "Experience the finest ground coffee crafted with dedication.",
   },
   {
     src: "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c70438233ef77965948968_product-hover-01.avif",
+    thumbnail: "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c70438233ef77965948968_product-hover-01.avif", // Thumbnail image
+    title: "Rich Coffee Blend",
+    description: "A rich blend of coffee beans for a perfect brew.",
   },
   {
-    src: "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c70438233ef77965948968_product-hover-01.avif",
+    src: "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c850e76511f76c038f8e75_product-gallery-01.avif",
+    thumbnail: "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c850e76511f76c038f8e75_product-gallery-01.avif", // Thumbnail image
+    title: "Arabica Coffee Beans",
+    description: "100% Arabica coffee beans with no additives.",
   },
   {
-    src: "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c70438233ef77965948968_product-hover-01.avif",
+    src: "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c850e70dd95466d5d1009f_product-gallery-02.avif",
+    thumbnail: "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c850e70dd95466d5d1009f_product-gallery-02.avif", // Thumbnail image
+    title: "Ground Coffee Pack",
+    description: "Perfectly packed ground coffee for your daily needs.",
   },
 ];
