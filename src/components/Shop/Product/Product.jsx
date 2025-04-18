@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { productItems } from "../../../utils/productItems";
 import Container from "../../shared/Container";
 import ProductDetailsCard from "./ProductDetailsCard";
+import ProductReview from "./ProductReview";
 
 const Product = () => {
   const { productId } = useParams();
@@ -13,7 +14,8 @@ const Product = () => {
 
   return (
     <Container>
-      <ProductDetailsCard/>
+      <ProductDetailsCard />
+      <ProductReview />
     </Container>
   );
 };

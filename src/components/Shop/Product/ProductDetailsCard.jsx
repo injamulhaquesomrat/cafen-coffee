@@ -1,96 +1,13 @@
-import { useState } from "react";
-import Lightbox from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css";
-import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
-import Zoom from "yet-another-react-lightbox/plugins/zoom";
-import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
-import "yet-another-react-lightbox/plugins/thumbnails.css";
-import { FcSynchronize } from "react-icons/fc";
+import PhotoThumbnailGallery from "../../shared/PhotoThumbnailGallery";
 
 const ProductDetailsCard = () => {
-  const [open, setOpen] = useState(false);
-  const thumbnailsRef = useState(null);
-  const [thumbnailsVisible, setThumbnailsVisible] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const toggleThumbnails = () => {
-    setThumbnailsVisible(!thumbnailsVisible);
-    const thumbnailContainer = document.querySelector(
-      ".yarl__thumbnails_track"
-    );
-    if (thumbnailContainer) {
-      thumbnailContainer.classList.toggle("hidden");
-    }
-  };
-
   return (
     <div className="mt-5 rounded-2xl md:rounded-[50px] border border-cf-coffee overflow-hidden bg-white flex flex-col lg:flex-row">
-      {/* start:: product image container with lightshot  */}
+      {/* start:: product images container with lightshot  */}
       <div className="w-full xl:w-5/12 grid">
-        <>
-          {/* Thumbnail Gallery */}
-          <div className="grid grid-cols-2">
-            {slides.map((slide, index) => (
-              <img
-                className="h-full w-full object-cover cursor-pointer"
-                key={index}
-                src={slide.src}
-                alt={`Thumbnail ${index}`}
-                onClick={() => {
-                  setCurrentIndex(index);
-                  setOpen(true);
-                }}
-              />
-            ))}
-          </div>
-
-          {/* Lightbox Slider */}
-          <Lightbox
-            open={open}
-            close={() => setOpen(false)}
-            slides={slides}
-            index={currentIndex}
-            plugins={[Thumbnails, Zoom, Fullscreen]}
-            zoom={{ maxZoomPixelRatio: 3 }}
-            thumbnails={{ width: 70, height: 70, ref: thumbnailsRef }}
-            carousel={{
-              finite: "true",
-              spacing: "10px",
-              imageFit: "contain",
-              preload: slides.length,
-            }}
-            styles={{
-              container: { backgroundColor: "rgba(0, 0, 0, 0.9)" },
-              thumbnailsContainer: {
-                backgroundColor: "rgba(0, 0, 0, 0.9)",
-                border: "0",
-              },
-            }}
-            toolbar={{
-              buttons: [
-                <button
-                  className="text-cf-light-yellow p-2 hover:rotate-180 transition-all duration-500"
-                  key="toggle-thumbnails"
-                  onClick={toggleThumbnails}
-                  // onClick={() =>
-                  //   thumbnailsRef.current?.visible
-                  //     ? thumbnailsRef.current?.hide()
-                  //     : thumbnailsRef.current?.show()
-                  // }
-                >
-                  <FcSynchronize size={24} />
-                </button>,
-                "close",
-              ],
-            }}
-            captions={{
-              title: (slide) => slide.title,
-              description: (slide) => slide.description,
-            }}
-          />
-        </>
+        <PhotoThumbnailGallery slides={slides} />
       </div>
-      {/* end:: product image container with lightshot  */}
+      {/* end:: product images container with lightshot  */}
 
       {/* start:: product text container */}
       <div className="p-5 sm:p-[30px] md:p-10 grid justify-between text-cf-coffee bg-cf-light-yellow xl:w-7/12">
@@ -123,7 +40,7 @@ const ProductDetailsCard = () => {
         <div className="flex flex-col gap-[5px]">
           <label htmlFor="weight">Weight</label>
           <select
-            className="px-5 py-2.5 rounded-xl outline-none border border-cf-coffee bg-cf-light-yellow"
+            className="px-5 py-2.5 rounded-xl outline-none border border-cf-coffee bg-cf-light-yellow cursor-pointer"
             name="weight"
             id="weight"
           >
