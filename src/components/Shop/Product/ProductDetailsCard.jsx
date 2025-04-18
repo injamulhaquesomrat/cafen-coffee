@@ -1,13 +1,70 @@
+import { useState } from "react";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
+import "yet-another-react-lightbox/plugins/thumbnails.css";
+
 const ProductDetailsCard = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <div className="mt-5 rounded-2xl md:rounded-[50px] border border-cf-coffee overflow-hidden bg-white flex flex-col lg:flex-row">
       {/* start:: product image container with lightshot  */}
-      <div className="w-full xl:w-5/12">
-        <img
-        className="h-full w-full object-cover"
+      <div className="w-full xl:w-5/12 grid">
+        <>
+          {/* Thumbnail Gallery */}
+          <div className="grid grid-cols-2">
+            {slides.map((slide, index) => (
+              <img
+                className="h-full w-full object-cover cursor-pointer"
+                key={index}
+                src={slide.src}
+                alt={`Thumbnail ${index}`}
+                onClick={() => setOpen(true)}
+              />
+            ))}
+          </div>
+
+          {/* Lightbox Slider */}
+          <Lightbox
+            open={open}
+            close={() => setOpen(false)}
+            slides={slides}
+            plugins={[Thumbnails, Zoom, Fullscreen]}
+            zoom={{ maxZoomPixelRatio: 3 }}
+            thumbnails={{ width: 100, height: 100 }}
+            styles={{
+              container: { backgroundColor: "rgba(0, 0, 0, 0.9)" },
+            }}
+            toolbar={{
+              buttons: [
+                <button
+                  key="custom-button"
+                  onClick={() => alert("Custom Action!")}
+                >
+                  Custom
+                </button>,
+                "close",
+              ],
+            }}
+            carousel={{
+              spacing: "10px",
+              imageFit: "contain",
+              preload: 2,
+            }}
+            captions={{
+              title: (slide) => slide.title,
+              description: (slide) => slide.description,
+            }}
+          />
+        </>
+        {/* <img
+          className="h-full w-full object-cover"
           src="https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c70438233ef77965948968_product-hover-01.avif"
           alt="product image"
-        />
+        /> */}
       </div>
       {/* end:: product image container with lightshot  */}
 
@@ -60,7 +117,7 @@ const ProductDetailsCard = () => {
           <div className="flex flex-col gap-[5px] min-w-[100px]">
             <label htmlFor="quantity">Quantity</label>
             <input
-            className="px-3 py-2.5 pr-1.5 rounded-full outline-none border border-cf-coffee bg-cf-light-yellow max-w-[100px]"
+              className="px-3 py-2.5 pr-1.5 rounded-full outline-none border border-cf-coffee bg-cf-light-yellow max-w-[100px]"
               type="number"
               id="quantity"
               name="quantity"
@@ -70,7 +127,9 @@ const ProductDetailsCard = () => {
             />
           </div>
           <div className="w-full">
-            <button className="text-cf-coffee hover:text-cf-light-white transition-all duration-200 border border-cf-coffee rounded-full bg-cf-yellow hover:bg-cf-coffee px-[30px] py-2.5 md:px-10 md:py-5 font-medium w-full h-[45px] flex items-center justify-center">Add to Cart</button>
+            <button className="text-cf-coffee hover:text-cf-light-white transition-all duration-200 border border-cf-coffee rounded-full bg-cf-yellow hover:bg-cf-coffee px-[30px] py-2.5 md:px-10 md:py-5 font-medium w-full h-[45px] flex items-center justify-center">
+              Add to Cart
+            </button>
           </div>
         </div>
       </div>
@@ -80,3 +139,18 @@ const ProductDetailsCard = () => {
 };
 
 export default ProductDetailsCard;
+
+const slides = [
+  {
+    src: "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c70438233ef77965948968_product-hover-01.avif",
+  },
+  {
+    src: "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c70438233ef77965948968_product-hover-01.avif",
+  },
+  {
+    src: "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c70438233ef77965948968_product-hover-01.avif",
+  },
+  {
+    src: "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c70438233ef77965948968_product-hover-01.avif",
+  },
+];
