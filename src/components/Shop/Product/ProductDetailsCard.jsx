@@ -12,7 +12,7 @@ const ProductDetailsCard = () => {
       {/* end:: product image container with lightshot  */}
 
       {/* start:: product text container */}
-      <div className="p-5 sm:p-[30px] md:p-10 grid justify-between text-cf-coffee bg-cf-light-yellow w-7/12">
+      <div className="p-5 sm:p-[30px] md:p-10 grid justify-between text-cf-coffee bg-cf-light-yellow xl:w-7/12">
         <div className="px-5 py-[5px] mb-2.5 bg-cf-coffee rounded-full text-cf-yellow w-fit">
           Coffee
         </div>
