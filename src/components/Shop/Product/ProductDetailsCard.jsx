@@ -11,6 +11,7 @@ const ProductDetailsCard = () => {
   const [open, setOpen] = useState(false);
   const thumbnailsRef = useState(null);
   const [thumbnailsVisible, setThumbnailsVisible] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const toggleThumbnails = () => {
     setThumbnailsVisible(!thumbnailsVisible);
@@ -35,7 +36,10 @@ const ProductDetailsCard = () => {
                 key={index}
                 src={slide.src}
                 alt={`Thumbnail ${index}`}
-                onClick={() => setOpen(true)}
+                onClick={() => {
+                  setCurrentIndex(index);
+                  setOpen(true);
+                }}
               />
             ))}
           </div>
@@ -45,6 +49,7 @@ const ProductDetailsCard = () => {
             open={open}
             close={() => setOpen(false)}
             slides={slides}
+            index={currentIndex}
             plugins={[Thumbnails, Zoom, Fullscreen]}
             zoom={{ maxZoomPixelRatio: 3 }}
             thumbnails={{ width: 70, height: 70, ref: thumbnailsRef }}
@@ -162,25 +167,29 @@ export default ProductDetailsCard;
 const slides = [
   {
     src: "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c6ea51336d4457d43f725d_product-01.avif",
-    thumbnail: "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c6ea51336d4457d43f725d_product-01.avif", // Thumbnail image
+    thumbnail:
+      "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c6ea51336d4457d43f725d_product-01.avif", // Thumbnail image
     title: "Premium Ground Coffee",
     description: "Experience the finest ground coffee crafted with dedication.",
   },
   {
     src: "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c70438233ef77965948968_product-hover-01.avif",
-    thumbnail: "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c70438233ef77965948968_product-hover-01.avif", // Thumbnail image
+    thumbnail:
+      "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c70438233ef77965948968_product-hover-01.avif", // Thumbnail image
     title: "Rich Coffee Blend",
     description: "A rich blend of coffee beans for a perfect brew.",
   },
   {
     src: "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c850e76511f76c038f8e75_product-gallery-01.avif",
-    thumbnail: "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c850e76511f76c038f8e75_product-gallery-01.avif", // Thumbnail image
+    thumbnail:
+      "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c850e76511f76c038f8e75_product-gallery-01.avif", // Thumbnail image
     title: "Arabica Coffee Beans",
     description: "100% Arabica coffee beans with no additives.",
   },
   {
     src: "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c850e70dd95466d5d1009f_product-gallery-02.avif",
-    thumbnail: "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c850e70dd95466d5d1009f_product-gallery-02.avif", // Thumbnail image
+    thumbnail:
+      "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c850e70dd95466d5d1009f_product-gallery-02.avif", // Thumbnail image
     title: "Ground Coffee Pack",
     description: "Perfectly packed ground coffee for your daily needs.",
   },
