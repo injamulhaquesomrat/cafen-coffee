@@ -31,7 +31,7 @@ const CartContainer = ({ isCartOpen, handleCartModal }) => {
         <hr className=" border-cf-coffee" />
 
         {/* start :: cart body */}
-        <div className="flex flex-col justify-center items-center px-6 py-4 h-[calc(100%-64px)]">
+        {/* <div className="flex flex-col justify-center items-center px-6 py-4 h-[calc(100%-64px)]">
           <div className="w-full">
             <img
               className="w-6/12 mx-auto"
@@ -50,10 +50,10 @@ const CartContainer = ({ isCartOpen, handleCartModal }) => {
               Shop Now
             </button>
           </div>
-        </div>
+        </div> */}
 
-
-        {/* <div>
+        <div>
+          {/* start:: cart item */}
           <div className="flex items-start justify-between p-5 gap-5">
             <div className="flex items-center justify-between">
               <img
@@ -81,8 +81,11 @@ const CartContainer = ({ isCartOpen, handleCartModal }) => {
               />
             </div>
           </div>
-
+          {/* end:: cart item */}
+          {/* breakline */}
           <hr className=" border-cf-coffee" />
+
+          {/* start:: cart footer */}
           <div className="p-6 pt-4">
             <div className="text-cf-coffee flex items-center justify-between mb-4">
               <p>Subtotal</p>
@@ -94,7 +97,8 @@ const CartContainer = ({ isCartOpen, handleCartModal }) => {
               Continue to Checkout
             </button>
           </div>
-        </div> */}
+          {/* end:: cart footer */}
+        </div>
         {/* end :: cart body */}
       </div>
     </div>
