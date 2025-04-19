@@ -7,7 +7,7 @@ const Newsletter = () => {
   return (
     <div className="py-8 md:py-14 flex flex-col justify-center items-center gap-8">
       <img src="/veg-bag.svg" alt="veg bag" />
-      <h6 className="text-xl md:text-3xl font-nunito font-semibold text-cf-coffee max-w-xl tracking-tight leading-tight text-center">
+      <h6 className="text-xl md:text-3xl font-sober font-semibold text-cf-coffee max-w-xl tracking-tight leading-tight text-center">
         Sign up for our newsletter for updates on new menu items, special offers
       </h6>
       <form onSubmit={handleSubmit} className="xl:w-4/12">

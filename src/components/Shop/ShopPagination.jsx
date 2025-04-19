@@ -17,20 +17,20 @@ const ShopPagination = ({ currentPage, setCurrentPage, totalPages }) => {
         type="button"
         onClick={handlePrev}
         disabled={currentPage === 1}
-        className={`flex items-center justify-center gap-1.5 px-[30px] md:px-10 py-2.5 sm:py-5 text-cf-yellow bg-cf-coffee rounded-full font-nunito font-bold cursor-pointer w-full border border-cf-coffee hover:bg-cf-yellow hover:text-cf-coffee transition duration-300 ease-in-out ${
+        className={`flex items-center justify-center gap-1.5 px-[30px] md:px-10 py-2.5 sm:py-5 text-cf-yellow bg-cf-coffee rounded-full font-sober font-bold cursor-pointer w-full border border-cf-coffee hover:bg-cf-yellow hover:text-cf-coffee transition duration-300 ease-in-out ${
           currentPage === 1 && "invisible"
         }`}
       >
         <FaChevronLeft size={12} /> Previous
       </button>
-      <div className="text-cf-coffee text-nowrap font-nunito font-medium">
+      <div className="text-cf-coffee text-nowrap font-sober font-medium">
         {currentPage} / {totalPages}
       </div>
       <button
         type="button"
         onClick={handleNext}
         disabled={currentPage === totalPages}
-        className={`flex items-center justify-center gap-1.5 px-[30px] md:px-10 py-2.5 sm:py-5 text-cf-yellow bg-cf-coffee rounded-full font-nunito font-bold cursor-pointer w-full  border border-cf-coffee hover:bg-cf-yellow hover:text-cf-coffee transition duration-300 ease-in-out ${
+        className={`flex items-center justify-center gap-1.5 px-[30px] md:px-10 py-2.5 sm:py-5 text-cf-yellow bg-cf-coffee rounded-full font-sober font-bold cursor-pointer w-full  border border-cf-coffee hover:bg-cf-yellow hover:text-cf-coffee transition duration-300 ease-in-out ${
           currentPage === totalPages && "invisible"
         }`}
       >

@@ -42,10 +42,10 @@ const ProductItem = ({ item }) => {
 
         {/* start:: product title & price */}
         <div className="pt-4">
-          <h6 className="text-lg md:text-xl font-nunito font-semibold text-cf-coffee tracking-tight">
+          <h6 className="text-lg md:text-xl font-sober font-semibold text-cf-coffee tracking-tight">
             {title}
           </h6>
-          <p className="font-nunito font-semibold text-cf-coffee tracking-tight">
+          <p className="font-sober font-semibold text-cf-coffee tracking-tight">
             ${price} USD
           </p>
         </div>

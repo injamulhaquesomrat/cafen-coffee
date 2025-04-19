@@ -11,27 +11,22 @@
 }
 
 @font-face {
-  font-family: "Sober";
-  src: url("./assets/fonts/sober-font/BDOGrotesk-Regular-BF648a656f74a27.otf")
-      format("opentype"),
-    url("./assets/fonts/Sober-Regular.ttf") format("truetype");
+  font-family: "BD Grotesk";
+  src: url("./assets/fonts/bdogrotesk-font/BDOGrotesk-Regular-BF648a656f74a27.otf")
+    format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "BD Grotesk";
-  src: url("./assets/fonts/sober-font/sober-regular.otf") format("opentype");
+  font-family: "Sober";
+  src: url("./assets/fonts/sober-font/sober-regular-webfont.woff")
+      format("woff"),
+    url("./assets/fonts/sober-font/sober-regular-webfont.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
-.font-roboto {
-  font-family: "Roboto", sans-serif;
-}
-.font-nunito {
-  font-family: "Nunito", sans-serif;
-}
 .font-sober {
   font-family: "Sober", sans-serif;
 }

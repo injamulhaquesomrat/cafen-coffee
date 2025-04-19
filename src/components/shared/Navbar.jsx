@@ -27,7 +27,7 @@ const Navbar = () => {
           {/* end:logo container */}
 
           {/* start::menus */}
-          <ul className="hidden lg:flex gap-5 font-nunito text-cf-coffee font-medium md:text-lg relative">
+          <ul className="hidden lg:flex gap-5 font-sober text-cf-coffee font-medium md:text-lg relative">
             {/* start::Homepage link */}
             <li onClick={() => setIsDropdownOpen(false)}>
               <NavLink
@@ -108,7 +108,7 @@ const Navbar = () => {
             {/* start::cart modal open button */}
             <button
               onClick={handleCartModal}
-              className="font-nunito font-bold text-cf-coffee md:text-lg"
+              className="font-sober font-bold text-cf-coffee md:text-lg"
             >
               Cart (0)
             </button>

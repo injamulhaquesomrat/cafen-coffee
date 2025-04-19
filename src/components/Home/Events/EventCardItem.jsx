@@ -9,14 +9,14 @@ const EventCardItem = ({ item }) => {
         <div className="flex flex-col p-4 md:p-6 md:w-1/2">
           <div className="flex-1 pb-4 md:pb-16">
             <p>{item.date}</p>
-            <h4 className="text-xl md:text-2xl font-nunito font-bold pb-2 md:pb-4 tracking-tight">
+            <h4 className="text-xl md:text-2xl font-sober font-bold pb-2 md:pb-4 tracking-tight">
               {item.title}
             </h4>
             <p className="line-clamp-2">{item.description}</p>
           </div>
           <div>
             <Link to={`/event/${item.id}`}>
-              <button className="px-6 py-1.5 bg-cf-yellow border border-cf-coffee rounded-full font-nunito font-bold inline-flex items-center gap-2 group">
+              <button className="px-6 py-1.5 bg-cf-yellow border border-cf-coffee rounded-full font-sober font-bold inline-flex items-center gap-2 group">
                 View event{" "}
                 <FaArrowRight className="text-xs group-hover:translate-x-1 transition-all duration-300 ease-in-out" />
               </button>

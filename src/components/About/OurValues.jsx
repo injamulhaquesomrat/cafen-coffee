@@ -4,7 +4,7 @@ const OurValues = () => {
   return (
     <section className="py-20 md:py-[100px] lg:py-[10\20px] ">
       {/* start:: section title */}
-      <h2 className="text-[42px] sm:text-[50px] md:text-[54px] lg:text-6xl font-nunito leading-tight tracking-tighter text-cf-coffee font-medium text-center">
+      <h2 className="text-[42px] sm:text-[50px] md:text-[54px] lg:text-6xl font-sober leading-tight tracking-tighter text-cf-coffee font-medium text-center">
         Our values
       </h2>
       {/* end:: section title */}

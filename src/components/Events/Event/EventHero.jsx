@@ -4,7 +4,7 @@ const EventHero = () => {
   return (
     <div className="bg-cf-light-yellow pb-[60px] pt-6 sm:pt-10 sm:pb-20 md:pb-[100px] lg:pb-[120px] xl:pb-[140px]">
     <Container>
-      <h2 className="text-cf-coffee text-[46px] sm:text-[62px] tracking-tighter leading-tight font-nunito mb-5 sm:mb-[30px] text-center font-medium">Coffee art workshop</h2>
+      <h2 className="text-cf-coffee text-[46px] sm:text-[62px] font-sober mb-5 sm:mb-[30px] text-center font-medium">Coffee art workshop</h2>
       <div>
         <img
         className="rounded-lg"

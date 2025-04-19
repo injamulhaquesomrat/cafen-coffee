@@ -9,7 +9,7 @@ const Hero = () => {
           {/* start:: hero text container */}
           <div className="w-full md:w-3/6 flex flex-col justify-center py-10 lg:py-0 gap-[30px] md:gap-[50px] md:basis-2/3 lg:basis-1/2">
             {/* start:: section heading */}
-            <h1 className="text-[46px] md:text-5xl xl:text-[80px] leading-tight tracking-tighter font-nunito font-bold text-cf-coffee">
+            <h1 className="text-[46px] md:text-5xl xl:text-[80px] leading-tight tracking-tighter font-sober font-bold text-cf-coffee">
               Discover the perfect brew at Cafen café
             </h1>
             {/* end:: section heading */}
@@ -50,10 +50,10 @@ const Hero = () => {
                   <img src="/icons/about/about-icon-01.svg" alt="coffee ICON" />
                 </div>
                 <div>
-                  <h6 className="text-xl xl:text-2xl font-semibold font-nunito tracking-tighter">
+                  <h6 className="text-xl xl:text-2xl font-semibold font-sober tracking-tighter">
                     Artisanal Coffee
                   </h6>
-                  <p className="font-nunito tracking-tight xl:text-lg">
+                  <p className="font-sober tracking-tight xl:text-lg">
                     Savor fresh, locally sourced menu items.
                   </p>
                 </div>
@@ -63,10 +63,10 @@ const Hero = () => {
                   <img src="/icons/about/about-icon-03.svg" alt="ABOUT ICON" />
                 </div>
                 <div>
-                  <h6 className="text-xl xl:text-2xl font-semibold font-nunito tracking-tighter">
+                  <h6 className="text-xl xl:text-2xl font-semibold font-sober tracking-tighter">
                     Free Wi-Fi
                   </h6>
-                  <p className="font-nunito tracking-tight xl:text-lg">
+                  <p className="font-sober tracking-tight xl:text-lg">
                     Stay connected with our complimentary Wi-Fi.
                   </p>
                 </div>

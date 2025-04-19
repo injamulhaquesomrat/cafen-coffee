@@ -6,7 +6,7 @@ const Specs = () => {
       <Container>
         <div>
           {/* start:: section heading */}
-          <h5 className="text-3xl md:text-4xl lg:text-5xl font-semibold pb-6 lg:pb-8 font-nunito tracking-tight text-cf-coffee text-center">
+          <h5 className="text-3xl md:text-4xl lg:text-5xl font-semibold pb-6 lg:pb-8 font-sober tracking-tight text-cf-coffee text-center">
             Our commitment to sustainability
           </h5>
           {/* end:: section heading */}
@@ -23,10 +23,10 @@ const Specs = () => {
                   />
                 </div>
                 <div className="w-fit md:text-right space-y-2 lg:space-y-4">
-                  <h6 className="text-xl lg:text-2xl xl:text-[32px] font-semibold font-nunito tracking-tight">
+                  <h6 className="text-xl lg:text-2xl xl:text-[32px] font-semibold font-sober tracking-tight">
                     Cozy atmosphere
                   </h6>
-                  <p className="font-nunito tracking-tight lg:text-base">
+                  <p className="font-sober tracking-tight lg:text-base">
                     We are committed to eco-friendly practices, from using
                     biodegradable materials to sourcing locally
                   </p>
@@ -41,10 +41,10 @@ const Specs = () => {
                   />
                 </div>
                 <div className="w-fit md:text-right space-y-2 lg:space-y-4">
-                  <h6 className="text-xl lg:text-2xl xl:text-[32px] font-semibold font-nunito tracking-tight">
+                  <h6 className="text-xl lg:text-2xl xl:text-[32px] font-semibold font-sober tracking-tight">
                     Community engagement
                   </h6>
-                  <p className="font-nunito tracking-tight lg:text-base">
+                  <p className="font-sober tracking-tight lg:text-base">
                     We believe in giving back to our community through events,
                     and local collaborations.
                   </p>
@@ -74,10 +74,10 @@ const Specs = () => {
                   />
                 </div>
                 <div className="space-y-2 lg:space-y-4">
-                  <h6 className="text-xl lg:text-2xl xl:text-[32px] font-semibold font-nunito tracking-tight">
+                  <h6 className="text-xl lg:text-2xl xl:text-[32px] font-semibold font-sober tracking-tight">
                     Artisanal coffee
                   </h6>
-                  <p className="font-nunito tracking-tight lg:text-base">
+                  <p className="font-sober tracking-tight lg:text-base">
                     Our coffee is sourced from the finest regions around the
                     world and roasted to perfection.
                   </p>
@@ -92,10 +92,10 @@ const Specs = () => {
                   />
                 </div>
                 <div className="space-y-2 lg:space-y-4">
-                  <h6 className="text-xl lg:text-2xl xl:text-[32px] font-semibold font-nunito tracking-tight">
+                  <h6 className="text-xl lg:text-2xl xl:text-[32px] font-semibold font-sober tracking-tight">
                     Exceptional service
                   </h6>
-                  <p className="font-nunito tracking-tight lg:text-base">
+                  <p className="font-sober tracking-tight lg:text-base">
                     Our friendly and knowledgeable staff are dedicated to
                     providing you with the best service
                   </p>

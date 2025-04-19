@@ -9,7 +9,7 @@ const Locations = () => {
         <div>
           {/* start:: section heading */}
           <div className="text-center">
-            <h3 className="text-3xl md:text-4xl lg:text-5xl font-semibold pb-6 lg:pb-8 font-nunito tracking-tight text-cf-coffee text-center">
+            <h3 className="text-3xl md:text-4xl lg:text-5xl font-semibold pb-6 lg:pb-8 font-sober tracking-tight text-cf-coffee text-center">
               Visit our locations
             </h3>
             <p className="text-cf-coffee">

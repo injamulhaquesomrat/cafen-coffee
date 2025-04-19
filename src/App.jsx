@@ -19,7 +19,7 @@ function App() {
         <title>Home | Cafen ☕ - Ecommerce Website</title>
         <link rel="canonical" href="/" />
       </Helmet>
-      <div className="font-roboto">
+      <div className="font-bdogrotesk">
         <Hero />
         <About/>
         <Featured />

@@ -17,7 +17,7 @@ const CartContainer = ({ isCartOpen, handleCartModal }) => {
     >
       <div className="cart-container-children absolute right-[50%] top-[50%] transform translate-x-[50%] translate-y-[-50%] h-full w-full sm:w-[480px] sm:h-[700px] border rounded-lg  bg-cf-light-white">
         <div className="flex justify-between items-center px-6 py-4">
-          <h3 className="text-2xl font-nunito font-bold text-cf-coffee ">
+          <h3 className="text-2xl font-sober font-bold text-cf-coffee ">
             Your cart
           </h3>
           <button onClick={handleCartModal}>
@@ -38,7 +38,7 @@ const CartContainer = ({ isCartOpen, handleCartModal }) => {
             />
           </div>
           <div className="text-center space-y-3 my-2">
-            <h4 className="text-3xl font-bold font-nunito text-cf-coffee">
+            <h4 className="text-3xl font-bold font-sober text-cf-coffee">
               Your cart is empty
             </h4>
             <p className="text-cf-coffee font-medium">

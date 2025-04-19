@@ -7,7 +7,7 @@ const FeaturedMenuItems = () => {
       <Container>
         {/* start::faetured menu items carousel */}
         <div>
-          <h1 className="text-cf-coffee text-3xl md:text-[55px] tracking-tight font-bold font-nunito pb-5 md:pb-8">
+          <h1 className="text-cf-coffee text-3xl md:text-[55px] tracking-tight font-bold font-sober pb-5 md:pb-8">
             Featured Menu Items
           </h1>
         </div>

@@ -28,7 +28,7 @@ const ContactInformation = () => {
     <div className="mt-20 md:mt-[100px] lg:mt-[150px] pb-20 md:pb-[100px] lg:pb-[150px] text-cf-coffee flex flex-col md:flex-row justify-between gap-5 md:gap-10 lg:gap-10">
       {/* start::contact information with socials */}
       <div>
-        <h5 className="text-[32px] font-nunito leading-tight tracking-tighter font-medium pb-5">
+        <h5 className="text-[32px] font-sober leading-tight tracking-tighter font-medium pb-5">
           Contact information
         </h5>
         <p>Social Media</p>
@@ -70,14 +70,24 @@ const ContactInformation = () => {
       {/* start::phone, email, address */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-3 gap-[30px] lg:gap-5">
         {contactInfoItems.map((item) => (
-          <div key={item?.id} className="col-span-1 flex flex-col sm:flex-row gap-5">
+          <div
+            key={item?.id}
+            className="col-span-1 flex flex-col sm:flex-row gap-5"
+          >
             <div className="h-10 w-10 md:h-[50px] md:w-[50px] min-w-2/5 bg-cf-yellow flex items-center justify-center rounded-full border border-cf-coffee">
               <img src={item?.img} alt={item?.title} />
             </div>
             <div className="w-4/5">
-              <h6 className="font-nunito text-2xl font-medium tracking-tighter leading-tight pb-2.5">{item?.title}</h6>
+              <h6 className="font-sober text-2xl font-medium tracking-tighter leading-tight pb-2.5">
+                {item?.title}
+              </h6>
               {item?.link ? (
-                <a className="tracking-tight leading-tight underline hover:no-underline" href={item?.link}>{item?.text}</a>
+                <a
+                  className="tracking-tight leading-tight underline hover:no-underline"
+                  href={item?.link}
+                >
+                  {item?.text}
+                </a>
               ) : (
                 <p className="tracking-tight leading-tight">{item?.text}</p>
               )}

@@ -54,10 +54,10 @@ const TeamMember = ({ member }) => {
 
         {/* start:: team member text container */}
         <div className="pt-4">
-          <h6 className="text-2xl xl:text-3xl font-nunito font-semibold text-cf-coffee tracking-tighter mb-2.5">
+          <h6 className="text-2xl xl:text-3xl font-sober font-semibold text-cf-coffee tracking-tighter mb-2.5">
             {name}
           </h6>
-          <p className="font-nunito xl:text-lg font-semibold text-cf-coffee tracking-tighter">
+          <p className="font-sober xl:text-lg font-semibold text-cf-coffee tracking-tighter">
             {position}
           </p>
         </div>

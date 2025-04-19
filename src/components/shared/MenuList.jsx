@@ -1,6 +1,4 @@
-
-
-const MenuList = ({menuItems}) => {
+const MenuList = ({ menuItems }) => {
   return (
     <>
       <ul className="grid grid-cols-2 justify-between py-10 gap-y-6 gap-x-16">
@@ -24,12 +22,12 @@ const MenuList = ({menuItems}) => {
               </div>
               <div className="flex flex-col md:flex-row gap-5 flex-1 justify-between items-start text-cf-coffee">
                 <div className="space-y-1">
-                  <h6 className="text-xl font-nunito font-bold tracking-tight">
+                  <h6 className="text-xl font-sober font-bold tracking-tight">
                     {item.name}
                   </h6>
                   <p>{item.description}</p>
                 </div>
-                <div className="font-nunito font-bold">{item.price}</div>
+                <div className="font-sober font-bold">{item.price}</div>
               </div>
             </div>
           </li>

@@ -13,7 +13,6 @@ const ProductPurchaseShortcut = () => {
     return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
-
   return (
     <div
       className={`fixed bottom-0 left-0 right-0 w-full p-3 hidden lg:block bg-cf-yellow z-[99] text-cf-coffee shadow-md transition-opacity duration-300 ${
@@ -27,7 +26,9 @@ const ProductPurchaseShortcut = () => {
             src="https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c6ea51336d4457d43f725d_product-01.avif"
             alt="shortcut image"
           />
-          <h6 className="text-2xl font-nunito font-semibold tracking-tighter leading-tight">Premium ground coffee</h6>
+          <h6 className="text-2xl font-sober font-semibold tracking-tighter leading-tight">
+            Premium ground coffee
+          </h6>
           <p className="text-lg font-medium">$ 15.99 USD</p>
         </div>
         <div className="flex gap-4">
@@ -41,9 +42,15 @@ const ProductPurchaseShortcut = () => {
                 {" "}
                 Select Weight
               </option>
-              <option className="bg-white" value="100g">100g</option>
-              <option className="bg-white" value="200g">200g</option>
-              <option className="bg-white" value="500g">500g</option>
+              <option className="bg-white" value="100g">
+                100g
+              </option>
+              <option className="bg-white" value="200g">
+                200g
+              </option>
+              <option className="bg-white" value="500g">
+                500g
+              </option>
             </select>
           </div>
           <div className="flex flex-col md:flex-row md:items-end gap-4">

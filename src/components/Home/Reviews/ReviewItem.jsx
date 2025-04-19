@@ -10,7 +10,7 @@ const ReviewItem = ({ item }) => {
             <RenderStars count={5} />
           </div>
 
-          <h4 className="text-xl md:text-3xl font-nunito font-bold pb-2 md:pb-4 tracking-tight">
+          <h4 className="text-xl md:text-3xl font-sober font-bold pb-2 md:pb-4 tracking-tight">
             {item?.review}
           </h4>
           <p className="line-clamp-2 text-2xl font-medium">{item?.name}</p>
