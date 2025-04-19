@@ -1,6 +1,7 @@
 import Container from "../../shared/Container";
 import EventContent from "./EventContent";
 import EventHero from "./EventHero";
+import OtherEvents from "./OtherEvents";
 
 const Event = () => {
   return (
@@ -8,6 +9,7 @@ const Event = () => {
       <EventHero />
       <Container>
         <EventContent />
+        <OtherEvents />
       </Container>
     </>
   );
