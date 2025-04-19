@@ -26,7 +26,7 @@ const ProductPurchaseShortcut = () => {
             src="https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c6ea51336d4457d43f725d_product-01.avif"
             alt="shortcut image"
           />
-          <h6 className="text-2xl font-sober font-semibold tracking-tighter leading-tight">
+          <h6 className="text-2xl font-sober font-semibold  ">
             Premium ground coffee
           </h6>
           <p className="text-lg font-medium">$ 15.99 USD</p>

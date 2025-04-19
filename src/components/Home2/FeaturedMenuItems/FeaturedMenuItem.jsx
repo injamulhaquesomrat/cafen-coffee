@@ -10,7 +10,7 @@ const FeaturedMenuItem = ({ category, img, subCategories }) => {
             alt={category}
           />
         </div>
-        <h4 className="text-3xl text-cf-coffee font-sober tracking-tighter leading-tight text-center">
+        <h4 className="text-3xl text-cf-coffee font-sober   text-center">
           {category}
         </h4>
       </div>
@@ -22,7 +22,7 @@ const FeaturedMenuItem = ({ category, img, subCategories }) => {
           <>
             <div className="flex justify-between items-end gap-8 border-b border-cf-coffee pb-5">
               <div className="grid gap-2.5">
-                <h6 className="text-xl md:text-2xl text-cf-coffee tracking-tighter leading-tight">
+                <h6 className="text-xl md:text-2xl text-cf-coffee  ">
                   {item?.name}
                 </h6>
                 <p className="text-sm md:text-base text-cf-coffee">

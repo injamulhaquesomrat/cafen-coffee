@@ -12,7 +12,7 @@ const Featured = () => {
           {/* start:: section heading */}
           <div className="flex flex-col gap-5 items-center justify-center">
             <img src="/feature-icon.svg" alt="feature icon" />
-            <h1 className="text-2xl md:text-4xl lg:text-5xl font-sober font-bold text-cf-coffee text-center">
+            <h1 className="text-2xl md:text-4xl lg:text-5xl font-sober text-cf-coffee text-center">
               Featured menu items
             </h1>
           </div>

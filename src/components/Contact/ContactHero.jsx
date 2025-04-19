@@ -1,7 +1,7 @@
 const ContactHero = () => {
   return (
     <div className="py-[80px] px-5  mt-5">
-      <h1 className="text-[50px] text-center md:text-[68px] lg:text-7xl xl:text-[80px] leading-tight tracking-tighter font-sober font-bold text-cf-coffee">
+      <h1 className="text-[50px] text-center md:text-[68px] lg:text-7xl xl:text-[80px]  font-sober font-bold text-cf-coffee">
         Get in touch with cafen café
       </h1>
 

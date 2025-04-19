@@ -15,7 +15,7 @@ const LocationItem = ({ item }) => {
       </div>
       <div className="aspect-[16/12] lg:aspect-video flex flex-col justify-between">
         <div className="h-fit">
-          <h2 className="text-2xl text-cf-coffee text-nunito tracking-tighter leading-tight pb-2">
+          <h2 className="text-2xl text-cf-coffee text-nunito   pb-2">
             {title}
           </h2>
           <p className="text-cf-coffee">{location}</p>

@@ -43,7 +43,7 @@ const WebsiteInformation = () => {
 
           {/* start:: opening hours */}
           <div className="flex-1 space-y-2 flex flex-col justify-center">
-            <h6 className="font-semibold font-sober text-cf-coffee text-xl tracking-tighter">
+            <h6 className="font-sober text-cf-coffee text-xl ">
               Opening hours
             </h6>
             <p className="text-cf-coffee">Monday - Friday: 7:00 AM - 8:00 PM</p>
@@ -54,18 +54,18 @@ const WebsiteInformation = () => {
           {/* end:: opening hours */}
 
           {/* start:: copyright */}
-          <p className="mt-auto text-cf-coffee">
+          <p className="mt-auto text-cf-coffee text-sm">
             Designed by{" "}
             <Link
               to="#"
-              className="font-bold underline hover:no-underline font-sober"
+              className="underline hover:no-underline font-sober"
             >
               Webestica
             </Link>
             , Developed by{" "}
             <Link
               to="#"
-              className="font-bold underline hover:no-underline font-sober"
+              className="underline hover:no-underline font-sober"
             >
               Injamul H. Somrat
             </Link>

@@ -28,7 +28,7 @@ const ContactInformation = () => {
     <div className="mt-20 md:mt-[100px] lg:mt-[150px] pb-20 md:pb-[100px] lg:pb-[150px] text-cf-coffee flex flex-col md:flex-row justify-between gap-5 md:gap-10 lg:gap-10">
       {/* start::contact information with socials */}
       <div>
-        <h5 className="text-[32px] font-sober leading-tight tracking-tighter font-medium pb-5">
+        <h5 className="text-[32px] font-sober  font-medium pb-5">
           Contact information
         </h5>
         <p>Social Media</p>
@@ -78,18 +78,18 @@ const ContactInformation = () => {
               <img src={item?.img} alt={item?.title} />
             </div>
             <div className="w-4/5">
-              <h6 className="font-sober text-2xl font-medium tracking-tighter leading-tight pb-2.5">
+              <h6 className="font-sober text-2xl font-medium   pb-2.5">
                 {item?.title}
               </h6>
               {item?.link ? (
                 <a
-                  className="tracking-tight leading-tight underline hover:no-underline"
+                  className="tracking-tight  underline hover:no-underline"
                   href={item?.link}
                 >
                   {item?.text}
                 </a>
               ) : (
-                <p className="tracking-tight leading-tight">{item?.text}</p>
+                <p className="tracking-tight ">{item?.text}</p>
               )}
             </div>
           </div>

@@ -5,7 +5,7 @@ const OurStory = () => {
     <section className="py-20 md:py-[100px] border-y border-cf-coffee bg-foreground text-center">
       <Container>
         {/* start:: section title */}
-        <h2 className="text-[42px] sm:text-[50px] md:text-[54px] lg:text-6xl font-sober leading-tight tracking-tighter text-cf-coffee font-medium">
+        <h2 className="text-[42px] sm:text-[50px] md:text-[54px] lg:text-6xl font-sober text-cf-coffee font-medium">
           Our story
         </h2>
         {/* end:: section title */}
@@ -30,7 +30,7 @@ const OurStory = () => {
               className="flex gap-2.5 xl:gap-3 items-center text-cf-coffee"
             >
               <div>
-                <h4 className="text-[40px] xl:text-5xl font-sober leading-tight tracking-tighter font-medium">
+                <h4 className="text-[40px] xl:text-5xl font-sober  font-medium">
                   {item?.count}
                 </h4>
               </div>

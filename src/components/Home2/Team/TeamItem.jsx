@@ -33,10 +33,10 @@ const TeamItem = ({ item }) => {
           </div>
         </div>
         <Link href="/" className="text-center w-full">
-          <h6 className="text-xl md:text-2xl font-sober text-cf-coffee font-semibold leading-tight tracking-tighter">
+          <h6 className="text-xl md:text-2xl font-sober text-cf-coffee font-semibold ">
             {title}
           </h6>
-          <p className="md:text-xl font-sober text-cf-coffee font-medium leading-tight tracking-tighter">
+          <p className="md:text-xl font-sober text-cf-coffee font-medium ">
             {position}
           </p>
         </Link>

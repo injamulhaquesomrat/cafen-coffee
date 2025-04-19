@@ -15,7 +15,7 @@ const AboutSection = () => {
         {/* end:: About section image */}
         {/* start:: About section text container */}
         <div className="w-full md:w-4/5 mx-auto text-center flex flex-col gap-5">
-          <h2 className="text-3xl md:text-6xl leading-snug tracking-tighter text-cf-yellow font-sober font-bold">
+          <h2 className="text-3xl md:text-6xl  text-cf-yellow font-sober">
             Cafen started with a simple idea: to create a space where people can
             enjoy{" "}
             <button className=" bg-cf-coffee border border-cf-yellow px-4 py-1 rounded-full text-cf-yellow text-xl md:text-4xl">

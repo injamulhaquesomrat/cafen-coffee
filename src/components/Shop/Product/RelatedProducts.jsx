@@ -4,7 +4,7 @@ import ProductItem from "../../Home/Products/ProductItem";
 const RelatedProducts = () => {
   return (
     <div className="pt-20">
-      <h4 className="text-4xl md:text-[42px] lg:text-[48px] xl:text-[55px] leading-tight tracking-tighter mb-2.5 font-sober">
+      <h4 className="text-4xl md:text-[42px] lg:text-[48px] xl:text-[55px]  mb-2.5 font-sober">
         Related Products
       </h4>
       {/* start:: related products container */}

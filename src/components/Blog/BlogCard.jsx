@@ -12,7 +12,7 @@ const BlogCard = ({ item }) => {
         <span className="px-2.5 py-[5px] bg-cf-coffee rounded-full text-cf-yellow font-semibold">
           {item?.type}
         </span>
-        <h4 className="text-2xl text-cf-coffee font-sober font-semibold tracking-tighter leading-tight line-clamp-1">
+        <h4 className="text-2xl text-cf-coffee font-sober font-semibold   line-clamp-1">
           {item?.title}
         </h4>
       </div>

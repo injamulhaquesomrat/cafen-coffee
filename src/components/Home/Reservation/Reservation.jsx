@@ -32,7 +32,7 @@ const Reservation = () => {
             {/* start:: reservation form */}
             <form onSubmit={handleFormSubmit}>
               {/* start:: form title */}
-              <h6 className="text-2xl md:text-3xl font-semibold font-sober">
+              <h6 className="text-2xl md:text-3xl font-sober">
                 Make a reservation
               </h6>
               {/* end:: form title */}

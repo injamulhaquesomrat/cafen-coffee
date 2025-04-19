@@ -29,7 +29,7 @@ const OrderNow = () => {
 
       {/* start:: order now text container */}
       <div className="absolute top-0 left-0 p-4 flex flex-col items-center gap-4 lg:gap-8 xl:gap-16 justify-center z-50 h-full w-full">
-        <h4 className="text-center text-[21px] md:text-5xl lg:text-[56px] text-cf-yellow font-sober tracking-tighter leading-relaxed md:w-[86%] lg:w-[90%] xl:max-w-[600px]">
+        <h4 className="text-center text-[21px] md:text-5xl lg:text-[56px] text-cf-yellow font-sober  leading-relaxed md:w-[86%] lg:w-[90%] xl:max-w-[600px]">
           Get 20% off all beverages from 3 PM to 5 PM every weekday.
         </h4>
         <Link to="/menu">

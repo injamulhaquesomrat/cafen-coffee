@@ -14,14 +14,14 @@ const ProductDetailsCard = () => {
         <div className="px-5 py-[5px] mb-2.5 bg-cf-coffee rounded-full text-cf-yellow w-fit">
           Coffee
         </div>
-        <h2 className="text-[38px] sm:text-[50px] md:text-[60px] text-cf-coffee font-sober font-medium tracking-tighter leading-tight mb-2.5">
+        <h2 className="text-[38px] sm:text-[50px] md:text-[60px] text-cf-coffee font-sober font-medium   mb-2.5">
           Premium ground coffee
         </h2>
 
         <h5 className="text-[28px] font-medium">$ 15.99 USD</h5>
 
         <div className="mt-5">
-          <h6 className="text-[26px] text-cf-coffee font-sober font-medium tracking-tighter leading-tight mb-[5px]">
+          <h6 className="text-[26px] text-cf-coffee font-sober font-medium   mb-[5px]">
             Description:
           </h6>
           <p>
@@ -31,7 +31,7 @@ const ProductDetailsCard = () => {
           </p>
         </div>
         <div className="mt-5 mb-2.5">
-          <h6 className="text-[26px] text-cf-coffee font-sober font-medium tracking-tighter leading-tight mb-[5px]">
+          <h6 className="text-[26px] text-cf-coffee font-sober font-medium   mb-[5px]">
             Ingredients:
           </h6>
           <p>100% arabica coffee beans, No additives or preservatives</p>

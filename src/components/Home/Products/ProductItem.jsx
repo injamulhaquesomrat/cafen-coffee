@@ -27,7 +27,7 @@ const ProductItem = ({ item }) => {
           {/* end:: product thumbnail */}
 
           {/* start:: product offer */}
-          <span className="px-4 py-1 leading-tight rounded-full bg-cf-coffee text-cf-yellow absolute top-2 left-2 text-sm font-medium">
+          <span className="px-4 py-1  rounded-full bg-cf-coffee text-cf-yellow absolute top-2 left-2 text-sm font-medium">
             {save_offer}
           </span>
           {/* end:: product offer */}
@@ -42,10 +42,10 @@ const ProductItem = ({ item }) => {
 
         {/* start:: product title & price */}
         <div className="pt-4">
-          <h6 className="text-lg md:text-xl font-sober font-semibold text-cf-coffee tracking-tight">
+          <h6 className="text-lg md:text-xl font-sober text-cf-coffee">
             {title}
           </h6>
-          <p className="font-sober font-semibold text-cf-coffee tracking-tight">
+          <p className="font-sober  text-cf-coffee">
             ${price} USD
           </p>
         </div>

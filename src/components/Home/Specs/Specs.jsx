@@ -19,7 +19,7 @@ const Specs = () => {
 
           <div className="text-cf-coffee grid md:basis-7/12">
             {/* start:: section title */}
-            <h5 className="text-3xl md:text-4xl lg:text-5xl font-semibold pb-6 font-sober tracking-tight">
+            <h5 className="text-3xl md:text-4xl lg:text-5xl pb-6 font-sober">
               Discover our coffee
             </h5>
             {/* end:: section title */}
@@ -32,10 +32,10 @@ const Specs = () => {
                   <div className="bg-cf-yellow p-3 rounded-xl border border-cf-coffee w-fit">
                     <img src={item?.logoSrc} alt="ABOUT ICON   " />
                   </div>
-                  <h6 className="text-xl lg:text-2xl font-semibold font-sober tracking-tight">
+                  <h6 className="text-xl lg:text-2xl font-sober">
                     {item?.title}
                   </h6>
-                  <p className="font-sober tracking-tight lg:text-lg">
+                  <p className="font-sober lg:text-lg">
                     {item?.description}
                   </p>
                 </div>

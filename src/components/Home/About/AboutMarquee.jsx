@@ -21,7 +21,7 @@ const AboutMarquee = () => {
           <div key={item.id} className="flex gap-4 items-center py-6 pr-4">
             <img src="/marquee-icon.svg" alt="marquee icon" />
             <p
-              className="font-sober text-cf-coffee text-xl tracking-tight font-semibold"
+              className="font-sober text-cf-coffee text-xl "
               key={item.id}
             >
               {item.text}
