@@ -1,11 +1,14 @@
 import Container from "../../shared/Container";
+import EventContent from "./EventContent";
 import EventHero from "./EventHero";
 
 const Event = () => {
   return (
     <>
       <EventHero />
-      <Container></Container>
+      <Container>
+        <EventContent />
+      </Container>
     </>
   );
 };

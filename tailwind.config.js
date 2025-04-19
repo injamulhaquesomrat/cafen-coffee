@@ -10,9 +10,9 @@ export default {
         "cf-light-white": "#fffff5",
         "cf-light-yellow": "#f8f1cb",
         "cf-foreground": "#fffbed",
-        
       },
     },
   },
   plugins: [],
 };
+

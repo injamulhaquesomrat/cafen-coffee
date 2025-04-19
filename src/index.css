@@ -70,6 +70,16 @@ input:-webkit-autofill {
   transform: translateY(120%); /* Move thumbnails out of view */
 }
 
+/* Custom styles for hiding the scrollbar */
+.no-scrollbar {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
+}
+
 @media only screen and (min-width: 640px) {
   .cf-btn {
     font-size: 1rem;
