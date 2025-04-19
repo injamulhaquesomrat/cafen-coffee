@@ -54,7 +54,7 @@ const ProductPurchaseShortcut = () => {
             </select>
           </div>
           <div className="flex flex-col md:flex-row md:items-end gap-4">
-            <div className="flex flex-col gap- min-w-[100px]">
+            <div className="flex flex-col min-w-[100px]">
               <input
                 className="px-3 py-2.5 pr-1.5 rounded-full outline-none border border-cf-coffee bg-cf-yellow max-w-[100px]"
                 type="number"
