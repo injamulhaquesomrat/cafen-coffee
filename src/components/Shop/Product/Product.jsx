@@ -3,6 +3,7 @@ import { productItems } from "../../../utils/productItems";
 import Container from "../../shared/Container";
 import ProductDetailsCard from "./ProductDetailsCard";
 import ProductReview from "./ProductReview";
+import ProductPurchaseShortcut from "./ProductPurchaseShortcut";
 
 const Product = () => {
   const { productId } = useParams();
@@ -16,6 +17,7 @@ const Product = () => {
     <Container>
       <ProductDetailsCard />
       <ProductReview />
+      <ProductPurchaseShortcut />
     </Container>
   );
 };
