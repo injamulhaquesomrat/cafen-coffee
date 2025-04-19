@@ -13,6 +13,7 @@ import Faqs from "../pages/Faqs";
 import BookATable from "../pages/BookATable";
 import PrivacyPolicy from "../pages/PrivacyPolicy";
 import Product from "../components/Shop/Product/Product";
+import Event from "../components/Events/Event/Event";
 
 const Router = createHashRouter([
   {
@@ -47,6 +48,10 @@ const Router = createHashRouter([
       {
         path: "/events",
         element: <Events />,
+      },
+      {
+        path: "/event/:eventId",
+        element: <Event />,
       },
       {
         path: "/home-2",

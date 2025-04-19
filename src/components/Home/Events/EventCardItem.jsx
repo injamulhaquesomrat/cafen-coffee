@@ -15,7 +15,7 @@ const EventCardItem = ({ item }) => {
             <p className="line-clamp-2">{item.description}</p>
           </div>
           <div>
-            <Link to="#">
+            <Link to={`/event/${item.id}`}>
               <button className="px-6 py-1.5 bg-cf-yellow border border-cf-coffee rounded-full font-nunito font-bold inline-flex items-center gap-2 group">
                 View event{" "}
                 <FaArrowRight className="text-xs group-hover:translate-x-1 transition-all duration-300 ease-in-out" />
