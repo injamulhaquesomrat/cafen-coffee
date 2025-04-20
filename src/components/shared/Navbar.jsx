@@ -19,7 +19,7 @@ const Navbar = () => {
     <div className="bg-cf-light-yellow">
       {/* start:: container */}
       <Container>
-        <div className="py-6 md:py-8 flex justify-between items-center">
+        <div className="py-4 lg:py-[30px] flex justify-between items-center">
           {/* start:logo container  */}
           <Link to="/">
             <img src="/logo.svg" alt="logo" />

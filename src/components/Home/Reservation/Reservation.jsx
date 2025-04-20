@@ -32,7 +32,7 @@ const Reservation = () => {
           {/* end::empty box */}
 
           {/* start:: reservation form */}
-          <div className="md:w-2/3 lg:w-full xl:w-9/12 lg:max-w-[460px] mx-auto border border-cf-coffee p-5 md:p-8 rounded-lg bg-cf-yellow text-cf-coffee lg:col-span-1">
+          <div className="w-full md:w-9/12 lg:w-full xl:w-9/12 lg:max-w-[460px] mx-auto border border-cf-coffee p-5 md:p-8 rounded-lg bg-cf-yellow text-cf-coffee lg:col-span-1">
             <form onSubmit={handleFormSubmit}>
               {/* start:: form title */}
               <h6 className="text-2xl md:text-3xl font-sober">

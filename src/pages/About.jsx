@@ -11,7 +11,7 @@ const About = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>About | Cafen</title>
+        <title>About | Cafen ☕</title>
         <link rel="canonical" href="/" />
       </Helmet>
       <>

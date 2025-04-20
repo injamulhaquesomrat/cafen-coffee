@@ -11,9 +11,9 @@ const Newsletter = () => {
         Sign up for our newsletter for updates on new menu items, special offers
       </h6>
       <form onSubmit={handleSubmit} className="max-w-[455px]">
-        <div className="border border-cf-coffee rounded-full p-1.5 xl:p-2 flex justify-between lg:w-[455px]">
+        <div className="border border-cf-coffee rounded-full p-2.5 flex justify-between lg:w-[455px]">
           <input
-            className="p-2.5 bg-cf-foreground focus-visible:outline-0 text-cf-coffee placeholder:text-cf-coffee/80 placeholder:text-md text-md lg:text-lg rounded-2xl font-medium flex-1"
+            className="p-[5px] bg-cf-foreground focus-visible:outline-0 text-cf-coffee placeholder:text-cf-coffee/80 placeholder:text-md text-md lg:text-lg rounded-2xl font-medium w-full"
             type="email"
             name="email"
             id="email"
@@ -22,7 +22,7 @@ const Newsletter = () => {
           />
           <button
             type="submit"
-            className="px-2.5 md:px-5 py-2.5 md:py-2 rounded-full border border-cf-coffee bg-cf-yellow text-cf-coffee font-medium md:text-lg"
+            className="px-5 py-[5px] h-[42px] flex items-center justify-center rounded-full border border-cf-coffee bg-cf-yellow hover:bg-cf-coffee text-cf-coffee hover:text-cf-light-white font-medium duration-300 transition-all ease-in-out"
           >
             Subscribe
           </button>
