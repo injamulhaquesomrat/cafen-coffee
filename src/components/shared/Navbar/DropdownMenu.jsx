@@ -21,7 +21,7 @@ const DropdownMenu = ({ isDropdownOpen, setIsDropdownOpen, menus }) => {
           <li key={index}>
             {name === "Pages" ? (
               <button
-                className={`flex flex-col items-left justify-between gap-1 w-full leading-6 px-2.5 py-1 font-bold rounded-lg duration-150   hover:bg-cf-yellow border border-transparent hover:border-cf-coffee "
+                className={`flex flex-col items-left justify-between gap-1 w-full leading-6 px-2.5 py-1 font-medium rounded-lg duration-150 hover:bg-cf-yellow border border-transparent hover:border-cf-coffee "
                   `}
               >
                 <div
@@ -36,7 +36,7 @@ const DropdownMenu = ({ isDropdownOpen, setIsDropdownOpen, menus }) => {
               <NavLink
                 to={path}
                 className={({ isActive }) =>
-                  `flex flex-col items-left justify-between gap-1 leading-6 px-2.5 py-1 font-bold rounded-lg duration-150 border ${
+                  `flex flex-col items-left justify-between gap-1 leading-6 px-2.5 py-1 font-medium rounded-lg duration-150 border ${
                     isActive
                       ? "bg-cf-yellow text-cf-coffee border-cf-coffee"
                       : "hover:bg-cf-yellow hover:border-cf-coffee border-transparent"
@@ -63,7 +63,7 @@ const DropdownMenu = ({ isDropdownOpen, setIsDropdownOpen, menus }) => {
                   <NavLink
                     onClick={() => setIsDropdownOpen(false)}
                     className={({ isActive }) =>
-                      `rounded-md border leading-6 font-bold px-2.5 py-1  ${
+                      `rounded-md border leading-6 font-medium px-2.5 py-1  ${
                         isActive
                           ? "bg-cf-yellow text-cf-coffee border-cf-coffee"
                           : "hover:bg-cf-yellow hover:border-cf-coffee border-transparent"

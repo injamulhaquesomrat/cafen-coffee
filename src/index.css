@@ -9,9 +9,12 @@
   margin: 0;
   padding: 0;
 }
-
-
-
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "BD Grotesk", sans-serif;
+}
 .font-sober {
   font-family: "Sober", sans-serif;
 }

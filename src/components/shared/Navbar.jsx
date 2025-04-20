@@ -33,7 +33,7 @@ const Navbar = () => {
               <NavLink
                 to="/"
                 className={({ isActive }) =>
-                  `flex items-center gap-1 leading-6 px-2.5 py-1 font-bold rounded-lg duration-150 border ${
+                  `flex items-center gap-1 leading-6 px-2.5 py-1 font-medium rounded-lg duration-150 border ${
                     isActive
                       ? "bg-cf-yellow text-cf-coffee border-cf-coffee"
                       : "hover:bg-cf-yellow hover:border-cf-coffee border-transparent"
@@ -50,7 +50,7 @@ const Navbar = () => {
               <NavLink
                 to="about"
                 className={({ isActive }) =>
-                  `flex items-center gap-1 leading-6 px-2.5 py-1 font-bold rounded-lg duration-150 border ${
+                  `flex items-center gap-1 leading-6 px-2.5 py-1 font-medium rounded-lg duration-150 border ${
                     isActive
                       ? "bg-cf-yellow text-cf-coffee border-cf-coffee"
                       : "hover:bg-cf-yellow hover:border-cf-coffee border-transparent"
@@ -69,7 +69,7 @@ const Navbar = () => {
               onMouseLeave={handleDropdown}
             >
               <button
-                className={`flex items-center gap-1 leading-6 px-2.5 py-1 font-bold rounded-lg duration-150 border border-transparent hover:border-cf-coffee hover:bg-cf-yellow`}
+                className={`flex items-center gap-1 leading-6 px-2.5 py-1 font-medium rounded-lg duration-150 border border-transparent hover:border-cf-coffee hover:bg-cf-yellow`}
               >
                 Pages
                 <FaChevronDown className="text-sm" />
@@ -89,7 +89,7 @@ const Navbar = () => {
               <NavLink
                 to="shop"
                 className={({ isActive }) =>
-                  `flex items-center gap-1 leading-6 px-2.5 py-1 font-bold rounded-lg duration-150 border ${
+                  `flex items-center gap-1 leading-6 px-2.5 py-1 font-medium rounded-lg duration-150 border ${
                     isActive
                       ? "bg-cf-yellow text-cf-coffee border-cf-coffee"
                       : "hover:bg-cf-yellow hover:border-cf-coffee border-transparent"
@@ -108,7 +108,7 @@ const Navbar = () => {
             {/* start::cart modal open button */}
             <button
               onClick={handleCartModal}
-              className="font-sober font-bold text-cf-coffee md:text-lg"
+              className="text-cf-coffee md:text-lg"
             >
               Cart (0)
             </button>
