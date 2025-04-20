@@ -5,7 +5,7 @@ import ProductItem from "./ProductItem";
 
 const Products = () => {
   return (
-    <section className="bg-cf-foreground py-20 md:py-[100px] lg:py-[120px] xl:py-[150px]">
+    <section className="bg-cf-foreground cf-section">
       <Container>
         {/* start:: section heading */}
         <div className="pb-[30px] xs:pb-10 lg:pb-[60px] xl:pbb-[70px]">

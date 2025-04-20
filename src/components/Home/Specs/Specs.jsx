@@ -4,7 +4,7 @@ import { specItems } from "../../../utils/specItems";
 
 const Specs = () => {
   return (
-    <div className="bg-cf-foreground border-t border-b border-cf-coffee py-20 md:py-[100px] lg:py-[120px] xl:py-[150px]">
+    <div className="bg-cf-foreground border-t border-b border-cf-coffee cf-section">
       <Container>
         <div className="flex flex-col md:flex-row gap-8 lg:gap-16 justify-between">
           {/* start:: specs image content */}

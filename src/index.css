@@ -15,6 +15,26 @@ html {
   line-height: 1.5;
   font-family: "BD Grotesk", sans-serif;
 }
+.cf-section {
+  padding-block: 80px;
+}
+@media only screen and (min-width: 768px) {
+  .cf-section {
+    padding-block: 100px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cf-section {
+    padding-block: 120px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .cf-section {
+    padding-block: 150px;
+  }
+}
+
+/* custom fonts */
 .font-sober {
   font-family: "Sober", sans-serif;
 }
@@ -26,15 +46,7 @@ input:-webkit-autofill {
   background-color: transparent;
 }
 
-.cf-btn {
-  font-size: 0.875rem;
-  font-weight: 500;
-  padding: 0.625rem 1.875rem;
-  border: 1px solid #5a0808;
-  border-radius: 50rem;
-  background-color: #fee473;
-}
-
+/* yet another react lightbox customiation */
 .yarl__flex_center .yarl__thumbnails_thumbnail {
   border: 0px !important;
   padding: 0;
@@ -68,6 +80,16 @@ input:-webkit-autofill {
   display: none; /* For Chrome, Safari, and Edge */
 }
 
+/* custon button style */
+.cf-btn {
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.625rem 1.875rem;
+  border: 1px solid #5a0808;
+  border-radius: 50rem;
+  background-color: #fee473;
+}
+
 @media only screen and (min-width: 640px) {
   .cf-btn {
     font-size: 1rem;
@@ -75,6 +97,7 @@ input:-webkit-autofill {
   }
 }
 
+/* splide arrow customization */
 .splide__arrows .splide__arrow {
   border: 1px solid #5a0808;
 }

@@ -25,7 +25,7 @@ const reviewOptions = {
 
 const Reviews = () => {
   return (
-    <section className="bg-cf-light-white py-20 md:py-[100px] lg:py-[120px] xl:py-[150px]">
+    <section className="bg-cf-light-white cf-section">
       <Container>
         <Splide options={reviewOptions} aria-label="Upcoming Events Images">
           {reviewsItems.map((item) => (

@@ -4,7 +4,7 @@ import Container from "./Container";
 import { useState } from "react";
 import DropdownMenu from "./Navbar/DropdownMenu";
 import { navItems } from "../../utils/navItems";
-import CartContainer from "./Navbar/CartContainer";
+import CartModal from "./Navbar/Cart/CartModal";
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -103,16 +103,15 @@ const Navbar = () => {
           </ul>
           {/* end::menus */}
 
-          {/* start::cart container  */}
           <div className="flex gap-4 items-center">
-            {/* start::cart modal open button */}
+            {/* start::cart modal trigger button */}
             <button
               onClick={handleCartModal}
               className="text-cf-coffee md:text-lg"
             >
               Cart (0)
             </button>
-            {/* end::cart modal open button */}
+            {/* end::cart modal trigger button */}
 
             <div>
               {/* start::sidebar trigger button */}
@@ -149,10 +148,7 @@ const Navbar = () => {
       </Container>
 
       {/* start::cart modal */}
-      <CartContainer
-        isCartOpen={isCartOpen}
-        handleCartModal={handleCartModal}
-      />
+      <CartModal isCartOpen={isCartOpen} handleCartModal={handleCartModal} />
       {/* end::cart modal */}
     </div>
   );
