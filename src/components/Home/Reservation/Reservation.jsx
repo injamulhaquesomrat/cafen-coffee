@@ -24,7 +24,7 @@ const Reservation = () => {
   };
 
   return (
-    <div className="py-20 md:py-[100px] lg:py-[130px] bg-[url('/form-bg-image.avif')] h-full bg-cover">
+    <section className="py-20 md:py-[100px] lg:py-[130px] bg-[url('/form-bg-image.avif')] h-full bg-cover">
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2">
           {/* start::empty box */}
@@ -63,7 +63,7 @@ const Reservation = () => {
           {/* end:: reservation form */}
         </div>
       </Container>
-    </div>
+    </section>
   );
 };
 

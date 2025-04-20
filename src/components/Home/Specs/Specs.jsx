@@ -20,7 +20,7 @@ const Specs = () => {
           {/* start::specs text content */}
           <div className="text-cf-coffee grid md:basis-7/12">
             {/* start:: section title */}
-            <h5 className="text- xs:text-[32px] md:text-[34px] lg:text-[38px] xl:text-[40px] pb-6 font-sober">
+            <h5 className="text-3xl xs:text-[32px] md:text-[34px] lg:text-[38px] xl:text-[40px] pb-6 font-sober">
               Discover our coffee
             </h5>
             {/* end:: section title */}

@@ -65,8 +65,8 @@ const Navbar = () => {
             {/* start::All pages Dropdown triggger button */}
             <li
               onClick={handleDropdown}
-              onMouseEnter={handleDropdown}
-              onMouseLeave={handleDropdown}
+              onMouseEnter={() => setIsDropdownOpen(true)}
+              onMouseLeave={() => setIsDropdownOpen(false)}
             >
               <button
                 className={`flex items-center gap-1 leading-6 px-2.5 py-1 font-medium rounded-lg duration-150 border border-transparent hover:border-cf-coffee hover:bg-cf-yellow`}
