@@ -13,7 +13,7 @@ const eventCarouselOptions = {
   pagination: false,
   classes: {
     arrows:
-      "splide__arrows absolute top-[109%] right-1/2 md:-top-12 md:right-0 translate-x-1/2 md:translate-x-0 w-[8rem] md:w-[10rem]",
+      "splide__arrows absolute top-[109%] right-1/2 xs:-top-12 md:-top-16 xs:right-0 translate-x-1/2 xs:translate-x-0 w-[8rem] md:w-[10rem]",
     arrow:
       "splide__arrow !bg-transparent !fill-cf-coffee !h-10 !w-10 md:!h-14 md:!w-14 !opacity-100",
   },

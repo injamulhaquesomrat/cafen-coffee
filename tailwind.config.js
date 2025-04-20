@@ -11,8 +11,14 @@ export default {
         "cf-light-yellow": "#f8f1cb",
         "cf-foreground": "#fffbed",
       },
+      fontFamily: {
+        bdogrotesk: ["Bodoni Grotesk", "sans-serif"],
+        sober: ["Sober", "sans-serif"],
+      },
+      screens: {
+        xs: "480px",
+      },
     },
   },
   plugins: [],
 };
-
