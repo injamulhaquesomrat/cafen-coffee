@@ -24,12 +24,15 @@ const Reservation = () => {
   };
 
   return (
-    <div className="py-14 md:py-20 bg-[url('/form-bg-image.avif')] h-full bg-cover">
+    <div className="py-20 md:py-[100px] lg:py-[130px] bg-[url('/form-bg-image.avif')] h-full bg-cover">
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2">
+          {/* start::empty box */}
           <div className="lg:col-span-1"></div>
-          <div className="md:w-2/3 lg:w-full xl:w-2/3 mx-auto border border-cf-coffee p-5 md:p-8 rounded-lg bg-cf-yellow text-cf-coffee lg:col-span-1">
-            {/* start:: reservation form */}
+          {/* end::empty box */}
+
+          {/* start:: reservation form */}
+          <div className="md:w-2/3 lg:w-full xl:w-9/12 lg:max-w-[460px] mx-auto border border-cf-coffee p-5 md:p-8 rounded-lg bg-cf-yellow text-cf-coffee lg:col-span-1">
             <form onSubmit={handleFormSubmit}>
               {/* start:: form title */}
               <h6 className="text-2xl md:text-3xl font-sober">
@@ -56,8 +59,8 @@ const Reservation = () => {
               </div>
               {/* form submit button */}
             </form>
-            {/* end:: reservation form */}
           </div>
+          {/* end:: reservation form */}
         </div>
       </Container>
     </div>

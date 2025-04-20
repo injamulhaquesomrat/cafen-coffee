@@ -5,7 +5,7 @@ import EventsCounter from "./EventsCounter";
 
 const Events = () => {
   return (
-    <div className="bg-cf-light-white py-20">
+    <section className="bg-cf-foreground py-20 md:py-[100px] lg:py-[120px] xl:py-[150px]">
       <Container>
         {/* start::events carousel */}
         <div className="pb-5 md:pb-8">
@@ -19,7 +19,7 @@ const Events = () => {
         <EventsCounter />
         {/* end::events counter */}
       </Container>
-    </div>
+    </section>
   );
 };
 

@@ -4,7 +4,7 @@ import { specItems } from "../../../utils/specItems";
 
 const Specs = () => {
   return (
-    <div className="bg-cf-light-white border-t border-b border-cf-coffee py-14 md:py-20">
+    <div className="bg-cf-foreground border-t border-b border-cf-coffee py-20 md:py-[100px] lg:py-[120px] xl:py-[150px]">
       <Container>
         <div className="flex flex-col md:flex-row gap-8 lg:gap-16 justify-between">
           {/* start:: specs image content */}
@@ -17,9 +17,10 @@ const Specs = () => {
           </div>
           {/* end:: specs image content */}
 
+          {/* start::specs text content */}
           <div className="text-cf-coffee grid md:basis-7/12">
             {/* start:: section title */}
-            <h5 className="text-3xl md:text-4xl lg:text-5xl pb-6 font-sober">
+            <h5 className="text- xs:text-[32px] md:text-[34px] lg:text-[38px] xl:text-[40px] pb-6 font-sober">
               Discover our coffee
             </h5>
             {/* end:: section title */}
@@ -32,12 +33,10 @@ const Specs = () => {
                   <div className="bg-cf-yellow p-3 rounded-xl border border-cf-coffee w-fit">
                     <img src={item?.logoSrc} alt="ABOUT ICON   " />
                   </div>
-                  <h6 className="text-xl lg:text-2xl font-sober">
+                  <h6 className="text-[22px] lg:text-2xl font-sober">
                     {item?.title}
                   </h6>
-                  <p className="font-sober lg:text-lg">
-                    {item?.description}
-                  </p>
+                  <p className="font-sober lg:text-lg">{item?.description}</p>
                 </div>
               ))}
               {/* end:: repeatative spec items */}
@@ -56,6 +55,7 @@ const Specs = () => {
             </div>
             {/* end:: specs list */}
           </div>
+          {/* end::specs text content */}
         </div>
       </Container>
     </div>

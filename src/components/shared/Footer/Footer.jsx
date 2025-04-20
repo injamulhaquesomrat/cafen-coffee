@@ -4,7 +4,7 @@ import PageInfo from "./PageInfo";
 
 const Footer = () => {
   return (
-    <div className="py-10 md:py-14 bg-cf-foreground border-t border-cf-coffee">
+    <div className="pt-[60px] pb-[30px] xs:pt-10 lg:pt-[100px] lg:pb-10 xl:pt-[150px] bg-cf-foreground border-t border-cf-coffee">
       <Container>
         <Newsletter />
         <PageInfo />

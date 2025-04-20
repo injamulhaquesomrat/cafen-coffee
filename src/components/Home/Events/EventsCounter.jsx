@@ -19,7 +19,7 @@ const eventCounters = [
 
 const EventsCounter = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center pt-24 md:pt-16 lg:pt-20 text-cf-coffee gap-8 ">
+    <div className="flex flex-col md:flex-row justify-center items-center pt-24 md:pt-16 lg:pt-20 text-cf-coffee gap-[15px] md:gap-8">
       {eventCounters.map((item) => (
         <div key={item?.id} className="flex gap-4 items-center">
           <h6 className="text-[2.5rem] font-sober">

@@ -7,7 +7,8 @@ import ReviewItem from "./ReviewItem";
 const reviewOptions = {
   gap: "1.5rem",
   rewind: true,
-  type: "slide",
+  type: "fade",
+  speed: 800,
   perMove: 1,
   perPage: 1,
   focus: "center",
@@ -24,8 +25,8 @@ const reviewOptions = {
 
 const Reviews = () => {
   return (
-    <Container>
-      <div className="my-14">
+    <div className="bg-cf-light-white py-20 md:py-[100px] lg:py-[120px] xl:py-[150px]">
+      <Container>
         <Splide options={reviewOptions} aria-label="Upcoming Events Images">
           {reviewsItems.map((item) => (
             <SplideSlide key={item.id}>
@@ -35,8 +36,8 @@ const Reviews = () => {
             </SplideSlide>
           ))}
         </Splide>
-      </div>
-    </Container>
+      </Container>
+    </div>
   );
 };
 

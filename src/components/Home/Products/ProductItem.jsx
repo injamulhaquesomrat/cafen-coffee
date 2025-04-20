@@ -6,7 +6,7 @@ const ProductItem = ({ item }) => {
     <>
       <Link
         to={`/product/${id}`}
-        className="inline-block border border-cf-coffee md:border-transparent md:hover:border-cf-coffee rounded-xl p-4 group bg-cf-light-yellow md:bg-transparent md:hover:bg-cf-light-yellow transition-all duration-300 mt-8"
+        className="inline-block border border-cf-coffee md:border-transparent md:hover:border-cf-coffee rounded-xl p-4 group bg-cf-light-yellow md:bg-transparent md:hover:bg-cf-light-yellow transition-all duration-300"
       >
         {/* start: product visual representation with offer */}
         <div className="relative rounded-lg aspect-[9/10] overflow-hidden">
@@ -41,13 +41,11 @@ const ProductItem = ({ item }) => {
         {/* end:: product visual representation with offer */}
 
         {/* start:: product title & price */}
-        <div className="pt-4">
-          <h6 className="text-lg md:text-xl font-sober text-cf-coffee">
+        <div className="pt-4 text-cf-coffee">
+          <h6 className="text-[22px] xs:text-xl md:text-[22px] xl:text-2xl font-sober mb-[5px] xs:mb-0">
             {title}
           </h6>
-          <p className="font-sober  text-cf-coffee">
-            ${price} USD
-          </p>
+          <p className="text-sm">$ {price} USD</p>
         </div>
         {/* end:: product title & price */}
       </Link>

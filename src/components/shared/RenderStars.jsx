@@ -1,10 +1,10 @@
-import { FaStar } from "react-icons/fa";
+import { GiRoundStar } from "react-icons/gi";
 
 const RenderStars = ({ count }) => {
   return (
     <div className="inline-flex gap-1 text-[#ffc700] items-center">
       {Array.from({ length: count }, (_, index) => (
-        <FaStar key={index} className="text-lg md:text-xl" />
+        <GiRoundStar key={index} className="text-2xl" />
       ))}
     </div>
   );

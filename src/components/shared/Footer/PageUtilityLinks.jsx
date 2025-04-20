@@ -20,7 +20,7 @@ const PageUtilityLinks = () => {
                   <NavLink
                     to={item.path}
                     className={({ isActive }) =>
-                      `font-semibold text-lg ${
+                      `${
                         isActive
                           ? "text-cf-yellow"
                           : "text-white hover:text-cf-yellow"
@@ -37,7 +37,7 @@ const PageUtilityLinks = () => {
                 <li key={id}>
                   <NavLink
                     className={({ isActive }) =>
-                      `font-semibold text-lg ${
+                      `${
                         isActive
                           ? "text-cf-yellow"
                           : "text-white hover:text-cf-yellow"
@@ -63,7 +63,7 @@ const PageUtilityLinks = () => {
                 <li key={id}>
                   <NavLink
                     className={({ isActive }) =>
-                      `font-semibold text-lg ${
+                      `${
                         isActive
                           ? "text-cf-yellow"
                           : "text-white hover:text-cf-yellow"
