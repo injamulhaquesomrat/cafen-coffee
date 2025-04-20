@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Container from "../../shared/Container";
 
 const AboutSection = () => {
@@ -5,9 +6,9 @@ const AboutSection = () => {
     <section className="py-20 md:py-32 bg-cf-coffee">
       <Container>
         {/* start:: About section image */}
-        <div className="flex justify-center items-center mb-5">
+        <div className="flex justify-center items-center mb-4">
           <img
-            className="w-fit"
+            className=" h-20 w-20"
             src="/icons/hero/hero-decorative-02.avif"
             alt="section icon"
           />
@@ -15,12 +16,14 @@ const AboutSection = () => {
         {/* end:: About section image */}
         {/* start:: About section text container */}
         <div className="w-full md:w-4/5 mx-auto text-center flex flex-col gap-5">
-          <h2 className="text-3xl md:text-6xl  text-cf-yellow font-sober">
+          <h2 className="text-[34px] sm:text-[40px] md:text-[54px] lg:text-[56px] xl:text-[60px] leading-[1.2] text-cf-yellow font-sober">
             Cafen started with a simple idea: to create a space where people can
             enjoy{" "}
-            <button className=" bg-cf-coffee border border-cf-yellow px-4 py-1 rounded-full text-cf-yellow text-xl md:text-4xl">
-              Great coffee
-            </button>{" "}
+            <Link href="/products" className="">
+              <button className=" bg-cf-coffee mr-2 border border-cf-yellow hover:bg-cf-yellow hover:text-cf-coffee font-sober px-5 md:px-10 lg:px-[60px] py-2.5 rounded-full text-cf-yellow text-[22px] md:text-4xl leading-[1.1] transition-all duration-300 ease-in-out">
+                Great coffee
+              </button>
+            </Link>
             and even better company.
           </h2>
           <p className="text-cf-yellow">

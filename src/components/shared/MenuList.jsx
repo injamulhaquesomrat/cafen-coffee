@@ -1,7 +1,7 @@
 const MenuList = ({ menuItems }) => {
   return (
     <>
-      <ul className="grid grid-cols-2 justify-between py-10 gap-y-6 gap-x-16">
+      <ul className="grid grid-cols-2 justify-between gap-y-6 gap-x-16">
         {menuItems.map((item, index) => (
           <li
             className="border-b border-cf-coffee/10 pb-5 col-span-2 lg:col-span-1"
@@ -22,12 +22,12 @@ const MenuList = ({ menuItems }) => {
               </div>
               <div className="flex flex-col md:flex-row gap-5 flex-1 justify-between items-start text-cf-coffee">
                 <div className="space-y-1">
-                  <h6 className="text-xl font-sober font-bold tracking-tight">
+                  <h6 className="text-[22px] sm:text-2xl leading-[1.18] font-sober">
                     {item.name}
                   </h6>
                   <p>{item.description}</p>
                 </div>
-                <div className="font-sober font-bold">{item.price}</div>
+                <div>{item.price}</div>
               </div>
             </div>
           </li>
