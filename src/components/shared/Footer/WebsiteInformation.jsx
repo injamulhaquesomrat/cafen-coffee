@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 const WebsiteInformation = () => {
   return (
     <>
-      <div className="border border-cf-coffee bg-cf-light-yellow p-4 md:p-8 lg:p-10 rounded-3xl xl:rounded-[50px] flex flex-col md:flex-row justify-between lg:col-span-7">
-        <div className="flex flex-col justify-between">
+      <div className="border border-cf-coffee bg-cf-light-yellow p-4 md:p-8 lg:p-5 xl:p-10 gap-8 lg:gap-4 rounded-2xl xl:rounded-[50px] flex flex-col md:flex-row items-center justify-between lg:col-span-7">
+        <div className="flex flex-col justify-between lg:w-7/12">
           <div>
             <img src="/logo.svg" alt="footer logo" />
             {/* start::social links  */}
@@ -69,7 +69,7 @@ const WebsiteInformation = () => {
           {/* end:: copyright */}
         </div>
         {/* start:; map image */}
-        <div>
+        <div className="lg:w-5/12 flex items-center justify-center">
           <img src="/footer-image.svg" alt="footer map" />
         </div>
         {/* end:; map image */}

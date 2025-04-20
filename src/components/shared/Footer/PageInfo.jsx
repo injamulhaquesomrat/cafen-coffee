@@ -3,7 +3,7 @@ import WebsiteInformation from "./WebsiteInformation";
 
 const PageInfo = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+    <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 xl:gap-[35px]">
       {/* start:: website information */}
       <WebsiteInformation />
       {/* start:: website information */}
