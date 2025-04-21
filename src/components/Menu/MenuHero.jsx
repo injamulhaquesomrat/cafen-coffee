@@ -1,6 +1,6 @@
 const MenuHero = ({menuTitle, menuBg}) => {
   return (
-    <div className="relative w-full max-h-[232px] overflow-hidden aspect-[16/10] rounded-[10px]">
+    <div className="relative w-full max-h-[232px] overflow-hidden aspect-[16/10] rounded-[10px] mb-[30px] xs:mb-10 lg:mb-[60px] xl:mmb-[70px]">
       <div className="absolute inset-0 bg-cf-coffee opacity-40"></div>
         <img
           className="w-full h-[400px] object-cover aspect-video"
