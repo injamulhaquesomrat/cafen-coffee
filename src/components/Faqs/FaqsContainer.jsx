@@ -2,7 +2,7 @@ import ValuesAccordion from "../About/ValuesAccordion";
 
 const FaqsContainer = () => {
   return (
-    <div className="py-[60px] sm:py-20 lg:py-[100px] max-w-[940px] mx-auto">
+    <div className="py-20 md:py-[100px] max-w-[940px] mx-auto">
       <ValuesAccordion accordionItems={faqItems} />
     </div>
   );

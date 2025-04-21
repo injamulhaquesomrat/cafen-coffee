@@ -12,7 +12,7 @@ const Faqs = () => {
         <title>FAQs | Cafen ☕</title>
         <link rel="canonical" href="/" />
       </Helmet>
-      <div>
+      <div className="bg-cf-light-white">
         <Container>
           <PageHero pageTitle={"Frequently asked questions"} />
           <FaqsContainer />

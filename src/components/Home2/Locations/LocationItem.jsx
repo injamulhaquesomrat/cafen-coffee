@@ -5,17 +5,17 @@ const LocationItem = ({ item }) => {
   const { title, image, location, mapLink, contact } = item;
 
   return (
-    <div className="p-5 lg:p-8 border border-cf-coffee bg-cf-foreground rounded-2xl space-y-4 h-full">
+    <div className="p-5 border border-cf-coffee bg-cf-foreground rounded-2xl space-y-4 h-full">
       <div className="">
         <img
-          className="aspect-square object-cover rounded-xl"
+          className="aspect-square object-cover rounded-lg"
           src={image}
           alt={title}
         />
       </div>
       <div className="aspect-[16/12] lg:aspect-video flex flex-col justify-between">
         <div className="h-fit">
-          <h2 className="text-2xl text-cf-coffee text-nunito   pb-2">
+          <h2 className="text-[28px] xl:text-[30px] leading-[1.2] text-cf-coffee font-sober pb-2">
             {title}
           </h2>
           <p className="text-cf-coffee">{location}</p>

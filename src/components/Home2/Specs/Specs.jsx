@@ -2,54 +2,40 @@ import Container from "../../shared/Container";
 
 const Specs = () => {
   return (
-    <section className="bg-cf-light-white border-t border-b border-cf-coffee py-14 md:py-20">
+    <section className="bg-cf-light-white py-20 md:py-[100px] lg:py-[120px] xl:py-[150px]">
       <Container>
         <div>
           {/* start:: section heading */}
-          <h5 className="text-3xl md:text-4xl lg:text-5xl font-semibold pb-6 lg:pb-8 font-sober tracking-tight text-cf-coffee text-center">
+          <h5 className="text-[42px] xs:text-[50px] md:text-[54px] lg:text-[56px] xl:text-[60px] leading-[1.2] pb-[30px] xs:pb-10 lg:pb-[60px] xl:pb-[70px] font-sober text-cf-coffee text-center">
             Our commitment to sustainability
           </h5>
           {/* end:: section heading */}
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-x-8 xl:gap-y-0 text-cf-coffee ">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-5 lg:gap-x-[30px] xl:gap-y-0 text-cf-coffee ">
             {/* start:: left spec list */}
             <div className="flex flex-col md:justify-between gap-6 lg:gap-x-8 xl:gap-y-0">
-              <div className="flex md:flex-row-reverse gap-3 lg:gap-8 items-start justify-between">
-                <div className="bg-cf-yellow px-1 py-2 rounded-full border border-cf-coffee w-10 h-10 flex items-center justify-center">
-                  <img
-                    className="min-w-8 h-[22px]"
-                    src="https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66c5ad98f12558cb20c6ee66_about-icon-05.svg"
-                    alt="ABOUT ICON"
-                  />
+              {specItems.slice(0, 2).map((item) => (
+                <div
+                  key={item?.id}
+                  className="flex md:flex-row-reverse gap-3 lg:gap-6 items-start justify-between"
+                >
+                  <div className="bg-cf-yellow px-1 py-2 rounded-full border border-cf-coffee w-10 h-10 flex items-center justify-center">
+                    <img
+                      className="min-w-8 h-[22px]"
+                      src={item?.icon}
+                      alt={item?.title}
+                    />
+                  </div>
+                  <div className="w-fit md:text-right space-y-2 lg:space-y-4">
+                    <h6 className="text-xl lg:text-[22px] xl:text-[32px] font-sober leading-[1.2]">
+                      {item?.title}
+                    </h6>
+                    <p className="leading-[1.2] lg:text-base">
+                      {item?.description}
+                    </p>
+                  </div>
                 </div>
-                <div className="w-fit md:text-right space-y-2 lg:space-y-4">
-                  <h6 className="text-xl lg:text-2xl xl:text-[32px] font-semibold font-sober tracking-tight">
-                    Cozy atmosphere
-                  </h6>
-                  <p className="font-sober tracking-tight lg:text-base">
-                    We are committed to eco-friendly practices, from using
-                    biodegradable materials to sourcing locally
-                  </p>
-                </div>
-              </div>
-              <div className="flex md:flex-row-reverse gap-3 lg:gap-8 items-start justify-between">
-                <div className="bg-cf-yellow px-1 py-2 rounded-full border border-cf-coffee flex items-center justify-center w-10 h-10">
-                  <img
-                    className="min-w-8 h-[22px]"
-                    src="https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66c5ad984041a6256d0d16fb_about-icon-06.svg"
-                    alt="ABOUT ICON"
-                  />
-                </div>
-                <div className="w-fit md:text-right space-y-2 lg:space-y-4">
-                  <h6 className="text-xl lg:text-2xl xl:text-[32px] font-semibold font-sober tracking-tight">
-                    Community engagement
-                  </h6>
-                  <p className="font-sober tracking-tight lg:text-base">
-                    We believe in giving back to our community through events,
-                    and local collaborations.
-                  </p>
-                </div>
-              </div>
+              ))}
             </div>
             {/* end:: left spec list */}
 
@@ -57,7 +43,7 @@ const Specs = () => {
             <div className="md:basis-5/12 flex justify-center">
               <img
                 className="border border-cf-coffee rounded-2xl object-cover"
-                src="/icons/about/about-image-01.avif"
+                src="https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66c5b24aff0158f1b9b9dad3_about-image-02.avif"
                 alt="about image"
               />
             </div>
@@ -65,42 +51,28 @@ const Specs = () => {
 
             {/* start:: right spec list */}
             <div className="flex flex-col md:justify-between gap-6 lg:gap-x-8 xl:gap-y-0">
-              <div className="flex justify-between gap-3 lg:gap-8">
-                <div className="bg-cf-yellow px-1 py-2 rounded-full border border-cf-coffee flex items-center justify-center w-10 h-10">
-                  <img
-                    className="min-w-8 h-[22px]"
-                    src="https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66c5ad981e9f0a172b181a40_about-icon-07.svg"
-                    alt="ABOUT ICON   "
-                  />
+              {specItems.slice(2, 4).map((item) => (
+                <div
+                  key={item?.id}
+                  className="flex justify-between gap-3 lg:gap-5"
+                >
+                  <div className="bg-cf-yellow px-1 py-2 rounded-full border border-cf-coffee w-10 h-10 flex items-center justify-center">
+                    <img
+                      className="min-w-8 h-[22px]"
+                      src={item?.icon}
+                      alt={item?.title}
+                    />
+                  </div>
+                  <div className="w-fit md:text-left space-y-2 lg:space-y-4">
+                    <h6 className="text-xl lg:text-[22px] xl:text-[32px] font-sober leading-[1.2]">
+                      {item?.title}
+                    </h6>
+                    <p className="leading-[1.2] lg:text-base">
+                      {item?.description}
+                    </p>
+                  </div>
                 </div>
-                <div className="space-y-2 lg:space-y-4">
-                  <h6 className="text-xl lg:text-2xl xl:text-[32px] font-semibold font-sober tracking-tight">
-                    Artisanal coffee
-                  </h6>
-                  <p className="font-sober tracking-tight lg:text-base">
-                    Our coffee is sourced from the finest regions around the
-                    world and roasted to perfection.
-                  </p>
-                </div>
-              </div>
-              <div className="flex justify-between gap-3 lg:gap-8">
-                <div className="bg-cf-yellow px-1 py-2 rounded-full border border-cf-coffee flex items-center justify-center w-10 h-10">
-                  <img
-                    className="min-w-8 h-[22px]"
-                    src="https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66c5ad988193824040953f74_about-icon-08.svg"
-                    alt="ABOUT ICON   "
-                  />
-                </div>
-                <div className="space-y-2 lg:space-y-4">
-                  <h6 className="text-xl lg:text-2xl xl:text-[32px] font-semibold font-sober tracking-tight">
-                    Exceptional service
-                  </h6>
-                  <p className="font-sober tracking-tight lg:text-base">
-                    Our friendly and knowledgeable staff are dedicated to
-                    providing you with the best service
-                  </p>
-                </div>
-              </div>
+              ))}
             </div>
             {/* end:: right spec list */}
           </div>
@@ -111,3 +83,35 @@ const Specs = () => {
 };
 
 export default Specs;
+
+// specs items
+const specItems = [
+  {
+    id: 1,
+    title: "Cozy atmosphere",
+    description:
+      "  We are committed to eco-friendly practices, from using biodegradable materials to sourcing locally",
+    icon: "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66c5ad98f12558cb20c6ee66_about-icon-05.svg",
+  },
+  {
+    id: 2,
+    title: " Community engagement",
+    description:
+      "We believe in giving back to our community through events, and local collaborations.",
+    icon: "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66c5ad984041a6256d0d16fb_about-icon-06.svg",
+  },
+  {
+    id: 3,
+    title: "Artisanal coffee",
+    description:
+      "Our coffee is sourced from the finest regions around the world and roasted to perfection.",
+    icon: "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66c5ad981e9f0a172b181a40_about-icon-07.svg",
+  },
+  {
+    id: 4,
+    title: "Exceptional service",
+    description:
+      "Our friendly and knowledgeable staff are dedicated to providing you with the best service",
+    icon: "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66c5ad988193824040953f74_about-icon-08.svg",
+  },
+];

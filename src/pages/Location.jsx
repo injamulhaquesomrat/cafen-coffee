@@ -10,7 +10,7 @@ const Location = () => {
         <title>Location | Cafen</title>
         <link rel="canonical" href="/" />
       </Helmet>
-      <div>
+      <div className="bg-cf-light-white">
         <LocationContainer/>
         <GoToTop />
       </div>

@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { useState } from "react";
-import { FaMinus, FaPlus } from "react-icons/fa";
+import { FiMinus, FiPlus } from "react-icons/fi";
 
 const ValuesAccordion = ({ accordionItems }) => {
   const [activeIndices, setActiveIndices] = useState([0]);
@@ -22,7 +22,7 @@ const ValuesAccordion = ({ accordionItems }) => {
       : "0px";
   };
   return (
-    <div className="flex flex-col gap-5 lg:gap-[30px] md:w-[55%]">
+    <div className="flex flex-col gap-5 lg:gap-[30px] md:w-full">
       {accordionItems.map((item, index) => (
         <div
           className={`border border-cf-coffee text-cf-coffee rounded-2xl ${
@@ -38,14 +38,16 @@ const ValuesAccordion = ({ accordionItems }) => {
               fontWeight: activeIndices.includes(index) ? "semibold" : "normal",
             }}
           >
-            <p className="text-xl md:text-2xl lg:text-[28px] font-sober">{item.title}</p>
+            <p className="text-xl md:text-2xl lg:text-[28px] leading-[1.4] font-sober">
+              {item.title}
+            </p>
             {activeIndices.includes(index) ? (
               <span>
-                <FaMinus />
+                <FiMinus className="xs:text-lg md:text-2xl" />
               </span>
             ) : (
               <span>
-                <FaPlus />
+                <FiPlus className="xs:text-lg md:text-2xl" />
               </span>
             )}
           </div>

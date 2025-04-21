@@ -13,7 +13,7 @@ const BookATable = () => {
         <title>Book a Table | Cafen ☕</title>
         <link rel="canonical" href="/" />
       </Helmet>
-      <div>
+      <div className="bg-cf-light-white">
         <Container>
           <PageHero pageTitle={"Book a table"} />
           <BookATableContainer />
