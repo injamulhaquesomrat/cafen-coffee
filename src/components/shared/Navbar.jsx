@@ -1,5 +1,5 @@
 import { FaBars, FaChevronDown } from "react-icons/fa";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import Container from "./Container";
 import { useState } from "react";
 import DropdownMenu from "./Navbar/DropdownMenu";
@@ -10,13 +10,22 @@ const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isCartOpen, setIsCartOpen] = useState(false);
 
+  const currentPath = useLocation().pathname;
+  const colouredNavPages = ["/", "/home-2"];
+
   // handle dropdown menu
   const handleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
 
   const handleCartModal = () => setIsCartOpen(!isCartOpen);
 
   return (
-    <div className="bg-cf-light-yellow">
+    <div
+      className={`${
+        colouredNavPages.includes(currentPath)
+          ? "bg-cf-light-yellow"
+          : "bg-cf-light-white"
+      }`}
+    >
       {/* start:: container */}
       <Container>
         <div className="py-4 lg:py-[30px] flex justify-between items-center">
