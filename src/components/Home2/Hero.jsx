@@ -7,9 +7,9 @@ const Hero = () => {
       <Container>
         <div className="flex flex-col sm:flex-row gap-8 justify-between">
           {/* start:: hero text container */}
-          <div className="w-full md:w-3/6 flex flex-col justify-center py-10 lg:py-0 gap-[30px] md:gap-[50px] md:basis-2/3 lg:basis-1/2">
+          <div className="w-full md:w-3/6 flex flex-col justify-center pb-10 lg:py-0 gap-[30px] md:gap-[50px] md:basis-2/3 lg:basis-1/2">
             {/* start:: section heading */}
-            <h1 className="text-[46px] md:text-5xl xl:text-[80px]  font-sober font-bold text-cf-coffee">
+            <h1 className="text-[46px] md:text-5xl xl:text-[80px] leading-[1.2] font-sober text-cf-coffee">
               Discover the perfect brew at Cafen café
             </h1>
             {/* end:: section heading */}
@@ -19,7 +19,7 @@ const Hero = () => {
               <Link to="/menu">
                 <button className="cf-btn text-cf-coffee relative overflow-hidden group mb-1 z-10">
                   <img
-                    className="absolute top-0 -left-8 group-hover:-left-2 transition-all duration-500"
+                    className="absolute top-0 -left-8 group-hover:-left-3 transition-all duration-500"
                     src="/button-vector-01.svg"
                     alt="button hover"
                   />
@@ -45,28 +45,28 @@ const Hero = () => {
 
             {/* start:: specifications */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-x-8 xl:gap-y-0 text-cf-coffee pt-4 xl:pt-8">
-              <div className="flex items-start gap-3">
+              <div className="flex items-start gap-3 xl:gap-5">
                 <div className="bg-cf-yellow p-1.5 md:p-3 xl:p-3.5 rounded-xl border border-cf-coffee w-fit">
                   <img src="/icons/about/about-icon-01.svg" alt="coffee ICON" />
                 </div>
                 <div>
-                  <h6 className="text-xl xl:text-2xl font-semibold font-sober ">
+                  <h6 className="text-xl xl:text-2xl font-sober ">
                     Artisanal Coffee
                   </h6>
-                  <p className="font-sober tracking-tight xl:text-lg">
+                  <p className="xl:text-lg">
                     Savor fresh, locally sourced menu items.
                   </p>
                 </div>
               </div>
-              <div className="flex items-start gap-3">
+              <div className="flex items-start gap-3 xl:gap-5">
                 <div className="bg-cf-yellow p-1.5 md:p-3 xl:p-3.5 rounded-xl border border-cf-coffee w-fit">
                   <img src="/icons/about/about-icon-03.svg" alt="ABOUT ICON" />
                 </div>
                 <div>
-                  <h6 className="text-xl xl:text-2xl font-semibold font-sober ">
+                  <h6 className="text-xl xl:text-2xl font-sober ">
                     Free Wi-Fi
                   </h6>
-                  <p className="font-sober tracking-tight xl:text-lg">
+                  <p className="xl:text-lg">
                     Stay connected with our complimentary Wi-Fi.
                   </p>
                 </div>

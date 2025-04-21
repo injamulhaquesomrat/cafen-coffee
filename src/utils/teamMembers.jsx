@@ -35,4 +35,28 @@ export const teamMembers = [
       twitter: "https://twitter.com/robertbrown",
     },
   },
+  {
+    id: 4,
+    name: "Jake Nguyen",
+    position: "Roast Master",
+    image:
+      "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c5d445c6015f7491aaea7a_team-image-03.avif",
+    socials: {
+      facebook: "https://facebook.com/jakenguyen",
+      instagram: "https://instagram.com/jakenguyen",
+      twitter: "https://twitter.com/jakenguyen",
+    },
+  },
+  {
+    id: 5,
+    name: "Sophie Hall",
+    image:
+      "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c5d475e62c89f92aba56dc_team-image-05.avif",
+    position: "Customer Experience Lead",
+    socials: {
+      facebook: "https://facebook.com/sophiehall",
+      instagram: "https://instagram.com/sophiehall",
+      twitter: "https://twitter.com/sophiehall",
+    },
+  },
 ];

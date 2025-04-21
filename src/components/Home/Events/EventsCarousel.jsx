@@ -13,9 +13,9 @@ const eventCarouselOptions = {
   pagination: false,
   classes: {
     arrows:
-      "splide__arrows absolute top-[109%] right-1/2 xs:-top-12 md:-top-16 xs:right-0 translate-x-1/2 xs:translate-x-0 w-[8rem] md:w-[10rem]",
+      "splide__arrows absolute top-[109%] right-1/2 xs:-top-[50px] md:-top-[64px] lg:-top-14 xl:-top-[60px] xs:right-0 translate-x-1/2 xs:translate-x-0 w-[8.5rem] md:w-[10rem]",
     arrow:
-      "splide__arrow !bg-transparent !fill-cf-coffee !h-10 !w-10 md:!h-14 md:!w-14 !opacity-100",
+      "splide__arrow !bg-transparent !fill-cf-coffee !h-[45px] !w-[45px] md:!h-[50px] md:!w-[50px] !opacity-100",
   },
   breakpoints: {
     768: {

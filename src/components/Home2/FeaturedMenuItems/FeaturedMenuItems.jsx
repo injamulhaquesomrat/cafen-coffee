@@ -1,15 +1,14 @@
 import Container from "../../shared/Container";
+import SectionTitle from "../../shared/SectionTitle";
 import FeaturedMenuCarousel from "./FeaturedMenuCarousel";
 
 const FeaturedMenuItems = () => {
   return (
-    <section className="bg-cf-light-white py-20">
+    <section className="bg-cf-light-white py-20 md:py-[100px] lg:py-[120px] xl:py-[150px]">
       <Container>
         {/* start::faetured menu items carousel */}
-        <div>
-          <h1 className="text-cf-coffee text-3xl md:text-[55px] tracking-tight font-bold font-sober pb-5 md:pb-8">
-            Featured Menu Items
-          </h1>
+        <div className="pb-5 md:pb-8">
+          <SectionTitle title={"Featured menu items"} />
         </div>
         {/* end::faetured menu items carousel */}
 

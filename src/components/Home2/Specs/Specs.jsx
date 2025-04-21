@@ -2,13 +2,13 @@ import Container from "../../shared/Container";
 
 const Specs = () => {
   return (
-    <section className="bg-cf-light-white py-20 md:py-[100px] lg:py-[120px] xl:py-[150px]">
+    <section className="bg-cf-light-white py-20 md:py-[100px] lg:py-[120px] xl:py-[150px] border-y border-cf-coffee">
       <Container>
         <div>
           {/* start:: section heading */}
-          <h5 className="text-[42px] xs:text-[50px] md:text-[54px] lg:text-[56px] xl:text-[60px] leading-[1.2] pb-[30px] xs:pb-10 lg:pb-[60px] xl:pb-[70px] font-sober text-cf-coffee text-center">
+          <h2 className="text-[42px] xs:text-[50px] md:text-[54px] lg:text-[56px] xl:text-[60px] leading-[1.2] pb-[30px] xs:pb-10 lg:pb-[60px] xl:pb-[70px] font-sober text-cf-coffee text-center">
             Our commitment to sustainability
-          </h5>
+          </h2>
           {/* end:: section heading */}
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-5 lg:gap-x-[30px] xl:gap-y-0 text-cf-coffee ">

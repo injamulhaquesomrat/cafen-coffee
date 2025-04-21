@@ -17,8 +17,8 @@ const Brands = () => {
       <Container>
         <div className="flex flex-col md:flex-row gap-7 items-center">
           {/* start:: section heading */}
-          <div className="md:w-2/6 lg:w-1/3 xl:w-2/12">
-            <h3 className="text-xl font-sober text-cf-coffee   lg:text-[26px]">
+          <div className="md:w-1/4">
+            <h3 className="text-xl lg:text-[26px] font-sober text-cf-coffee">
               We are serving top brands coffee
             </h3>
           </div>
