@@ -11,7 +11,7 @@ const Contact = () => {
         <title>Blog | Cafen ☕</title>
         <link rel="canonical" href="/" />
       </Helmet>
-      <div>
+      <div className="bg-cf-light-white">
         <Container>
           <ContactContainer />
         </Container>

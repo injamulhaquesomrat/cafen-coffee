@@ -25,10 +25,10 @@ const contactInfoItems = [
 
 const ContactInformation = () => {
   return (
-    <div className="mt-20 md:mt-[100px] lg:mt-[150px] pb-20 md:pb-[100px] lg:pb-[150px] text-cf-coffee flex flex-col md:flex-row justify-between gap-5 md:gap-10 lg:gap-10">
+    <div className="mt-20 xs:mt-[100px] xl:mt-[150px] pb-20 md:pb-[100px] lg:pb-[120px] xl:pb-[150px] text-cf-coffee flex flex-col md:flex-row justify-between gap-5 md:gap-10 lg:gap-10">
       {/* start::contact information with socials */}
-      <div>
-        <h5 className="text-[32px] font-sober  font-medium pb-5">
+      <div className="xl:w-3/12">
+        <h5 className="text-[32px] leading-[1.2] font-sober font-medium pb-5">
           Contact information
         </h5>
         <p>Social Media</p>
@@ -68,7 +68,7 @@ const ContactInformation = () => {
       {/* end::contact information with socials */}
 
       {/* start::phone, email, address */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-3 gap-[30px] lg:gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-3 gap-[30px] lg:gap-5 xl:w-9/12">
         {contactInfoItems.map((item) => (
           <div
             key={item?.id}
@@ -78,18 +78,15 @@ const ContactInformation = () => {
               <img src={item?.img} alt={item?.title} />
             </div>
             <div className="w-4/5">
-              <h6 className="font-sober text-2xl font-medium   pb-2.5">
+              <h6 className="font-sober leading-[1.2] text-2xl font-medium pb-2.5">
                 {item?.title}
               </h6>
               {item?.link ? (
-                <a
-                  className="tracking-tight  underline hover:no-underline"
-                  href={item?.link}
-                >
+                <a className="underline hover:no-underline" href={item?.link}>
                   {item?.text}
                 </a>
               ) : (
-                <p className="tracking-tight ">{item?.text}</p>
+                <p>{item?.text}</p>
               )}
             </div>
           </div>

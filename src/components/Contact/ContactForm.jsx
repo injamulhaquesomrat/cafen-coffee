@@ -34,7 +34,7 @@ const ContactForm = () => {
         ></textarea>
         <div>
           <button
-            className="text-cf-coffee hover:text-cf-light-white transition-all duration-200 border border-cf-coffee rounded-lg bg-cf-yellow hover:bg-cf-coffee px-[30px] py-2.5 md:px-10 md:py-5 font-medium"
+            className="text-cf-coffee hover:text-cf-light-white transition-all duration-300 border border-cf-coffee rounded-lg bg-cf-yellow hover:bg-cf-coffee px-[30px] py-2.5 md:px-10 md:py-5 font-medium"
             type="submit"
           >
             Submit
