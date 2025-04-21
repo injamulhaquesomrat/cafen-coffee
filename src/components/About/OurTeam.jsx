@@ -14,7 +14,7 @@ const OurTeam = () => {
 
         {/* start:: our teams container */}
         <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-[30px] mt-[30px] xs:mt-10 lg:mt-[60px] xl:mt-[70px] max-w-[940px] mx-auto">
-          {teamMembers.map((member) => (
+          {teamMembers.slice(0,3).map((member) => (
             <TeamMember key={member.id} member={member} />
           ))}
         </div>

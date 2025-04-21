@@ -13,7 +13,7 @@ const Events = () => {
         <title>Events | Cafen ☕</title>
         <link rel="canonical" href="/" />
       </Helmet>
-      <div>
+      <div className="bg-cf-light-white">
         <Container>
           <PageHero pageTitle={"Our events"} />
           <EventsContainer />

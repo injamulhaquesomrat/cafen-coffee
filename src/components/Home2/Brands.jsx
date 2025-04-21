@@ -13,7 +13,7 @@ const Brands = () => {
     );
   };
   return (
-    <section className="py-[50px] border-y border-cf-coffee">
+    <section className="py-[50px] border-y border-cf-coffee bg-cf-light-white">
       <Container>
         <div className="flex flex-col md:flex-row gap-7 items-center">
           {/* start:: section heading */}
