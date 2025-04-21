@@ -1,31 +1,34 @@
+import Container from "../shared/Container";
 import ValuesAccordion from "./ValuesAccordion";
 
 const OurValues = () => {
   return (
-    <section className="py-20 md:py-[100px] lg:py-[10\20px] ">
-      {/* start:: section title */}
-      <h2 className="text-[42px] sm:text-[50px] md:text-[54px] lg:text-6xl font-sober  text-cf-coffee font-medium text-center">
-        Our values
-      </h2>
-      {/* end:: section title */}
+    <section className="cf-section bg-cf-light-white">
+      <Container>
+        {/* start:: section title */}
+        <h2 className="text-[42px] xs:text-[50px] md:text-[54px] lg:text-[56px] xl:text-6xl font-sober  text-cf-coffee font-medium text-center">
+          Our values
+        </h2>
+        {/* end:: section title */}
 
-      {/* start:: our values container */}
-      <div className="flex flex-col md:flex-row gap-10 lg:gap-20 mt-[30px] md:mt-10 lg:mt-[60px]">
-        {/* start:: our values image container */}
-        <div>
-          <img
-            className="rounded-2xl border border-cf-coffee"
-            src="https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66c6bfc3e1cf54b7acae136c_value-image.avif"
-            alt="over values banner image"
-          />
+        {/* start:: our values container */}
+        <div className="flex flex-col md:flex-row gap-10 xl:gap-20 mt-[30px] xs:mt-10 lg:mt-[60px] xl:mt-[70px]">
+          {/* start:: our values image container */}
+          <div className="w-[45%]">
+            <img
+              className="rounded-2xl border border-cf-coffee"
+              src="https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66c6bfc3e1cf54b7acae136c_value-image.avif"
+              alt="over values banner image"
+            />
+          </div>
+          {/* end:: our values image container */}
+
+          {/* start:: our values accordion container */}
+          <ValuesAccordion accordionItems={accordionItems} />
+          {/* end:: our values accordion container */}
         </div>
-        {/* end:: our values image container */}
-
-        {/* start:: our values accordion container */}
-        <ValuesAccordion accordionItems={accordionItems} />
-        {/* end:: our values accordion container */}
-      </div>
-      {/* end:: our values container */}
+        {/* end:: our values container */}
+      </Container>
     </section>
   );
 };

@@ -19,9 +19,7 @@ const About = () => {
           <Intro />
         </Container>
         <OurStory />
-        <Container>
           <OurValues />
-        </Container>
         <OurTeam />
         <GoToTop />
       </>

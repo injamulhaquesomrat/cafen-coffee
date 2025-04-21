@@ -22,7 +22,7 @@ const ValuesAccordion = ({ accordionItems }) => {
       : "0px";
   };
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-5 lg:gap-[30px] md:w-[55%]">
       {accordionItems.map((item, index) => (
         <div
           className={`border border-cf-coffee text-cf-coffee rounded-2xl ${
@@ -38,7 +38,7 @@ const ValuesAccordion = ({ accordionItems }) => {
               fontWeight: activeIndices.includes(index) ? "semibold" : "normal",
             }}
           >
-            <p className="text-xl lg:text-2xl">{item.title}</p>
+            <p className="text-xl md:text-2xl lg:text-[28px] font-sober">{item.title}</p>
             {activeIndices.includes(index) ? (
               <span>
                 <FaMinus />
