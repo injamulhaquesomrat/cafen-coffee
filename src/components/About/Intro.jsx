@@ -13,7 +13,7 @@ const Intro = () => {
 
       {/* start:: intro text container */}
       <div className="p-5 md:p-10 lg:p-[60px] bg-cf-light-yellow basis-1/2 md:basis-7/12">
-        <h1 className="text-[56px] xs:tex-[62px] md:text-[68px] lg:text-[70px] xl:text-[80px] leading-[1.2] pb-4 md:pb-7 text-cf-coffee font-sober">
+        <h1 className="text-[56px] xs:tex-[62px] md:text-[68px] lg:text-[70px] xl:text-[80px] leading-[1.1] pb-4 md:pb-7 text-cf-coffee font-sober">
           About cafen café
         </h1>
         <p className="pb-[50px] md:pb-[60px] max-w-[600px] text-cf-coffee xl:text-lg ">
