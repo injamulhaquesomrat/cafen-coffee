@@ -5,7 +5,7 @@ const PageHero = ({ pageTitle, subContent }) => {
         {pageTitle}
       </h1>
 
-      {subContent && <div>{subContent}</div>}
+      {subContent && <div className="text-center text-cf-coffee">{subContent}</div>}
     </div>
   );
 };

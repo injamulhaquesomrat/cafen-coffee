@@ -36,7 +36,7 @@ const ShopContainer = () => {
       {/* end:: shop hero section */}
 
       {/* start:: products container */}
-      <div className="py-[60px] sm:py-20 lg:py-[100px]">
+      <div className="py-[60px] md:py-20 lg:py-[100px]">
         <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 gap-6 ">
           {currentItems.map((item, index) => (
             <ProductItem key={index} item={item} />

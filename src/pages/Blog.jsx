@@ -28,7 +28,7 @@ const Blog = () => {
           <PageHero pageTitle={"Our blog"} />
 
           {/* start:: products container */}
-          <div className="py-20 lg:py-[100px]">
+          <div className="py-[60px] md:py-20 lg:py-[100px]">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[30px]">
               {currentItems.map((item) => (
                 <BlogCard key={item?.id} item={item} />

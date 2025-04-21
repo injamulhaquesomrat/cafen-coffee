@@ -4,7 +4,7 @@ import MenuHero from "./MenuHero";
 
 const MenuContainer = () => {
   return (
-    <div className="py-20 md:py-[100px] space-y-10 md:space-y-[100px] lg:space-y-[140px]">
+    <div className="py-[60px] md:py-20 lg:py-[100px] space-y-10 md:space-y-[100px] lg:space-y-[140px]">
       {/* Todo:: use differennt items for breakfast, lunch and dinner */}
       {/* start:: breakfast items */}
       <div>
