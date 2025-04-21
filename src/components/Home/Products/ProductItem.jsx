@@ -6,7 +6,7 @@ const ProductItem = ({ item }) => {
     <>
       <Link
         to={`/product/${id}`}
-        className="inline-block border border-cf-coffee md:border-transparent md:hover:border-cf-coffee rounded-xl p-4 group bg-cf-light-yellow md:bg-transparent md:hover:bg-cf-light-yellow transition-all duration-300"
+        className="inline-block border border-cf-coffee md:border-transparent md:hover:border-cf-coffee rounded-xl p-4 group bg-cf-light-white md:bg-transparent md:hover:bg-cf-light-yellow transition-all duration-300"
       >
         {/* start: product visual representation with offer */}
         <div className="relative rounded-lg aspect-[9/10] overflow-hidden">
