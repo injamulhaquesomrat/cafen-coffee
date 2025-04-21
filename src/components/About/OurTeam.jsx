@@ -4,7 +4,7 @@ import TeamMember from "./TeamMember";
 
 const OurTeam = () => {
   return (
-    <section className="cf-section border-y border-cf-coffee bg-[#fffbed] text-center">
+    <section className="cf-section border-t border-cf-coffee bg-[#fffbed] text-center">
       <Container>
         {/* start:: section title */}
         <h2 className="text-[42px] xs:text-[50px] md:text-[54px] lg:text-[56px] xl:text-6xl font-sober  text-cf-coffee font-medium">
