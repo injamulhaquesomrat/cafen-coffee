@@ -9,10 +9,10 @@ const BlogCard = ({ item }) => {
         />
       </div>
       <div className="space-y-2.5">
-        <span className="px-2.5 py-[5px] bg-cf-coffee rounded-full text-cf-yellow font-semibold">
+        <span className="px-2.5 py-[5px] bg-cf-coffee rounded-full text-cf-yellow">
           {item?.type}
         </span>
-        <h4 className="text-2xl text-cf-coffee font-sober font-semibold   line-clamp-1">
+        <h4 className="text-2xl sm:text-xl xl:text-2xl leading-[1.2] text-cf-coffee font-sober line-clamp-2">
           {item?.title}
         </h4>
       </div>
