@@ -4,11 +4,11 @@ import ProductItem from "../../Home/Products/ProductItem";
 const RelatedProducts = () => {
   return (
     <div className="pt-20">
-      <h4 className="text-4xl md:text-[42px] lg:text-[48px] xl:text-[55px]  mb-2.5 font-sober">
+      <h2 className="text-[42px] xs:text-[50px] md:text-[54px] lg:text-[56px] xl:text-[60px] leading-[1.2] mb-2.5 font-sober">
         Related Products
-      </h4>
+      </h2>
       {/* start:: related products container */}
-      <div className="py-[60px] sm:py-20 lg:py-[100px]">
+      <div className="pt-[30px] xs:pt-10 lg:pt-[60px] xl:pt-[70px] pb-20 md:pb-[100px] lg:pb-[120px] xl:pb-[150px]">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
           {productItems.slice(0, 2).map((item, index) => (
             <ProductItem key={index} item={item} />

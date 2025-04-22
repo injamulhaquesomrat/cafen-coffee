@@ -4,6 +4,7 @@ import Container from "../../shared/Container";
 import ProductDetailsCard from "./ProductDetailsCard";
 import ProductReview from "./ProductReview";
 import ProductPurchaseShortcut from "./ProductPurchaseShortcut";
+import { Helmet } from "react-helmet";
 
 const Product = () => {
   const { productId } = useParams();
@@ -14,11 +15,20 @@ const Product = () => {
   }
 
   return (
-    <Container>
-      <ProductDetailsCard />
-      <ProductReview />
-      <ProductPurchaseShortcut />
-    </Container>
+    <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>{productInfo?.title}</title>
+        <link rel="canonical" href="/" />
+      </Helmet>
+      <div className="bg-cf-light-white">
+        <Container>
+          <ProductDetailsCard />
+          <ProductReview />
+          <ProductPurchaseShortcut />
+        </Container>
+      </div>
+    </>
   );
 };
 
