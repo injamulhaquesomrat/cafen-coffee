@@ -10,7 +10,7 @@ const EventHero = ({ eventInfo }) => {
         <div>
           <img
             className="rounded-lg w-full"
-            src={eventInfo?.image}
+            src={eventInfo?.images?.big}
             alt={eventInfo?.title}
           />
         </div>
