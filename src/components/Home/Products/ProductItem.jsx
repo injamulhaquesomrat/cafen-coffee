@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 
 const ProductItem = ({ item }) => {
-  const { id, title, price, thumbnail, image, save_offer } = item;
+  const { id, title, price, thumbnail, images, save_offer } = item;
+
   return (
     <>
       <Link
@@ -13,7 +14,7 @@ const ProductItem = ({ item }) => {
           {/* start:: product image */}
           <img
             className="w-full h-full object-cover rounded-lg"
-            src={image}
+            src={images[1].src}
             alt={title}
           />
           {/* end::  product image */}

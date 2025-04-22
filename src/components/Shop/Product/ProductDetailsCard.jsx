@@ -1,41 +1,39 @@
 import PhotoThumbnailGallery from "../../shared/PhotoThumbnailGallery";
 
-const ProductDetailsCard = () => {
+const ProductDetailsCard = ({ productInfo }) => {
   return (
     <div className="pt-5 md:pt-10">
       <div className="rounded-2xl md:rounded-[50px] border border-cf-coffee overflow-hidden bg-white flex flex-col lg:flex-row">
         {/* start:: product images container with lightshot  */}
         <div className="w-full lg:w-5/12 grid">
-          <PhotoThumbnailGallery slides={slides} />
+          <PhotoThumbnailGallery slides={productInfo?.images.slice(0, 4)} />
         </div>
         {/* end:: product images container with lightshot  */}
 
         {/* start:: product text container */}
         <div className="p-5 sm:p-[30px] md:p-10 grid justify-between text-cf-coffee bg-cf-light-yellow lg:w-7/12">
           <div className="px-5 py-[5px] mb-2.5 bg-cf-coffee rounded-full text-cf-yellow w-fit text-sm leading-[1.7]">
-            Coffee
+            {productInfo?.category}
           </div>
           <h2 className="text-[38px] xs:text-[50px] md:text-[60px] xl:text-[70px] leading-[1.2] text-cf-coffee font-sober mb-2.5">
-            Premium ground coffee
+            {productInfo?.title}
           </h2>
 
-          <h5 className="text-[28px] leading-[1.2] font-medium">$ 15.99 USD</h5>
+          <h5 className="text-[28px] leading-[1.2] font-medium">
+            $ {productInfo?.price} USD
+          </h5>
 
           <div className="mt-5">
             <h6 className="text-[26px] leading-[1.2] text-cf-coffee font-sober mb-[5px]">
               Description:
             </h6>
-            <p>
-              With our Premium Ground Coffee, you&apos;re not just brewing a cup
-              you&apos;re enjoying a crafted experience that reflects the
-              dedication and expertise behind every bean.
-            </p>
+            <p>{productInfo?.description}</p>
           </div>
           <div className="mt-5 mb-2.5">
             <h6 className="text-[26px] leading-[1.2] text-cf-coffee font-sober mb-[5px]">
               Ingredients:
             </h6>
-            <p>100% arabica coffee beans, No additives or preservatives</p>
+            <p>{productInfo?.ingredients.join(", ")}</p>
           </div>
 
           <div className="flex flex-col gap-[5px]">
@@ -45,7 +43,7 @@ const ProductDetailsCard = () => {
               name="weight"
               id="weight"
             >
-              <option value="" selected disabled>
+              <option defaultValue="Select Weight" disabled>
                 {" "}
                 Select Weight
               </option>
@@ -82,34 +80,3 @@ const ProductDetailsCard = () => {
 };
 
 export default ProductDetailsCard;
-
-const slides = [
-  {
-    src: "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c6ea51336d4457d43f725d_product-01.avif",
-    thumbnail:
-      "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c6ea51336d4457d43f725d_product-01.avif", // Thumbnail image
-    title: "Premium Ground Coffee",
-    description: "Experience the finest ground coffee crafted with dedication.",
-  },
-  {
-    src: "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c70438233ef77965948968_product-hover-01.avif",
-    thumbnail:
-      "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c70438233ef77965948968_product-hover-01.avif", // Thumbnail image
-    title: "Rich Coffee Blend",
-    description: "A rich blend of coffee beans for a perfect brew.",
-  },
-  {
-    src: "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c850e76511f76c038f8e75_product-gallery-01.avif",
-    thumbnail:
-      "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c850e76511f76c038f8e75_product-gallery-01.avif", // Thumbnail image
-    title: "Arabica Coffee Beans",
-    description: "100% Arabica coffee beans with no additives.",
-  },
-  {
-    src: "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c850e70dd95466d5d1009f_product-gallery-02.avif",
-    thumbnail:
-      "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c850e70dd95466d5d1009f_product-gallery-02.avif", // Thumbnail image
-    title: "Ground Coffee Pack",
-    description: "Perfectly packed ground coffee for your daily needs.",
-  },
-];

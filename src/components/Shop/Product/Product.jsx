@@ -23,9 +23,9 @@ const Product = () => {
       </Helmet>
       <div className="bg-cf-light-white">
         <Container>
-          <ProductDetailsCard />
-          <ProductReview />
-          <ProductPurchaseShortcut />
+          <ProductDetailsCard productInfo={productInfo}/>
+          <ProductReview productInfo={productInfo}/>
+          <ProductPurchaseShortcut productInfo={productInfo}/>
         </Container>
       </div>
     </>

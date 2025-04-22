@@ -38,7 +38,7 @@ const ProductPurchaseShortcut = () => {
               name="weight"
               id="weight"
             >
-              <option value="" selected disabled>
+              <option defaultValue="Select Weight" disabled>
                 {" "}
                 Select Weight
               </option>

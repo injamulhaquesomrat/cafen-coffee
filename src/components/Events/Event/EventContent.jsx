@@ -1,6 +1,6 @@
 import PrimaryButton from "../../shared/PrimaryButton";
 
-const EventContent = () => {
+const EventContent = ({ eventInfo }) => {
   return (
     <div className="flex flex-col gap-[30px] md:gap-[50px] md:flex-row pt-20 lg:pt-[100px] bg-cf-light-white">
       {/* start::event details */}
@@ -39,7 +39,7 @@ const EventContent = () => {
       sticky top-20"
       >
         <h6 className="text-3xl leading-[1.2] font-sober">
-          Coffee art workshop
+          {eventInfo?.title}
         </h6>
         <p>
           This workshop is the perfect way to enhance your coffee-making skills.

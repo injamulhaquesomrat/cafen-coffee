@@ -4,33 +4,65 @@ export const productItems = [
     title: "Espresso Beans",
     category: "coffee",
     price: 14.99,
-    image:
-      "https://images.unsplash.com/photo-1521677446241-d182a96ec49f?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3",
-    save_offer: "Save 10%",
+    images: [
+      { src: "/icons/demo/demo-1.avif" },
+      {
+        src: "https://images.unsplash.com/photo-1521677446241-d182a96ec49f?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1675155337990-378495973b2a?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+    ],
     thumbnail: "/icons/demo/demo-1.avif",
+    save_offer: "Save 10%",
     description:
       "The blend offers a rich crema and a smooth, velvety finish, perfect for espresso shots and espresso-based drinks like lattes, cappuccinos, and macchiatos.",
     ingredients: ["Robusta coffee beans"],
     reviews: [
       {
-        name: "Frances Guerrero",
-        review:
+        id: 1,
+        reviewer: "Frances Guerrero",
+        headline: "Perfect for Working Remotely",
+        rating: 5,
+        description:
           "Great for remote work. The Wi-Fi is fast, the seating is comfortable, and the coffee keeps me focused.",
       },
       {
-        name: "Larry Lawson",
-        review:
+        id: 2,
+        reviewer: "Larry Lawson",
+        headline: "Great Morning Boost",
+        rating: 4,
+        description:
           "Perfect for breakfast. The coffee is the perfect way to start the day. Highly recommend!",
       },
       {
-        name: "Lori Stevens",
-        review:
+        id: 3,
+        reviewer: "Lori Stevens",
+        headline: "Lovely Atmosphere",
+        rating: 5,
+        description:
           "Lovely outdoor seating. The ambiance is great, and the coffee is always satisfying.",
       },
       {
-        name: "Bryan Knight",
-        review:
+        id: 4,
+        reviewer: "Bryan Knight",
+        headline: "Top-tier Lattes",
+        rating: 5,
+        description:
           "Best lattes in town. Smooth, creamy, and absolutely delicious. A charming café!",
+      },
+      {
+        id: 5,
+        reviewer: "Melissa James",
+        headline: "Bold Flavor",
+        rating: 4,
+        description: "Strong, robust flavor that pairs well with a croissant.",
       },
     ],
   },
@@ -39,28 +71,64 @@ export const productItems = [
     title: "Matcha Green Tea",
     category: "tea",
     price: 9.99,
-    image:
-      "https://images.unsplash.com/photo-1717398804998-ad2d48822518?q=80&w=2153&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    save_offer: "Save 15%",
+    images: [
+      { src: "/icons/demo/demo-2.avif" },
+      {
+        src: "https://images.unsplash.com/photo-1717398804998-ad2d48822518?q=80&w=2153&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1675155337990-378495973b2a?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+    ],
     thumbnail: "/icons/demo/demo-2.avif",
+    save_offer: "Save 15%",
     description:
       "Premium Japanese matcha powder with a rich flavor and vibrant green color. Great for lattes and smoothies.",
     ingredients: ["Stone-ground matcha green tea leaves"],
     reviews: [
       {
-        name: "Emily Wu",
-        review:
+        id: 1,
+        reviewer: "Emily Wu",
+        headline: "Fresh and Energizing",
+        rating: 5,
+        description:
           "Calming and energizing. The matcha here is top-notch and super fresh.",
       },
       {
-        name: "Daniel Cho",
-        review:
+        id: 2,
+        reviewer: "Daniel Cho",
+        headline: "Great Pick-Me-Up",
+        rating: 4,
+        description:
           "Perfect afternoon pick-me-up. Creamy, earthy, and so good.",
       },
       {
-        name: "Monica Patel",
-        review:
-          "Great quality matcha. It’s vibrant and smooth—not bitter like others.",
+        id: 3,
+        reviewer: "Monica Patel",
+        headline: "High-Quality Matcha",
+        rating: 5,
+        description:
+          "Great quality matcha. It's vibrant and smooth—not bitter like others.",
+      },
+      {
+        id: 4,
+        reviewer: "Jane Moore",
+        headline: "Perfect Blend",
+        rating: 5,
+        description: "Smooth with just the right balance of sweetness.",
+      },
+      {
+        id: 5,
+        reviewer: "David Lee",
+        headline: "Refreshing!",
+        rating: 4,
+        description: "A refreshing drink with a unique, earthy flavor.",
       },
     ],
   },
@@ -69,26 +137,63 @@ export const productItems = [
     title: "Tiramisu Delight",
     category: "dessert",
     price: 6.5,
-    image:
-      "https://images.unsplash.com/photo-1639744211487-b27e3551b07c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    save_offer: "Save $1 on 2",
+    images: [
+      { src: "/icons/demo/demo-3.avif" },
+      {
+        src: "https://images.unsplash.com/photo-1639744211487-b27e3551b07c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1675155337990-378495973b2a?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+    ],
     thumbnail: "/icons/demo/demo-3.avif",
+    save_offer: "Save $1 on 2",
     description:
       "Classic Italian dessert with espresso-soaked ladyfingers, mascarpone cream, and cocoa powder.",
     ingredients: ["Espresso", "Mascarpone", "Ladyfingers", "Cocoa powder"],
     reviews: [
       {
-        name: "Jessica Morgan",
-        review: "Heavenly dessert. The layers melt in your mouth.",
+        id: 1,
+        reviewer: "Jessica Morgan",
+        headline: "Heaven in Every Bite",
+        rating: 5,
+        description: "Heavenly dessert. The layers melt in your mouth.",
       },
       {
-        name: "Marcus Hill",
-        review:
+        id: 2,
+        reviewer: "Marcus Hill",
+        headline: "Rich and Balanced",
+        rating: 4,
+        description:
           "My favorite treat. Rich and balanced. Not too sweet, just right.",
       },
       {
-        name: "Rachel Adams",
-        review: "Best combo with coffee. You won't regret it.",
+        id: 3,
+        reviewer: "Rachel Adams",
+        headline: "Perfect with Coffee",
+        rating: 5,
+        description: "Best combo with coffee. You won't regret it.",
+      },
+      {
+        id: 4,
+        reviewer: "Nina Davis",
+        headline: "Guilty Pleasure",
+        rating: 5,
+        description: "Rich and indulgent, just the way I love it.",
+      },
+      {
+        id: 5,
+        reviewer: "Tommy Peters",
+        headline: "Best Tiramisu Ever",
+        rating: 5,
+        description:
+          "The best tiramisu I've had in years. Perfectly creamy and sweet.",
       },
     ],
   },
@@ -97,25 +202,61 @@ export const productItems = [
     title: "Cold Brew Coffee",
     category: "coffee",
     price: 4.75,
-    image:
-      "https://images.unsplash.com/photo-1592663527359-cf6642f54cff?q=80&w=2219&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    save_offer: "Buy 1 Get 1 Half Off",
+    images: [
+      { src: "/icons/demo/demo-1.avif" },
+      {
+        src: "https://images.unsplash.com/photo-1592663527359-cf6642f54cff?q=80&w=2219&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1521677446241-d182a96ec49f?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1603455908680-5d6de8bf7cd4?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1675155337990-378495973b2a?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+    ],
     thumbnail: "/icons/demo/demo-1.avif",
+    save_offer: "Buy 1 Get 1 Half Off",
     description:
       "Smooth, bold, and naturally sweet cold brew steeped for 18 hours. Served over ice for a refreshing kick.",
     ingredients: ["Arabica coffee", "Filtered water"],
     reviews: [
       {
-        name: "Steven Blake",
-        review: "Refreshing and bold. Great flavor, not too bitter.",
+        id: 1,
+        reviewer: "Steven Blake",
+        headline: "Refreshing and Bold",
+        rating: 5,
+        description: "Great flavor, not too bitter.",
       },
       {
-        name: "Naomi Clarke",
-        review: "Smoothest cold brew ever. Has a natural sweetness.",
+        id: 2,
+        reviewer: "Naomi Clarke",
+        headline: "Smoothest Cold Brew Ever",
+        rating: 5,
+        description: "Has a natural sweetness.",
       },
       {
-        name: "Tom Nguyen",
-        review: "Caffeine kick! Tastes amazing with oat milk.",
+        id: 3,
+        reviewer: "Tom Nguyen",
+        headline: "Caffeine Kick!",
+        rating: 5,
+        description: "Tastes amazing with oat milk.",
+      },
+      {
+        id: 4,
+        reviewer: "Kylie Ross",
+        headline: "Perfect Cold Brew",
+        rating: 5,
+        description: "I love how smooth it is and so refreshing!",
+      },
+      {
+        id: 5,
+        reviewer: "Peter Hall",
+        headline: "My Favorite Coffee",
+        rating: 4,
+        description: "My go-to drink during hot summer days.",
       },
     ],
   },
@@ -124,21 +265,54 @@ export const productItems = [
     title: "Chai Latte",
     category: "tea",
     price: 5.25,
-    image:
-      "https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    save_offer: "Save 5%",
+    images: [
+      { src: "/icons/demo/demo-3.avif" },
+      {
+        src: "https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1603455908680-5d6de8bf7cd4?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1521677446241-d182a96ec49f?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3",
+      },
+    ],
     thumbnail: "/icons/demo/demo-3.avif",
+    save_offer: "Save 5%",
     description:
       "A cozy, spiced chai tea blend with creamy steamed milk. Perfect balance of cinnamon, cardamom, and cloves.",
     ingredients: ["Black tea", "Cinnamon", "Cardamom", "Milk"],
     reviews: [
       {
-        name: "Amira Shah",
-        review: "Warm and comforting. My favorite fall drink.",
+        id: 1,
+        reviewer: "Amira Shah",
+        headline: "Warm and Comforting",
+        rating: 5,
+        description: "My favorite fall drink.",
       },
       {
-        name: "Lucas Brown",
-        review: "The spice blend is just perfect.",
+        id: 2,
+        reviewer: "Lucas Brown",
+        headline: "Perfect Spice Blend",
+        rating: 4,
+        description: "The spice blend is just perfect.",
+      },
+      {
+        id: 3,
+        reviewer: "Samantha White",
+        headline: "Great Balance",
+        rating: 4,
+        description: "Smooth and flavorful, perfect for relaxing.",
+      },
+      {
+        id: 4,
+        reviewer: "Sarah Collins",
+        headline: "Spicy Perfection",
+        rating: 5,
+        description: "The perfect spiced drink to warm up your day.",
       },
     ],
   },
@@ -147,95 +321,293 @@ export const productItems = [
     title: "Vanilla Bean Cheesecake",
     category: "dessert",
     price: 7.0,
-    image:
-      "https://images.unsplash.com/photo-1603455908680-5d6de8bf7cd4?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    save_offer: "Free topping",
+    images: [
+      { src: "/icons/demo/demo-2.avif" },
+      {
+        src: "https://images.unsplash.com/photo-1603455908680-5d6de8bf7cd4?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1592663527359-cf6642f54cff?q=80&w=2219&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1675155337990-378495973b2a?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3",
+      },
+    ],
     thumbnail: "/icons/demo/demo-2.avif",
+    save_offer: "Save 15%",
     description:
-      "Creamy vanilla bean cheesecake with a buttery graham cracker crust. A classic favorite.",
+      "Creamy, indulgent vanilla bean cheesecake on a graham cracker crust. Rich and satisfying.",
     ingredients: ["Cream cheese", "Vanilla bean", "Graham cracker"],
     reviews: [
       {
-        name: "Sophie Lin",
-        review: "Melt-in-your-mouth texture. So rich and smooth.",
+        id: 1,
+        reviewer: "Nina Brooks",
+        headline: "Creamy Delight",
+        rating: 5,
+        description: "Creamy, smooth, and decadent. A real treat.",
+      },
+      {
+        id: 2,
+        reviewer: "Gerald Simon",
+        headline: "Perfectly Sweet",
+        rating: 5,
+        description: "The cheesecake is not too sweet but just perfect.",
+      },
+      {
+        id: 3,
+        reviewer: "Lydia Harris",
+        headline: "Best Dessert",
+        rating: 5,
+        description: "Hands down the best cheesecake I've ever had.",
       },
     ],
   },
   {
     id: 7,
-    title: "Mocha Latte",
-    category: "coffee",
-    price: 5.0,
-    image:
-      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3",
-    save_offer: "Earn 2x points",
+    title: "Vegan Chocolate Cake",
+    category: "dessert",
+    price: 6.5,
+    images: [
+      { src: "/icons/demo/demo-1.avif" },
+      {
+        src: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1603455908680-5d6de8bf7cd4?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1592663527359-cf6642f54cff?q=80&w=2219&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1675155337990-378495973b2a?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+    ],
     thumbnail: "/icons/demo/demo-1.avif",
+    save_offer: "Buy 2 Get 1 Free",
     description:
-      "A rich blend of espresso, chocolate, and steamed milk. Topped with whipped cream.",
-    ingredients: ["Espresso", "Cocoa", "Milk"],
+      "Moist and rich vegan chocolate cake with a smooth chocolate ganache topping. A guilt-free indulgence.",
+    ingredients: ["Cocoa powder", "Flour", "Sugar", "Non-dairy milk"],
     reviews: [
       {
-        name: "Jared Cole",
-        review: "Coffee + chocolate = heaven. My go-to treat!",
+        id: 1,
+        reviewer: "Zoe Williams",
+        headline: "Absolutely Delicious",
+        rating: 5,
+        description: "Perfect for vegan chocolate lovers.",
+      },
+      {
+        id: 2,
+        reviewer: "Bradley Turner",
+        headline: "Rich and Moist",
+        rating: 5,
+        description: "Super rich and moist! You won't even miss the dairy.",
+      },
+      {
+        id: 3,
+        reviewer: "Taylor James",
+        headline: "Vegan Heaven",
+        rating: 5,
+        description: "Incredible! This vegan cake is the best I've had.",
       },
     ],
   },
   {
     id: 8,
-    title: "Lemon Tart",
-    category: "dessert",
-    price: 5.95,
-    image:
-      "https://images.unsplash.com/photo-1589302168068-964664d93dc0?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3",
-    save_offer: "Save 20% this week",
+    title: "Berry Smoothie",
+    category: "beverages",
+    price: 5.75,
+    images: [
+      { src: "/icons/demo/demo-2.avif" },
+      {
+        src: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1639744211487-b27e3551b07c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1675155337990-378495973b2a?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1592663527359-cf6642f54cff?q=80&w=2219&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+    ],
     thumbnail: "/icons/demo/demo-2.avif",
+    save_offer: "Save 10%",
     description:
-      "Zesty lemon curd in a flaky pastry shell, topped with powdered sugar. Light, tangy, and refreshing.",
-    ingredients: ["Lemon", "Eggs", "Butter", "Pastry dough"],
+      "A refreshing smoothie packed with strawberries, blueberries, and a hint of honey. Perfect for an energy boost.",
+    ingredients: ["Strawberries", "Blueberries", "Honey", "Almond milk"],
     reviews: [
       {
-        name: "Carla Romero",
-        review: "Tangy and perfect. Pairs beautifully with tea.",
+        id: 1,
+        reviewer: "Alice Jenkins",
+        headline: "Refreshing and Energizing",
+        rating: 5,
+        description:
+          "Perfectly refreshing and just the right amount of sweetness.",
+      },
+      {
+        id: 2,
+        reviewer: "Mark Davis",
+        headline: "Great Summer Drink",
+        rating: 4,
+        description: "Super refreshing and full of fresh fruit flavors.",
+      },
+      {
+        id: 3,
+        reviewer: "Holly Scott",
+        headline: "My Go-To Drink",
+        rating: 5,
+        description: "I get this every time! Delicious and energizing.",
+      },
+      {
+        id: 4,
+        reviewer: "Liam Turner",
+        headline: "Deliciously Smooth",
+        rating: 5,
+        description:
+          "This smoothie is smooth, not too sweet, and so satisfying.",
+      },
+      {
+        id: 5,
+        reviewer: "Cathy Stone",
+        headline: "Fruity Delight",
+        rating: 4,
+        description:
+          "Tastes like a burst of fresh berries, perfect for mornings.",
       },
     ],
   },
   {
     id: 9,
-    title: "Herbal Infusion Tea",
-    category: "tea",
-    price: 4.25,
-    image:
-      "https://images.unsplash.com/photo-1675155337990-378495973b2a?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    save_offer: "10% off your next cup",
+    title: "Cinnamon Roll",
+    category: "baked goods",
+    price: 3.5,
+    images: [
+      { src: "/icons/demo/demo-3.avif" },
+      {
+        src: "https://images.unsplash.com/photo-1675155337990-378495973b2a?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1592663527359-cf6642f54cff?q=80&w=2219&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1639744211487-b27e3551b07c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1521677446241-d182a96ec49f?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3",
+      },
+    ],
     thumbnail: "/icons/demo/demo-3.avif",
+    save_offer: "Save 15%",
     description:
-      "A soothing blend of chamomile, mint, and rose petals. Caffeine-free and perfect for winding down.",
-    ingredients: ["Chamomile", "Mint", "Rose petals"],
+      "Fluffy and soft cinnamon rolls topped with a creamy glaze. A perfect sweet treat for any time of the day.",
+    ingredients: ["Flour", "Butter", "Sugar", "Cinnamon", "Cream cheese"],
     reviews: [
       {
-        name: "Nina Adams",
-        review: "Relaxing and fragrant. Great before bedtime.",
+        id: 1,
+        reviewer: "Olivia Williams",
+        headline: "Best Cinnamon Roll",
+        rating: 5,
+        description: "So soft and gooey, one of the best I've ever had.",
+      },
+      {
+        id: 2,
+        reviewer: "Ethan Lee",
+        headline: "Sweet and Cozy",
+        rating: 5,
+        description: "Great flavor and texture, the glaze is heavenly.",
+      },
+      {
+        id: 3,
+        reviewer: "Sophia Martin",
+        headline: "Perfect Breakfast",
+        rating: 4,
+        description:
+          "A sweet treat in the morning. Just the right amount of cinnamon.",
+      },
+      {
+        id: 4,
+        reviewer: "Dylan Brown",
+        headline: "Gooey Goodness",
+        rating: 5,
+        description:
+          "Absolutely delicious. The texture is perfect and the cinnamon flavor is strong.",
+      },
+      {
+        id: 5,
+        reviewer: "Charlotte King",
+        headline: "Melt-in-Your-Mouth",
+        rating: 5,
+        description: "Soft and sweet, these rolls are simply irresistible!",
       },
     ],
   },
   {
     id: 10,
-    title: "Carrot Cake Slice",
+    title: "Mango Sorbet",
     category: "dessert",
-    price: 6.25,
-    image:
-      "https://images.unsplash.com/photo-1679940984055-fda3bbaadbb1?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    save_offer: "Buy 2, Save $2",
-    thumbnail: "/icons/demo/demo-1.avif",
-    description:
-      "Moist carrot cake with cream cheese frosting and a hint of spice. A classic café favorite.",
-    ingredients: ["Carrots", "Walnuts", "Cinnamon", "Cream cheese"],
-    reviews: [
+    price: 4.25,
+    images: [
+      { src: "/icons/demo/demo-1.avif" },
       {
-        name: "Leo Martinez",
-        review: "So moist and flavorful. Love the frosting!",
+        src: "https://images.unsplash.com/photo-1679940984055-fda3bbaadbb1?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1675155337990-378495973b2a?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1521677446241-d182a96ec49f?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1639744211487-b27e3551b07c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
     ],
-  }
-]
-
+    thumbnail: "/icons/demo/demo-1.avif",
+    save_offer: "Save 20%",
+    description:
+      "A sweet, tangy, and refreshing mango sorbet, made with real mangoes. Perfect for cooling off on a hot day.",
+    ingredients: ["Mangoes", "Sugar", "Lemon juice"],
+    reviews: [
+      {
+        id: 1,
+        reviewer: "George Lopez",
+        headline: "Sweet and Tangy",
+        rating: 5,
+        description: "Perfect balance of sweetness and tartness.",
+      },
+      {
+        id: 2,
+        reviewer: "Isabella Harris",
+        headline: "Refreshing",
+        rating: 5,
+        description:
+          "Such a refreshing treat. It tastes just like fresh mango!",
+      },
+      {
+        id: 3,
+        reviewer: "Jack Taylor",
+        headline: "Great Summer Treat",
+        rating: 5,
+        description: "Best sorbet I've ever had. It's my go-to for summer.",
+      },
+      {
+        id: 4,
+        reviewer: "Mia Carter",
+        headline: "Crisp and Refreshing",
+        rating: 5,
+        description: "Great mango flavor, and the texture is perfect!",
+      },
+      {
+        id: 5,
+        reviewer: "Benjamin Clark",
+        headline: "Deliciously Smooth",
+        rating: 4,
+        description:
+          "Super smooth and creamy, just the right amount of mango flavor.",
+      },
+    ],
+  },
+];

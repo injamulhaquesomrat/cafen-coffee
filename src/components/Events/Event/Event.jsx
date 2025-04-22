@@ -21,9 +21,9 @@ const Event = () => {
         <title>{eventInfo?.title}</title>
         <link rel="canonical" href="/" />
       </Helmet>
-      <EventHero />
+      <EventHero eventInfo={eventInfo} />
       <Container>
-        <EventContent />
+        <EventContent eventInfo={eventInfo} />
         <OtherEvents />
       </Container>
     </>
