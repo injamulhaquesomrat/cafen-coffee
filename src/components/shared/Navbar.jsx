@@ -97,6 +97,7 @@ const Navbar = () => {
                   <DropdownMenu
                     menus={navItems[2].submenus}
                     isDropdownOpen={isDropdownOpen}
+                    setIsDropdownOpen={setIsDropdownOpen}
                   />
                 )}
               </button>
