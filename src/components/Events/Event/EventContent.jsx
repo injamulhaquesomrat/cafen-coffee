@@ -2,17 +2,17 @@ import PrimaryButton from "../../shared/PrimaryButton";
 
 const EventContent = () => {
   return (
-    <div className="flex flex-col gap-10 md:flex-row md:gap-8 pt-20">
+    <div className="flex flex-col gap-[30px] md:gap-[50px] md:flex-row pt-20 lg:pt-[100px] bg-cf-light-white">
       {/* start::event details */}
-      <div className="text-cf-coffee  md:w-7/12 overflow-y-scroll md:h-screen no-scrollbar">
-        <p className="pb-5">
+      <div className="text-cf-coffee md:w-7/12 overflow-y-scroll md:h-fit no-scrollbar">
+        <p className="pb-5 md:pb-10">
           Immerse yourself in the world of specialty coffee, where each sip
           tells a story of origin, craftsmanship, and passion. Begin your
           journey with an introduction to the art of coffee, exploring the rich
           history and diverse regions that produce some of the world&apos;s
           finest beans.
         </p>
-        <blockquote className="mb-5 p-5 rounded-lg bg-cf-coffee text-cf-yellow text-xl text-center">
+        <blockquote className="mb-5 md:mb-10 p-5 md:p-[30px] lg:p-[50px] rounded-2xl bg-cf-coffee text-cf-yellow text-xl text-center">
           As the tasting begins, you&apos;ll be guided through a curated
           selection of hand-picked coffee varieties, each representing distinct
           flavor profiles. From the bright and fruity notes of an Ethiopian
@@ -34,9 +34,13 @@ const EventContent = () => {
       {/* end::event details */}
 
       {/* start::event register */}
-      <div className=" flex flex-col h-fit md:w-5/12 gap-5 p-5 border border-cf-coffee rounded-xl text-cf-coffee bg-cf-foreground
-      sticky top-20">
-        <h6 className="text-3xl font-sober">Coffee art workshop</h6>
+      <div
+        className=" flex flex-col h-fit md:w-5/12 gap-5 p-5 border border-cf-coffee rounded-xl text-cf-coffee bg-cf-foreground
+      sticky top-20"
+      >
+        <h6 className="text-3xl leading-[1.2] font-sober">
+          Coffee art workshop
+        </h6>
         <p>
           This workshop is the perfect way to enhance your coffee-making skills.
         </p>
