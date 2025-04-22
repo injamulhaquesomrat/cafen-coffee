@@ -5,13 +5,13 @@ const ProductDetailsCard = () => {
     <div className="pt-5 md:pt-10">
       <div className="rounded-2xl md:rounded-[50px] border border-cf-coffee overflow-hidden bg-white flex flex-col lg:flex-row">
         {/* start:: product images container with lightshot  */}
-        <div className="w-full xl:w-5/12 grid">
+        <div className="w-full lg:w-5/12 grid">
           <PhotoThumbnailGallery slides={slides} />
         </div>
         {/* end:: product images container with lightshot  */}
 
         {/* start:: product text container */}
-        <div className="p-5 sm:p-[30px] md:p-10 grid justify-between text-cf-coffee bg-cf-light-yellow xl:w-7/12">
+        <div className="p-5 sm:p-[30px] md:p-10 grid justify-between text-cf-coffee bg-cf-light-yellow lg:w-7/12">
           <div className="px-5 py-[5px] mb-2.5 bg-cf-coffee rounded-full text-cf-yellow w-fit text-sm leading-[1.7]">
             Coffee
           </div>

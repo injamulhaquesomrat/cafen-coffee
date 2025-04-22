@@ -5,16 +5,26 @@ import { useState } from "react";
 import DropdownMenu from "./Navbar/DropdownMenu";
 import { navItems } from "../../utils/navItems";
 import CartModal from "./Navbar/Cart/CartModal";
+import { useParams } from "react-router-dom";
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const { eventId } = useParams();
 
   const currentPath = useLocation().pathname;
-  const colouredNavPages = ["/", "/home-2"];
+  const colouredNavPages = [
+    "/",
+    "/home-2",
+    eventId ? `/event/${eventId}` : null,
+  ];
 
   // handle dropdown menu
   const handleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
+
+  const closeDropDown = () => {
+    setIsDropdownOpen(false);
+  };
 
   const handleCartModal = () => setIsCartOpen(!isCartOpen);
 
@@ -38,7 +48,7 @@ const Navbar = () => {
           {/* start::menus */}
           <ul className="hidden lg:flex gap-5 font-sober text-cf-coffee font-medium md:text-lg relative">
             {/* start::Homepage link */}
-            <li onClick={() => setIsDropdownOpen(false)}>
+            <li onClick={() => closeDropDown()}>
               <NavLink
                 to="/"
                 className={({ isActive }) =>
@@ -55,7 +65,7 @@ const Navbar = () => {
             {/* end::Homepage link */}
 
             {/* start::About page link */}
-            <li onClick={() => setIsDropdownOpen(false)}>
+            <li onClick={() => closeDropDown()}>
               <NavLink
                 to="about"
                 className={({ isActive }) =>
