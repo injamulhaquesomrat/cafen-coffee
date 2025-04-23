@@ -59,6 +59,14 @@ export const navItems = [
         name: "Privacy Policy",
         path: "/privacy-policy",
       },
+      {
+        path: "dkfja",
+        name: "Error 404",
+      },
+      {
+        name: "Coming Soon",
+        path: "/coming-soon",
+      },
     ],
   },
   {

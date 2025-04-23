@@ -14,12 +14,14 @@ import BookATable from "../pages/BookATable";
 import PrivacyPolicy from "../pages/PrivacyPolicy";
 import Product from "../components/Shop/Product/Product";
 import Event from "../components/Events/Event/Event";
+import ErrorPage from "../pages/ErrorPage";
+import ComingSoon from "../pages/ComingSoon";
 
 const Router = createHashRouter([
   {
     path: "/",
     element: <Root />,
-    // errorElement: <ErrorPage />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
@@ -82,6 +84,10 @@ const Router = createHashRouter([
         element: <PrivacyPolicy />,
       },
     ],
+  },
+  {
+    path: "/coming-soon",
+    element: <ComingSoon />,
   },
 ]);
 

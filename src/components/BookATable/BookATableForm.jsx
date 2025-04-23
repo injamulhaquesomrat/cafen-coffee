@@ -41,13 +41,13 @@ const BookATableForm = () => {
         className="px-5 py-2.5 rounded-lg border border-cf-coffee outline-none bg-cf-light-yellow text-cf-coffee placeholder:text-cf-coffee col-span-1"
         placeholder="Message"
         rows="9"
-      ></textarea>
-        <button
-          className="text-cf-coffee hover:text-cf-light-white transition-all duration-200 border border-cf-coffee rounded-full bg-cf-yellow hover:bg-cf-coffee px-[30px] py-2.5 md:px-10 md:py-5 font-medium"
-          type="submit"
-        >
-          Submit
-        </button>
+      />
+      <button
+        className="text-cf-coffee hover:text-cf-light-white transition-all duration-200 border border-cf-coffee rounded-full bg-cf-yellow hover:bg-cf-coffee px-[30px] py-2.5 md:px-10 md:py-5 font-medium"
+        type="submit"
+      >
+        Submit
+      </button>
     </div>
   );
 };
