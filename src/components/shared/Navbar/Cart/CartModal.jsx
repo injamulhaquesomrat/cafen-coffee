@@ -2,8 +2,11 @@ import { BiX } from "react-icons/bi";
 import EmptyCartBody from "./EmptyCartBody";
 import CartBody from "./CartBody";
 import CartFooter from "./CartFooter";
+import { useCart } from "../../../../provider/CartProvider";
 
 const CartModal = ({ isCartOpen, handleCartModal }) => {
+  const { cartItems } = useCart();
+
   // handle cart outside click
   const handleCartOutsideClick = (event) => {
     if (!event.target.closest(".cart-container-children")) {
@@ -11,7 +14,6 @@ const CartModal = ({ isCartOpen, handleCartModal }) => {
     }
   };
 
-  const isCartEmpty = !false;
   return (
     <div
       className={`fixed top-0 left-0 h-[100vh] w-[100vw] bg-black/40 z-50 ${
@@ -21,7 +23,7 @@ const CartModal = ({ isCartOpen, handleCartModal }) => {
     >
       <div
         className={`cart-container-children absolute right-[50%] top-[50%] transform translate-x-[50%] translate-y-[-50%] h-full md:h-fit w-full max-w-[480px] md:min-h-[700px] ${
-          isCartEmpty ? "md:max-h-[700px]" : "md:max-h-full overflow-auto"
+          cartItems===0 ? "md:max-h-[700px]" : "md:max-h-full overflow-auto"
         } border rounded-lg bg-cf-light-white flex flex-col`}
       >
         {/* start::cart heading */}
@@ -38,10 +40,10 @@ const CartModal = ({ isCartOpen, handleCartModal }) => {
         {/* end::cart heading */}
 
         {/* start :: cart body */}
-        {isCartEmpty ? <EmptyCartBody /> : <CartBody />}
+        {cartItems.length === 0 ? <EmptyCartBody /> : <CartBody />}
         {/* end :: cart body */}
 
-        {isCartEmpty || <CartFooter />}
+        {cartItems.length === 0 || <CartFooter />}
       </div>
     </div>
   );

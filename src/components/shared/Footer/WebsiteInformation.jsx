@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const WebsiteInformation = () => {
   return (
     <>
-      <div className="border border-cf-coffee bg-cf-light-yellow p-4 md:p-8 lg:p-5 xl:p-10 gap-8 lg:gap-4 rounded-2xl xl:rounded-[50px] flex flex-col md:flex-row items-center justify-between lg:col-span-7">
+      <div className="border border-cf-coffee bg-cf-light-yellow p-4 md:p-8 lg:p-5 xl:p-10 gap-8 lg:gap-4 rounded-2xl xl:rounded-[50px] flex flex-col md:flex-row items-center justify-between lg:col-span-8 xl:col-span-7">
         <div className="flex flex-col justify-between lg:w-7/12">
           <div>
             <img src="/logo.svg" alt="footer logo" />

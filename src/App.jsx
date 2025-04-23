@@ -21,7 +21,7 @@ function App() {
       </Helmet>
       <div className="font-bdogrotesk">
         <Hero />
-        <About/>
+        <About />
         <Featured />
         <Events />
         <EventsGallery />

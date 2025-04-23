@@ -6,11 +6,14 @@ import DropdownMenu from "./Navbar/DropdownMenu";
 import { navItems } from "../../utils/navItems";
 import CartModal from "./Navbar/Cart/CartModal";
 import { useParams } from "react-router-dom";
+import { useCart } from "../../provider/CartProvider";
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isCartOpen, setIsCartOpen] = useState(false);
   const { eventId } = useParams();
+
+  const { cartItems } = useCart();
 
   const currentPath = useLocation().pathname;
   const colouredNavPages = [
@@ -129,7 +132,7 @@ const Navbar = () => {
               onClick={handleCartModal}
               className="text-cf-coffee md:text-lg"
             >
-              Cart (0)
+              Cart ({cartItems.length})
             </button>
             {/* end::cart modal trigger button */}
 

@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
+import { useCart } from "../../../provider/CartProvider";
 
-const ProductPurchaseShortcut = () => {
+const ProductPurchaseShortcut = ({ productInfo, quantity, setQuantity }) => {
   const [isVisible, setIsVisible] = useState(false);
+
+  const { addToCart } = useCart();
 
   // Show button when scrolling down
   useEffect(() => {
@@ -27,9 +30,9 @@ const ProductPurchaseShortcut = () => {
             alt="shortcut image"
           />
           <h6 className="text-2xl font-sober leading-[1.2]">
-            Premium ground coffee
+            {productInfo?.title}
           </h6>
-          <p className="text-lg leading-[1.2]">$ 15.99 USD</p>
+          <p className="text-lg leading-[1.2]">$ {productInfo?.price} USD</p>
         </div>
         <div className="flex gap-4">
           <div className="flex flex-col gap-[5px] h-[55px]">
@@ -62,11 +65,15 @@ const ProductPurchaseShortcut = () => {
                 name="quantity"
                 min="1"
                 max="10"
-                defaultValue="1"
+                onChange={(e) => setQuantity(e.target.value)}
+                value={quantity}
               />
             </div>
             <div className="">
-              <button className="hover:text-cf-coffee text-cf-yellow transition-all duration-200 border border-cf-coffee rounded-full hover:bg-cf-yellow bg-cf-coffee px-[30px] py-2.5 md:px-10 md:py-5 font-medium w-full h-[55px] flex items-center justify-center">
+              <button
+                onClick={() => addToCart(productInfo, +quantity)}
+                className="hover:text-cf-coffee text-cf-yellow transition-all duration-200 border border-cf-coffee rounded-full hover:bg-cf-yellow bg-cf-coffee px-[30px] py-2.5 md:px-10 md:py-5 font-medium w-full h-[55px] flex items-center justify-center"
+              >
                 Add to Cart
               </button>
             </div>

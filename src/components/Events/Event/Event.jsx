@@ -5,6 +5,7 @@ import EventHero from "./EventHero";
 import OtherEvents from "./OtherEvents";
 import { useParams } from "react-router-dom";
 import { eventItems } from "../../../utils/eventCarouselItems";
+import GoToTop from "../../shared/GoToTop";
 
 const Event = () => {
   const { eventId } = useParams();
@@ -25,6 +26,7 @@ const Event = () => {
       <Container>
         <EventContent eventInfo={eventInfo} />
         <OtherEvents />
+        <GoToTop />
       </Container>
     </>
   );

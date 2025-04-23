@@ -1,6 +1,10 @@
+import { useCart } from "../../../provider/CartProvider";
 import PhotoThumbnailGallery from "../../shared/PhotoThumbnailGallery";
 
-const ProductDetailsCard = ({ productInfo }) => {
+const ProductDetailsCard = ({ productInfo, quantity, setQuantity }) => {
+  const { addToCart } = useCart();
+
+
   return (
     <div className="pt-5 md:pt-10">
       <div className="rounded-2xl md:rounded-[50px] border border-cf-coffee overflow-hidden bg-white flex flex-col lg:flex-row">
@@ -63,11 +67,15 @@ const ProductDetailsCard = ({ productInfo }) => {
                 name="quantity"
                 min="1"
                 max="10"
-                defaultValue="1"
+                onChange={(e) => setQuantity(e.target.value)}
+                value={quantity}
               />
             </div>
             <div className="w-full">
-              <button className="text-cf-coffee hover:text-cf-light-white transition-all duration-200 border border-cf-coffee rounded-full bg-cf-yellow hover:bg-cf-coffee px-[30px] py-2.5 md:px-10 md:py-5 font-medium w-full h-[45px] flex items-center justify-center">
+              <button
+                onClick={() => addToCart(productInfo, +quantity)}
+                className="text-cf-coffee hover:text-cf-light-white transition-all duration-200 border border-cf-coffee rounded-full bg-cf-yellow hover:bg-cf-coffee px-[30px] py-2.5 md:px-10 md:py-5 font-medium w-full h-[45px] flex items-center justify-center"
+              >
                 Add to Cart
               </button>
             </div>
