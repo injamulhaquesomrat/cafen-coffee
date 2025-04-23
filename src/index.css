@@ -59,7 +59,7 @@ input:-webkit-autofill {
 
 .yarl__flex_center
   .yarl__thumbnails_thumbnail.yarl__thumbnails_thumbnail_active {
-  border: 3px solid #5a0808 !important;
+  border: 2px solid #5a0808 !important;
 }
 .yarl__thumbnails_track {
   transition: all 0.3s ease-in-out; /* Smooth animation */

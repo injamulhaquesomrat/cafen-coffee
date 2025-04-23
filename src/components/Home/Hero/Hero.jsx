@@ -17,7 +17,7 @@ const Hero = () => {
           {/*start::hero menu button */}
           <div>
             <Link to="/menu">
-              <button className="cf-btn text-cf-coffee relative overflow-hidden group  z-10">
+              <button className="cf-btn text-cf-coffee relative overflow-hidden group z-10">
                 <img
                   className="absolute top-0 -left-8 group-hover:-left-2 transition-all duration-500"
                   src="/button-vector-01.svg"

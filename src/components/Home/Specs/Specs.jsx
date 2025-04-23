@@ -43,7 +43,15 @@ const Specs = () => {
 
               <div className="flex flex-col justify-end gap-3">
                 <div>
-                  <button className="bg-cf-coffee text-cf-yellow px-6 md:px-8 p-2 md:py-4 md:text-lg rounded-full">
+                  {/* <button className="bg-cf-coffee text-cf-yellow px-6 md:px-8 p-2 md:py-4 md:text-lg rounded-full">
+                    More about
+                  </button> */}
+                  <button className="bg-cf-coffee text-cf-yellow px-6 md:px-8 p-2 md:py-4 md:text-lg rounded-full relative overflow-hidden group  z-10">
+                    <img
+                      className="absolute top-0 -left-8 group-hover:-left-3 transition-all duration-500"
+                      src="/button-vector-01.svg"
+                      alt="button hover"
+                    />
                     More about
                   </button>
                 </div>
