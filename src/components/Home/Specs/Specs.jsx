@@ -36,7 +36,7 @@ const Specs = () => {
                   <h6 className="text-[22px] lg:text-2xl font-sober">
                     {item?.title}
                   </h6>
-                  <p className="font-sober lg:text-lg">{item?.description}</p>
+                  <p>{item?.description}</p>
                 </div>
               ))}
               {/* end:: repeatative spec items */}

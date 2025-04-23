@@ -9,7 +9,7 @@ const Products = () => {
       <Container>
         {/* start:: section heading */}
         <div className="pb-[30px] xs:pb-10 lg:pb-[60px] xl:pbb-[70px]">
-          <SectionTitle title={"Our signnature items"} />
+          <SectionTitle title={"Our signature items"} />
         </div>
         {/* end:: section heading */}
 
