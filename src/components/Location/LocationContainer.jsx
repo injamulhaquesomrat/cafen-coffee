@@ -2,6 +2,30 @@ import LocationItem from "../Home2/Locations/LocationItem";
 import Container from "../shared/Container";
 import PageHero from "../shared/PageHero";
 
+const LocationContainer = () => {
+  return (
+    <Container>
+      {/* start:: shop hero section */}
+      <PageHero pageTitle={"Our locations"} />
+      {/* end:: shop hero section */}
+
+      {/* start:: location items container */}
+      <div className="py-[60px] md:py-20 lg:py-[100px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+          {locationItems.map((item, index) => (
+            <LocationItem key={index} item={item} />
+          ))}
+        </div>
+      </div>
+
+      {/* end:: lcoation items container */}
+    </Container>
+  );
+};
+
+export default LocationContainer;
+
+// locaion items
 const locationItems = [
   {
     id: 1,
@@ -31,26 +55,3 @@ const locationItems = [
       "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66c97ea5cf8812f1656dc66e_location-image-03.avif",
   },
 ];
-
-const LocationContainer = () => {
-  return (
-    <Container>
-      {/* start:: shop hero section */}
-      <PageHero pageTitle={"Our locations"} />
-      {/* end:: shop hero section */}
-
-      {/* start:: location items container */}
-      <div className="py-[60px] md:py-20 lg:py-[100px]">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[30px]">
-          {locationItems.map((item, index) => (
-            <LocationItem key={index} item={item} />
-          ))}
-        </div>
-      </div>
-
-      {/* end:: lcoation items container */}
-    </Container>
-  );
-};
-
-export default LocationContainer;

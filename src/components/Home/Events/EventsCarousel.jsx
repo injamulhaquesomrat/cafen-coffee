@@ -2,6 +2,20 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { eventItems } from "../../../utils/eventCarouselItems";
 import EventCardItem from "./EventCardItem";
 
+const EventsCarousel = () => {
+  return (
+    <Splide options={eventCarouselOptions} aria-label="Upcoming Events Images">
+      {eventItems.map((item) => (
+        <SplideSlide key={item.id}>
+          <EventCardItem item={item} />
+        </SplideSlide>
+      ))}
+    </Splide>
+  );
+};
+
+export default EventsCarousel;
+
 // event carousel options
 const eventCarouselOptions = {
   gap: "1.5rem",
@@ -28,17 +42,3 @@ const eventCarouselOptions = {
   height: "100%",
   mediaQuery: "min",
 };
-
-const EventsCarousel = () => {
-  return (
-    <Splide options={eventCarouselOptions} aria-label="Upcoming Events Images">
-      {eventItems.map((item) => (
-        <SplideSlide key={item.id}>
-          <EventCardItem item={item} />
-        </SplideSlide>
-      ))}
-    </Splide>
-  );
-};
-
-export default EventsCarousel;

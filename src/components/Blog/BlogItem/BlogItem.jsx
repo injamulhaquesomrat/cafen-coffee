@@ -8,9 +8,9 @@ import { useParams } from "react-router-dom";
 
 const BlogItem = () => {
   const { blogId } = useParams();
-
   const blogInfo = blogItems.find((item) => item.id === +blogId);
 
+  // fallback
   if (!blogId) {
     return <h1>Blog not found</h1>;
   }

@@ -37,6 +37,7 @@ const ComingSoon = () => {
           </form>
         </div>
 
+        {/* start:: social links */}
         <div className="flex items-center justify-center gap-1.5 pt-5">
           <span>Follow us: </span>
           <div className="flex items-center justify-center gap-2.5 lg:gap-3">
@@ -51,6 +52,7 @@ const ComingSoon = () => {
             </a>
           </div>
         </div>
+        {/* end:: social links */}
       </div>
     </div>
   );

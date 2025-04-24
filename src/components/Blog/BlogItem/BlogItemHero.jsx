@@ -5,13 +5,17 @@ const BlogItemHero = ({ blogInfo }) => {
     <div className="bg-secondary-foreground pt-8 xl:pt-16">
       <Container>
         <div className="text-primary">
+          {/* start::blog hero text content */}
           <div>
             <div className="flex justify-center items-center gap-5 mb-2.5">
               <span className="bg-primary text-secondary px-2.5 py-[5px] text-sm rounded-full leading-[1.7]">
                 {blogInfo?.type}
               </span>
-              <span className="text-sm text-primary-foreground">August 23, 2024</span>
+              <span className="text-sm text-primary-foreground">
+                August 23, 2024
+              </span>
             </div>
+
             <h3 className="text-[50px] xs:text-[56px] md:text-[68px] lg:text-[70px] xl:text-[80px] leading-[1.2] font-sober text-center">
               {blogInfo?.title}
             </h3>
@@ -20,9 +24,13 @@ const BlogItemHero = ({ blogInfo }) => {
               there are countless ways to explore and savor your favorite brew.
             </p>
           </div>
+          {/* end::blog hero text contents */}
+
+          {/* start:: blog hero image */}
           <div className="mt-5 md:mt-10 border border-primary rounded-t-xl overflow-hidden">
             <img src={blogInfo?.images.big} alt={blogInfo?.title} />
           </div>
+          {/* end:: blog hero image */}
         </div>
       </Container>
     </div>

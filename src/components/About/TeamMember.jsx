@@ -23,10 +23,10 @@ const TeamMember = ({ member }) => {
       icon: <FaSquareXTwitter className="text-lg lg:text-2xl text-secondary" />,
     },
   ];
+
   return (
     <>
       <div
-        // to={`/product/${name}`}
         className="inline-block border border-primary rounded-xl p-5 group bg-background lg:hover:bg-secondary transition-all duration-700 cursor-pointer"
       >
         {/* start:: team member image container */}

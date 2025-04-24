@@ -14,6 +14,7 @@ const AboutSection = () => {
           />
         </div>
         {/* end:: About section image */}
+
         {/* start:: About section text container */}
         <div className="w-full md:w-4/5 mx-auto text-center flex flex-col gap-5">
           <h2 className="text-[34px] sm:text-[40px] md:text-[54px] lg:text-[56px] xl:text-[60px] leading-[1.2] text-secondary font-sober">

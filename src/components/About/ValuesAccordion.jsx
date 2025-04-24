@@ -6,21 +6,22 @@ const ValuesAccordion = ({ accordionItems }) => {
   const [activeIndices, setActiveIndices] = useState([0]);
   const contentRefs = useRef([]);
 
+  // handle click of the accordion
   const handleClick = (index) => {
     if (activeIndices.includes(index)) {
-      // Remove the index if it's already active
       setActiveIndices(activeIndices.filter((i) => i !== index));
     } else {
-      // Add the index to the list of active indices
       setActiveIndices([...activeIndices, index]);
     }
   };
 
+  // set content height when it is open
   const getContentHeight = (index) => {
     return activeIndices.includes(index)
       ? `${contentRefs.current[index]?.scrollHeight}px`
       : "0px";
   };
+
   return (
     <div className="flex flex-col gap-5 lg:gap-[30px] md:w-full">
       {accordionItems.map((item, index) => (

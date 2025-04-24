@@ -15,6 +15,7 @@ const CoffeeMakingVideo = () => {
     }
     setIsVideoPlaying(!isVideoPlaying);
   };
+
   return (
     <div className="relative">
       {/* start:: video */}
