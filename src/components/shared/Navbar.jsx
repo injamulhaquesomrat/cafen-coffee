@@ -11,7 +11,7 @@ import { useCart } from "../../provider/CartProvider";
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isCartOpen, setIsCartOpen] = useState(false);
-  const { eventId } = useParams();
+  const { eventId, blogId } = useParams();
 
   const { cartItems } = useCart();
 
@@ -20,6 +20,7 @@ const Navbar = () => {
     "/",
     "/home-2",
     eventId ? `/event/${eventId}` : null,
+    blogId ? `/blog/${blogId}` : null,
   ];
 
   // handle dropdown menu

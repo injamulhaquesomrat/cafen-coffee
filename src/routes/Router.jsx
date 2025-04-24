@@ -16,6 +16,7 @@ import Product from "../components/Shop/Product/Product";
 import Event from "../components/Events/Event/Event";
 import ErrorPage from "../pages/ErrorPage";
 import ComingSoon from "../pages/ComingSoon";
+import BlogItem from "../components/Blog/BlogItem/BlogItem";
 
 const Router = createHashRouter([
   {
@@ -70,6 +71,10 @@ const Router = createHashRouter([
       {
         path: "/blog",
         element: <Blog />,
+      },
+      {
+        path: "/blog/:blogId",
+        element: <BlogItem />,
       },
       {
         path: "/faqs",
