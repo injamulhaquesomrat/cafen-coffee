@@ -1,4 +1,4 @@
-import PrimaryButton from "../../shared/PrimaryButton";
+import SecondaryButton from "../../shared/Buttons/SecondaryButton";
 
 const EventContent = ({ eventInfo }) => {
   return (
@@ -49,8 +49,8 @@ const EventContent = ({ eventInfo }) => {
           <span>Date : August 19, 2024</span>
           <span>Time : 8:00 PM - 10:00 AM</span>
         </div>
-        <div className="-mb-10">
-          <PrimaryButton buttonText={"Register to event"} />
+        <div>
+          <SecondaryButton buttonText={"Register to event"} />
         </div>
       </div>
       {/* end::event register */}

@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import { featuredItems } from "../../../utils/featuredItems";
 import Container from "../../shared/Container";
-import PrimaryButton from "../../shared/PrimaryButton";
 import MenuList from "../../shared/MenuList";
 import SectionTitle from "../../shared/SectionTitle";
+import DecorationButtonPrimary from "../../shared/Buttons/DecorationButtonPrimary";
 
 const Featured = () => {
   return (
@@ -24,7 +24,7 @@ const Featured = () => {
           {/* start:: button container */}
           <div className="flex items-center justify-center mt-10 xl:mt-[90px">
             <Link to="/menu">
-              <PrimaryButton buttonText={"View full menu"} />
+              <DecorationButtonPrimary btnText={"View full menu"} />
             </Link>
           </div>
           {/* end:: button container */}

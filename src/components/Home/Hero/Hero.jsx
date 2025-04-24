@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Container from "../../shared/Container";
 import HeroVideoContent from "./HeroVideoContent";
-import DecorationButtonPrimary from "../../shared/DecorationButtonPrimary";
+import DecorationButtonPrimary from "../../shared/Buttons/DecorationButtonPrimary";
 
 const Hero = () => {
   return (

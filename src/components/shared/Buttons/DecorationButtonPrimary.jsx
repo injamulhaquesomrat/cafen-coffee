@@ -1,10 +1,10 @@
-import { cn } from "../../lib/utils";
+import { cn } from "../../../lib/utils";
 
 const DecorationButtonPrimary = ({ btnText, className }) => {
   return (
     <button
       className={cn(
-        `text-sm font-medium px-[30px] xs:px-10 py-2.5 xs:py-5 border border-primary rounded-full bg-secondary text-cf-coffee relative overflow-hidden group z-10`,
+        `text-sm xs:text-base font-medium leading-[1.2] px-[30px] xs:px-10 py-2.5 xs:py-5 border border-primary rounded-full bg-secondary text-primary relative overflow-hidden group z-10`,
         className
       )}
     >

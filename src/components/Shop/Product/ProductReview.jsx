@@ -1,4 +1,4 @@
-import PrimaryButton from "../../shared/PrimaryButton";
+import DecorationButtonPrimary from "../../shared/Buttons/DecorationButtonPrimary";
 import SectionTitle from "../../shared/SectionTitle";
 import ProductReviewCard from "./ProductReviewCard";
 import RelatedProducts from "./RelatedProducts";
@@ -14,7 +14,7 @@ const ProductReview = ({ productInfo }) => {
         by clicking the below button!
       </p>
       <div className="-mb-2.5 xs:mb-0">
-        <PrimaryButton buttonText="Submit a Review" />
+        <DecorationButtonPrimary btnText="Submit a Review" />
       </div>
       <div className="max-w-[940px] mx-auto space-y-10">
         {productInfo?.reviews.map((item) => (

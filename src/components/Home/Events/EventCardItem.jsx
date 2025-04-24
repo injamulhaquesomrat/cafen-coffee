@@ -1,5 +1,5 @@
-import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import ButtonArrow from "../../shared/Buttons/ButtonArrow";
 
 const EventCardItem = ({ item }) => {
   return (
@@ -18,10 +18,11 @@ const EventCardItem = ({ item }) => {
           </div>
           <div>
             <Link to={`/event/${item?.id}`}>
-              <button className="px-5 py-2.5 bg-cf-yellow border border-cf-coffee rounded-full inline-flex items-center gap-2 group">
+              {/* <button className="px-5 py-2.5 bg-cf-yellow border border-cf-coffee rounded-full inline-flex items-center gap-2 group">
                 View event{" "}
                 <FaArrowRight className="text-xs group-hover:translate-x-1 transition-all duration-300 ease-in-out" />
-              </button>
+              </button> */}
+              <ButtonArrow btnText={"View event"} />
             </Link>
           </div>
         </div>
