@@ -69,7 +69,7 @@ const Router = createHashRouter([
         element: <Location />,
       },
       {
-        path: "/blog",
+        path: "/blogs",
         element: <Blog />,
       },
       {

@@ -37,7 +37,7 @@ export const navItems = [
       },
       {
         name: "Blog",
-        path: "/blog",
+        path: "/blogs",
       },
       {
         name: "Contact",

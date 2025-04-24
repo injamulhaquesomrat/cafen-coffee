@@ -7,7 +7,7 @@ const BlogCard = ({ item }) => {
         <div>
           <img
             className="w-full aspect-[16/12] object-cover rounded-[10px]"
-            src={item?.img}
+            src={item?.images.small}
             alt="blog card image"
           />
         </div>
