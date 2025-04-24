@@ -1,3 +1,4 @@
+import PrimaryButton from "../../shared/Buttons/PrimaryButton";
 import Container from "../../shared/Container";
 import ReservationInputField from "./ReservationInputField";
 
@@ -50,12 +51,10 @@ const Reservation = () => {
 
               {/* start:: form submit button */}
               <div>
-                <button
-                  className="px-6 md:px-8 py-2 md:py-4 border border-cf-coffee rounded-full bg-cf-coffee hover:bg-cf-yellow text-cf-yellow hover:text-cf-coffee text-lg duration-300 transition-all"
-                  type="submit"
-                >
-                  Submit
-                </button>
+                <PrimaryButton
+                  className={"lg:text-base"}
+                  buttonText={"Submit"}
+                />
               </div>
               {/* form submit button */}
             </form>

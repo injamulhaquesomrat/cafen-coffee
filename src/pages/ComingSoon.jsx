@@ -1,6 +1,7 @@
 import { AiFillInstagram } from "react-icons/ai";
 import { FaFacebookF } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import SecondaryButton from "../components/shared/Buttons/SecondaryButton";
 
 const ComingSoon = () => {
   return (
@@ -28,12 +29,10 @@ const ComingSoon = () => {
               placeholder="Your Email..."
             />
             <div>
-              <button
-                className="text-cf-coffee hover:text-cf-light-white transition-all duration-200 border border-cf-coffee rounded-full bg-cf-yellow hover:bg-cf-coffee px-[30px] py-2.5 md:px-10 md:py-5 font-medium"
-                type="submit"
-              >
-                Notify Me
-              </button>
+              <SecondaryButton
+                className={"md:text-base"}
+                buttonText={"Notify me"}
+              />
             </div>
           </form>
         </div>
@@ -45,7 +44,7 @@ const ComingSoon = () => {
               <AiFillInstagram className="text-[22px] lg:text-3xl hover:-translate-y-1.5 duration-150 transition-all ease-in-out" />
             </a>
             <a href="#">
-              <FaFacebookF className="lg:text-2xl hover:-translate-y-1.5 duration-150 transition-all ease-in-out"/>
+              <FaFacebookF className="lg:text-2xl hover:-translate-y-1.5 duration-150 transition-all ease-in-out" />
             </a>
             <a href="#">
               <FaSquareXTwitter className="text-[22px] lg:text-3xl hover:-translate-y-1.5 duration-150 transition-all ease-in-out" />

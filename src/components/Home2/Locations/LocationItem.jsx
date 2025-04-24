@@ -1,5 +1,5 @@
-import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import ButtonArrow from "../../shared/Buttons/ButtonArrow";
 
 const LocationItem = ({ item }) => {
   const { title, image, location, mapLink, contact } = item;
@@ -25,13 +25,7 @@ const LocationItem = ({ item }) => {
             {contact}
           </a>
           <Link href={mapLink}>
-            <button className="inline-flex px-6  bg-cf-yellow py-3 rounded-full items-center gap-2 group border border-cf-coffee w-fit">
-              <span>View on map</span>{" "}
-              <FaArrowRight
-                className="group-hover:translate-x-1 duration-300 ease-in-out"
-                size={12}
-              />
-            </button>
+            <ButtonArrow btnText={"View on map"} />
           </Link>
         </div>
       </div>

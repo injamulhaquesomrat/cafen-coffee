@@ -1,3 +1,5 @@
+import SecondaryButton from "../shared/Buttons/SecondaryButton";
+
 const ContactForm = () => {
   return (
     <div className="grid grid-cols-12 gap-5 lg:gap-10 justify-center items-center">
@@ -33,12 +35,7 @@ const ContactForm = () => {
           rows="9"
         ></textarea>
         <div>
-          <button
-            className="text-cf-coffee hover:text-cf-light-white transition-all duration-300 border border-cf-coffee rounded-lg bg-cf-yellow hover:bg-cf-coffee px-[30px] py-2.5 md:px-10 md:py-5 font-medium"
-            type="submit"
-          >
-            Submit
-          </button>
+          <SecondaryButton className={"rounded-lg lg:text-base"} buttonText={"Submit"} />
         </div>
       </div>
       {/* end:: contact form */}

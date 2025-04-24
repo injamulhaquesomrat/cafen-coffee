@@ -1,3 +1,5 @@
+import PrimaryButton from "../shared/Buttons/PrimaryButton";
+
 const BookATableForm = () => {
   return (
     <div className="bg-cf-light-yellow p-5 sm:p-7 lg:p-12 flex flex-col gap-5 md:gap-7 lg:gap-7 rounded-xl lg:rounded-3xl shadow-md w-full col-span-12 md:col-span-7 h-full">
@@ -42,12 +44,7 @@ const BookATableForm = () => {
         placeholder="Message"
         rows="9"
       />
-      <button
-        className="text-cf-coffee hover:text-cf-light-white transition-all duration-200 border border-cf-coffee rounded-full bg-cf-yellow hover:bg-cf-coffee px-[30px] py-2.5 md:px-10 md:py-5 font-medium"
-        type="submit"
-      >
-        Submit
-      </button>
+      <PrimaryButton buttonText={"Submit"} />
     </div>
   );
 };

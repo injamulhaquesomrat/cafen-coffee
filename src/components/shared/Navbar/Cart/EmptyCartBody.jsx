@@ -1,3 +1,5 @@
+import SecondaryButton from "../../Buttons/SecondaryButton";
+
 const EmptyCartBody = () => {
   return (
     <div className="flex flex-col justify-center items-center px-4 py-4 xs:py-[100px] h-[calc(100%-64px)]">
@@ -16,9 +18,7 @@ const EmptyCartBody = () => {
           Nothing in your basket. Time to browse and shop!
         </p>
         <div className="mt-[30px]">
-          <button className="text-xl leading-[1.4] bg-cf-yellow hover:bg-cf-coffee text-cf-coffee hover:text-cf-yellow cf-btn">
-            Shop Now
-          </button>
+          <SecondaryButton buttonText={"Shop now"} />
         </div>
       </div>
     </div>

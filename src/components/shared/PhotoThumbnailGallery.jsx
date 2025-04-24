@@ -65,7 +65,7 @@ const PhotoThumbnailGallery = ({ slides }) => {
         toolbar={{
           buttons: [
             <button
-              className="text-cf-light-yellow p-2 hover:rotate-180 transition-all duration-500"
+              className="text-cf-light-yellow p-2 hover:rotate-180 transition-all duration-700"
               key="toggle-thumbnails"
               onClick={toggleThumbnails}
             >

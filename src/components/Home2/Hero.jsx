@@ -1,3 +1,4 @@
+import DecorationButtonPrimary from "../shared/Buttons/DecorationButtonPrimary";
 import Container from "../shared/Container";
 import { Link } from "react-router-dom";
 
@@ -17,19 +18,10 @@ const Hero = () => {
             {/*start::hero menu button container */}
             <div>
               <Link to="/menu">
-                <button className="cf-btn text-cf-coffee relative overflow-hidden group mb-1 z-10">
-                  <img
-                    className="absolute top-0 -left-8 group-hover:-left-3 transition-all duration-500"
-                    src="/button-vector-01.svg"
-                    alt="button hover"
-                  />
-                  View our menu
-                  <img
-                    className="absolute -bottom-2 -right-10 group-hover:-right-5 transition-all duration-500"
-                    src="/button-vector-02.svg"
-                    alt="button hover"
-                  />
-                </button>
+                <DecorationButtonPrimary
+                  className={"mb-2.5"}
+                  btnText={"View our menu"}
+                />
               </Link>
               <div className="flex items-center gap-2">
                 <img

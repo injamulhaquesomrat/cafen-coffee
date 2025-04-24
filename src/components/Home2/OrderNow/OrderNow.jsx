@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import DecorationButtonPrimary from "../../shared/Buttons/DecorationButtonPrimary";
 
 const OrderNow = () => {
   return (
@@ -33,19 +34,7 @@ const OrderNow = () => {
           Get 20% off all beverages from 3 PM to 5 PM every weekday.
         </h4>
         <Link to="/menu">
-          <button className="cf-btn text-cf-coffee relative overflow-hidden group mb-1 z-10">
-            <img
-              className="absolute top-0 -left-8 group-hover:-left-2 transition-all duration-500"
-              src="/button-vector-01.svg"
-              alt="button hover"
-            />
-            Order Now
-            <img
-              className="absolute -bottom-2 -right-10 group-hover:-right-5 transition-all duration-500"
-              src="/button-vector-02.svg"
-              alt="button hover"
-            />
-          </button>
+          <DecorationButtonPrimary btnText={"Order Now"} />
         </Link>
       </div>
       {/* end:: order now text container */}
