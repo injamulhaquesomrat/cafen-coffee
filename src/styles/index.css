@@ -1,56 +1,67 @@
+/* Tailwind CSS base, components, and utilities */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Global styles */
 * {
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.2;
   font-family: "BD Grotesk", sans-serif;
   margin: 0;
   padding: 0;
 }
+
 html {
   scroll-behavior: smooth;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.2;
   font-family: "BD Grotesk", sans-serif;
 }
+
+/* Section padding customization */
 .cf-section {
   padding-block: 80px;
 }
+
 @media only screen and (min-width: 768px) {
   .cf-section {
     padding-block: 100px;
   }
 }
+
 @media only screen and (min-width: 1024px) {
   .cf-section {
     padding-block: 120px;
   }
 }
+
 @media only screen and (min-width: 1280px) {
   .cf-section {
     padding-block: 150px;
   }
 }
 
-/* custom fonts */
+/* Custom font styles */
 .font-sober {
   font-family: "Sober", sans-serif;
 }
+
 .font-bdogrotesk {
   font-family: "BD Grotesk", sans-serif;
 }
 
+/* Autofill input field customization */
 input:-webkit-autofill {
   background-color: transparent;
 }
 
-/* yet another react lightbox customiation */
+/* React Lightbox customizations */
 .yarl__flex_center .yarl__thumbnails_thumbnail {
-  border: 0px !important;
+  border: 0 !important;
   padding: 0;
 }
+
 .yarl__flex_center .yarl__thumbnails_thumbnail img {
   width: 100%;
   height: 100%;
@@ -61,6 +72,7 @@ input:-webkit-autofill {
   .yarl__thumbnails_thumbnail.yarl__thumbnails_thumbnail_active {
   border: 2px solid #5a0808 !important;
 }
+
 .yarl__thumbnails_track {
   transition: all 0.3s ease-in-out; /* Smooth animation */
   transform: translateY(0); /* Default position */
@@ -70,17 +82,17 @@ input:-webkit-autofill {
   transform: translateY(120%); /* Move thumbnails out of view */
 }
 
-/* Custom styles for hiding the scrollbar */
+/* Custom scrollbar hiding styles */
 .no-scrollbar {
-  scrollbar-width: none; /* For Firefox */
-  -ms-overflow-style: none; /* For Internet Explorer */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer */
 }
 
 .no-scrollbar::-webkit-scrollbar {
-  display: none; /* For Chrome, Safari, and Edge */
+  display: none; /* Chrome, Safari, Edge */
 }
 
-/* custon button style */
+/* Custom button styles */
 .cf-btn {
   font-size: 0.875rem;
   font-weight: 500;
@@ -97,7 +109,7 @@ input:-webkit-autofill {
   }
 }
 
-/* splide arrow customization */
+/* Splide arrow customizations */
 .splide__arrows .splide__arrow {
   border: 1px solid #5a0808;
 }
@@ -106,6 +118,7 @@ input:-webkit-autofill {
   background-color: #fee473 !important;
   transition: 0.5s all ease-in-out;
 }
+
 .splide__arrows .splide__arrow svg {
   fill: #5a0808;
   width: 1em;

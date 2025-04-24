@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet";
-import "./App.css";
 import Hero from "./components/Home/Hero/Hero";
 import Featured from "./components/Home/Featured/Featured";
 import Events from "./components/Home/Events/Events";
@@ -16,7 +15,7 @@ function App() {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Home | Cafen ☕ - Ecommerce Website</title>
+        <title>Cafen - Ecommerce Website</title>
         <link rel="canonical" href="/" />
       </Helmet>
       <div className="font-bdogrotesk">

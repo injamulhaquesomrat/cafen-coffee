@@ -10,9 +10,16 @@ export default {
         "cf-light-white": "#fffff5",
         "cf-light-yellow": "#f8f1cb",
         "cf-foreground": "#fffbed",
+        primary: "#5a0808",
+        "primary-foreground": "#7b3a38",
+        secondary: "#fee473",
+        "secondary-foreground": "#f8f1cb",
+        "secondary-three": "#fff7eb",
+        background: "#fffbed",
+        foreground: "#fffff5",
       },
       fontFamily: {
-        bdogrotesk: ["Bodoni Grotesk", "sans-serif"],
+        bdogrotesk: ["BD Grotesk", "sans-serif"],
         sober: ["Sober", "sans-serif"],
       },
       screens: {
