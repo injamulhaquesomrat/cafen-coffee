@@ -6,9 +6,9 @@ export const eventItems = [
       "This workshop is the perfect way to enhance your coffee-making skills.",
     date: "August 19, 2024",
     images: {
-      big: "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66d0652b606a0cfcc17daecc_event-big-04.avif",
+      big: "/public/assets/images/events/coffee-art-workshop-big.avif",
       small:
-        "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66d0652b606a0cfcc17daecc_event-big-04.avif",
+        "/public/assets/images/events/coffee-art-workshop.avif",
     },
   },
   {
@@ -19,8 +19,8 @@ export const eventItems = [
     date: "August 13, 2024",
     images: {
       small:
-        "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66bdd597d854ea560378dd4a_event-image-01.avif",
-      big: "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c80a2fc297bc53c6fa3082_event-big-01.avif",
+        "/public/assets/images/events/live-music-friday.avif",
+      big: "/public/assets/images/events/live-music-friday-big.avif",
     },
   },
   {
@@ -31,8 +31,8 @@ export const eventItems = [
     date: "August 16, 2024",
     images: {
       small:
-        "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66bdddcce03eaa96ecf00a90_event-image-02.avif",
-      big: "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c80a4e6865e501227265b9_event-big-02.avif",
+        "/public/assets/images/events/coffee-tasting-experience.avif",
+      big: "/public/assets/images/events/coffee-tasting-experience-big.avif",
     },
   },
   {
@@ -43,8 +43,8 @@ export const eventItems = [
     date: "August 14, 2024",
     images: {
       small:
-        "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66bdddd7b5dce20d2326afc2_event-image-03.avif",
-      big: "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1460/66c80a7da317e0e9c91965c6_event-big-03.avif",
+        "/public/assets/images/events/special-guest-appearence.avif",
+      big: "/public/assets/images/events/special-guest-appearence-big.avif",
     },
   },
 ];

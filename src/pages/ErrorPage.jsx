@@ -11,7 +11,7 @@ const ErrorPage = () => {
           </h1>
           <img
             className="h-14 w-14 sm:h-[100px] sm:w-[100px]"
-            src="https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66bf1e93272d9448d7187a46_about-icon-01.svg"
+            src="/public/assets/icons/props/settings.svg"
             alt="error zero icon"
           />
           <h1 className="text-[100px] sm:text-[140px] font-sober leading-none">

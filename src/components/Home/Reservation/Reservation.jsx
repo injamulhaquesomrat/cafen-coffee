@@ -25,7 +25,7 @@ const Reservation = () => {
   };
 
   return (
-    <section className="py-20 md:py-[100px] lg:py-[130px] bg-[url('/form-bg-image.avif')] h-full bg-cover">
+    <section className="py-20 md:py-[100px] lg:py-[130px] bg-[url('/assets/images/reservation/form-bg-image.avif')] h-full bg-cover">
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2">
           {/* start::empty box */}

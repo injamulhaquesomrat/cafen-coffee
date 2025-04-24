@@ -14,8 +14,8 @@ export default EventsGallery;
 
 // gallery items
 const galleryItems = [
-  { id: 1, src: "/icons/gallery/gallary-image-01.avif" },
-  { id: 2, src: "/icons/gallery/gallary-image-02.avif" },
-  { id: 3, src: "/icons/gallery/gallary-image-03.avif" },
-  { id: 4, src: "/icons/gallery/gallary-image-04.avif" },
+  { id: 1, src: "/assets/images/gallery/gallery-one.avif" },
+  { id: 2, src: "/assets/images/gallery/gallery-two.avif" },
+  { id: 3, src: "/assets/images/gallery/gallery-three.avif" },
+  { id: 4, src: "/assets/images/gallery/gallery-four.avif" },
 ];

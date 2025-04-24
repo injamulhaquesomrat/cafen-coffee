@@ -26,10 +26,7 @@ const CoffeeMakingVideo = () => {
         loop
         muted
       >
-        <source
-          src="https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440%2F66c6d79ee0eb0f2859157f1d_Untitled%20video%20-%20Made%20with%20Clipchamp%20%281%29-transcode.mp4"
-          type="video/mp4"
-        />
+        <source src="/assets/videos/about-video.mp4" type="video/mp4" />
         <source src="movie.ogg" type="video/ogg" />
         Your browser does not support the video tag
       </video>

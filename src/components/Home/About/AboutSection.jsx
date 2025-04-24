@@ -9,7 +9,7 @@ const AboutSection = () => {
         <div className="flex justify-center items-center mb-4">
           <img
             className=" h-20 w-20"
-            src="/icons/hero/hero-decorative-02.avif"
+            src="/assets/icons/hero/hero-decorative-02.avif"
             alt="section icon"
           />
         </div>

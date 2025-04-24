@@ -45,7 +45,7 @@ const Navbar = () => {
         <div className="py-4 lg:py-[30px] flex justify-between items-center">
           {/* start:logo container  */}
           <Link to="/">
-            <img src="/logo.svg" alt="logo" />
+            <img src="/assets/logo.svg" alt="logo" />
           </Link>
           {/* end:logo container */}
 

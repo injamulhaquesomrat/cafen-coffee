@@ -5,21 +5,18 @@ export const productItems = [
     category: "coffee",
     price: 14.99,
     images: [
-      { src: "/icons/demo/demo-1.avif" },
+      { src: "/public/assets/images/products/expresso-beans.avif" },
       {
-        src: "https://images.unsplash.com/photo-1521677446241-d182a96ec49f?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3",
+        src: "/public/assets/images/products/expresso-beans-two.avif",
       },
       {
-        src: "https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        src: "/public/assets/images/products/expresso-beans-three.avif",
       },
       {
-        src: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3",
-      },
-      {
-        src: "https://images.unsplash.com/photo-1675155337990-378495973b2a?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        src: "/public/assets/images/products/expresso-beans-four.avif",
       },
     ],
-    thumbnail: "/icons/demo/demo-1.avif",
+    thumbnail: "/public/assets/images/products/thumbnail-one.avif",
     save_offer: "Save 10%",
     description:
       "The blend offers a rich crema and a smooth, velvety finish, perfect for espresso shots and espresso-based drinks like lattes, cappuccinos, and macchiatos.",
@@ -72,21 +69,18 @@ export const productItems = [
     category: "tea",
     price: 9.99,
     images: [
-      { src: "/icons/demo/demo-2.avif" },
+      { src: "/public/assets/images/products/matcha-green-tea.avif" },
       {
-        src: "https://images.unsplash.com/photo-1717398804998-ad2d48822518?q=80&w=2153&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        src: "/public/assets/images/products/matcha-green-tea-two.avif",
       },
       {
-        src: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3",
+        src: "/public/assets/images/products/matcha-green-tea-three.avif",
       },
       {
-        src: "https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      },
-      {
-        src: "https://images.unsplash.com/photo-1675155337990-378495973b2a?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        src: "/public/assets/images/products/matcha-green-tea.avif-four",
       },
     ],
-    thumbnail: "/icons/demo/demo-2.avif",
+    thumbnail: "/public/assets/images/products/thumbnail-two.avif",
     save_offer: "Save 15%",
     description:
       "Premium Japanese matcha powder with a rich flavor and vibrant green color. Great for lattes and smoothies.",
@@ -138,21 +132,18 @@ export const productItems = [
     category: "dessert",
     price: 6.5,
     images: [
-      { src: "/icons/demo/demo-3.avif" },
+      { src: "/public/assets/images/products/tiramisu-delight.avif" },
       {
-        src: "https://images.unsplash.com/photo-1639744211487-b27e3551b07c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        src: "/public/assets/images/products/tiramisu-delight-two.avif",
       },
       {
-        src: "https://images.unsplash.com/photo-1675155337990-378495973b2a?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        src: "/public/assets/images/products/tiramisu-delight-3.avif",
       },
       {
-        src: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3",
-      },
-      {
-        src: "https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        src: "/public/assets/images/products/tiramisu-delight-4.avif",
       },
     ],
-    thumbnail: "/icons/demo/demo-3.avif",
+    thumbnail: "/public/assets/images/products/thumbnail-three.avif",
     save_offer: "Save $1 on 2",
     description:
       "Classic Italian dessert with espresso-soaked ladyfingers, mascarpone cream, and cocoa powder.",
@@ -203,21 +194,18 @@ export const productItems = [
     category: "coffee",
     price: 4.75,
     images: [
-      { src: "/icons/demo/demo-1.avif" },
+      { src: "/public/assets/images/products/cold-brew-coffee.avif" },
       {
-        src: "https://images.unsplash.com/photo-1592663527359-cf6642f54cff?q=80&w=2219&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        src: "/public/assets/images/products/cold-brew-coffee-2.avif",
       },
       {
-        src: "https://images.unsplash.com/photo-1521677446241-d182a96ec49f?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3",
+        src: "/public/assets/images/products/cold-brew-coffee-3.avif",
       },
       {
-        src: "https://images.unsplash.com/photo-1603455908680-5d6de8bf7cd4?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      },
-      {
-        src: "https://images.unsplash.com/photo-1675155337990-378495973b2a?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        src: "/public/assets/images/products/cold-brew-coffee-4.avif",
       },
     ],
-    thumbnail: "/icons/demo/demo-1.avif",
+    thumbnail: "/public/assets/images/products/thumbnail-three.avif",
     save_offer: "Buy 1 Get 1 Half Off",
     description:
       "Smooth, bold, and naturally sweet cold brew steeped for 18 hours. Served over ice for a refreshing kick.",
@@ -266,21 +254,18 @@ export const productItems = [
     category: "tea",
     price: 5.25,
     images: [
-      { src: "/icons/demo/demo-3.avif" },
+      { src: "/public/assets/images/products/chai-latte.avif" },
       {
-        src: "https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        src: "/public/assets/images/products/chai-latte-2.avif",
       },
       {
-        src: "https://images.unsplash.com/photo-1603455908680-5d6de8bf7cd4?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        src: "/public/assets/images/products/chai-latte-3.avif",
       },
       {
-        src: "https://images.unsplash.com/photo-1521677446241-d182a96ec49f?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3",
-      },
-      {
-        src: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3",
+        src: "/public/assets/images/products/chai-latte-4.avif",
       },
     ],
-    thumbnail: "/icons/demo/demo-3.avif",
+    thumbnail: "/public/assets/images/products/thumbnail-two.avif",
     save_offer: "Save 5%",
     description:
       "A cozy, spiced chai tea blend with creamy steamed milk. Perfect balance of cinnamon, cardamom, and cloves.",
@@ -322,21 +307,18 @@ export const productItems = [
     category: "dessert",
     price: 7.0,
     images: [
-      { src: "/icons/demo/demo-2.avif" },
+      { src: "/public/assets/images/products/vanilla-bean-cheesecake.avif" },
       {
-        src: "https://images.unsplash.com/photo-1603455908680-5d6de8bf7cd4?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        src: "/public/assets/images/products/vanilla-bean-cheesecake-2.avif",
       },
       {
-        src: "https://images.unsplash.com/photo-1592663527359-cf6642f54cff?q=80&w=2219&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        src: "/public/assets/images/products/vanilla-bean-cheesecake-3.avif",
       },
       {
-        src: "https://images.unsplash.com/photo-1675155337990-378495973b2a?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      },
-      {
-        src: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3",
+        src: "/public/assets/images/products/vanilla-bean-cheesecake-4.avif",
       },
     ],
-    thumbnail: "/icons/demo/demo-2.avif",
+    thumbnail: "/public/assets/images/products/thumbnail-one.avif",
     save_offer: "Save 15%",
     description:
       "Creamy, indulgent vanilla bean cheesecake on a graham cracker crust. Rich and satisfying.",
@@ -371,21 +353,19 @@ export const productItems = [
     category: "dessert",
     price: 6.5,
     images: [
-      { src: "/icons/demo/demo-1.avif" },
+      { src: "/public/assets/images/products/vegan-chocolate-cake.jpg" },
       {
-        src: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3",
+        src: "/public/assets/images/products/vegan-chocolate-cake-2.jpg",
       },
       {
-        src: "https://images.unsplash.com/photo-1603455908680-5d6de8bf7cd4?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        src: "/public/assets/images/products/vegan-chocolate-cake-3.jpg",
       },
       {
-        src: "https://images.unsplash.com/photo-1592663527359-cf6642f54cff?q=80&w=2219&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      },
-      {
-        src: "https://images.unsplash.com/photo-1675155337990-378495973b2a?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        src: "/public/assets/images/products/vegan-chocolate-cake-4.jpg",
       },
     ],
-    thumbnail: "/icons/demo/demo-1.avif",
+
+    thumbnail: "/public/assets/images/products/thumbnail-one.avif",
     save_offer: "Buy 2 Get 1 Free",
     description:
       "Moist and rich vegan chocolate cake with a smooth chocolate ganache topping. A guilt-free indulgence.",
@@ -420,21 +400,18 @@ export const productItems = [
     category: "beverages",
     price: 5.75,
     images: [
-      { src: "/icons/demo/demo-2.avif" },
+      { src: "/public/assets/images/products/berry-smoothie.jpg" },
       {
-        src: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3",
+        src: "/public/assets/images/products/berry-smoothie-2.jpg",
       },
       {
-        src: "https://images.unsplash.com/photo-1639744211487-b27e3551b07c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        src: "/public/assets/images/products/berry-smoothie-3.jpg",
       },
       {
-        src: "https://images.unsplash.com/photo-1675155337990-378495973b2a?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      },
-      {
-        src: "https://images.unsplash.com/photo-1592663527359-cf6642f54cff?q=80&w=2219&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        src: "/public/assets/images/products/berry-smoothie-4.jpg",
       },
     ],
-    thumbnail: "/icons/demo/demo-2.avif",
+    thumbnail: "/public/assets/images/products/thumbnail-two.avif",
     save_offer: "Save 10%",
     description:
       "A refreshing smoothie packed with strawberries, blueberries, and a hint of honey. Perfect for an energy boost.",
@@ -486,21 +463,18 @@ export const productItems = [
     category: "baked goods",
     price: 3.5,
     images: [
-      { src: "/icons/demo/demo-3.avif" },
+      { src: "/public/assets/images/products/cinnamon-roll.jpg" },
       {
-        src: "https://images.unsplash.com/photo-1675155337990-378495973b2a?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        src: "/public/assets/images/products/cinnamon-roll-2.jpg"
       },
       {
-        src: "https://images.unsplash.com/photo-1592663527359-cf6642f54cff?q=80&w=2219&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        src: "/public/assets/images/products/cinnamon-roll-3.jpg"
       },
       {
-        src: "https://images.unsplash.com/photo-1639744211487-b27e3551b07c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      },
-      {
-        src: "https://images.unsplash.com/photo-1521677446241-d182a96ec49f?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3",
+        src: "/public/assets/images/products/cinnamon-roll-4.jpg"
       },
     ],
-    thumbnail: "/icons/demo/demo-3.avif",
+    thumbnail: "/public/assets/images/products/thumbnail-three.avif",
     save_offer: "Save 15%",
     description:
       "Fluffy and soft cinnamon rolls topped with a creamy glaze. A perfect sweet treat for any time of the day.",

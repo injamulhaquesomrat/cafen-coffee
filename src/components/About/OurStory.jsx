@@ -47,7 +47,7 @@ const OurStory = () => {
         {/* start:: story image */}
         <img
           className="mt-10 xs:mt-[60px] lg:mt-[100px]  rounded-2xl"
-          src="https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66c97d18c7adaa727aaa92c3_story-image.avif"
+          src="/assets/images/about/about-story.avif"
           alt="our story banner"
         />
         {/* end:: story image */}

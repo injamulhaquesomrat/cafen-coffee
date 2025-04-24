@@ -2,6 +2,7 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import FeaturedMenuItem from "./FeaturedMenuItem";
 import { featuredMenuItems } from "../../../utils/featuredMenuItems";
 
+// featured menu options
 const featuredMenuOptions = {
   gap: "1.5rem",
   rewind: true,

@@ -12,7 +12,7 @@ const Featured = () => {
         <div className="bg-secondary-foreground border border-primary rounded-2xl p-5 md:p-10 xl:p-[100px]">
           {/* start:: section heading */}
           <div className="flex flex-col gap-1.5 items-center justify-center mb-10 lg:mb-[60px] xl:mb-[70px] text-center">
-            <img src="/feature-icon.svg" alt="feature icon" />
+            <img src="/assets/icons/props/feature-icon.svg" alt="feature icon" />
             <SectionTitle title="Featured menu items" />
           </div>
           {/* end:: section heading */}

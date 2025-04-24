@@ -9,7 +9,7 @@ const Intro = () => {
           <div className="basis-1/2 md:basis-5/12">
             <img
               className="h-full w-full object-cover"
-              src="https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66c97d18a23cbf4ea02c1405_about-hero-image.avif"
+              src="/assets/images/about/about-hero.avif"
               alt="about intro image"
             />
           </div>
@@ -30,12 +30,10 @@ const Intro = () => {
                   <li key={item?.id} className={item?.classNames}>
                     <img
                       className="h-5 w-5"
-                      src="https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66c5dd9223f789cfded54897_about-list-icon.svg"
+                      src="/public/assets/icons/props/list-tick.svg"
                       alt="tick icon"
                     />
-                    <span className="text-sm md:text-base">
-                      {item?.text}
-                    </span>
+                    <span className="text-sm md:text-base">{item?.text}</span>
                   </li>
                 ))}
               </ul>

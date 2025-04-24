@@ -6,34 +6,34 @@ const WebsiteInformation = () => {
       <div className="border border-primary bg-secondary-foreground p-4 md:p-8 lg:p-5 xl:p-10 gap-8 lg:gap-4 rounded-2xl xl:rounded-[50px] flex flex-col md:flex-row items-center justify-between lg:col-span-8 xl:col-span-7">
         <div className="flex flex-col justify-between lg:w-7/12">
           <div>
-            <img src="/logo.svg" alt="footer logo" />
+            <img src="/assets/logo.svg" alt="footer logo" />
             {/* start::social links  */}
             <div className="flex items-center gap-4 pt-[25px]">
               <Link to="#">
                 <img
                   className="h-6 w-6 hover:-translate-y-1 transition-all duration-300"
-                  src="https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66b9dff7361ea25322579388_facebook.svg"
+                  src="/public/assets/icons/props/facebook-icon.svg"
                   alt="facebook icon"
                 />
               </Link>
               <Link to="#">
                 <img
                   className="h-6 w-6 hover:-translate-y-1 transition-all duration-300"
-                  src="https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66b9dff69faf75adbbe76dac_instagram.svg"
+                  src="/public/assets/icons/props/instagram-icon.svg"
                   alt="instagram icon"
                 />
               </Link>
               <Link to="#">
                 <img
                   className="h-6 w-6 hover:-translate-y-1 transition-all duration-300"
-                  src="https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66b9dff5bbda84c872361580_dribble.svg"
+                  src="/public/assets/icons/props/dribble-icon.svg"
                   alt="dribble icon"
                 />
               </Link>
               <Link to="#">
                 <img
                   className="h-6 w-6 hover:-translate-y-1 transition-all duration-300"
-                  src="https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66b9dff61c1404aa7ba991cc_twitter.svg"
+                  src="/public/assets/icons/props/twitter-icon.svg"
                   alt="twitter icon"
                 />
               </Link>
@@ -70,7 +70,7 @@ const WebsiteInformation = () => {
         </div>
         {/* start:; map image */}
         <div className="lg:w-5/12 flex items-center justify-center">
-          <img src="/footer-image.svg" alt="footer map" />
+          <img src="/assets/icons/props/footer-image.svg" alt="footer map" />
         </div>
         {/* end:; map image */}
       </div>

@@ -43,7 +43,7 @@ const Specs = () => {
             <div className="md:basis-5/12 flex justify-center">
               <img
                 className="border border-primary rounded-2xl object-cover"
-                src="https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66c5b24aff0158f1b9b9dad3_about-image-02.avif"
+                src="/public/assets/images/spec/book-a-table.avif"
                 alt="about image"
               />
             </div>
@@ -91,27 +91,27 @@ const specItems = [
     title: "Cozy atmosphere",
     description:
       "  We are committed to eco-friendly practices, from using biodegradable materials to sourcing locally",
-    icon: "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66c5ad98f12558cb20c6ee66_about-icon-05.svg",
+    icon: "/public/assets/icons/props/cozy-atmosphere.svg",
   },
   {
     id: 2,
     title: " Community engagement",
     description:
       "We believe in giving back to our community through events, and local collaborations.",
-    icon: "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66c5ad984041a6256d0d16fb_about-icon-06.svg",
+    icon: "/public/assets/icons/props/community-engagement.svg",
   },
   {
     id: 3,
     title: "Artisanal coffee",
     description:
       "Our coffee is sourced from the finest regions around the world and roasted to perfection.",
-    icon: "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66c5ad981e9f0a172b181a40_about-icon-07.svg",
+    icon: "/public/assets/icons/props/artisanal-coffee.svg",
   },
   {
     id: 4,
     title: "Exceptional service",
     description:
       "Our friendly and knowledgeable staff are dedicated to providing you with the best service",
-    icon: "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66c5ad988193824040953f74_about-icon-08.svg",
+    icon: "/public/assets/icons/props/exceptional-services.svg",
   },
 ];

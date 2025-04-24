@@ -1,4 +1,8 @@
-import { dinnerItems, featuredItems, lunchItems } from "../../utils/featuredItems";
+import {
+  dinnerItems,
+  featuredItems,
+  lunchItems,
+} from "../../utils/featuredItems";
 import MenuList from "../shared/MenuList";
 import MenuHero from "./MenuHero";
 
@@ -9,9 +13,7 @@ const MenuContainer = () => {
       <div>
         <MenuHero
           menuTitle={"Breakfast"}
-          menuBg={
-            "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66c97d172690586591c4c707_menu-image-01.avif"
-          }
+          menuBg={"/public/assets/images/featured/breabreakfast-hero.avif"}
         />
         <MenuList menuItems={featuredItems} />
       </div>
@@ -21,9 +23,7 @@ const MenuContainer = () => {
       <div>
         <MenuHero
           menuTitle={"Lunch"}
-          menuBg={
-            "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66c97d18e2dee3d3cead81ab_menu-image-02.avif"
-          }
+          menuBg={"/public/assets/images/featured/lunch-hero.avif"}
         />
         <MenuList menuItems={lunchItems} />
       </div>
@@ -33,9 +33,7 @@ const MenuContainer = () => {
       <div>
         <MenuHero
           menuTitle={"Dinner"}
-          menuBg={
-            "https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66c97d17f25ef16633e62657_menu-image-03.avif"
-          }
+          menuBg={"/public/assets/images/featured/dinner-hero.avif"}
         />
         <MenuList menuItems={dinnerItems} />
       </div>

@@ -13,12 +13,9 @@ const OrderNow = () => {
           playsInline
           loop
         >
+          <source src="/public/assets/videos/menu-video.mp4" type="video/mp4" />
           <source
-            src="https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440%2F66de71640b20da8ad02b9340_Untitled%20video%20-%20Made%20with%20Clipchamp%20%285%29%20%281%29-transcode.mp4"
-            type="video/mp4"
-          />
-          <source
-            src="https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440%2F66de71640b20da8ad02b9340_Untitled%20video%20-%20Made%20with%20Clipchamp%20%285%29%20%281%29-transcode.webm"
+            src="/public/assets/videos/menu-video.webm"
             type="video/webm"
           />
           Your browser does not support HTML video.

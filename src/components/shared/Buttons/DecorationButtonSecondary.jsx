@@ -10,7 +10,7 @@ const DecorationButtonSecondary = ({ btnText, className }) => {
     >
       <img
         className="absolute -top-1 -left-8 group-hover:-left-4 xs:group-hover:-left-2 transition-all duration-500"
-        src="/button-vector-01.svg"
+        src="/assets/icons/props/button-vector-01.svg"
         alt="button hover"
       />
       {btnText}

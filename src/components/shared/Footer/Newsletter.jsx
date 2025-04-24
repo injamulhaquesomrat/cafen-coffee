@@ -6,7 +6,7 @@ const Newsletter = () => {
   };
   return (
     <div className="pb-[40px] md:pb-[60px] flex flex-col justify-center items-center gap-8">
-      <img src="/veg-bag.svg" alt="veg bag" />
+      <img src="/assets/icons/props/veg-bag.svg" alt="veg bag" />
       <h6 className="text-[32px] font-sober text-primary max-w-xl leading-[1.2] text-center">
         Sign up for our newsletter for updates on new menu items, special offers
       </h6>

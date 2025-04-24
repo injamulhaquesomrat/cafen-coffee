@@ -12,7 +12,7 @@ const Specs = () => {
           <div className="md:basis-5/12 flex justify-center">
             <img
               className="border border-primary rounded-[2.5rem] object-cover"
-              src="/icons/about/about-image-01.avif"
+              src="/assets/images/spec/about-image-01.avif"
               alt="about image"
             />
           </div>
