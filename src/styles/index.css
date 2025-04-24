@@ -19,6 +19,7 @@ html {
   font-family: "BD Grotesk", sans-serif;
 }
 
+
 /* Section padding customization */
 .cf-section {
   padding-block: 80px;
@@ -90,23 +91,6 @@ input:-webkit-autofill {
 
 .no-scrollbar::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Edge */
-}
-
-/* Custom button styles */
-.cf-btn {
-  font-size: 0.875rem;
-  font-weight: 500;
-  padding: 0.625rem 1.875rem;
-  border: 1px solid #5a0808;
-  border-radius: 50rem;
-  background-color: #fee473;
-}
-
-@media only screen and (min-width: 640px) {
-  .cf-btn {
-    font-size: 1rem;
-    padding: 1.25rem 2.5rem;
-  }
 }
 
 /* Splide arrow customizations */
