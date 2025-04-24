@@ -8,13 +8,13 @@ const EventCardItem = ({ item }) => {
         {/* start::carousel item content */}
         <div className="flex flex-col p-4 md:p-6 xs:w-1/2">
           <div className="flex-1 pb-5 xs:pb-[50px] md:pb-16">
-            <p className="text-sm xs:text-base mb-[5px] sm:mb-[15px]">
+            <p className="text-sm xs:text-base mb-[5px] sm:mb-[15px] text-primary-foreground">
               {item?.date}
             </p>
             <h4 className="text-2xl xs:text-[28px] font-sober pb-[5px] sm:pb-2.5 md:pb-4 leading-[1.2]">
               {item?.title}
             </h4>
-            <p className="line-clamp-4">{item?.description}</p>
+            <p className="line-clamp-4 text-primary-foreground">{item?.description}</p>
           </div>
           <div>
             <Link to={`/event/${item?.id}`}>

@@ -16,20 +16,10 @@ const ReviewItem = ({ item }) => {
           <p className="line-clamp-4 text-[22px] md:text-2xl font-medium font-sober">
             {item?.name}
           </p>
-          <p>{item?.role}</p>
+          <p className="text-primary-foreground">{item?.role}</p>
         </div>
       </div>
       {/* end:: review carousel item text content */}
-
-      {/* start:: review carousel item image  */}
-      {/* <div>
-        <img
-          className="object-cover w-full h-full aspect-[16/12] md:aspect-[16/10]"
-          src={item?.image}
-          alt={item?.title}
-        />
-      </div> */}
-      {/* end:: review carousel item image  */}
     </div>
   );
 };

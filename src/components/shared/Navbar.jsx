@@ -50,13 +50,13 @@ const Navbar = () => {
           {/* end:logo container */}
 
           {/* start::menus */}
-          <ul className="hidden lg:flex gap-5 font-sober text-primary font-medium md:text-lg relative">
+          <ul className="hidden lg:flex gap-5 text-primary md:text-lg relative">
             {/* start::Homepage link */}
             <li onClick={() => closeDropDown()}>
               <NavLink
                 to="/"
                 className={({ isActive }) =>
-                  `flex items-center gap-1 leading-6 px-2.5 py-1 font-medium rounded-lg duration-150 border ${
+                  `flex items-center gap-1 leading-6 px-2.5 py-1 font-medium rounded-lg duration-300 border ${
                     isActive
                       ? "bg-secondary text-primary border-primary"
                       : "hover:bg-secondary hover:border-primary border-transparent"
@@ -73,7 +73,7 @@ const Navbar = () => {
               <NavLink
                 to="about"
                 className={({ isActive }) =>
-                  `flex items-center gap-1 leading-6 px-2.5 py-1 font-medium rounded-lg duration-150 border ${
+                  `flex items-center gap-1 leading-6 px-2.5 py-1 font-medium rounded-lg duration-300 border ${
                     isActive
                       ? "bg-secondary text-primary border-primary"
                       : "hover:bg-secondary hover:border-primary border-transparent"
@@ -92,10 +92,10 @@ const Navbar = () => {
               onMouseLeave={() => setIsDropdownOpen(false)}
             >
               <button
-                className={`flex items-center gap-1 leading-6 px-2.5 py-1 font-medium rounded-lg duration-150 border border-transparent hover:border-primary hover:bg-secondary`}
+                className={`flex items-center gap-2 leading-6 px-2.5 py-1 font-medium rounded-lg duration-300 border border-transparent hover:border-primary hover:bg-secondary`}
               >
                 Pages
-                <FaChevronDown className="text-sm" />
+                <FaChevronDown className={`text-sm mt-[3px] transition-all duration-300 ease-in-out ${isDropdownOpen && "rotate-180"}`}/>
                 {/* Dropdown submenus */}
                 {isDropdownOpen && (
                   <DropdownMenu
@@ -113,7 +113,7 @@ const Navbar = () => {
               <NavLink
                 to="shop"
                 className={({ isActive }) =>
-                  `flex items-center gap-1 leading-6 px-2.5 py-1 font-medium rounded-lg duration-150 border ${
+                  `flex items-center gap-1 leading-6 px-2.5 py-1 font-medium rounded-lg duration-300 border ${
                     isActive
                       ? "bg-secondary text-primary border-primary"
                       : "hover:bg-secondary hover:border-primary border-transparent"

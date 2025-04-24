@@ -13,7 +13,7 @@ const DropdownMenu = ({ isDropdownOpen, setIsDropdownOpen, menus }) => {
     <div
       className={`absolute ${
         isDropdownOpen ? "top-[90px] md:top-[34px]" : "md:-top-24"
-      } right-4 left-4 md:left-auto md:-right-4 bg-foreground text-primary rounded-lg p-3 min-w-[90vw] md:min-w-[200px] z-50 border border-primary`}
+      } right-4 left-4 md:left-auto md:-right-4 bg-cf-light-white text-primary rounded-lg p-3 bg-background min-w-[90vw] md:min-w-[200px] z-50 border border-primary`}
     >
       {/* start:: menu list */}
       <ul className="rounded-lg space-y-1">
@@ -21,22 +21,26 @@ const DropdownMenu = ({ isDropdownOpen, setIsDropdownOpen, menus }) => {
           <li key={index}>
             {name === "Pages" ? (
               <button
-                className={`flex flex-col items-left justify-between gap-1 w-full leading-6 px-2.5 py-1 font-medium rounded-lg duration-150 hover:bg-secondary border border-transparent hover:border-primary "
+                className={`flex flex-col items-left justify-between gap-1 w-full leading-6 px-2.5 py-1 font-medium rounded-lg duration-300 hover:bg-secondary border border-transparent hover:border-primary "
                   `}
               >
                 <div
                   onClick={name === "Pages" && handleSubmenu}
-                  className="flex items-center gap-1 justify-between w-full"
+                  className="flex items-center gap-1 justify-between w-full leading-normal"
                 >
                   {name}
-                  <FaChevronDown className="text-sm" />
+                  <FaChevronDown
+                    className={`text-sm mt-0.5 transition-all duration-300 ease-in-out ${
+                      isOpenSubmenus && "rotate-180"
+                    }`}
+                  />
                 </div>
               </button>
             ) : (
               <NavLink
                 to={path}
                 className={({ isActive }) =>
-                  `flex flex-col items-left justify-between gap-1 leading-6 px-2.5 py-1 font-medium rounded-lg duration-150 border ${
+                  `flex flex-col items-left justify-between gap-1 px-2.5 py-1 font-medium leading-normal rounded-lg duration-300 border ${
                     isActive
                       ? "bg-secondary text-primary border-primary"
                       : "hover:bg-secondary hover:border-primary border-transparent"
@@ -45,7 +49,7 @@ const DropdownMenu = ({ isDropdownOpen, setIsDropdownOpen, menus }) => {
               >
                 <div
                   onClick={() => setIsDropdownOpen(false)}
-                  className="flex items-center gap-1 justify-between"
+                  className="flex items-center gap-1 justify-between leading-normal"
                 >
                   {name}
                 </div>

@@ -25,9 +25,9 @@ const MenuList = ({ menuItems }) => {
                   <h6 className="text-[22px] sm:text-2xl leading-[1.18] font-sober">
                     {item.name}
                   </h6>
-                  <p>{item.description}</p>
+                  <p className="text-primary-foreground">{item.description}</p>
                 </div>
-                <div>{item.price}</div>
+                <div className="text-primary-foreground">{item.price}</div>
               </div>
             </div>
           </li>

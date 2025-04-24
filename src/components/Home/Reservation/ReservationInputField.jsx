@@ -1,6 +1,6 @@
 const ReservationInputField = ({ label, name, placeholder, type = "text" }) => {
   return (
-    <div className="grid grid-cols-3 items-center text-primary/80">
+    <div className="grid grid-cols-3 items-center text-primary-foreground">
       {/* start:: label */}
       <p className="col-span-1">{label}:</p>
       {/* end:: label */}

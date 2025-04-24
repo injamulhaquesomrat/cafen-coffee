@@ -46,21 +46,21 @@ const WebsiteInformation = () => {
             <h6 className="font-sober text-primary text-[22px]">
               Opening hours
             </h6>
-            <p className="text-primary text-sm">
+            <p className="text-primary-foreground text-sm">
               Monday - Friday: 7:00 AM - 8:00 PM
             </p>
-            <p className="text-primary text-sm">
+            <p className="text-primary-foreground text-sm">
               Saturday - Sunday: 8:00 AM - 6:00 PM
             </p>
           </div>
           {/* end:: opening hours */}
 
           {/* start:: copyright */}
-          <p className="mt-auto text-primary text-sm">
+          <p className="mt-auto text-primary-foreground text-sm">
             Developed by{" "}
             <a
               href="https://github.com/injamulhaquesomrat"
-              className="underline hover:no-underline font-sober"
+              className="underline hover:no-underline font-sober text-primary"
             >
               Injamul Haque Somrat
             </a>{" "}

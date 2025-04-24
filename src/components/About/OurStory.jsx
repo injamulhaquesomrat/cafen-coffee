@@ -11,12 +11,12 @@ const OurStory = () => {
         {/* end:: section title */}
 
         {/* start:: story paragraph text */}
-        <p className="text-primary mt-5 lg:mt-10 pb-2.5 lg:max-w-[570px] xl:max-w-[780px] mx-auto">
+        <p className="text-primary-foreground mt-5 lg:mt-10 pb-2.5 lg:max-w-[570px] xl:max-w-[780px] mx-auto">
           At Cafen, we believe that every cup of coffee tells a story. Ours
           began with a simple desire—to create a space where people could pause,
           connect, and savor the beauty of a well-brewed cup.
         </p>
-        <p className="text-primary mb-10 lg:max-w-[570px] xl:max-w-[780px] mx-auto">
+        <p className="text-primary-foreground mb-10 lg:max-w-[570px] xl:max-w-[780px] mx-auto">
           Founded by passionate coffee lovers, Cafen was born from a love for
           both the craft of coffee and the community it fosters.
         </p>
@@ -35,7 +35,9 @@ const OurStory = () => {
                 </h4>
               </div>
               <div>
-                <span className="xl:text-lg">{item?.desc}</span>
+                <span className="xl:text-lg text-primary-foreground">
+                  {item?.desc}
+                </span>
               </div>
             </div>
           ))}

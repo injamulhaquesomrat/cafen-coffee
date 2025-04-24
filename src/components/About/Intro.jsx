@@ -20,12 +20,12 @@ const Intro = () => {
             <h1 className="text-[56px] xs:tex-[62px] md:text-[68px] lg:text-[70px] xl:text-[80px] leading-[1.1] pb-4 md:pb-7 text-primary font-sober">
               About cafen café
             </h1>
-            <p className="pb-[50px] md:pb-[60px] max-w-[600px] text-primary xl:text-lg ">
+            <p className="pb-[50px] md:pb-[60px] max-w-[600px] text-primary-foreground">
               Welcome to Cafen Café, where every cup of coffee is crafted with
               love and every visit feels like coming home.
             </p>
             <div className="w-full xl:h-1/2 flex xl:items-center">
-              <ul className="text-primary">
+              <ul className="text-primary-foreground">
                 {introList.map((item) => (
                   <li key={item?.id} className={item?.classNames}>
                     <img
@@ -33,7 +33,7 @@ const Intro = () => {
                       src="https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66c5dd9223f789cfded54897_about-list-icon.svg"
                       alt="tick icon"
                     />
-                    <span className=" text-sm md:text-base xl:text-lg">
+                    <span className="text-sm md:text-base">
                       {item?.text}
                     </span>
                   </li>

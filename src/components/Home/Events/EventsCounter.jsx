@@ -23,7 +23,7 @@ const EventsCounter = () => {
       {eventCounters.map((item) => (
         <div key={item?.id} className="flex gap-4 items-center">
           <h6 className="text-[2.5rem] font-sober">{item?.count}</h6>
-          <p>{item?.type}</p>
+          <p className="text-primary-foreground">{item?.type}</p>
         </div>
       ))}
     </div>

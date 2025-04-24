@@ -10,7 +10,7 @@ const FeaturedMenuItem = ({ category, img, subCategories }) => {
             alt={category}
           />
         </div>
-        <h4 className="text-3xl text-primary font-sober   text-center">
+        <h4 className="text-3xl text-primary font-sober text-center">
           {category}
         </h4>
       </div>
