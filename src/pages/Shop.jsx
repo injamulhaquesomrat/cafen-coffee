@@ -10,7 +10,7 @@ const Shop = () => {
         <title>Shop | Cafen ☕</title>
         <link rel="canonical" href="/" />
       </Helmet>
-      <div className="bg-cf-light-white">
+      <div className="bg-foreground">
         <ShopContainer />
         <GoToTop />
       </div>

@@ -1,6 +1,6 @@
 const PrivacyContainer = () => {
   return (
-    <div className="py-[60px] md:py-20 lg:py-[100px] text-cf-coffee space-y-8">
+    <div className="py-[60px] md:py-20 lg:py-[100px] text-primary space-y-8">
       <div className="max-w-[940px] mx-auto space-y-8">
         <h5 className="text-2xl md:text-[28px] lg:text-3xl  font-sober">
           Collecting Personal Information

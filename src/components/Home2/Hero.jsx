@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <section className="bg-cf-light-yellow pt-8 overflow-hidden">
+    <section className="bg-secondary-foreground pt-8 overflow-hidden">
       <Container>
         <div className="flex flex-col sm:flex-row gap-8 justify-between">
           {/* start:: hero text container */}
           <div className="w-full md:w-3/6 flex flex-col justify-center pb-10 lg:py-0 gap-[30px] md:gap-[50px] md:basis-2/3 lg:basis-1/2">
             {/* start:: section heading */}
-            <h1 className="text-[46px] md:text-5xl xl:text-[80px] leading-[1.2] font-sober text-cf-coffee">
+            <h1 className="text-[46px] md:text-5xl xl:text-[80px] leading-[1.2] font-sober text-primary">
               Discover the perfect brew at Cafen café
             </h1>
             {/* end:: section heading */}
@@ -28,7 +28,7 @@ const Hero = () => {
                   src="https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66c479e0032ed262ed70798a_star-one.svg"
                   alt="star icon"
                 />
-                <span className="text-cf-coffee">
+                <span className="text-primary">
                   4.95/5 from over 100 reviews
                 </span>
               </div>
@@ -36,9 +36,9 @@ const Hero = () => {
             {/* end::hero menu button container*/}
 
             {/* start:: specifications */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-x-8 xl:gap-y-0 text-cf-coffee pt-4 xl:pt-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-x-8 xl:gap-y-0 text-primary pt-4 xl:pt-8">
               <div className="flex items-start gap-3 xl:gap-5">
-                <div className="bg-cf-yellow p-1.5 md:p-3 xl:p-3.5 rounded-xl border border-cf-coffee w-fit">
+                <div className="bg-secondary p-1.5 md:p-3 xl:p-3.5 rounded-xl border border-primary w-fit">
                   <img src="/icons/about/about-icon-01.svg" alt="coffee ICON" />
                 </div>
                 <div>
@@ -51,7 +51,7 @@ const Hero = () => {
                 </div>
               </div>
               <div className="flex items-start gap-3 xl:gap-5">
-                <div className="bg-cf-yellow p-1.5 md:p-3 xl:p-3.5 rounded-xl border border-cf-coffee w-fit">
+                <div className="bg-secondary p-1.5 md:p-3 xl:p-3.5 rounded-xl border border-primary w-fit">
                   <img src="/icons/about/about-icon-03.svg" alt="ABOUT ICON" />
                 </div>
                 <div>

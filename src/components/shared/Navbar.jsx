@@ -36,8 +36,8 @@ const Navbar = () => {
     <div
       className={`${
         colouredNavPages.includes(currentPath)
-          ? "bg-cf-light-yellow"
-          : "bg-cf-light-white"
+          ? "bg-secondary-foreground"
+          : "bg-foreground"
       }`}
     >
       {/* start:: container */}
@@ -50,7 +50,7 @@ const Navbar = () => {
           {/* end:logo container */}
 
           {/* start::menus */}
-          <ul className="hidden lg:flex gap-5 font-sober text-cf-coffee font-medium md:text-lg relative">
+          <ul className="hidden lg:flex gap-5 font-sober text-primary font-medium md:text-lg relative">
             {/* start::Homepage link */}
             <li onClick={() => closeDropDown()}>
               <NavLink
@@ -58,8 +58,8 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   `flex items-center gap-1 leading-6 px-2.5 py-1 font-medium rounded-lg duration-150 border ${
                     isActive
-                      ? "bg-cf-yellow text-cf-coffee border-cf-coffee"
-                      : "hover:bg-cf-yellow hover:border-cf-coffee border-transparent"
+                      ? "bg-secondary text-primary border-primary"
+                      : "hover:bg-secondary hover:border-primary border-transparent"
                   }`
                 }
               >
@@ -75,8 +75,8 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   `flex items-center gap-1 leading-6 px-2.5 py-1 font-medium rounded-lg duration-150 border ${
                     isActive
-                      ? "bg-cf-yellow text-cf-coffee border-cf-coffee"
-                      : "hover:bg-cf-yellow hover:border-cf-coffee border-transparent"
+                      ? "bg-secondary text-primary border-primary"
+                      : "hover:bg-secondary hover:border-primary border-transparent"
                   }`
                 }
               >
@@ -92,7 +92,7 @@ const Navbar = () => {
               onMouseLeave={() => setIsDropdownOpen(false)}
             >
               <button
-                className={`flex items-center gap-1 leading-6 px-2.5 py-1 font-medium rounded-lg duration-150 border border-transparent hover:border-cf-coffee hover:bg-cf-yellow`}
+                className={`flex items-center gap-1 leading-6 px-2.5 py-1 font-medium rounded-lg duration-150 border border-transparent hover:border-primary hover:bg-secondary`}
               >
                 Pages
                 <FaChevronDown className="text-sm" />
@@ -115,8 +115,8 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   `flex items-center gap-1 leading-6 px-2.5 py-1 font-medium rounded-lg duration-150 border ${
                     isActive
-                      ? "bg-cf-yellow text-cf-coffee border-cf-coffee"
-                      : "hover:bg-cf-yellow hover:border-cf-coffee border-transparent"
+                      ? "bg-secondary text-primary border-primary"
+                      : "hover:bg-secondary hover:border-primary border-transparent"
                   }`
                 }
               >
@@ -131,7 +131,7 @@ const Navbar = () => {
             {/* start::cart modal trigger button */}
             <button
               onClick={handleCartModal}
-              className="text-cf-coffee md:text-lg"
+              className="text-primary md:text-lg"
             >
               Cart ({cartItems.length})
             </button>
@@ -143,13 +143,13 @@ const Navbar = () => {
                 onClick={handleDropdown}
                 className={`relative p-2.5 lg:hidden ${
                   isDropdownOpen
-                    ? "border-cf-yellow border bg-cf-coffee"
-                    : "bg-cf-yellow border border-cf-coffee"
+                    ? "border-secondary border bg-primary"
+                    : "bg-secondary border border-primary"
                 }  rounded-md`}
               >
                 <FaBars
                   className={`text-xl ${
-                    isDropdownOpen ? "text-cf-yellow" : "text-cf-coffee"
+                    isDropdownOpen ? "text-secondary" : "text-primary"
                   }`}
                 />
               </button>

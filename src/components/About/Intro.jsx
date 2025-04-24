@@ -2,9 +2,9 @@ import Container from "../shared/Container";
 
 const Intro = () => {
   return (
-    <div className="bg-cf-light-white pt-[30px] pb-20 md:pb-[100px] lg:pb-[120] xl:pb-[150px] ">
+    <div className="bg-foreground pt-[30px] pb-20 md:pb-[100px] lg:pb-[120] xl:pb-[150px] ">
       <Container>
-        <section className="flex flex-col md:flex-row border border-cf-coffee rounded-2xl overflow-hidden">
+        <section className="flex flex-col md:flex-row border border-primary rounded-2xl overflow-hidden">
           {/* start:: intro image */}
           <div className="basis-1/2 md:basis-5/12">
             <img
@@ -16,16 +16,16 @@ const Intro = () => {
           {/* end:; intro image */}
 
           {/* start:: intro text container */}
-          <div className="p-5 md:p-10 lg:p-[60px] bg-cf-light-yellow basis-1/2 md:basis-7/12">
-            <h1 className="text-[56px] xs:tex-[62px] md:text-[68px] lg:text-[70px] xl:text-[80px] leading-[1.1] pb-4 md:pb-7 text-cf-coffee font-sober">
+          <div className="p-5 md:p-10 lg:p-[60px] bg-secondary-foreground basis-1/2 md:basis-7/12">
+            <h1 className="text-[56px] xs:tex-[62px] md:text-[68px] lg:text-[70px] xl:text-[80px] leading-[1.1] pb-4 md:pb-7 text-primary font-sober">
               About cafen café
             </h1>
-            <p className="pb-[50px] md:pb-[60px] max-w-[600px] text-cf-coffee xl:text-lg ">
+            <p className="pb-[50px] md:pb-[60px] max-w-[600px] text-primary xl:text-lg ">
               Welcome to Cafen Café, where every cup of coffee is crafted with
               love and every visit feels like coming home.
             </p>
             <div className="w-full xl:h-1/2 flex xl:items-center">
-              <ul className="text-cf-coffee">
+              <ul className="text-primary">
                 {introList.map((item) => (
                   <li key={item?.id} className={item?.classNames}>
                     <img

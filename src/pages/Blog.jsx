@@ -23,7 +23,7 @@ const Blog = () => {
         <title>Blog | Cafen ☕</title>
         <link rel="canonical" href="/" />
       </Helmet>
-      <div className="bg-cf-light-white">
+      <div className="bg-foreground">
         <Container>
           <PageHero pageTitle={"Our blog"} />
 

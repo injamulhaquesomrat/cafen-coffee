@@ -12,7 +12,7 @@ const AboutMarquee = () => {
     );
   };
   return (
-    <section className="bg-cf-yellow">
+    <section className="bg-secondary">
       <Marquee
         direction={marqueeDirection}
         onCycleComplete={handleCycleComplete}
@@ -21,7 +21,7 @@ const AboutMarquee = () => {
           <div key={item.id} className="flex gap-4 items-center py-6 pr-4">
             <img src="/marquee-icon.svg" alt="marquee icon" />
             <p
-              className="font-sober text-cf-coffee text-xl md:text-2xl"
+              className="font-sober text-primary text-xl md:text-2xl"
               key={item.id}
             >
               {item.text}

@@ -13,7 +13,7 @@ const DropdownMenu = ({ isDropdownOpen, setIsDropdownOpen, menus }) => {
     <div
       className={`absolute ${
         isDropdownOpen ? "top-[90px] md:top-[34px]" : "md:-top-24"
-      } right-4 left-4 md:left-auto md:-right-4 bg-cf-light-white text-cf-coffee rounded-lg p-3 min-w-[90vw] md:min-w-[200px] z-50 border border-cf-coffee`}
+      } right-4 left-4 md:left-auto md:-right-4 bg-foreground text-primary rounded-lg p-3 min-w-[90vw] md:min-w-[200px] z-50 border border-primary`}
     >
       {/* start:: menu list */}
       <ul className="rounded-lg space-y-1">
@@ -21,7 +21,7 @@ const DropdownMenu = ({ isDropdownOpen, setIsDropdownOpen, menus }) => {
           <li key={index}>
             {name === "Pages" ? (
               <button
-                className={`flex flex-col items-left justify-between gap-1 w-full leading-6 px-2.5 py-1 font-medium rounded-lg duration-150 hover:bg-cf-yellow border border-transparent hover:border-cf-coffee "
+                className={`flex flex-col items-left justify-between gap-1 w-full leading-6 px-2.5 py-1 font-medium rounded-lg duration-150 hover:bg-secondary border border-transparent hover:border-primary "
                   `}
               >
                 <div
@@ -38,8 +38,8 @@ const DropdownMenu = ({ isDropdownOpen, setIsDropdownOpen, menus }) => {
                 className={({ isActive }) =>
                   `flex flex-col items-left justify-between gap-1 leading-6 px-2.5 py-1 font-medium rounded-lg duration-150 border ${
                     isActive
-                      ? "bg-cf-yellow text-cf-coffee border-cf-coffee"
-                      : "hover:bg-cf-yellow hover:border-cf-coffee border-transparent"
+                      ? "bg-secondary text-primary border-primary"
+                      : "hover:bg-secondary hover:border-primary border-transparent"
                   }`
                 }
               >
@@ -57,7 +57,7 @@ const DropdownMenu = ({ isDropdownOpen, setIsDropdownOpen, menus }) => {
               <div
                 className={`${
                   isOpenSubmenus ? "flex" : "hidden"
-                } p-2  flex-col border border-cf-coffee rounded-lg`}
+                } p-2  flex-col border border-primary rounded-lg`}
               >
                 {submenus.map(({ name, path }, index) => (
                   <NavLink
@@ -65,8 +65,8 @@ const DropdownMenu = ({ isDropdownOpen, setIsDropdownOpen, menus }) => {
                     className={({ isActive }) =>
                       `rounded-md border leading-6 font-medium px-2.5 py-1  ${
                         isActive
-                          ? "bg-cf-yellow text-cf-coffee border-cf-coffee"
-                          : "hover:bg-cf-yellow hover:border-cf-coffee border-transparent"
+                          ? "bg-secondary text-primary border-primary"
+                          : "hover:bg-secondary hover:border-primary border-transparent"
                       }`
                     }
                     to={path || "#"}

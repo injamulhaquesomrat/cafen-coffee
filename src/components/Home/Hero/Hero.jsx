@@ -5,12 +5,12 @@ import DecorationButtonPrimary from "../../shared/Buttons/DecorationButtonPrimar
 
 const Hero = () => {
   return (
-    <section className="bg-cf-light-yellow pt-8 md:pt-12 overflow-hidden">
+    <section className="bg-secondary-foreground pt-8 md:pt-12 overflow-hidden">
       <Container>
         {/* start:: hero text container */}
         <div className="text-center w-full xl:w-2/3 mx-auto grid gap-[1.375rem]">
           {/* start:: hero text */}
-          <h1 className="text-[50px] sm:text-[60px] md:text-[68px] lg:text-[70px] xl:text-[80px] leading-[1.2] font-sober text-cf-coffee">
+          <h1 className="text-[50px] sm:text-[60px] md:text-[68px] lg:text-[70px] xl:text-[80px] leading-[1.2] font-sober text-primary">
             Discover the perfect blend of taste and ambiance.
           </h1>
           {/* end:: hero text */}

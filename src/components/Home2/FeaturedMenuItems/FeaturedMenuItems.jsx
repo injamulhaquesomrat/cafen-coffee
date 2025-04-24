@@ -4,7 +4,7 @@ import FeaturedMenuCarousel from "./FeaturedMenuCarousel";
 
 const FeaturedMenuItems = () => {
   return (
-    <section className="bg-cf-light-white py-20 md:py-[100px] lg:py-[120px] xl:py-[150px]">
+    <section className="bg-foreground py-20 md:py-[100px] lg:py-[120px] xl:py-[150px]">
       <Container>
         {/* start::faetured menu items carousel */}
         <div className="pb-5 md:pb-8">

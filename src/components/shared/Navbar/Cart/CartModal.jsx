@@ -23,19 +23,19 @@ const CartModal = ({ isCartOpen, handleCartModal }) => {
     >
       <div
         className={`cart-container-children absolute right-[50%] top-[50%] transform translate-x-[50%] translate-y-[-50%] h-full md:h-fit w-full max-w-[480px] md:min-h-[700px] ${
-          cartItems===0 ? "md:max-h-[700px]" : "md:max-h-full overflow-auto"
-        } border rounded-lg bg-cf-light-white flex flex-col`}
+          cartItems === 0 ? "md:max-h-[700px]" : "md:max-h-full overflow-auto"
+        } border rounded-lg bg-foreground flex flex-col`}
       >
         {/* start::cart heading */}
         <div className="flex justify-between items-center px-6 py-4">
-          <h3 className="text-2xl font-sober text-cf-coffee ">Your cart</h3>
+          <h3 className="text-2xl font-sober text-primary ">Your cart</h3>
           <button onClick={handleCartModal}>
-            <BiX className="text-3xl text-cf-coffee" />
+            <BiX className="text-3xl text-primary" />
           </button>
         </div>
 
         {/* break line */}
-        <hr className=" border-cf-coffee" />
+        <hr className=" border-primary" />
 
         {/* end::cart heading */}
 

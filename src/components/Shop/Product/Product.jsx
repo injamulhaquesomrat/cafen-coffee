@@ -23,7 +23,7 @@ const Product = () => {
         <title>{productInfo?.title}</title>
         <link rel="canonical" href="/" />
       </Helmet>
-      <div className="bg-cf-light-white">
+      <div className="bg-foreground">
         <Container>
           <ProductDetailsCard
             productInfo={productInfo}

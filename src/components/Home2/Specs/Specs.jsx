@@ -2,16 +2,16 @@ import Container from "../../shared/Container";
 
 const Specs = () => {
   return (
-    <section className="bg-cf-light-white py-20 md:py-[100px] lg:py-[120px] xl:py-[150px] border-y border-cf-coffee">
+    <section className="bg-foreground py-20 md:py-[100px] lg:py-[120px] xl:py-[150px] border-y border-primary">
       <Container>
         <div>
           {/* start:: section heading */}
-          <h2 className="text-[42px] xs:text-[50px] md:text-[54px] lg:text-[56px] xl:text-[60px] leading-[1.2] pb-[30px] xs:pb-10 lg:pb-[60px] xl:pb-[70px] font-sober text-cf-coffee text-center">
+          <h2 className="text-[42px] xs:text-[50px] md:text-[54px] lg:text-[56px] xl:text-[60px] leading-[1.2] pb-[30px] xs:pb-10 lg:pb-[60px] xl:pb-[70px] font-sober text-primary text-center">
             Our commitment to sustainability
           </h2>
           {/* end:: section heading */}
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-5 lg:gap-x-[30px] xl:gap-y-0 text-cf-coffee ">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-5 lg:gap-x-[30px] xl:gap-y-0 text-primary ">
             {/* start:: left spec list */}
             <div className="flex flex-col md:justify-between gap-6 lg:gap-x-8 xl:gap-y-0">
               {specItems.slice(0, 2).map((item) => (
@@ -19,7 +19,7 @@ const Specs = () => {
                   key={item?.id}
                   className="flex md:flex-row-reverse gap-3 lg:gap-6 items-start justify-between"
                 >
-                  <div className="bg-cf-yellow px-1 py-2 rounded-full border border-cf-coffee w-10 h-10 flex items-center justify-center">
+                  <div className="bg-secondary px-1 py-2 rounded-full border border-primary w-10 h-10 flex items-center justify-center">
                     <img
                       className="min-w-8 h-[22px]"
                       src={item?.icon}
@@ -42,7 +42,7 @@ const Specs = () => {
             {/* start:: spec image */}
             <div className="md:basis-5/12 flex justify-center">
               <img
-                className="border border-cf-coffee rounded-2xl object-cover"
+                className="border border-primary rounded-2xl object-cover"
                 src="https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66c5b24aff0158f1b9b9dad3_about-image-02.avif"
                 alt="about image"
               />
@@ -56,7 +56,7 @@ const Specs = () => {
                   key={item?.id}
                   className="flex justify-between gap-3 lg:gap-5"
                 >
-                  <div className="bg-cf-yellow px-1 py-2 rounded-full border border-cf-coffee w-10 h-10 flex items-center justify-center">
+                  <div className="bg-secondary px-1 py-2 rounded-full border border-primary w-10 h-10 flex items-center justify-center">
                     <img
                       className="min-w-8 h-[22px]"
                       src={item?.icon}

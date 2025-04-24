@@ -18,7 +18,7 @@ const ProductPurchaseShortcut = ({ productInfo, quantity, setQuantity }) => {
 
   return (
     <div
-      className={`fixed bottom-0 left-0 right-0 w-full py-2.5 px-[30px] border-t border-cf-coffee hidden lg:block bg-cf-yellow z-[99] text-cf-coffee shadow-md transition-opacity duration-300 ${
+      className={`fixed bottom-0 left-0 right-0 w-full py-2.5 px-[30px] border-t border-primary hidden lg:block bg-secondary z-[99] text-primary shadow-md transition-opacity duration-300 ${
         isVisible ? "opacity-90" : "opacity-0 pointer-events-none"
       }`}
     >
@@ -37,7 +37,7 @@ const ProductPurchaseShortcut = ({ productInfo, quantity, setQuantity }) => {
         <div className="flex gap-4">
           <div className="flex flex-col gap-[5px] h-[55px]">
             <select
-              className="px-5 py-2.5 rounded-xl outline-none border border-cf-coffee bg-cf-yellow cursor-pointer h-full"
+              className="px-5 py-2.5 rounded-xl outline-none border border-primary bg-secondary cursor-pointer h-full"
               name="weight"
               id="weight"
             >
@@ -59,7 +59,7 @@ const ProductPurchaseShortcut = ({ productInfo, quantity, setQuantity }) => {
           <div className="flex flex-col md:flex-row md:items-end gap-4">
             <div className="flex flex-col min-w-[100px] h-[55px] ">
               <input
-                className="px-3 py-2.5 pr-1.5 rounded-full outline-none border border-cf-coffee bg-cf-yellow max-w-[100px] h-full"
+                className="px-3 py-2.5 pr-1.5 rounded-full outline-none border border-primary bg-secondary max-w-[100px] h-full"
                 type="number"
                 id="quantity"
                 name="quantity"
@@ -72,7 +72,7 @@ const ProductPurchaseShortcut = ({ productInfo, quantity, setQuantity }) => {
             <div className="">
               <button
                 onClick={() => addToCart(productInfo, +quantity)}
-                className="hover:text-cf-coffee text-cf-yellow transition-all duration-200 border border-cf-coffee rounded-full hover:bg-cf-yellow bg-cf-coffee px-[30px] py-2.5 md:px-10 md:py-5 font-medium w-full h-[55px] flex items-center justify-center"
+                className="hover:text-primary text-secondary transition-all duration-200 border border-primary rounded-full hover:bg-secondary bg-primary px-[30px] py-2.5 md:px-10 md:py-5 font-medium w-full h-[55px] flex items-center justify-center"
               >
                 Add to Cart
               </button>

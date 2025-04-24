@@ -13,7 +13,7 @@ const featuredMenuOptions = {
     arrows:
       "splide__arrows absolute top-[100%] right-1/2 xs:-top-[50px] md:-top-[64px] lg:-top-14 xl:-top-[60px] md:right-0 translate-x-1/2 md:translate-x-0 w-[8rem] md:w-[10rem] z-[999]",
     arrow:
-      "splide__arrow !bg-cf-foreground !fill-cf-coffee !h-[45px] !w-[45px] md:!h-[50px] md:!w-[50px] !opacity-100",
+      "splide__arrow !bg-background !fill-primary !h-[45px] !w-[45px] md:!h-[50px] md:!w-[50px] !opacity-100",
   },
   breakpoints: {
     768: {

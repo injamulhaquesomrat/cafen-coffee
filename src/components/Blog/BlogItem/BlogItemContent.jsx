@@ -1,7 +1,7 @@
 const BlogItemContent = () => {
   return (
-    <section className="bg-cf-light-white">
-      <div className="pt-[60px] text-cf-coffee max-w-[940px] mx-auto ">
+    <section className="bg-foreground">
+      <div className="pt-[60px] text-primary max-w-[940px] mx-auto ">
         <h5 className="text-2xl xs:text-[26px] md:text-[28px] lg:text-3xl xl:text-[32px] leading-[1.2] font-sober mb-2.5 px-5 lg:px-[50px]">
           The most common business debate isn&apos;t as black and white as you
           might think
@@ -60,7 +60,7 @@ const BlogItemContent = () => {
           projection favorable Mrs can be projecting own.
         </p>
 
-        <blockquote className="mb-5 md:mb-10 p-5 md:p-[30px] lg:p-[50px] rounded-2xl bg-cf-coffee text-cf-yellow text-xl text-center">
+        <blockquote className="mb-5 md:mb-10 p-5 md:p-[30px] lg:p-[50px] rounded-2xl bg-primary text-secondary text-xl text-center">
           Existence certainly explained how improving the household pretended.
           Delightful own attachment her partiality unaffected occasionally
           thoroughly. Adieus it no wonders spirit houses. Started several

@@ -11,10 +11,10 @@ const EmptyCartBody = () => {
         />
       </div>
       <div className="text-center mt-5">
-        <h4 className="text-[40px] leading-[1.2] font-sober text-cf-coffee">
+        <h4 className="text-[40px] leading-[1.2] font-sober text-primary">
           Your cart is empty
         </h4>
-        <p className="text-cf-coffee mt-2.5">
+        <p className="text-primary mt-2.5">
           Nothing in your basket. Time to browse and shop!
         </p>
         <div className="mt-[30px]">

@@ -5,7 +5,7 @@ import RelatedProducts from "./RelatedProducts";
 
 const ProductReview = ({ productInfo }) => {
   return (
-    <section className="text-center text-cf-coffee py-20">
+    <section className="text-center text-primary py-20">
       <div className="mb-2.5">
         <SectionTitle title={"Reviews"} />
       </div>

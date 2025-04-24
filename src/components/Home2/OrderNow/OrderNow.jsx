@@ -26,11 +26,11 @@ const OrderNow = () => {
       </div>
       {/* end:: order now background video */}
 
-      <div className="min-h-full w-full bg-cf-coffee/20 absolute top-0 left-0 z-40"></div>
+      <div className="min-h-full w-full bg-primary/20 absolute top-0 left-0 z-40"></div>
 
       {/* start:: order now text container */}
       <div className="absolute top-0 left-0 p-4 flex flex-col items-center gap-4 lg:gap-8 xl:gap-16 justify-center z-50 h-full w-full">
-        <h4 className="text-center text-2xl xs;text-[30px] md:text-5xl lg:text-[56px] xl:text-[60px] text-cf-yellow font-sober leading-[1.2] md:w-[526px] lg:w-[706px] xl:max-w-[570px]">
+        <h4 className="text-center text-2xl xs;text-[30px] md:text-5xl lg:text-[56px] xl:text-[60px] text-secondary font-sober leading-[1.2] md:w-[526px] lg:w-[706px] xl:max-w-[570px]">
           Get 20% off all beverages from 3 PM to 5 PM every weekday.
         </h4>
         <Link to="/menu">

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const WebsiteInformation = () => {
   return (
     <>
-      <div className="border border-cf-coffee bg-cf-light-yellow p-4 md:p-8 lg:p-5 xl:p-10 gap-8 lg:gap-4 rounded-2xl xl:rounded-[50px] flex flex-col md:flex-row items-center justify-between lg:col-span-8 xl:col-span-7">
+      <div className="border border-primary bg-secondary-foreground p-4 md:p-8 lg:p-5 xl:p-10 gap-8 lg:gap-4 rounded-2xl xl:rounded-[50px] flex flex-col md:flex-row items-center justify-between lg:col-span-8 xl:col-span-7">
         <div className="flex flex-col justify-between lg:w-7/12">
           <div>
             <img src="/logo.svg" alt="footer logo" />
@@ -43,20 +43,20 @@ const WebsiteInformation = () => {
 
           {/* start:: opening hours */}
           <div className="flex-1 space-y-2 flex flex-col justify-center my-[30px] xl:my-[50px]">
-            <h6 className="font-sober text-cf-coffee text-[22px]">
+            <h6 className="font-sober text-primary text-[22px]">
               Opening hours
             </h6>
-            <p className="text-cf-coffee text-sm">
+            <p className="text-primary text-sm">
               Monday - Friday: 7:00 AM - 8:00 PM
             </p>
-            <p className="text-cf-coffee text-sm">
+            <p className="text-primary text-sm">
               Saturday - Sunday: 8:00 AM - 6:00 PM
             </p>
           </div>
           {/* end:: opening hours */}
 
           {/* start:: copyright */}
-          <p className="mt-auto text-cf-coffee text-sm">
+          <p className="mt-auto text-primary text-sm">
             Developed by{" "}
             <a
               href="https://github.com/injamulhaquesomrat"

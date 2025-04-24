@@ -17,7 +17,7 @@ const reviewOptions = {
     arrows:
       "splide__arrows absolute top-[109%] right-1/2 md:top-1/2 md:right-0 translate-x-1/2 md:translate-x-0 md:translate-y-1/2 w-[8rem] md:w-full z-30",
     arrow:
-      "splide__arrow !bg-transparent !fill-cf-coffee !h-10 !w-10 md:!h-14 md:!w-14 !opacity-100",
+      "splide__arrow !bg-transparent !fill-primary !h-10 !w-10 md:!h-14 md:!w-14 !opacity-100",
   },
   height: "100%",
   mediaQuery: "min",
@@ -25,7 +25,7 @@ const reviewOptions = {
 
 const Reviews = () => {
   return (
-    <section className="bg-cf-light-white cf-section">
+    <section className="bg-foreground cf-section">
       <Container>
         <Splide options={reviewOptions} aria-label="Upcoming Events Images">
           {reviewsItems.map((item) => (

@@ -2,7 +2,7 @@ import RenderStars from "../../shared/RenderStars";
 
 const ReviewItem = ({ item }) => {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center text-center text-cf-coffee overflow-hidden md:w-2/3 mx-auto">
+    <div className="flex flex-col md:flex-row items-center justify-center text-center text-primary overflow-hidden md:w-2/3 mx-auto">
       {/* start:: review carousel item text content */}
       <div className="flex flex-col md:p-6">
         <div className="flex-1 pb-4 md:pb-6 grid justify-center">

@@ -5,13 +5,13 @@ import DecorationButtonSecondary from "../../shared/Buttons/DecorationButtonSeco
 
 const Specs = () => {
   return (
-    <div className="bg-cf-foreground border-t border-b border-cf-coffee cf-section">
+    <div className="bg-background border-t border-b border-primary cf-section">
       <Container>
         <div className="flex flex-col md:flex-row gap-8 lg:gap-16 justify-between">
           {/* start:: specs image content */}
           <div className="md:basis-5/12 flex justify-center">
             <img
-              className="border border-cf-coffee rounded-[2.5rem] object-cover"
+              className="border border-primary rounded-[2.5rem] object-cover"
               src="/icons/about/about-image-01.avif"
               alt="about image"
             />
@@ -19,7 +19,7 @@ const Specs = () => {
           {/* end:: specs image content */}
 
           {/* start::specs text content */}
-          <div className="text-cf-coffee grid md:basis-7/12">
+          <div className="text-primary grid md:basis-7/12">
             {/* start:: section title */}
             <h5 className="text-3xl xs:text-[32px] md:text-[34px] lg:text-[38px] xl:text-[40px] pb-6 font-sober">
               Discover our coffee
@@ -31,7 +31,7 @@ const Specs = () => {
               {/* start: repeatative spec items */}
               {specItems.map((item) => (
                 <div key={item?.id} className={item?.classNames}>
-                  <div className="bg-cf-yellow p-3 rounded-xl border border-cf-coffee w-fit">
+                  <div className="bg-secondary p-3 rounded-xl border border-primary w-fit">
                     <img src={item?.logoSrc} alt="ABOUT ICON   " />
                   </div>
                   <h6 className="text-[22px] lg:text-2xl font-sober">

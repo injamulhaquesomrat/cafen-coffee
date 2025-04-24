@@ -13,7 +13,7 @@ const PrivacyPolicy = () => {
         <title>Privacy Policy | Cafen ☕</title>
         <link rel="canonical" href="/" />
       </Helmet>
-      <div className="bg-cf-light-white">
+      <div className="bg-foreground">
         <Container>
           <PageHero
             pageTitle={"Privacy policy"}

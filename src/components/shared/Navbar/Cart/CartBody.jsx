@@ -11,7 +11,7 @@ const CartBody = () => {
       if (newQuantity >= 1 && newQuantity <= 5) {
         updateQuantity(id, newQuantity);
       } else {
-        updateQuantity(id, 1); 
+        updateQuantity(id, 1);
       }
     }
   };
@@ -32,7 +32,7 @@ const CartBody = () => {
                 alt="cart item image"
               />
             </div>
-            <div className="flex flex-col flex-1 text-cf-coffee">
+            <div className="flex flex-col flex-1 text-primary">
               <h6 className="font-semibold">{item?.title}</h6>
               <p>$ {item?.price} USD</p>
               <button
@@ -44,7 +44,7 @@ const CartBody = () => {
             </div>
             <div className="flex flex-col min-w-[86px]">
               <input
-                className="px-3 py-2.5 pr-1.5 rounded-full outline-none border border-cf-coffee bg-cf-foreground max-w-[86px] h-[55px] text-cf-coffee"
+                className="px-3 py-2.5 pr-1.5 rounded-full outline-none border border-primary bg-background max-w-[86px] h-[55px] text-primary"
                 type="number"
                 id="quantity"
                 name="quantity"

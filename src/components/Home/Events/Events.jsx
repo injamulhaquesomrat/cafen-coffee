@@ -5,7 +5,7 @@ import EventsCounter from "./EventsCounter";
 
 const Events = () => {
   return (
-    <section className="bg-cf-foreground cf-section">
+    <section className="bg-background cf-section">
       <Container>
         {/* start::events carousel */}
         <div className="pb-5 md:pb-8">

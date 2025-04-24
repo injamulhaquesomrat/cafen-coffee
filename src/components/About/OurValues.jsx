@@ -3,10 +3,10 @@ import ValuesAccordion from "./ValuesAccordion";
 
 const OurValues = () => {
   return (
-    <section className="cf-section bg-cf-light-white">
+    <section className="cf-section bg-foreground">
       <Container>
         {/* start:: section title */}
-        <h2 className="text-[42px] xs:text-[50px] md:text-[54px] lg:text-[56px] xl:text-6xl font-sober  text-cf-coffee font-medium text-center">
+        <h2 className="text-[42px] xs:text-[50px] md:text-[54px] lg:text-[56px] xl:text-6xl font-sober  text-primary font-medium text-center">
           Our values
         </h2>
         {/* end:: section title */}
@@ -16,7 +16,7 @@ const OurValues = () => {
           {/* start:: our values image container */}
           <div className="w-[45%]">
             <img
-              className="rounded-2xl border border-cf-coffee"
+              className="rounded-2xl border border-primary"
               src="https://cdn.prod.website-files.com/66b98cdd4dab60f19c8c1440/66c6bfc3e1cf54b7acae136c_value-image.avif"
               alt="over values banner image"
             />

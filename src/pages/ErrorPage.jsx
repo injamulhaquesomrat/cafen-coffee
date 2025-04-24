@@ -3,8 +3,8 @@ import DecorationButtonPrimary from "../components/shared/Buttons/DecorationButt
 
 const ErrorPage = () => {
   return (
-    <div className="bg-cf-light-white sm:max-w-[600px] w-full h-screen m-auto flex items-center justify-center p-4">
-      <div className="bg-cf-light-yellow p-5 xs:p-10 md:p-[60px] border border-cf-coffee rounded-xl text-center text-cf-coffee">
+    <div className="bg-foreground sm:max-w-[600px] w-full h-screen m-auto flex items-center justify-center p-4">
+      <div className="bg-secondary-foreground p-5 xs:p-10 md:p-[60px] border border-primary rounded-xl text-center text-primary">
         <div className="inline-flex items-center justify-center gap-1">
           <h1 className="text-[100px] sm:text-[140px] font-sober leading-none">
             4

@@ -5,11 +5,6 @@ export default {
   theme: {
     extend: {
       colors: {
-        "cf-coffee": "#5a0808",
-        "cf-yellow": "#fee473",
-        "cf-light-white": "#fffff5",
-        "cf-light-yellow": "#f8f1cb",
-        "cf-foreground": "#fffbed",
         primary: "#5a0808",
         "primary-foreground": "#7b3a38",
         secondary: "#fee473",

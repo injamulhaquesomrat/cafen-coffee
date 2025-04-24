@@ -19,20 +19,20 @@ const Pagination = ({ currentPage, setCurrentPage, totalPages }) => {
         type="button"
         onClick={handlePrev}
         disabled={currentPage === 1}
-        className={`flex items-center justify-center gap-1.5 px-[30px] md:px-10 py-2.5 sm:py-5 text-cf-yellow bg-cf-coffee rounded-full cursor-pointer w-full border border-cf-coffee hover:bg-cf-yellow hover:text-cf-coffee transition duration-300 ease-in-out ${
+        className={`flex items-center justify-center gap-1.5 px-[30px] md:px-10 py-2.5 sm:py-5 text-secondary bg-primary rounded-full cursor-pointer w-full border border-primary hover:bg-secondary hover:text-primary transition duration-300 ease-in-out ${
           currentPage === 1 && "invisible"
         }`}
       >
         <FaChevronLeft className="mt-0.5" size={10} /> Previous
       </button>
-      <div className="text-cf-coffee text-nowrap font-medium">
+      <div className="text-primary text-nowrap font-medium">
         {currentPage} / {totalPages}
       </div>
       <button
         type="button"
         onClick={handleNext}
         disabled={currentPage === totalPages}
-        className={`flex items-center justify-center gap-1.5 px-[30px] md:px-10 py-2.5 sm:py-5 text-cf-yellow bg-cf-coffee rounded-full cursor-pointer w-full  border border-cf-coffee hover:bg-cf-yellow hover:text-cf-coffee transition duration-300 ease-in-out ${
+        className={`flex items-center justify-center gap-1.5 px-[30px] md:px-10 py-2.5 sm:py-5 text-secondary bg-primary rounded-full cursor-pointer w-full  border border-primary hover:bg-secondary hover:text-primary transition duration-300 ease-in-out ${
           currentPage === totalPages && "invisible"
         }`}
       >

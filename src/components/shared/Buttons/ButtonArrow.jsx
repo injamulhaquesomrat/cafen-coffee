@@ -1,4 +1,3 @@
-
 import { HiArrowRight } from "react-icons/hi";
 import { cn } from "../../../lib/utils";
 
@@ -6,7 +5,7 @@ const ButtonArrow = ({ btnText }) => {
   return (
     <button
       className={cn(
-        `leading-normal px-5 py-2.5 bg-cf-yellow border border-cf-coffee rounded-full inline-flex items-center gap-2.5 group`
+        `leading-normal px-5 py-2.5 bg-secondary border border-primary rounded-full inline-flex items-center gap-2.5 group`
       )}
     >
       {btnText}{" "}

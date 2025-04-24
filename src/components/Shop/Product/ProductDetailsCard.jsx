@@ -6,7 +6,7 @@ const ProductDetailsCard = ({ productInfo, quantity, setQuantity }) => {
 
   return (
     <div className="pt-5 md:pt-10">
-      <div className="rounded-2xl md:rounded-[50px] border border-cf-coffee overflow-hidden bg-white flex flex-col lg:flex-row">
+      <div className="rounded-2xl md:rounded-[50px] border border-primary overflow-hidden bg-white flex flex-col lg:flex-row">
         {/* start:: product images container with lightshot  */}
         <div className="w-full lg:w-5/12 grid">
           <PhotoThumbnailGallery slides={productInfo?.images.slice(0, 4)} />
@@ -14,11 +14,11 @@ const ProductDetailsCard = ({ productInfo, quantity, setQuantity }) => {
         {/* end:: product images container with lightshot  */}
 
         {/* start:: product text container */}
-        <div className="p-5 sm:p-[30px] md:p-10 grid justify-between text-cf-coffee bg-cf-light-yellow lg:w-7/12">
-          <div className="px-5 py-[5px] mb-2.5 bg-cf-coffee rounded-full text-cf-yellow w-fit h-fit text-sm leading-[1.7]">
+        <div className="p-5 sm:p-[30px] md:p-10 grid justify-between text-primary bg-secondary-foreground lg:w-7/12">
+          <div className="px-5 py-[5px] mb-2.5 bg-primary rounded-full text-secondary w-fit h-fit text-sm leading-[1.7]">
             {productInfo?.category}
           </div>
-          <h2 className="text-[38px] xs:text-[50px] md:text-[60px] xl:text-[70px] leading-[1.2] text-cf-coffee font-sober mb-2.5">
+          <h2 className="text-[38px] xs:text-[50px] md:text-[60px] xl:text-[70px] leading-[1.2] text-primary font-sober mb-2.5">
             {productInfo?.title}
           </h2>
 
@@ -27,13 +27,13 @@ const ProductDetailsCard = ({ productInfo, quantity, setQuantity }) => {
           </h5>
 
           <div className="mt-5">
-            <h6 className="text-[26px] leading-[1.2] text-cf-coffee font-sober mb-[5px]">
+            <h6 className="text-[26px] leading-[1.2] text-primary font-sober mb-[5px]">
               Description:
             </h6>
             <p>{productInfo?.description}</p>
           </div>
           <div className="mt-5 mb-2.5">
-            <h6 className="text-[26px] leading-[1.2] text-cf-coffee font-sober mb-[5px]">
+            <h6 className="text-[26px] leading-[1.2] text-primary font-sober mb-[5px]">
               Ingredients:
             </h6>
             <p>{productInfo?.ingredients.join(", ")}</p>
@@ -42,7 +42,7 @@ const ProductDetailsCard = ({ productInfo, quantity, setQuantity }) => {
           <div className="flex flex-col gap-[5px]">
             <label htmlFor="weight">Weight</label>
             <select
-              className="px-5 py-2.5 rounded-xl outline-none border border-cf-coffee bg-cf-light-yellow cursor-pointer"
+              className="px-5 py-2.5 rounded-xl outline-none border border-primary bg-secondary-foreground cursor-pointer"
               name="weight"
               id="weight"
             >
@@ -60,7 +60,7 @@ const ProductDetailsCard = ({ productInfo, quantity, setQuantity }) => {
             <div className="flex flex-col gap-[5px] min-w-[100px]">
               <label htmlFor="quantity">Quantity</label>
               <input
-                className="px-3 py-2.5 pr-1.5 rounded-full outline-none border border-cf-coffee bg-cf-light-yellow max-w-[100px]"
+                className="px-3 py-2.5 pr-1.5 rounded-full outline-none border border-primary bg-secondary-foreground max-w-[100px]"
                 type="number"
                 id="quantity"
                 name="quantity"
@@ -73,7 +73,7 @@ const ProductDetailsCard = ({ productInfo, quantity, setQuantity }) => {
             <div className="w-full">
               <button
                 onClick={() => addToCart(productInfo, +quantity)}
-                className="text-cf-coffee hover:text-cf-light-white transition-all duration-200 border border-cf-coffee rounded-full bg-cf-yellow hover:bg-cf-coffee px-[30px] py-2.5 md:px-10 md:py-5 font-medium w-full h-[45px] flex items-center justify-center"
+                className="text-primary hover:text-foreground transition-all duration-200 border border-primary rounded-full bg-secondary hover:bg-primary px-[30px] py-2.5 md:px-10 md:py-5 font-medium w-full h-[45px] flex items-center justify-center"
               >
                 Add to Cart
               </button>

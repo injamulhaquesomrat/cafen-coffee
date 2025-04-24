@@ -4,7 +4,7 @@ import ButtonArrow from "../../shared/Buttons/ButtonArrow";
 const EventCardItem = ({ item }) => {
   return (
     <>
-      <div className="flex flex-col xs:flex-row border border-cf-coffee rounded-2xl text-cf-coffee overflow-hidden lg:col-span-1">
+      <div className="flex flex-col xs:flex-row border border-primary rounded-2xl text-primary overflow-hidden lg:col-span-1">
         {/* start::carousel item content */}
         <div className="flex flex-col p-4 md:p-6 xs:w-1/2">
           <div className="flex-1 pb-5 xs:pb-[50px] md:pb-16">

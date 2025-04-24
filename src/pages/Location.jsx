@@ -10,8 +10,8 @@ const Location = () => {
         <title>Location | Cafen</title>
         <link rel="canonical" href="/" />
       </Helmet>
-      <div className="bg-cf-light-white">
-        <LocationContainer/>
+      <div className="bg-foreground">
+        <LocationContainer />
         <GoToTop />
       </div>
     </>

@@ -25,8 +25,8 @@ const ValuesAccordion = ({ accordionItems }) => {
     <div className="flex flex-col gap-5 lg:gap-[30px] md:w-full">
       {accordionItems.map((item, index) => (
         <div
-          className={`border border-cf-coffee text-cf-coffee rounded-2xl ${
-            activeIndices.includes(index) && "bg-cf-coffee text-cf-yellow"
+          className={`border border-primary text-primary rounded-2xl ${
+            activeIndices.includes(index) && "bg-primary text-secondary"
           }`}
           key={index}
         >

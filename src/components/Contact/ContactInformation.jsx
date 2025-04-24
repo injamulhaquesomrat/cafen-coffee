@@ -25,7 +25,7 @@ const contactInfoItems = [
 
 const ContactInformation = () => {
   return (
-    <div className="mt-20 xs:mt-[100px] xl:mt-[150px] pb-20 md:pb-[100px] lg:pb-[120px] xl:pb-[150px] text-cf-coffee flex flex-col md:flex-row justify-between gap-5 md:gap-10 lg:gap-10">
+    <div className="mt-20 xs:mt-[100px] xl:mt-[150px] pb-20 md:pb-[100px] lg:pb-[120px] xl:pb-[150px] text-primary flex flex-col md:flex-row justify-between gap-5 md:gap-10 lg:gap-10">
       {/* start::contact information with socials */}
       <div className="xl:w-3/12">
         <h5 className="text-[32px] leading-[1.2] font-sober font-medium pb-5">
@@ -74,7 +74,7 @@ const ContactInformation = () => {
             key={item?.id}
             className="col-span-1 flex flex-col sm:flex-row gap-5"
           >
-            <div className="h-10 w-10 md:h-[50px] md:w-[50px] min-w-2/5 bg-cf-yellow flex items-center justify-center rounded-full border border-cf-coffee">
+            <div className="h-10 w-10 md:h-[50px] md:w-[50px] min-w-2/5 bg-secondary flex items-center justify-center rounded-full border border-primary">
               <img src={item?.img} alt={item?.title} />
             </div>
             <div className="w-4/5">

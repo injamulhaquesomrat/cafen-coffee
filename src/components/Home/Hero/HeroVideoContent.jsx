@@ -21,7 +21,7 @@ const HeroVideoContent = () => {
       {/* start:: video */}
       <video
         ref={videoRef}
-        className="rounded-lg shadow-lg w-full rounded-t-2xl rounded-b-none border border-cf-coffee relative z-40"
+        className="rounded-lg shadow-lg w-full rounded-t-2xl rounded-b-none border border-primary relative z-40"
         autoPlay
         loop
         muted

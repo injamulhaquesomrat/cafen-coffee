@@ -14,7 +14,7 @@ const teamCarouselOptions = {
     arrows:
       "splide__arrows absolute top-1/2 w-full md:w-[108%] md:-right-[4%] z-50 flex justify-between",
     arrow:
-      "splide__arrow !bg-white !fill-cf-coffee !h-[45px] !w-[45px] md:!h-[50px] md:!w-[50px] !opacity-100",
+      "splide__arrow !bg-white !fill-primary !h-[45px] !w-[45px] md:!h-[50px] md:!w-[50px] !opacity-100",
   },
   breakpoints: {
     768: {

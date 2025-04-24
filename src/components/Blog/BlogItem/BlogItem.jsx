@@ -22,7 +22,7 @@ const BlogItem = () => {
         <link rel="canonical" href="/" />
       </Helmet>
       <BlogItemHero blogInfo={blogInfo} />
-      <div className="bg-cf-light-white">
+      <div className="bg-foreground">
         <Container>
           <BlogItemContent />
           <RelatedBlogs />

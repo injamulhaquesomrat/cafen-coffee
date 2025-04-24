@@ -8,26 +8,26 @@ const TeamMember = ({ member }) => {
     {
       id: 1,
       link: `${socials?.facebook}`,
-      icon: <FaFacebookSquare className="text-lg lg:text-2xl text-cf-yellow" />,
+      icon: <FaFacebookSquare className="text-lg lg:text-2xl text-secondary" />,
     },
     {
       id: 2,
       link: `${socials?.instagram}`,
       icon: (
-        <FaInstagramSquare className="text-lg lg:text-2xl text-cf-yellow" />
+        <FaInstagramSquare className="text-lg lg:text-2xl text-secondary" />
       ),
     },
     {
       id: 3,
       link: `${socials?.twitter}`,
-      icon: <FaSquareXTwitter className="text-lg lg:text-2xl text-cf-yellow" />,
+      icon: <FaSquareXTwitter className="text-lg lg:text-2xl text-secondary" />,
     },
   ];
   return (
     <>
       <div
         // to={`/product/${name}`}
-        className="inline-block border border-cf-coffee rounded-xl p-5 group bg-cf-foreground lg:hover:bg-cf-yellow transition-all duration-700 cursor-pointer"
+        className="inline-block border border-primary rounded-xl p-5 group bg-background lg:hover:bg-secondary transition-all duration-700 cursor-pointer"
       >
         {/* start:: team member image container */}
         <div className="relative rounded-lg overflow-hidden">
@@ -56,10 +56,10 @@ const TeamMember = ({ member }) => {
 
         {/* start:: team member text container */}
         <div className="pt-4">
-          <h6 className="text-xl mmd:text-[22px] lg:text-2xl font-sober text-cf-coffee mb-2.5">
+          <h6 className="text-xl mmd:text-[22px] lg:text-2xl font-sober text-primary mb-2.5">
             {name}
           </h6>
-          <p className="xl:text-lg text-cf-coffee ">{position}</p>
+          <p className="xl:text-lg text-primary ">{position}</p>
         </div>
         {/* end:: team member text container */}
       </div>

@@ -13,12 +13,12 @@ const Brands = () => {
     );
   };
   return (
-    <section className="py-[50px] border-y border-cf-coffee bg-cf-light-white">
+    <section className="py-[50px] border-y border-primary bg-foreground">
       <Container>
         <div className="flex flex-col md:flex-row gap-7 items-center">
           {/* start:: section heading */}
           <div className="md:w-1/4">
-            <h3 className="text-xl lg:text-[26px] font-sober text-cf-coffee">
+            <h3 className="text-xl lg:text-[26px] font-sober text-primary">
               We are serving top brands coffee
             </h3>
           </div>

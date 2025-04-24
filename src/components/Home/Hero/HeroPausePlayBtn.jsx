@@ -2,7 +2,7 @@ const HeroPausePlayBtn = ({ handlePlayPause, isVideoPlaying }) => {
   return (
     <button
       onClick={handlePlayPause}
-      className="absolute md:bottom-8 bottom-4 md:right-8 right-4 bg-cf-yellow text-cf-coffee rounded-full p-2 md:p-5 border border-cf-coffee z-40"
+      className="absolute md:bottom-8 bottom-4 md:right-8 right-4 bg-secondary text-primary rounded-full p-2 md:p-5 border border-primary z-40"
     >
       {isVideoPlaying ? (
         <svg

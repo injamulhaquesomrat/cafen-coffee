@@ -20,7 +20,7 @@ const CoffeeMakingVideo = () => {
       {/* start:: video */}
       <video
         ref={videoRef}
-        className=" w-full border-t border-cf-coffee relative z-40 max-h-[715px] min-h-[300px] object-cover"
+        className=" w-full border-t border-primary relative z-40 max-h-[715px] min-h-[300px] object-cover"
         autoPlay
         loop
         muted

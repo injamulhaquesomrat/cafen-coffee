@@ -5,8 +5,8 @@ import SecondaryButton from "../components/shared/Buttons/SecondaryButton";
 
 const ComingSoon = () => {
   return (
-    <div className="bg-cf-light-white w-full h-screen sm:flex items-center justify-center p-[30px]">
-      <div className="bg-cf-light-yellow p-[30px] lg:p-[50px] rounded-xl text-center text-cf-coffee md:w-[540px] lg:w-[800px]">
+    <div className="bg-foreground w-full h-screen sm:flex items-center justify-center p-[30px]">
+      <div className="bg-secondary-foreground p-[30px] lg:p-[50px] rounded-xl text-center text-primary md:w-[540px] lg:w-[800px]">
         <div className="inline-flex items-center justify-center gap-1 mb-2.5 xs:mb-5">
           <img
             className="h-[100px] w-[100px] sm:w-[120px] sm:h-[120px] md:w-[150px] md:h-[150px]"
@@ -24,7 +24,7 @@ const ComingSoon = () => {
         <div className="grid mt-[30px] mb-[15px]">
           <form>
             <input
-              className="px-5 py-2.5 mb-2.5 w-4/5 rounded-lg border border-cf-coffee outline-none bg-cf-light-yellow text-cf-coffee placeholder:text-cf-coffee col-span-1"
+              className="px-5 py-2.5 mb-2.5 w-4/5 rounded-lg border border-primary outline-none bg-secondary-foreground text-primary placeholder:text-primary col-span-1"
               type="email"
               placeholder="Your Email..."
             />

@@ -2,21 +2,21 @@ import Container from "../shared/Container";
 
 const OurStory = () => {
   return (
-    <section className="py-20 md:py-[100px] border-y border-cf-coffee bg-cf-foreground text-center">
+    <section className="py-20 md:py-[100px] border-y border-primary bg-background text-center">
       <Container>
         {/* start:: section title */}
-        <h2 className="text-[42px] xs:text-[50px] md:text-[54px] lg:text-[56px] xl:text-6xl font-sober text-cf-coffee font-medium">
+        <h2 className="text-[42px] xs:text-[50px] md:text-[54px] lg:text-[56px] xl:text-6xl font-sober text-primary font-medium">
           Our story
         </h2>
         {/* end:: section title */}
 
         {/* start:: story paragraph text */}
-        <p className="text-cf-coffee mt-5 lg:mt-10 pb-2.5 lg:max-w-[570px] xl:max-w-[780px] mx-auto">
+        <p className="text-primary mt-5 lg:mt-10 pb-2.5 lg:max-w-[570px] xl:max-w-[780px] mx-auto">
           At Cafen, we believe that every cup of coffee tells a story. Ours
           began with a simple desire—to create a space where people could pause,
           connect, and savor the beauty of a well-brewed cup.
         </p>
-        <p className="text-cf-coffee mb-10 lg:max-w-[570px] xl:max-w-[780px] mx-auto">
+        <p className="text-primary mb-10 lg:max-w-[570px] xl:max-w-[780px] mx-auto">
           Founded by passionate coffee lovers, Cafen was born from a love for
           both the craft of coffee and the community it fosters.
         </p>
@@ -27,7 +27,7 @@ const OurStory = () => {
           {storyList.map((item) => (
             <div
               key={item?.id}
-              className="flex gap-2.5 xl:gap-3 items-center text-cf-coffee col-span-1"
+              className="flex gap-2.5 xl:gap-3 items-center text-primary col-span-1"
             >
               <div>
                 <h4 className="text-[40px] xl:text-5xl font-sober  font-medium">
