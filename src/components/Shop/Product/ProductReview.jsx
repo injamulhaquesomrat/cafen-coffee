@@ -13,7 +13,7 @@ const ProductReview = ({ productInfo }) => {
         Read Reviews from our satisfied customers. Share your experience with Us
         by clicking the below button!
       </p>
-      <div className="-mb-2.5 xs:mb-0">
+      <div className="mb-[30px] xs:mb-10 lg:mb-[60px] xl:mb-[70px]">
         <DecorationButtonPrimary btnText="Submit a Review" />
       </div>
       <div className="max-w-[940px] mx-auto space-y-10">

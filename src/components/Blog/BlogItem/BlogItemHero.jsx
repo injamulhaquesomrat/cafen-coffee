@@ -13,9 +13,12 @@ const BlogItemHero = ({ blogInfo }) => {
               <span className="text-sm">August 23, 2024</span>
             </div>
             <h3 className="text-[50px] xs:text-[56px] md:text-[68px] lg:text-[70px] xl:text-[80px] leading-[1.2] font-sober text-center">
-              Creative ways to enjoy coffee
+              {blogInfo?.title}
             </h3>
-            <p className="text-center">{blogInfo?.title}</p>
+            <p className="text-center md:w-[79%] lg:w-[56%] xl:w-[520px] mx-auto">
+              From decadent dessert-inspired drinks to refreshing cold brews,
+              there are countless ways to explore and savor your favorite brew.
+            </p>
           </div>
           <div className="mt-5 md:mt-10 border border-cf-coffee rounded-t-xl overflow-hidden">
             <img src={blogInfo?.images.big} alt={blogInfo?.title} />
