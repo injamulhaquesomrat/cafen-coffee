@@ -11,9 +11,9 @@ const Newsletter = () => {
         Sign up for our newsletter for updates on new menu items, special offers
       </h6>
       <form onSubmit={handleSubmit} className="max-w-[455px]">
-        <div className="border border-primary rounded-full p-2.5 flex justify-between lg:w-[455px]">
+        <div className="border border-primary-foreground rounded-full p-2.5 flex justify-between lg:w-[455px]">
           <input
-            className="p-[5px] bg-background focus-visible:outline-0 text-primary placeholder:text-primary/80 placeholder:text-md text-md lg:text-lg rounded-2xl font-medium w-full"
+            className="p-[5px] pl-4 bg-background focus-visible:outline-0 text-primary placeholder:text-primary/80 placeholder:text-md text-md lg:text-lg rounded-2xl font-medium w-full"
             type="email"
             name="email"
             id="email"

@@ -10,7 +10,7 @@ const BlogItemHero = ({ blogInfo }) => {
               <span className="bg-primary text-secondary px-2.5 py-[5px] text-sm rounded-full leading-[1.7]">
                 {blogInfo?.type}
               </span>
-              <span className="text-sm">August 23, 2024</span>
+              <span className="text-sm text-primary-foreground">August 23, 2024</span>
             </div>
             <h3 className="text-[50px] xs:text-[56px] md:text-[68px] lg:text-[70px] xl:text-[80px] leading-[1.2] font-sober text-center">
               {blogInfo?.title}

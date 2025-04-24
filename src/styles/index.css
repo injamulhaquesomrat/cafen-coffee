@@ -19,6 +19,10 @@ html {
   font-family: "BD Grotesk", sans-serif;
 }
 
+p {
+  color: #7b3a38;
+  line-height: normal;
+}
 
 /* Section padding customization */
 .cf-section {

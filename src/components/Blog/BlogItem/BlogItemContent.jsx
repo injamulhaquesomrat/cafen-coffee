@@ -16,7 +16,7 @@ const BlogItemContent = () => {
           account in outward tedious do. Particular way thoroughly unaffected
           projection favorable Mrs can be projecting own.
         </p>
-        <ul className="list-disc space-y-2.5 pl-10 mb-5 md:mb-[30px] px-5 md:px-[70px]">
+        <ul className="list-disc space-y-2.5 pl-10 mb-5 md:mb-[30px] px-5 md:px-[70px] text-primary-foreground">
           <li>The standard chunk of Lorem Ipsum used since the 1500s.</li>
           <li>reproduced below for those interested.</li>
           <li>It is a long-established fact that a reader will.</li>

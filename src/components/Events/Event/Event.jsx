@@ -23,11 +23,13 @@ const Event = () => {
         <link rel="canonical" href="/" />
       </Helmet>
       <EventHero eventInfo={eventInfo} />
-      <Container>
-        <EventContent eventInfo={eventInfo} />
-        <OtherEvents />
-        <GoToTop />
-      </Container>
+      <div className="bg-foreground">
+        <Container>
+          <EventContent eventInfo={eventInfo} />
+          <OtherEvents />
+          <GoToTop />
+        </Container>
+      </div>
     </>
   );
 };

@@ -30,13 +30,13 @@ const ProductDetailsCard = ({ productInfo, quantity, setQuantity }) => {
             <h6 className="text-[26px] leading-[1.2] text-primary font-sober mb-[5px]">
               Description:
             </h6>
-            <p>{productInfo?.description}</p>
+            <p className="text-primary-foreground">{productInfo?.description}</p>
           </div>
           <div className="mt-5 mb-2.5">
             <h6 className="text-[26px] leading-[1.2] text-primary font-sober mb-[5px]">
               Ingredients:
             </h6>
-            <p>{productInfo?.ingredients.join(", ")}</p>
+            <p className="text-primary-foreground">{productInfo?.ingredients.join(", ")}</p>
           </div>
 
           <div className="flex flex-col gap-[5px]">

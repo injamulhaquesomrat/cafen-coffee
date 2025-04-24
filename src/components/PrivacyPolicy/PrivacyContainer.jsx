@@ -14,7 +14,7 @@ const PrivacyContainer = () => {
           therefore always free from repetition, injected humour, or
           non-characteristic words etc.
         </p>
-        <ul className="list-disc list-inside pl-3 space-y-2.5">
+        <ul className="list-disc list-inside pl-3 space-y-2.5 text-primary-foreground">
           <li>
             There are many variations of passages of Lorem Ipsum available.
           </li>
@@ -54,7 +54,7 @@ const PrivacyContainer = () => {
           publishing software like Aldus PageMaker including versions of Lorem
           Ipsum.
         </p>
-        <ul className="list-decimal list-inside pl-3 space-y-2.5">
+        <ul className="list-decimal list-inside pl-3 space-y-2.5 text-primary-foreground">
           <li>sometimes on purpose.</li>
           <li>classical Latin literature from 45 BC.</li>
           <li>The Extremes of Good and Evil.</li>

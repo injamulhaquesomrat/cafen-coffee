@@ -38,9 +38,9 @@ const ValuesAccordion = ({ accordionItems }) => {
               fontWeight: activeIndices.includes(index) ? "semibold" : "normal",
             }}
           >
-            <p className="text-xl md:text-2xl lg:text-[28px] leading-[1.4] font-sober">
+            <h5 className="text-xl md:text-2xl lg:text-[28px] leading-[1.4] font-sober">
               {item.title}
-            </p>
+            </h5>
             {activeIndices.includes(index) ? (
               <span>
                 <FiMinus className="xs:text-lg md:text-2xl" />

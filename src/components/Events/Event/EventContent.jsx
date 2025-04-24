@@ -1,4 +1,4 @@
-import SecondaryButton from "../../shared/Buttons/SecondaryButton";
+import DecorationButtonPrimary from "../../shared/Buttons/DecorationButtonPrimary";
 
 const EventContent = ({ eventInfo }) => {
   return (
@@ -50,7 +50,7 @@ const EventContent = ({ eventInfo }) => {
           <span>Time : 8:00 PM - 10:00 AM</span>
         </div>
         <div>
-          <SecondaryButton buttonText={"Register to event"} />
+          <DecorationButtonPrimary btnText={"Register to event"} />
         </div>
       </div>
       {/* end::event register */}

@@ -18,7 +18,7 @@ const LocationItem = ({ item }) => {
           <h2 className="text-[28px] xl:text-[30px] leading-[1.2] text-primary font-sober pb-2">
             {title}
           </h2>
-          <p className="text-primary">{location}</p>
+          <p className="text-primary-foreground">{location}</p>
         </div>
         <div className="flex flex-col xl:flex-row xl:items-center text-primary font-medium gap-4 justify-between">
           <a className="hover:underline" href={`tel:${contact}`}>

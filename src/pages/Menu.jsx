@@ -18,7 +18,7 @@ const Menu = () => {
           <PageHero
             pageTitle={"Our menu"}
             subContent={
-              <p className="text-primary max-w-[620px] text-center mx-auto">
+              <p className="text-primary-foreground leading-normal max-w-[620px] text-center mx-auto">
                 Welcome to Cafen! Here, we take pride in serving a curated
                 selection of drinks and delights that are sure to satisfy every
                 palate.

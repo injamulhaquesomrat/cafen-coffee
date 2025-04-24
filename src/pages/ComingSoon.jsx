@@ -24,7 +24,7 @@ const ComingSoon = () => {
         <div className="grid mt-[30px] mb-[15px]">
           <form>
             <input
-              className="px-5 py-2.5 mb-2.5 w-4/5 rounded-lg border border-primary outline-none bg-secondary-foreground text-primary placeholder:text-primary col-span-1"
+              className="px-5 py-2.5 mb-2.5 w-4/5 rounded-lg border border-primary-foreground outline-none bg-secondary-foreground text-primary-foreground placeholder:text-primary-foreground col-span-1"
               type="email"
               placeholder="Your Email..."
             />
