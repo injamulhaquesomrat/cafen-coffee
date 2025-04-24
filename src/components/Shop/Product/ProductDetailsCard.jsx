@@ -4,7 +4,6 @@ import PhotoThumbnailGallery from "../../shared/PhotoThumbnailGallery";
 const ProductDetailsCard = ({ productInfo, quantity, setQuantity }) => {
   const { addToCart } = useCart();
 
-
   return (
     <div className="pt-5 md:pt-10">
       <div className="rounded-2xl md:rounded-[50px] border border-cf-coffee overflow-hidden bg-white flex flex-col lg:flex-row">

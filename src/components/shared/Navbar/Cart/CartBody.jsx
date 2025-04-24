@@ -11,7 +11,7 @@ const CartBody = () => {
       if (newQuantity >= 1 && newQuantity <= 5) {
         updateQuantity(id, newQuantity);
       } else {
-        updateQuantity(id, 1); // Default fallback
+        updateQuantity(id, 1); 
       }
     }
   };
@@ -50,8 +50,8 @@ const CartBody = () => {
                 name="quantity"
                 min="1"
                 max="10"
-                value={item?.quantity || 1}
                 onChange={(e) => handleQuantityChange(item.id, e.target.value)}
+                value={item?.quantity || 1}
               />
             </div>
           </div>
