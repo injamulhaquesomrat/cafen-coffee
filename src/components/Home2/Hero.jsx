@@ -1,3 +1,4 @@
+import { videoPropItems } from "../../utils/videoPropItems";
 import DecorationButtonPrimary from "../shared/Buttons/DecorationButtonPrimary";
 import Container from "../shared/Container";
 import { Link } from "react-router-dom";
@@ -8,9 +9,9 @@ const Hero = () => {
       <Container>
         <div className="flex flex-col sm:flex-row gap-8 justify-between">
           {/* start:: hero text container */}
-          <div className="w-full md:w-3/6 flex flex-col justify-center pb-10 lg:py-0 gap-[30px] md:gap-[50px] md:basis-2/3 lg:basis-1/2">
+          <div className="w-full md:w-3/6 inline-flex flex-col justify-center pb-10 lg:py-0 gap-[30px] md:gap-[50px] md:basis-2/3 lg:basis-1/2">
             {/* start:: section heading */}
-            <h1 className="text-[46px] md:text-5xl xl:text-[80px] leading-[1.2] font-sober text-primary">
+            <h1 className="text-[46px] md:text-5xl xl:text-[80px] leading-[1.7] font-sober text-primary">
               Discover the perfect brew at Cafen café
             </h1>
             {/* end:: section heading */}
@@ -75,7 +76,7 @@ const Hero = () => {
           {/* end:: hero text container */}
 
           {/* start::hero banner content */}
-          <div className="-mb-6 -mt-14 md:-mt-16 md:-mr-4 lg:mr-0 lg:-mt-32 lg:-mb-36 -rotate-6 md:basis-1/3 lg:basis-1/2">
+          <div className="-mb-6 -mt-14 md:-mt-16 md:-mr-4 lg:mr-0 lg:-mt-32 lg:-mb-60 -rotate-6 md:basis-1/3 lg:basis-1/2 h-fit">
             <div>
               <img
                 className="w-[600px] h-[600px] lg:h-[800px] lg:w-[800px] xl:w-full xl:h-full object-cover"
@@ -83,6 +84,16 @@ const Hero = () => {
                 alt="hero banner image"
               />
             </div>
+            {/* start:: props container */}
+            {videoPropItems.map((item) => (
+              <div
+                key={item?.id}
+                className={`hidden md:block blur-sm absolute ${item?.classNames}`}
+              >
+                <img src={item?.src} alt="video prop" />
+              </div>
+            ))}
+            {/* end:: props container */}
           </div>
           {/* end::hero banner content */}
         </div>
