@@ -47,7 +47,7 @@ const ContactForm = () => {
       <div className="rounded-2xl lg:rounded-[50px] w-full h-full col-span-12 md:col-span-5 overflow-hidden">
         <img
           className="h-full w-full object-cover"
-          src="/public/assets/images/contact/contact-image.avif"
+          src="/assets/images/contact/contact-image.avif"
           alt="contact form image"
         />
       </div>

@@ -10,7 +10,7 @@ const ComingSoon = () => {
         <div className="inline-flex items-center justify-center gap-1 mb-2.5 xs:mb-5">
           <img
             className="h-[100px] w-[100px] sm:w-[120px] sm:h-[120px] md:w-[150px] md:h-[150px]"
-            src="/public/assets/icons/props/coffee-bean.svg"
+            src="/assets/icons/props/coffee-bean.svg"
             alt="error zero icon"
           />
         </div>

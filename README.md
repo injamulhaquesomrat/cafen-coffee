@@ -59,6 +59,37 @@ Ensure you have the following installed:
 1. Create a new component in the `src/pages` directory.
 2. Add a route for the new page in `src/App.js`.
 
+### Adding Custom Fonts
+1. Add your font files to the `public/fonts` directory.
+2. Update the `index.css` file to include the font-face declarations:
+    ```css
+    @font-face {
+        font-family: 'CustomFont';
+        src: url('/fonts/CustomFont.woff2') format('woff2'),
+             url('/fonts/CustomFont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    ```
+3. Use the custom font in your components:
+    ```css
+    body {
+        font-family: 'CustomFont', sans-serif;
+    }
+    ```
+
+### Updating Theme Colors
+1. Open the `src/styles/theme.css` file.
+2. Modify the CSS variables to update the theme colors:
+    ```css
+    :root {
+        --primary-color: #6b4e16;
+        --secondary-color: #f4e1d2;
+        --accent-color: #d4a373;
+    }
+    ```
+
+
 ---
 
 ## Third-Party Libraries
@@ -104,8 +135,11 @@ This project leverages several third-party libraries to enhance functionality an
 
 ---
 
+## Live Demo
+Check out the live demo of the Cafen Coffee React Template: [Live Demo](https://cafen-coffee-demo.netlify.app/)
+
 ## Support
-If you encounter any issues or have questions, feel free to open an issue on the [GitHub repository](https://github.com/your-repo/cafen-coffee).
+If you encounter any issues or have questions, feel free to open an issue on the [GitHub repository](https://github.com/injamulhaquesomrat/cafen-coffee).
 
 ---
 

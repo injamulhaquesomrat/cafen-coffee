@@ -5,18 +5,18 @@ export const productItems = [
     category: "coffee",
     price: 14.99,
     images: [
-      { src: "/public/assets/images/products/expresso-beans.avif" },
+      { src: "/assets/images/products/expresso-beans.avif" },
       {
-        src: "/public/assets/images/products/expresso-beans-two.avif",
+        src: "/assets/images/products/expresso-beans-two.avif",
       },
       {
-        src: "/public/assets/images/products/expresso-beans-three.avif",
+        src: "/assets/images/products/expresso-beans-three.avif",
       },
       {
-        src: "/public/assets/images/products/expresso-beans-four.avif",
+        src: "/assets/images/products/expresso-beans-four.avif",
       },
     ],
-    thumbnail: "/public/assets/images/products/thumbnail-one.avif",
+    thumbnail: "/assets/images/products/thumbnail-one.avif",
     save_offer: "Save 10%",
     description:
       "The blend offers a rich crema and a smooth, velvety finish, perfect for espresso shots and espresso-based drinks like lattes, cappuccinos, and macchiatos.",
@@ -69,18 +69,18 @@ export const productItems = [
     category: "tea",
     price: 9.99,
     images: [
-      { src: "/public/assets/images/products/matcha-green-tea.avif" },
+      { src: "/assets/images/products/matcha-green-tea.avif" },
       {
-        src: "/public/assets/images/products/matcha-green-tea-two.avif",
+        src: "/assets/images/products/matcha-green-tea-two.avif",
       },
       {
-        src: "/public/assets/images/products/matcha-green-tea-three.avif",
+        src: "/assets/images/products/matcha-green-tea-three.avif",
       },
       {
-        src: "/public/assets/images/products/matcha-green-tea.avif-four",
+        src: "/assets/images/products/matcha-green-tea.avif-four",
       },
     ],
-    thumbnail: "/public/assets/images/products/thumbnail-two.avif",
+    thumbnail: "/assets/images/products/thumbnail-two.avif",
     save_offer: "Save 15%",
     description:
       "Premium Japanese matcha powder with a rich flavor and vibrant green color. Great for lattes and smoothies.",
@@ -132,18 +132,18 @@ export const productItems = [
     category: "dessert",
     price: 6.5,
     images: [
-      { src: "/public/assets/images/products/tiramisu-delight.avif" },
+      { src: "/assets/images/products/tiramisu-delight.avif" },
       {
-        src: "/public/assets/images/products/tiramisu-delight-two.avif",
+        src: "/assets/images/products/tiramisu-delight-two.avif",
       },
       {
-        src: "/public/assets/images/products/tiramisu-delight-3.avif",
+        src: "/assets/images/products/tiramisu-delight-3.avif",
       },
       {
-        src: "/public/assets/images/products/tiramisu-delight-4.avif",
+        src: "/assets/images/products/tiramisu-delight-4.avif",
       },
     ],
-    thumbnail: "/public/assets/images/products/thumbnail-three.avif",
+    thumbnail: "/assets/images/products/thumbnail-three.avif",
     save_offer: "Save $1 on 2",
     description:
       "Classic Italian dessert with espresso-soaked ladyfingers, mascarpone cream, and cocoa powder.",
@@ -194,18 +194,18 @@ export const productItems = [
     category: "coffee",
     price: 4.75,
     images: [
-      { src: "/public/assets/images/products/cold-brew-coffee.avif" },
+      { src: "/assets/images/products/cold-brew-coffee.avif" },
       {
-        src: "/public/assets/images/products/cold-brew-coffee-2.avif",
+        src: "/assets/images/products/cold-brew-coffee-2.avif",
       },
       {
-        src: "/public/assets/images/products/cold-brew-coffee-3.avif",
+        src: "/assets/images/products/cold-brew-coffee-3.avif",
       },
       {
-        src: "/public/assets/images/products/cold-brew-coffee-4.avif",
+        src: "/assets/images/products/cold-brew-coffee-4.avif",
       },
     ],
-    thumbnail: "/public/assets/images/products/thumbnail-three.avif",
+    thumbnail: "/assets/images/products/thumbnail-three.avif",
     save_offer: "Buy 1 Get 1 Half Off",
     description:
       "Smooth, bold, and naturally sweet cold brew steeped for 18 hours. Served over ice for a refreshing kick.",
@@ -254,18 +254,18 @@ export const productItems = [
     category: "tea",
     price: 5.25,
     images: [
-      { src: "/public/assets/images/products/chai-latte.avif" },
+      { src: "/assets/images/products/chai-latte.avif" },
       {
-        src: "/public/assets/images/products/chai-latte-2.avif",
+        src: "/assets/images/products/chai-latte-2.avif",
       },
       {
-        src: "/public/assets/images/products/chai-latte-3.avif",
+        src: "/assets/images/products/chai-latte-3.avif",
       },
       {
-        src: "/public/assets/images/products/chai-latte-4.avif",
+        src: "/assets/images/products/chai-latte-4.avif",
       },
     ],
-    thumbnail: "/public/assets/images/products/thumbnail-two.avif",
+    thumbnail: "/assets/images/products/thumbnail-two.avif",
     save_offer: "Save 5%",
     description:
       "A cozy, spiced chai tea blend with creamy steamed milk. Perfect balance of cinnamon, cardamom, and cloves.",
@@ -307,18 +307,18 @@ export const productItems = [
     category: "dessert",
     price: 7.0,
     images: [
-      { src: "/public/assets/images/products/vanilla-bean-cheesecake.avif" },
+      { src: "/assets/images/products/vanilla-bean-cheesecake.avif" },
       {
-        src: "/public/assets/images/products/vanilla-bean-cheesecake-2.avif",
+        src: "/assets/images/products/vanilla-bean-cheesecake-2.avif",
       },
       {
-        src: "/public/assets/images/products/vanilla-bean-cheesecake-3.avif",
+        src: "/assets/images/products/vanilla-bean-cheesecake-3.avif",
       },
       {
-        src: "/public/assets/images/products/vanilla-bean-cheesecake-4.avif",
+        src: "/assets/images/products/vanilla-bean-cheesecake-4.avif",
       },
     ],
-    thumbnail: "/public/assets/images/products/thumbnail-one.avif",
+    thumbnail: "/assets/images/products/thumbnail-one.avif",
     save_offer: "Save 15%",
     description:
       "Creamy, indulgent vanilla bean cheesecake on a graham cracker crust. Rich and satisfying.",
@@ -353,19 +353,19 @@ export const productItems = [
     category: "dessert",
     price: 6.5,
     images: [
-      { src: "/public/assets/images/products/vegan-chocolate-cake.jpg" },
+      { src: "/assets/images/products/vegan-chocolate-cake.jpg" },
       {
-        src: "/public/assets/images/products/vegan-chocolate-cake-2.jpg",
+        src: "/assets/images/products/vegan-chocolate-cake-2.jpg",
       },
       {
-        src: "/public/assets/images/products/vegan-chocolate-cake-3.jpg",
+        src: "/assets/images/products/vegan-chocolate-cake-3.jpg",
       },
       {
-        src: "/public/assets/images/products/vegan-chocolate-cake-4.jpg",
+        src: "/assets/images/products/vegan-chocolate-cake-4.jpg",
       },
     ],
 
-    thumbnail: "/public/assets/images/products/thumbnail-one.avif",
+    thumbnail: "/assets/images/products/thumbnail-one.avif",
     save_offer: "Buy 2 Get 1 Free",
     description:
       "Moist and rich vegan chocolate cake with a smooth chocolate ganache topping. A guilt-free indulgence.",
@@ -400,18 +400,18 @@ export const productItems = [
     category: "beverages",
     price: 5.75,
     images: [
-      { src: "/public/assets/images/products/berry-smoothie.jpg" },
+      { src: "/assets/images/products/berry-smoothie.jpg" },
       {
-        src: "/public/assets/images/products/berry-smoothie-2.jpg",
+        src: "/assets/images/products/berry-smoothie-2.jpg",
       },
       {
-        src: "/public/assets/images/products/berry-smoothie-3.jpg",
+        src: "/assets/images/products/berry-smoothie-3.jpg",
       },
       {
-        src: "/public/assets/images/products/berry-smoothie-4.jpg",
+        src: "/assets/images/products/berry-smoothie-4.jpg",
       },
     ],
-    thumbnail: "/public/assets/images/products/thumbnail-two.avif",
+    thumbnail: "/assets/images/products/thumbnail-two.avif",
     save_offer: "Save 10%",
     description:
       "A refreshing smoothie packed with strawberries, blueberries, and a hint of honey. Perfect for an energy boost.",
@@ -463,18 +463,18 @@ export const productItems = [
     category: "baked goods",
     price: 3.5,
     images: [
-      { src: "/public/assets/images/products/cinnamon-roll.jpg" },
+      { src: "/assets/images/products/cinnamon-roll.jpg" },
       {
-        src: "/public/assets/images/products/cinnamon-roll-2.jpg"
+        src: "/assets/images/products/cinnamon-roll-2.jpg",
       },
       {
-        src: "/public/assets/images/products/cinnamon-roll-3.jpg"
+        src: "/assets/images/products/cinnamon-roll-3.jpg",
       },
       {
-        src: "/public/assets/images/products/cinnamon-roll-4.jpg"
+        src: "/assets/images/products/cinnamon-roll-4.jpg",
       },
     ],
-    thumbnail: "/public/assets/images/products/thumbnail-three.avif",
+    thumbnail: "/assets/images/products/thumbnail-three.avif",
     save_offer: "Save 15%",
     description:
       "Fluffy and soft cinnamon rolls topped with a creamy glaze. A perfect sweet treat for any time of the day.",

@@ -25,10 +25,7 @@ const Hero = () => {
                 />
               </Link>
               <div className="flex items-center gap-2">
-                <img
-                  src="/public/assets/icons/props/star-one.svg"
-                  alt="star icon"
-                />
+                <img src="/assets/icons/props/star-one.svg" alt="star icon" />
                 <span className="text-primary">
                   4.95/5 from over 100 reviews
                 </span>
@@ -80,7 +77,7 @@ const Hero = () => {
             <div>
               <img
                 className="w-[600px] h-[600px] lg:h-[800px] lg:w-[800px] xl:w-full xl:h-full object-cover"
-                src="/public/assets/images/hero-2-banner.avif"
+                src="/assets/images/hero-2-banner.avif"
                 alt="hero banner image"
               />
             </div>

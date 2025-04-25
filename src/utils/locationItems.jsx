@@ -5,8 +5,7 @@ export const locationItems = [
     location: "123 Beach Ave, Miami, FL 33139",
     contact: "(305) 555-1234",
     mapLink: "https://goo.gl/maps/abc123",
-    image:
-      "/public/assets/images/locations/beachside-branch.avif",
+    image: "/assets/images/locations/beachside-branch.avif",
   },
   {
     id: 2,
@@ -14,8 +13,7 @@ export const locationItems = [
     location: "456 Downtown St, Miami, FL 33101",
     contact: "(305) 555-5678",
     mapLink: "https://goo.gl/maps/def456",
-    image:
-      "/public/assets/images/locations/downtown-branch.avif",
+    image: "/assets/images/locations/downtown-branch.avif",
   },
   {
     id: 3,
@@ -23,7 +21,6 @@ export const locationItems = [
     location: "789 Uptown Rd, Miami, FL 33101",
     contact: "(305) 555-9012",
     mapLink: "https://goo.gl/maps/ghi789",
-    image:
-      "/public/assets/images/locations/uptown-branch.avif",
+    image: "/assets/images/locations/uptown-branch.avif",
   },
 ];

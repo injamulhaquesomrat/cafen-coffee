@@ -17,7 +17,7 @@ const OurValues = () => {
           <div className="w-[45%]">
             <img
               className="rounded-2xl border border-primary"
-              src="/public/assets/images/about/about-values.avif"
+              src="/assets/images/about/about-values.avif"
               alt="over values banner image"
             />
           </div>

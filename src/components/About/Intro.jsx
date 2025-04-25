@@ -30,7 +30,7 @@ const Intro = () => {
                   <li key={item?.id} className={item?.classNames}>
                     <img
                       className="h-5 w-5"
-                      src="/public/assets/icons/props/list-tick.svg"
+                      src="/assets/icons/props/list-tick.svg"
                       alt="tick icon"
                     />
                     <span className="text-sm md:text-base">{item?.text}</span>

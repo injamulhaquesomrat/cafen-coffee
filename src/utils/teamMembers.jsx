@@ -14,7 +14,7 @@ export const teamMembers = [
     id: 2,
     name: "Jane Smith",
     position: "Pastry Chef",
-    image: "/public/assets/images/team/judy-ngyuan.avif",
+    image: "/assets/images/team/judy-ngyuan.avif",
     socials: {
       facebook: "https://facebook.com/janesmith",
       instagram: "https://instagram.com/janesmith",
@@ -25,7 +25,7 @@ export const teamMembers = [
     id: 3,
     name: "Robert Brown",
     position: "Cafe Manager",
-    image: "/public/assets/images/team/billy-vaquez.avif",
+    image: "/assets/images/team/billy-vaquez.avif",
     socials: {
       facebook: "https://facebook.com/robertbrown",
       instagram: "https://instagram.com/robertbrown",
@@ -36,7 +36,7 @@ export const teamMembers = [
     id: 4,
     name: "Jake Nguyen",
     position: "Roast Master",
-    image: "/public/assets/images/team/jake.jpg",
+    image: "/assets/images/team/jake.jpg",
     socials: {
       facebook: "https://facebook.com/jakenguyen",
       instagram: "https://instagram.com/jakenguyen",
@@ -46,7 +46,7 @@ export const teamMembers = [
   {
     id: 5,
     name: "Sophie Hall",
-    image: "/public/assets/images/team/sophie.jpg",
+    image: "/assets/images/team/sophie.jpg",
     position: "Customer Experience Lead",
     socials: {
       facebook: "https://facebook.com/sophiehall",

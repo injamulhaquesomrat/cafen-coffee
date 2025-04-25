@@ -43,7 +43,7 @@ const Specs = () => {
             <div className="md:basis-5/12 flex justify-center">
               <img
                 className="border border-primary rounded-2xl object-cover"
-                src="/public/assets/images/spec/book-a-table.avif"
+                src="/assets/images/spec/book-a-table.avif"
                 alt="about image"
               />
             </div>
@@ -91,27 +91,27 @@ const specItems = [
     title: "Cozy atmosphere",
     description:
       "  We are committed to eco-friendly practices, from using biodegradable materials to sourcing locally",
-    icon: "/public/assets/icons/props/cozy-atmosphere.svg",
+    icon: "/assets/icons/props/cozy-atmosphere.svg",
   },
   {
     id: 2,
     title: " Community engagement",
     description:
       "We believe in giving back to our community through events, and local collaborations.",
-    icon: "/public/assets/icons/props/community-engagement.svg",
+    icon: "/assets/icons/props/community-engagement.svg",
   },
   {
     id: 3,
     title: "Artisanal coffee",
     description:
       "Our coffee is sourced from the finest regions around the world and roasted to perfection.",
-    icon: "/public/assets/icons/props/artisanal-coffee.svg",
+    icon: "/assets/icons/props/artisanal-coffee.svg",
   },
   {
     id: 4,
     title: "Exceptional service",
     description:
       "Our friendly and knowledgeable staff are dedicated to providing you with the best service",
-    icon: "/public/assets/icons/props/exceptional-services.svg",
+    icon: "/assets/icons/props/exceptional-services.svg",
   },
 ];

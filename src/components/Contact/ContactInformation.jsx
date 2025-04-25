@@ -3,20 +3,20 @@ import { Link } from "react-router-dom";
 const contactInfoItems = [
   {
     id: 1,
-    img: "/public/assets/icons/props/contact-location.svg",
+    img: "/assets/icons/props/contact-location.svg",
     title: "Address",
     text: "Cafen Café 123 Coffee Lane Brewtown, 45678",
   },
   {
     id: 2,
-    img: "/public/assets/icons/props/contact-phone.svg",
+    img: "/assets/icons/props/contact-phone.svg",
     title: "Phone",
     text: "+1 (234) 567-8900",
     link: "tel:+1 (234) 567-8900",
   },
   {
     id: 3,
-    img: "/public/assets/icons/props/contact-mail.svg",
+    img: "/assets/icons/props/contact-mail.svg",
     title: "Email",
     text: "contact@cafencafe.com",
     link: "mail:contact@cafencafe.com",
@@ -37,28 +37,28 @@ const ContactInformation = () => {
           <Link to="#">
             <img
               className="h-6 w-6 hover:-translate-y-1 transition-all duration-300"
-              src="/public/assets/icons/props/facebook-icon.svg"
+              src="/assets/icons/props/facebook-icon.svg"
               alt="facebook icon"
             />
           </Link>
           <Link to="#">
             <img
               className="h-6 w-6 hover:-translate-y-1 transition-all duration-300"
-              src="/public/assets/icons/props/instagram-icon.svg"
+              src="/assets/icons/props/instagram-icon.svg"
               alt="instagram icon"
             />
           </Link>
           <Link to="#">
             <img
               className="h-6 w-6 hover:-translate-y-1 transition-all duration-300"
-              src="/public/assets/icons/props/dribble-icon.svg"
+              src="/assets/icons/props/dribble-icon.svg"
               alt="dribble icon"
             />
           </Link>
           <Link to="#">
             <img
               className="h-6 w-6 hover:-translate-y-1 transition-all duration-300"
-              src="/public/assets/icons/props/twitter-icon.svg"
+              src="/assets/icons/props/twitter-icon.svg"
               alt="twitter icon"
             />
           </Link>

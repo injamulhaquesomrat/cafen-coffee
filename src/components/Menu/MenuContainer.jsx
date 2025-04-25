@@ -13,7 +13,7 @@ const MenuContainer = () => {
       <div>
         <MenuHero
           menuTitle={"Breakfast"}
-          menuBg={"/public/assets/images/featured/breabreakfast-hero.avif"}
+          menuBg={"/assets/images/featured/breabreakfast-hero.avif"}
         />
         <MenuList menuItems={featuredItems} />
       </div>
@@ -23,7 +23,7 @@ const MenuContainer = () => {
       <div>
         <MenuHero
           menuTitle={"Lunch"}
-          menuBg={"/public/assets/images/featured/lunch-hero.avif"}
+          menuBg={"/assets/images/featured/lunch-hero.avif"}
         />
         <MenuList menuItems={lunchItems} />
       </div>
@@ -33,7 +33,7 @@ const MenuContainer = () => {
       <div>
         <MenuHero
           menuTitle={"Dinner"}
-          menuBg={"/public/assets/images/featured/dinner-hero.avif"}
+          menuBg={"/assets/images/featured/dinner-hero.avif"}
         />
         <MenuList menuItems={dinnerItems} />
       </div>

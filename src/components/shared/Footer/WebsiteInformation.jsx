@@ -12,28 +12,28 @@ const WebsiteInformation = () => {
               <Link to="#">
                 <img
                   className="h-6 w-6 hover:-translate-y-1 transition-all duration-300"
-                  src="/public/assets/icons/props/facebook-icon.svg"
+                  src="/assets/icons/props/facebook-icon.svg"
                   alt="facebook icon"
                 />
               </Link>
               <Link to="#">
                 <img
                   className="h-6 w-6 hover:-translate-y-1 transition-all duration-300"
-                  src="/public/assets/icons/props/instagram-icon.svg"
+                  src="/assets/icons/props/instagram-icon.svg"
                   alt="instagram icon"
                 />
               </Link>
               <Link to="#">
                 <img
                   className="h-6 w-6 hover:-translate-y-1 transition-all duration-300"
-                  src="/public/assets/icons/props/dribble-icon.svg"
+                  src="/assets/icons/props/dribble-icon.svg"
                   alt="dribble icon"
                 />
               </Link>
               <Link to="#">
                 <img
                   className="h-6 w-6 hover:-translate-y-1 transition-all duration-300"
-                  src="/public/assets/icons/props/twitter-icon.svg"
+                  src="/assets/icons/props/twitter-icon.svg"
                   alt="twitter icon"
                 />
               </Link>

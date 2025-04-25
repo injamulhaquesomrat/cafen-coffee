@@ -2,7 +2,7 @@ export const featuredMenuItems = [
   {
     id: 1,
     category: "Beverages",
-    img: "/public/assets/images/featured/menu-item-01.avif",
+    img: "/assets/images/featured/menu-item-01.avif",
     subCategories: [
       {
         name: "Coffee",
@@ -24,7 +24,7 @@ export const featuredMenuItems = [
   {
     id: 2,
     category: "Desserts",
-    img: "/public/assets/images/featured/menu-item-03.avif",
+    img: "/assets/images/featured/menu-item-03.avif",
     subCategories: [
       {
         name: "Chocolate Cake",
@@ -46,7 +46,7 @@ export const featuredMenuItems = [
   {
     id: 3,
     category: "Main Courses",
-    img: "/public/assets/images/featured/menu-item-03.avif",
+    img: "/assets/images/featured/menu-item-03.avif",
     subCategories: [
       {
         name: "Grilled Chicken",
@@ -68,7 +68,7 @@ export const featuredMenuItems = [
   {
     id: 4,
     category: "Appetizers",
-    img: "/public/assets/images/featured/menu-item-04.avif",
+    img: "/assets/images/featured/menu-item-04.avif",
     subCategories: [
       {
         name: "Bruschetta",

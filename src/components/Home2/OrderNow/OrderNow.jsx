@@ -13,11 +13,8 @@ const OrderNow = () => {
           playsInline
           loop
         >
-          <source src="/public/assets/videos/menu-video.mp4" type="video/mp4" />
-          <source
-            src="/public/assets/videos/menu-video.webm"
-            type="video/webm"
-          />
+          <source src="/assets/videos/menu-video.mp4" type="video/mp4" />
+          <source src="/assets/videos/menu-video.webm" type="video/webm" />
           Your browser does not support HTML video.
         </video>
       </div>
