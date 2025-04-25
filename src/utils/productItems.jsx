@@ -77,7 +77,7 @@ export const productItems = [
         src: "/assets/images/products/matcha-green-tea-three.avif",
       },
       {
-        src: "/assets/images/products/matcha-green-tea.avif-four",
+        src: "/assets/images/products/matcha-green-tea-four.jpg",
       },
     ],
     thumbnail: "/assets/images/products/thumbnail-two.avif",

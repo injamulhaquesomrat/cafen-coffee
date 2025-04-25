@@ -26,7 +26,7 @@ const ProductPurchaseShortcut = ({ productInfo, quantity, setQuantity }) => {
         <div className="flex items-center justify-between gap-4">
           <img
             className="h-[60px] w-[60px] rounded-lg"
-            src={productInfo?.image}
+            src={productInfo?.images[0].src}
             alt="shortcut image"
           />
           <h6 className="text-2xl font-sober leading-[1.2]">
