@@ -136,7 +136,7 @@ This project leverages several third-party libraries to enhance functionality an
 ---
 
 ## Live Demo
-Check out the live demo of the Cafen Coffee React Template: [Live Demo](https://cafen-coffee-demo.netlify.app/)
+Check out the live demo of the Cafen Coffee React Template: [Live Demo](https://cafen-coffee-inj.netlify.app)
 
 ## Support
 If you encounter any issues or have questions, feel free to open an issue on the [GitHub repository](https://github.com/injamulhaquesomrat/cafen-coffee).

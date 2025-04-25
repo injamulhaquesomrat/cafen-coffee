@@ -1,51 +1,90 @@
+import { useState } from "react";
 import PrimaryButton from "../shared/Buttons/PrimaryButton";
 
 const BookATableForm = () => {
+  const [formData, setFormData] = useState({
+    date: "",
+    time: "",
+    person: "",
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(formData); //output from the form on submit
+  };
   return (
-    <div className="bg-secondary-foreground p-5 sm:p-7 lg:p-12 flex flex-col gap-5 md:gap-7 lg:gap-7 rounded-xl lg:rounded-3xl shadow-md w-full col-span-12 md:col-span-7 h-full">
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-        <input
-          className="px-5 py-2.5 rounded-lg border border-primary outline-none bg-secondary-foreground text-primary placeholder:text-primary placeholder:text-base col-span-1"
-          type="date"
-          placeholder="Date(dd/mm/yyyy)"
+    <>
+      <form
+        className="bg-secondary-foreground p-5 sm:p-7 lg:p-12 flex flex-col gap-5 md:gap-7 lg:gap-7 rounded-xl lg:rounded-3xl shadow-md w-full col-span-12 md:col-span-7 h-full"
+        onSubmit={handleSubmit}
+      >
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <input
+            className="form-input"
+            type="date"
+            placeholder="Date(dd/mm/yyyy)"
+            name="date"
+            value={formData.date}
+            onChange={handleChange}
+          />
+          <input
+            className="form-input"
+            type="time"
+            name="time"
+            placeholder="Time(hh/mm)"
+            value={formData.time}
+            onChange={handleChange}
+          />
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <input
+            className="form-input"
+            type="text"
+            name="person"
+            placeholder="Person"
+            value={formData.person}
+            onChange={handleChange}
+          />
+          <input
+            className="form-input"
+            type="text"
+            name="name"
+            placeholder="Name"
+            value={formData.name}
+            onChange={handleChange}
+          />
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <input className="form-input" type="email" placeholder="Email" />
+          <input
+            className="form-input"
+            type="phone"
+            name="phone"
+            placeholder="Phone"
+            value={formData.phone}
+            onChange={handleChange}
+          />
+        </div>
+        <textarea
+          className="form-input"
+          placeholder="Message"
+          name="message"
+          value={formData.message}
+          onChange={handleChange}
+          rows="9"
         />
-        <input
-          className="px-5 py-2.5 rounded-lg border border-primary outline-none bg-secondary-foreground text-primary placeholder:text-primary col-span-1"
-          type="time"
-          placeholder="Time(hh/mm)"
-        />
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-        <input
-          className="px-5 py-2.5 rounded-lg border border-primary outline-none bg-secondary-foreground text-primary placeholder:text-primary col-span-1"
-          type="text"
-          placeholder="Person"
-        />
-        <input
-          className="px-5 py-2.5 rounded-lg border border-primary outline-none bg-secondary-foreground text-primary placeholder:text-primary placeholder:text-base col-span-1"
-          type="text"
-          placeholder="Name"
-        />
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-        <input
-          className="px-5 py-2.5 rounded-lg border border-primary outline-none bg-secondary-foreground text-primary placeholder:text-primary col-span-1"
-          type="email"
-          placeholder="Email"
-        />
-        <input
-          className="px-5 py-2.5 rounded-lg border border-primary outline-none bg-secondary-foreground text-primary placeholder:text-primary col-span-1"
-          type="phone"
-          placeholder="Phone"
-        />
-      </div>
-      <textarea
-        className="px-5 py-2.5 rounded-lg border border-primary outline-none bg-secondary-foreground text-primary placeholder:text-primary col-span-1"
-        placeholder="Message"
-        rows="9"
-      />
-      <PrimaryButton buttonText={"Submit"} />
-    </div>
+        <PrimaryButton type="submit" buttonText={"Submit"} />
+      </form>
+    </>
   );
 };
 

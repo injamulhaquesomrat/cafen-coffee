@@ -1,9 +1,10 @@
 import { HiArrowRight } from "react-icons/hi";
 import { cn } from "../../../lib/utils";
 
-const ButtonArrow = ({ btnText }) => {
+const ButtonArrow = ({ btnText, type = "button" }) => {
   return (
     <button
+      type={type}
       className={cn(
         `leading-normal px-5 py-2.5 bg-secondary border border-primary rounded-full inline-flex items-center gap-2.5 group`
       )}

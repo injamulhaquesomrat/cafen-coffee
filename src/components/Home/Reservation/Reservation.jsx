@@ -15,13 +15,13 @@ const Reservation = () => {
   const handleFormSubmit = (event) => {
     event.preventDefault();
     const form = event.target;
-    const name = form.name.value;
-    const email = form.email.value;
-    const phone = form.phone.value;
-    const date = form.date.value;
-    const time = form.time.value;
-    const guest = form.guest.value;
-    console.log({ name, email, phone, date, time, guest });
+    const data = {};
+
+    formFields.forEach(({ name }) => {
+      data[name] = form[name].value;
+    });
+
+    console.log(data);
   };
 
   return (
@@ -52,6 +52,7 @@ const Reservation = () => {
               {/* start:: form submit button */}
               <div>
                 <PrimaryButton
+                  type="submit"
                   className={"lg:text-base"}
                   buttonText={"Submit"}
                 />

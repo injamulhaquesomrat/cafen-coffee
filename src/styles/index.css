@@ -24,6 +24,11 @@ p {
   line-height: normal;
 }
 
+/* form input */
+.form-input {
+  @apply px-5 py-2.5 rounded-lg border border-primary outline-none bg-secondary-foreground text-primary placeholder:text-primary col-span-1;
+}
+
 /* Section padding customization */
 .cf-section {
   padding-block: 80px;

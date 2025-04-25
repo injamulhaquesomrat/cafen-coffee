@@ -4,6 +4,11 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import SecondaryButton from "../components/shared/Buttons/SecondaryButton";
 
 const ComingSoon = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const email = e.target.email.value;
+    console.log({ email });
+  };
   return (
     <div className="bg-foreground w-full h-screen sm:flex items-center justify-center p-[30px]">
       <div className="bg-secondary-foreground p-[30px] lg:p-[50px] rounded-xl text-center text-primary md:w-[540px] lg:w-[800px]">
@@ -22,14 +27,16 @@ const ComingSoon = () => {
           first to experience it!
         </p>
         <div className="grid mt-[30px] mb-[15px]">
-          <form>
+          <form onSubmit={handleSubmit}>
             <input
               className="px-5 py-2.5 mb-2.5 w-4/5 rounded-lg border border-primary-foreground outline-none bg-secondary-foreground text-primary-foreground placeholder:text-primary-foreground col-span-1"
               type="email"
+              name="email"
               placeholder="Your Email..."
             />
             <div>
               <SecondaryButton
+                type="submit"
                 className={"md:text-base"}
                 buttonText={"Notify me"}
               />
