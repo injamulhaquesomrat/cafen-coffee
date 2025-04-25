@@ -15,6 +15,11 @@ const Navbar = () => {
 
   const { cartItems } = useCart();
 
+  const totalCartQuantity = cartItems.reduce(
+    (acc, item) => acc + item?.quantity,
+    0
+  );
+
   const currentPath = useLocation().pathname;
   const colouredNavPages = [
     "/",
@@ -95,7 +100,11 @@ const Navbar = () => {
                 className={`flex items-center gap-2 leading-6 px-2.5 py-1 font-medium rounded-lg duration-300 border border-transparent hover:border-primary hover:bg-secondary`}
               >
                 Pages
-                <FaChevronDown className={`text-sm mt-[3px] transition-all duration-300 ease-in-out ${isDropdownOpen && "rotate-180"}`}/>
+                <FaChevronDown
+                  className={`text-sm mt-[3px] transition-all duration-300 ease-in-out ${
+                    isDropdownOpen && "rotate-180"
+                  }`}
+                />
                 {/* Dropdown submenus */}
                 {isDropdownOpen && (
                   <DropdownMenu
@@ -133,7 +142,7 @@ const Navbar = () => {
               onClick={handleCartModal}
               className="text-primary md:text-lg"
             >
-              Cart ({cartItems.length})
+              Cart ({cartItems.length > 0 ? totalCartQuantity : 0})
             </button>
             {/* end::cart modal trigger button */}
 

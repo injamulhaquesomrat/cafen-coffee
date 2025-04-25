@@ -2,7 +2,7 @@ import SecondaryButton from "../../Buttons/SecondaryButton";
 
 const EmptyCartBody = () => {
   return (
-    <div className="flex flex-col justify-center items-center px-4 py-4 xs:py-[100px] h-[calc(100%-64px)]">
+    <div className="flex flex-col justify-center items-center px-4 py-4 xs:py-[100px] h-[628px]">
       <div className="w-full">
         <img
           className="w-6/12 mx-auto"

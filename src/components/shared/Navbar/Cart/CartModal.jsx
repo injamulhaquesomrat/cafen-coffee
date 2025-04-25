@@ -22,8 +22,8 @@ const CartModal = ({ isCartOpen, handleCartModal }) => {
       onClick={handleCartOutsideClick}
     >
       <div
-        className={`cart-container-children absolute right-[50%] top-[50%] transform translate-x-[50%] translate-y-[-50%] h-full md:h-fit w-full max-w-[480px] md:min-h-[700px] ${
-          cartItems === 0 ? "md:max-h-[700px]" : "md:max-h-full overflow-auto"
+        className={`cart-container-children absolute right-[50%] top-[50%] transform translate-x-[50%] translate-y-[-50%] h-full md:h-fit w-full max-w-[480px] md:min-h-[695px] ${
+          cartItems === 0 ? "md:max-h-[695px]" : "md:max-h-full overflow-auto"
         } border rounded-lg bg-foreground flex flex-col`}
       >
         {/* start::cart heading */}
