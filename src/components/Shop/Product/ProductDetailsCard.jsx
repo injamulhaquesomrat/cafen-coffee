@@ -1,8 +1,18 @@
+import { useEffect, useState } from "react";
 import { useCart } from "../../../provider/CartProvider";
 import PhotoThumbnailGallery from "../../shared/PhotoThumbnailGallery";
+import calculatePriceByWeight from "../../../utils/calculatePriceByWeight";
 
 const ProductDetailsCard = ({ productInfo, quantity, setQuantity }) => {
+  const [productWeight, setProductWeight] = useState(productInfo?.weights[0]);
+  const [cartProductPrice, setCartProductPrice] = useState(productInfo?.price);
   const { addToCart } = useCart();
+
+  useEffect(() => {
+    setCartProductPrice(
+      calculatePriceByWeight(productInfo.price, productWeight, quantity)
+    );
+  }, [quantity, productWeight, productInfo?.price]);
 
   return (
     <div className="pt-5 md:pt-10">
@@ -22,39 +32,59 @@ const ProductDetailsCard = ({ productInfo, quantity, setQuantity }) => {
             {productInfo?.title}
           </h2>
 
+          {/* start::Product Price */}
           <h5 className="text-[28px] leading-[1.2] font-medium">
-            $ {productInfo?.price} USD
+            $
+            {productInfo?.price && productWeight
+              ? ((productInfo?.price * productWeight) / 100).toFixed(2)
+              : productInfo?.price}{" "}
+            USD
           </h5>
+          {/* end::Product Price */}
 
           <div className="mt-5">
             <h6 className="text-[26px] leading-[1.2] text-primary font-sober mb-[5px]">
               Description:
             </h6>
-            <p className="text-primary-foreground">{productInfo?.description}</p>
+            <p className="text-primary-foreground">
+              {productInfo?.description}
+            </p>
           </div>
+
           <div className="mt-5 mb-2.5">
             <h6 className="text-[26px] leading-[1.2] text-primary font-sober mb-[5px]">
               Ingredients:
             </h6>
-            <p className="text-primary-foreground">{productInfo?.ingredients.join(", ")}</p>
+            <p className="text-primary-foreground">
+              {productInfo?.ingredients.join(", ")}
+            </p>
           </div>
 
-          <div className="flex flex-col gap-[5px]">
-            <label htmlFor="weight">Weight</label>
-            <select
-              className="px-5 py-2.5 rounded-xl outline-none border border-primary bg-secondary-foreground cursor-pointer"
-              name="weight"
-              id="weight"
-            >
-              <option defaultValue="Select Weight" disabled>
-                {" "}
-                Select Weight
-              </option>
-              <option value="100g">100g</option>
-              <option value="200g">200g</option>
-              <option value="500g">500g</option>
-            </select>
-          </div>
+          {productInfo?.weights.length > 0 && (
+            <div className="flex flex-col gap-[5px]">
+              <label htmlFor="weight">Weight</label>
+              <select
+                className="px-5 py-2.5 rounded-xl outline-none border border-primary bg-secondary-foreground cursor-pointer"
+                name="weight"
+                id="weight"
+                onChange={(e) => setProductWeight(e.target.value)}
+              >
+                <option defaultValue="Select Weight" disabled>
+                  {" "}
+                  Select Weight
+                </option>
+                {productInfo?.weights.map((weight, idx) => (
+                  <option
+                    value={weight}
+                    key={idx + weight}
+                    selected={weight === productWeight}
+                  >
+                    {weight}g
+                  </option>
+                ))}
+              </select>
+            </div>
+          )}
 
           <div className="mt-5 flex flex-col md:flex-row md:items-end gap-5">
             <div className="flex flex-col gap-[5px] min-w-[100px]">
@@ -65,14 +95,21 @@ const ProductDetailsCard = ({ productInfo, quantity, setQuantity }) => {
                 id="quantity"
                 name="quantity"
                 min="1"
-                max="10"
-                onChange={(e) => setQuantity(e.target.value)}
+                max="1000"
+                onChange={(e) => setQuantity(+e.target.value)}
                 value={quantity}
               />
             </div>
             <div className="w-full">
               <button
-                onClick={() => addToCart(productInfo, +quantity)}
+                onClick={() =>
+                  addToCart(
+                    productInfo,
+                    +quantity,
+                    productWeight,
+                    cartProductPrice
+                  )
+                }
                 className="text-primary hover:text-foreground transition-all duration-200 border border-primary rounded-full bg-secondary hover:bg-primary px-[30px] py-2.5 md:px-10 md:py-5 font-medium w-full h-[45px] flex items-center justify-center"
               >
                 Add to Cart

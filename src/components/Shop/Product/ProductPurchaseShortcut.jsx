@@ -64,7 +64,7 @@ const ProductPurchaseShortcut = ({ productInfo, quantity, setQuantity }) => {
                 id="quantity"
                 name="quantity"
                 min="1"
-                max="10"
+                max="1000"
                 onChange={(e) => setQuantity(e.target.value)}
                 value={quantity}
               />

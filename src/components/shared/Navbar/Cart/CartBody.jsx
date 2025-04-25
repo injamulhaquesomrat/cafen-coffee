@@ -4,15 +4,12 @@ const CartBody = () => {
   const { removeFromCart, updateQuantity, cartItems } = useCart();
 
   const handleQuantityChange = (id, value) => {
-    if (value === "") {
+    const parsed = parseInt(value, 10);
+
+    if (!value || isNaN(parsed) || parsed < 1 || parsed > 1000) {
       updateQuantity(id, 1);
     } else {
-      const newQuantity = parseInt(value, 10);
-      if (newQuantity >= 1 && newQuantity <= 5) {
-        updateQuantity(id, newQuantity);
-      } else {
-        updateQuantity(id, 1);
-      }
+      updateQuantity(id, parsed);
     }
   };
 
@@ -22,7 +19,7 @@ const CartBody = () => {
         {/* start:: cart items */}
         {cartItems.map((item) => (
           <div
-            key={item?.id}
+            key={item?.cartId}
             className="flex items-start justify-between p-5 gap-5"
           >
             <div className="flex items-center justify-between">
@@ -33,11 +30,16 @@ const CartBody = () => {
               />
             </div>
             <div className="flex flex-col flex-1 text-primary">
-              <h6 className="font-semibold">{item?.title}</h6>
-              <p>$ {item?.price} USD</p>
+              <div className="mb-2.5">
+                <h6 className="font-semibold">{item?.title}</h6>
+                <p>$ {item?.productCartPrice} USD</p>
+                {item?.weights.length > 0 && (
+                  <p>Weight: {item?.weight}gm</p>
+                )}{" "}
+              </div>
               <button
-                onClick={() => removeFromCart(item?.id)}
-                className="text-left underline hover:no-underline inline-flex"
+                onClick={() => removeFromCart(item?.cartId)}
+                className="text-left underline hover:no-underline inline-flex w-fit"
               >
                 Remove
               </button>
@@ -49,7 +51,7 @@ const CartBody = () => {
                 id="quantity"
                 name="quantity"
                 min="1"
-                max="10"
+                max="1000"
                 onChange={(e) => handleQuantityChange(item.id, e.target.value)}
                 value={item?.quantity || 1}
               />

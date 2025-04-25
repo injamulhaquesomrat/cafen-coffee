@@ -4,6 +4,7 @@ export const productItems = [
     title: "Espresso Beans",
     category: "coffee",
     price: 14.99,
+    weights: [],
     images: [
       { src: "/assets/images/products/expresso-beans.avif" },
       {
@@ -68,6 +69,7 @@ export const productItems = [
     title: "Matcha Green Tea",
     category: "tea",
     price: 9.99,
+    weights: [],
     images: [
       { src: "/assets/images/products/matcha-green-tea.avif" },
       {
@@ -130,6 +132,7 @@ export const productItems = [
     id: 3,
     title: "Tiramisu Delight",
     category: "dessert",
+    weights: ["100", "200", "500"],
     price: 6.5,
     images: [
       { src: "/assets/images/products/tiramisu-delight.avif" },
@@ -193,6 +196,7 @@ export const productItems = [
     title: "Cold Brew Coffee",
     category: "coffee",
     price: 4.75,
+    weights: [],
     images: [
       { src: "/assets/images/products/cold-brew-coffee.avif" },
       {
@@ -253,6 +257,7 @@ export const productItems = [
     title: "Chai Latte",
     category: "tea",
     price: 5.25,
+    weights: [],
     images: [
       { src: "/assets/images/products/chai-latte.avif" },
       {
@@ -306,6 +311,7 @@ export const productItems = [
     title: "Vanilla Bean Cheesecake",
     category: "dessert",
     price: 7.0,
+    weights: ["100", "250", "450"],
     images: [
       { src: "/assets/images/products/vanilla-bean-cheesecake.avif" },
       {
@@ -351,6 +357,7 @@ export const productItems = [
     id: 7,
     title: "Vegan Chocolate Cake",
     category: "dessert",
+    weights: ["100", "150", "400"],
     price: 6.5,
     images: [
       { src: "/assets/images/products/vegan-chocolate-cake.jpg" },
@@ -399,6 +406,7 @@ export const productItems = [
     title: "Berry Smoothie",
     category: "beverages",
     price: 5.75,
+    weights: [],
     images: [
       { src: "/assets/images/products/berry-smoothie.jpg" },
       {
@@ -462,6 +470,7 @@ export const productItems = [
     title: "Cinnamon Roll",
     category: "baked goods",
     price: 3.5,
+    weights: [],
     images: [
       { src: "/assets/images/products/cinnamon-roll.jpg" },
       {
@@ -523,23 +532,21 @@ export const productItems = [
     id: 10,
     title: "Mango Sorbet",
     category: "dessert",
+    weights: ["100", "200", "500"],
     price: 4.25,
     images: [
-      { src: "/icons/demo/demo-1.avif" },
+      { src: "/public/assets/images/products/mango-sorbet.jpg" },
       {
-        src: "https://images.unsplash.com/photo-1679940984055-fda3bbaadbb1?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        src: "/public/assets/images/products/mango-sorbet-2.jpg",
       },
       {
-        src: "https://images.unsplash.com/photo-1675155337990-378495973b2a?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        src: "/public/assets/images/products/mango-sorbet-3.jpg",
       },
       {
-        src: "https://images.unsplash.com/photo-1521677446241-d182a96ec49f?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3",
-      },
-      {
-        src: "https://images.unsplash.com/photo-1639744211487-b27e3551b07c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        src: "/public/assets/images/products/mango-sorbet-4.jpg",
       },
     ],
-    thumbnail: "/icons/demo/demo-1.avif",
+    thumbnail: "/public/assets/images/products/thumbnail-two.avif",
     save_offer: "Save 20%",
     description:
       "A sweet, tangy, and refreshing mango sorbet, made with real mangoes. Perfect for cooling off on a hot day.",

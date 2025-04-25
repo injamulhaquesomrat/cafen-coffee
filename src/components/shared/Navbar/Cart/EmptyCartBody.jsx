@@ -6,7 +6,7 @@ const EmptyCartBody = () => {
       <div className="w-full">
         <img
           className="w-6/12 mx-auto"
-          src="/empty-cart.svg"
+          src="/assets/icons/props/empty-cart.svg"
           alt="empty cart"
         />
       </div>

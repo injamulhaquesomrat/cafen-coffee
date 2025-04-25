@@ -1,4 +1,7 @@
+import { useCart } from "../../../../provider/CartProvider";
+
 const CartFooter = () => {
+  const { subtotal } = useCart();
   return (
     <div>
       {/* breakline */}
@@ -8,7 +11,7 @@ const CartFooter = () => {
       <div className="p-6 pt-4">
         <div className="text-primary flex items-center justify-between mb-4">
           <p>Subtotal</p>
-          <p className="font-semibold">$ 110.62 USD</p>
+          <p className="font-semibold">$ {subtotal.toFixed(2)} USD</p>
         </div>
         <div>
           <button
