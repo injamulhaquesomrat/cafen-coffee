@@ -1,18 +1,25 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useCart } from "../../../provider/CartProvider";
 import PhotoThumbnailGallery from "../../shared/PhotoThumbnailGallery";
 import calculatePriceByWeight from "../../../utils/calculatePriceByWeight";
+import { useProduct } from "../../../provider/ProductProvider";
 
-const ProductDetailsCard = ({ productInfo, quantity, setQuantity }) => {
-  const [productWeight, setProductWeight] = useState(productInfo?.weights[0]);
-  const [cartProductPrice, setCartProductPrice] = useState(productInfo?.price);
+const ProductDetailsCard = ({ productInfo }) => {
   const { addToCart } = useCart();
+  const {
+    quantity,
+    setQuantity,
+    productWeight,
+    setProductWeight,
+    cartProductPrice,
+    setCartProductPrice,
+  } = useProduct();
 
   useEffect(() => {
     setCartProductPrice(
       calculatePriceByWeight(productInfo.price, productWeight, quantity)
     );
-  }, [quantity, productWeight, productInfo?.price]);
+  }, [quantity, productWeight, productInfo?.price, setCartProductPrice]);
 
   return (
     <div className="pt-5 md:pt-10">
@@ -42,6 +49,7 @@ const ProductDetailsCard = ({ productInfo, quantity, setQuantity }) => {
           </h5>
           {/* end::Product Price */}
 
+          {/* start::descriptions */}
           <div className="mt-5">
             <h6 className="text-[26px] leading-[1.2] text-primary font-sober mb-[5px]">
               Description:
@@ -50,7 +58,9 @@ const ProductDetailsCard = ({ productInfo, quantity, setQuantity }) => {
               {productInfo?.description}
             </p>
           </div>
+          {/* end::descriptions */}
 
+          {/* start::ingredients */}
           <div className="mt-5 mb-2.5">
             <h6 className="text-[26px] leading-[1.2] text-primary font-sober mb-[5px]">
               Ingredients:
@@ -59,7 +69,9 @@ const ProductDetailsCard = ({ productInfo, quantity, setQuantity }) => {
               {productInfo?.ingredients.join(", ")}
             </p>
           </div>
+          {/* end::ingredients */}
 
+          {/* start::weight */}
           {productInfo?.weights.length > 0 && (
             <div className="flex flex-col gap-[5px]">
               <label htmlFor="weight">Weight</label>
@@ -85,8 +97,10 @@ const ProductDetailsCard = ({ productInfo, quantity, setQuantity }) => {
               </select>
             </div>
           )}
+          {/* end::weight */}
 
           <div className="mt-5 flex flex-col md:flex-row md:items-end gap-5">
+            {/* start::quantity */}
             <div className="flex flex-col gap-[5px] min-w-[100px]">
               <label htmlFor="quantity">Quantity</label>
               <input
@@ -100,6 +114,8 @@ const ProductDetailsCard = ({ productInfo, quantity, setQuantity }) => {
                 value={quantity}
               />
             </div>
+            {/* end::quantity */}
+
             <div className="w-full">
               <button
                 onClick={() =>

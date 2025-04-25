@@ -5,12 +5,11 @@ import ProductDetailsCard from "./ProductDetailsCard";
 import ProductReview from "./ProductReview";
 import ProductPurchaseShortcut from "./ProductPurchaseShortcut";
 import { Helmet } from "react-helmet";
-import { useState } from "react";
 
 const Product = () => {
-  const [quantity, setQuantity] = useState(1);
   const { productId } = useParams();
   const productInfo = productItems.find((item) => item.id === +productId);
+  
 
   if (!productInfo) {
     return <h1>Product not found</h1>;
@@ -27,14 +26,10 @@ const Product = () => {
         <Container>
           <ProductDetailsCard
             productInfo={productInfo}
-            quantity={quantity}
-            setQuantity={setQuantity}
           />
           <ProductReview productInfo={productInfo} />
           <ProductPurchaseShortcut
             productInfo={productInfo}
-            quantity={quantity}
-            setQuantity={setQuantity}
           />
         </Container>
       </div>

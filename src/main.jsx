@@ -6,11 +6,14 @@ import { RouterProvider } from "react-router-dom";
 import Router from "./routes/Router.jsx";
 import "@splidejs/splide/dist/css/splide.min.css";
 import { CartProvider } from "./provider/CartProvider.jsx";
+import { ProductProvider } from "./provider/ProductProvider.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <CartProvider>
-      <RouterProvider router={Router} />
+      <ProductProvider>
+        <RouterProvider router={Router} />
+      </ProductProvider>
     </CartProvider>
   </StrictMode>
 );

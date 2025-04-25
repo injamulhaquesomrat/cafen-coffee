@@ -1,10 +1,20 @@
 import { useEffect, useState } from "react";
 import { useCart } from "../../../provider/CartProvider";
+import calculatePriceByWeight from "../../../utils/calculatePriceByWeight";
+import { useProduct } from "../../../provider/ProductProvider";
 
-const ProductPurchaseShortcut = ({ productInfo, quantity, setQuantity }) => {
+const ProductPurchaseShortcut = ({ productInfo }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   const { addToCart } = useCart();
+  const {
+    quantity,
+    setQuantity,
+    productWeight,
+    setProductWeight,
+    cartProductPrice,
+    setCartProductPrice,
+  } = useProduct();
 
   // Show button when scrolling down
   useEffect(() => {
@@ -15,6 +25,12 @@ const ProductPurchaseShortcut = ({ productInfo, quantity, setQuantity }) => {
     window.addEventListener("scroll", toggleVisibility);
     return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
+
+  useEffect(() => {
+    setCartProductPrice(
+      calculatePriceByWeight(productInfo.price, productWeight, quantity)
+    );
+  }, [quantity, productWeight, productInfo?.price, setCartProductPrice]);
 
   return (
     <div
@@ -32,46 +48,68 @@ const ProductPurchaseShortcut = ({ productInfo, quantity, setQuantity }) => {
           <h6 className="text-2xl font-sober leading-[1.2]">
             {productInfo?.title}
           </h6>
-          <p className="text-lg leading-[1.2]">$ {productInfo?.price} USD</p>
+
+          {/* price */}
+          <p className="text-lg leading-[1.2]">
+            $ $
+            {productInfo?.price && productWeight
+              ? ((productInfo?.price * productWeight) / 100).toFixed(2)
+              : productInfo?.price}{" "}
+            USD USD
+          </p>
         </div>
         <div className="flex gap-4">
-          <div className="flex flex-col gap-[5px] h-[55px]">
-            <select
-              className="px-5 py-2.5 rounded-xl outline-none border border-primary bg-secondary cursor-pointer h-full"
-              name="weight"
-              id="weight"
-            >
-              <option defaultValue="Select Weight" disabled>
-                {" "}
-                Select Weight
-              </option>
-              <option className="bg-white" value="100g">
-                100g
-              </option>
-              <option className="bg-white" value="200g">
-                200g
-              </option>
-              <option className="bg-white" value="500g">
-                500g
-              </option>
-            </select>
-          </div>
+          {/* weight */}
+          {productInfo?.weights.length > 0 && (
+            <div className="flex flex-col gap-[5px] h-[55px]">
+              <select
+                className="px-5 py-2.5 rounded-xl outline-none border border-primary bg-secondary-foreground cursor-pointer h-full"
+                name="weight"
+                id="weight"
+                onChange={(e) => setProductWeight(e.target.value)}
+              >
+                <option defaultValue="Select Weight" disabled>
+                  {" "}
+                  Select Weight
+                </option>
+                {productInfo?.weights.map((weight, idx) => (
+                  <option
+                    value={weight}
+                    key={idx + weight}
+                    selected={weight === productWeight}
+                  >
+                    {weight}g
+                  </option>
+                ))}
+              </select>
+            </div>
+          )}
+
           <div className="flex flex-col md:flex-row md:items-end gap-4">
-            <div className="flex flex-col min-w-[100px] h-[55px] ">
+            {/* quantity */}
+            <div className="flex flex-col gap-[5px] min-w-[100px] h-[55px]">
               <input
-                className="px-3 py-2.5 pr-1.5 rounded-full outline-none border border-primary bg-secondary max-w-[100px] h-full"
+                className="px-3 py-2.5 pr-1.5 rounded-full outline-none border border-primary bg-secondary-foreground max-w-[100px] h-full"
                 type="number"
                 id="quantity"
                 name="quantity"
                 min="1"
                 max="1000"
-                onChange={(e) => setQuantity(e.target.value)}
+                onChange={(e) => setQuantity(+e.target.value)}
                 value={quantity}
               />
             </div>
+
             <div className="">
               <button
-                onClick={() => addToCart(productInfo, +quantity)}
+                onClick={() =>
+                  addToCart(
+                    productInfo,
+                    +quantity,
+                    productWeight,
+                    cartProductPrice
+                  )
+                }
                 className="hover:text-primary text-secondary transition-all duration-200 border border-primary rounded-full hover:bg-secondary bg-primary px-[30px] py-2.5 md:px-10 md:py-5 font-medium w-full h-[55px] flex items-center justify-center"
               >
                 Add to Cart

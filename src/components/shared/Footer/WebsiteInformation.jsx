@@ -57,14 +57,14 @@ const WebsiteInformation = () => {
 
           {/* start:: copyright */}
           <p className="mt-auto text-primary-foreground text-sm">
-            Developed by{" "}
+            Distributed by{" "}
             <a
-              href="https://github.com/injamulhaquesomrat"
+              href="https://zenui.net/"
               className="underline hover:no-underline font-sober text-primary"
             >
-              Injamul Haque Somrat
+              Zen UI
             </a>{" "}
-            © 2025 Cafen - All rights reserved
+            © {new Date().getFullYear()} Cafen - All rights reserved
           </p>
           {/* end:: copyright */}
         </div>
