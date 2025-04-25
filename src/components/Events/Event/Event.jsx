@@ -26,7 +26,7 @@ const Event = () => {
       <div className="bg-foreground">
         <Container>
           <EventContent eventInfo={eventInfo} />
-          <OtherEvents />
+          <OtherEvents eventInfo={eventInfo}/>
           <GoToTop />
         </Container>
       </div>

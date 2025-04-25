@@ -22,7 +22,7 @@ const ProductReview = ({ productInfo }) => {
         ))}
       </div>
 
-      <RelatedProducts />
+      <RelatedProducts productInfo={productInfo} />
     </section>
   );
 };

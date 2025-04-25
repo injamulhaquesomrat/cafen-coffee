@@ -25,7 +25,7 @@ const BlogItem = () => {
       <div className="bg-foreground">
         <Container>
           <BlogItemContent />
-          <RelatedBlogs />
+          <RelatedBlogs blogInfo={blogInfo} />
         </Container>
       </div>
     </>
