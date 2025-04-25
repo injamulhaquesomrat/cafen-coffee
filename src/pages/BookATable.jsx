@@ -16,8 +16,8 @@ const BookATable = () => {
       <div className="bg-foreground">
         <Container>
           <PageHero pageTitle={"Book a table"} />
-          <BookATableContainer />
         </Container>
+          <BookATableContainer />
         <OrderNow />
         <GoToTop />
       </div>
