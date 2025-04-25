@@ -43,21 +43,11 @@ export const CartProvider = ({ children }) => {
   };
 
   // Update quantity of an item
-  // const updateQuantity = (id, newQuantity) => {
-  //   setCartItems((prevItems) =>
-  //     prevItems.map((cartItem) =>
-  //       cartItem.id === id
-  //         ? { ...cartItem, quantity: newQuantity } // Update the quantity
-  //         : cartItem
-  //     )
-  //   );
-  // };
   const updateQuantity = (id, newQuantity) => {
     setCartItems((prevItems) =>
       prevItems.map((cartItem) => {
-        if (cartItem.id === id) {
-          // If weight is an empty string, fallback to 1g
-          const weight = cartItem.weight ? parseFloat(cartItem.weight) : 100;
+        if (cartItem.cartId === id) {
+          const weight = cartItem?.weight ? parseFloat(cartItem?.weight) : 100;
           const updatedPrice = (cartItem.price * weight * newQuantity) / 100;
 
           return {

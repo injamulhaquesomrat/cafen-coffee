@@ -535,18 +535,18 @@ export const productItems = [
     weights: ["100", "200", "500"],
     price: 4.25,
     images: [
-      { src: "/public/assets/images/products/mango-sorbet.jpg" },
+      { src: "/assets/images/products/mango-sorbet.jpg" },
       {
-        src: "/public/assets/images/products/mango-sorbet-2.jpg",
+        src: "/assets/images/products/mango-sorbet-2.jpg",
       },
       {
-        src: "/public/assets/images/products/mango-sorbet-3.jpg",
+        src: "/assets/images/products/mango-sorbet-3.jpg",
       },
       {
-        src: "/public/assets/images/products/mango-sorbet-4.jpg",
+        src: "/assets/images/products/mango-sorbet-4.jpg",
       },
     ],
-    thumbnail: "/public/assets/images/products/thumbnail-two.avif",
+    thumbnail: "/assets/images/products/thumbnail-two.avif",
     save_offer: "Save 20%",
     description:
       "A sweet, tangy, and refreshing mango sorbet, made with real mangoes. Perfect for cooling off on a hot day.",

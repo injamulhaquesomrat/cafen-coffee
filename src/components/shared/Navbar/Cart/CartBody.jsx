@@ -52,7 +52,7 @@ const CartBody = () => {
                 name="quantity"
                 min="1"
                 max="1000"
-                onChange={(e) => handleQuantityChange(item.id, e.target.value)}
+                onChange={(e) => handleQuantityChange(item?.cartId, e.target.value)}
                 value={item?.quantity || 1}
               />
             </div>
