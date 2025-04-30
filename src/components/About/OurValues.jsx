@@ -14,7 +14,7 @@ const OurValues = () => {
         {/* start:: our values container */}
         <div className="flex flex-col md:flex-row gap-10 xl:gap-20 mt-[30px] xs:mt-10 lg:mt-[60px] xl:mt-[70px]">
           {/* start:: our values image container */}
-          <div className="w-[45%]">
+          <div className="md:w-[45%] xl:w-[40%]">
             <img
               className="rounded-2xl border border-primary"
               src="/assets/images/about/about-values.avif"

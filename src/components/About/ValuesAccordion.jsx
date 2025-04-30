@@ -23,7 +23,7 @@ const ValuesAccordion = ({ accordionItems }) => {
   };
 
   return (
-    <div className="flex flex-col gap-5 lg:gap-[30px] md:w-full">
+    <div className="flex flex-col gap-5 lg:gap-[30px] md:w-[55%] xl:w-[60%]">
       {accordionItems.map((item, index) => (
         <div
           className={`border border-primary text-primary rounded-2xl ${
